@@ -78,6 +78,79 @@ function pairKey(cardId: string) {
   return match?.[1] ?? null;
 }
 
+const EARLY_MEANING_ZH: Record<string, string> = {
+  "not": "不、否定",
+  "not, opposite of": "不、相反",
+  "without, not, opposite of": "没有、不、相反",
+  "common, commonplace, vulgar": "普通的、平常的、粗俗的",
+  "evident, palpable": "明显的、可感知的",
+  "whimsical": "反复无常的、异想天开的",
+  "scanty, scarce": "稀少的、不足的",
+  "a tendency, predisposition, propensity": "倾向、习性",
+  "to get around, be around, encircle, surround": "环绕、包围",
+  "only, single, sole, alone of its kind": "唯一的、单独的",
+  "first": "第一、最初",
+  "fewness, scarcity, a small number": "稀少、少量",
+  "obtained by asking or praying": "通过请求或祈求获得的",
+  "elude, frustrate": "躲避、挫败",
+  "to travel": "旅行、行走",
+  "perilous, dangerous": "危险的",
+  "shun, eschew, avoid, dispense with": "躲开、避开、不用",
+  "bold, brave, fearless": "大胆的、勇敢无畏的",
+  "again": "再次、重新",
+  "harsh to the taste, sharp, bitter, sour": "味道尖锐、苦或酸",
+  "to counterbalance, render inoperative, invalidate": "抵消、使失效",
+  "distasteful, disagreeable": "令人厌恶的、不合意的",
+  "prefer before others": "优先选择、偏爱",
+  "to make one's own": "据为己有、使之属于自己",
+  "give birth to, beget, bear; cause, bring about": "生育；引起、产生",
+  "being, essence": "存在、本质",
+  "to lie, tell lies.": "说谎",
+  "fluid, flowing, moist": "流动的、湿润的",
+  "facing, opposite": "面对的、相对的",
+  "toned down by admixture": "掺入其他成分而变得缓和",
+  "harmless; innocent; inoffensive": "无害的、无辜的、不冒犯人的",
+  "obstinate, quarrelsome": "固执的、好争吵的",
+  "rapid": "迅速的",
+  "separation, dissolution of marriage": "分离、解除婚姻",
+  "hold up, bear; suffer, endure": "支撑、承受、忍耐",
+  "full of words, wordy": "话多的、冗长的",
+  "precious, costly": "珍贵的、昂贵的",
+  "inconvenient, disagreeable, troublesome": "不方便的、麻烦的",
+  "derision, mockery": "嘲笑、讥讽",
+  "brilliance, brightness": "光辉、明亮",
+  "tendency": "倾向",
+  "with, together": "共同、一起",
+  "strong and hardy": "强壮而坚韧的",
+  "thin": "薄的、稀薄的",
+  "without a name": "没有名字的",
+  "dark, clouded, gloomy; dim, not clear": "黑暗的、阴沉的、模糊不清的",
+  "good-looking, beautiful, fair": "好看的、美丽的",
+  "visible, open to view; attracting attention, striking": "可见的、引人注意的",
+  "to place": "放置",
+  "to speak against": "公开反对、驳斥",
+  "disgrace, infamy, scandal, dishonor": "耻辱、恶名",
+  "disdain, scorn, refuse, repudiate": "鄙视、拒绝、否认",
+  "inner": "内部的",
+  "to trip up, overthrow, drive out, usurp": "绊倒、推翻、驱逐、夺取",
+  "to yield, give place; to give up some right or property": "让步、让出权利或财产",
+  "new, young, fresh, recent; additional; early, soon": "新的、年轻的、新近的；额外的",
+};
+
+function originalMeaningZh(earlyMeaning: string, modernMeaning: string) {
+  const normalized = earlyMeaning.trim().toLowerCase();
+  if (EARLY_MEANING_ZH[normalized]) return EARLY_MEANING_ZH[normalized];
+
+  const pieces = modernMeaning
+    .split(/[，、；;]/)
+    .map((piece) => piece.trim())
+    .filter(Boolean)
+    .slice(0, 2);
+  return pieces.length
+    ? `约指“${pieces.join("、")}”一类概念`
+    : "原始含义与现代词义相关";
+}
+
 function originDetails(card: WordCard) {
   const raw = card.origin.replace(/^原形 [^；]+；/, "");
   const earlyMeaning =
@@ -118,7 +191,12 @@ function originDetails(card: WordCard) {
   else if (/阿拉伯语/.test(evidence)) family = "阿拉伯语词源";
   else if (/梵语/.test(evidence)) family = "印欧语系 · 梵语同源";
 
-  return { chain, earlyMeaning, family, oldest };
+  return {
+    chain,
+    earlyMeaningZh: originalMeaningZh(earlyMeaning, card.meaning),
+    family,
+    oldest,
+  };
 }
 
 function highlightedExample(text: string, terms: string[]) {
@@ -419,10 +497,10 @@ export default function Home() {
           <div className="brand-mark" aria-hidden="true">
             A<span>音</span>
           </div>
-          <p className="eyebrow">GRE · 声音记忆模式</p>
-          <h1 id="welcome-title">一次，只记一个词。</h1>
+          <p className="eyebrow">ADHD 友好 · 声音记忆模式</p>
+          <h1 id="welcome-title">ADHDer GRE<br />同义词1000</h1>
           <p className="welcome-copy">
-            切到新词就自动念出来。先听、再猜，翻开后看中文、等价词和词源。
+            一次只记一个词。切到新词就自动念出来，再用等价词、词源和例句加深记忆。
           </p>
           <div className="welcome-stats" aria-label="学习进度">
             <div><strong>{WORDS.length}</strong><span>张发声词卡</span></div>
@@ -494,7 +572,7 @@ export default function Home() {
               }}
               type="button"
             >
-              <span>A音</span> GRE 声忆卡
+              <span>A音</span> ADHDer GRE 同义词1000
             </button>
             <div className="topbar-center">
               <span>{autoSpeak ? "自动朗读 开" : "自动朗读 关"}</span>
@@ -590,32 +668,21 @@ export default function Home() {
                         const details = originDetails(card);
                         return (
                           <div className="origin-story">
-                            <section className="origin-source">
-                              <span className="origin-step">01 · 源头</span>
+                            <div className="origin-summary">
                               <strong>{details.family}</strong>
-                              <p>
-                                最早可追溯形式：
-                                <b>{details.oldest}</b>
-                              </p>
-                            </section>
-                            <section className="origin-evolution">
-                              <span className="origin-step">02 · 演变路径</span>
-                              <div className="origin-chain">
-                                {details.chain.map((node, index) => (
-                                  <span className="origin-node" key={`${node}-${index}`}>
-                                    <b>{node}</b>
-                                    {index < details.chain.length - 1 ? (
-                                      <i aria-hidden="true">→</i>
-                                    ) : null}
-                                  </span>
-                                ))}
-                              </div>
-                              {details.earlyMeaning ? (
-                                <p className="early-meaning">
-                                  早期含义：“{details.earlyMeaning}”
-                                </p>
-                              ) : null}
-                            </section>
+                              <span>{details.oldest}</span>
+                              <em>原始义：{details.earlyMeaningZh}</em>
+                            </div>
+                            <div className="origin-chain" aria-label="词源演变路径">
+                              {details.chain.map((node, index) => (
+                                <span className="origin-node" key={`${node}-${index}`}>
+                                  <b>{node}</b>
+                                  {index < details.chain.length - 1 ? (
+                                    <i aria-hidden="true">→</i>
+                                  ) : null}
+                                </span>
+                              ))}
+                            </div>
                           </div>
                         );
                       })()}
