@@ -34,15 +34,6 @@ function emptyDailyProgress(): DailyProgress {
   return { date: localDateKey(), newCompleted: 0, reviewCompleted: 0 };
 }
 
-function shuffled(values: number[]) {
-  const next = [...values];
-  for (let i = next.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [next[i], next[j]] = [next[j], next[i]];
-  }
-  return next;
-}
-
 function SpeakerIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -76,6 +67,27 @@ function SettingsIcon() {
 function pairKey(cardId: string) {
   const match = cardId.match(/^(p\d{2}r\d{2})[ab]$/);
   return match?.[1] ?? null;
+}
+
+type WordPair = {
+  key: string;
+  indices: number[];
+};
+
+const WORD_PAIRS: WordPair[] = (() => {
+  const groups = new Map<string, number[]>();
+  WORDS.forEach((card, index) => {
+    const key = pairKey(card.id) ?? card.id;
+    const indices = groups.get(key) ?? [];
+    indices.push(index);
+    groups.set(key, indices);
+  });
+  return [...groups.entries()].map(([key, indices]) => ({ key, indices }));
+})();
+
+function pairForIndex(index: number) {
+  const key = pairKey(WORDS[index]?.id ?? "");
+  return WORD_PAIRS.find((pair) => pair.key === key)?.indices ?? [index];
 }
 
 const EARLY_MEANING_ZH: Record<string, string> = {
@@ -129,6 +141,7 @@ const EARLY_MEANING_ZH: Record<string, string> = {
   "visible, open to view; attracting attention, striking": "可见的、引人注意的",
   "to place": "放置",
   "to speak against": "公开反对、驳斥",
+  "to separate, divide, distinguish": "分开、划分、辨别",
   "disgrace, infamy, scandal, dishonor": "耻辱、恶名",
   "disdain, scorn, refuse, repudiate": "鄙视、拒绝、否认",
   "inner": "内部的",
@@ -137,22 +150,24 @@ const EARLY_MEANING_ZH: Record<string, string> = {
   "new, young, fresh, recent; additional; early, soon": "新的、年轻的、新近的；额外的",
 };
 
-function originalMeaningZh(earlyMeaning: string, modernMeaning: string) {
+const ORIGIN_OVERRIDES: Record<string, string> = {
+  discernment:
+    "1580年代｜现代英语 discern + -ment（名词后缀）← 中古英语 discernen ← 古法语 discerner ← 拉丁语 discernere｜早期义 “to separate, divide, distinguish”。",
+};
+
+function originalMeaningZh(earlyMeaning: string) {
   const normalized = earlyMeaning.trim().toLowerCase();
   if (EARLY_MEANING_ZH[normalized]) return EARLY_MEANING_ZH[normalized];
-
-  const pieces = modernMeaning
-    .split(/[，、；;]/)
-    .map((piece) => piece.trim())
-    .filter(Boolean)
-    .slice(0, 2);
-  return pieces.length
-    ? `约指“${pieces.join("、")}”一类概念`
-    : "原始含义与现代词义相关";
+  return earlyMeaning
+    ? `待校订：原始义资料为“${earlyMeaning}”，不以现代词义倒推`
+    : "待校订：当前资料不足，不以现代词义倒推原始义";
 }
 
 function originDetails(card: WordCard) {
-  const raw = card.origin.replace(/^原形 [^；]+；/, "");
+  const raw = (ORIGIN_OVERRIDES[card.originQuery] ?? card.origin).replace(
+    /^原形 [^；]+；/,
+    "",
+  );
   const earlyMeaning =
     raw.match(/早期义 [“"]([^”"]+)[”"]/)?.[1]?.trim() ?? "";
   const chainPart = raw
@@ -172,17 +187,14 @@ function originDetails(card: WordCard) {
     node === "英语" ? `现代英语 ${card.originQuery}` : node,
   );
   if (!chain.length) {
-    chain = [
-      raw.split("｜")[1]?.replace(/。$/, "").trim() || "英语内部构词",
-      `现代英语 ${card.originQuery}`,
-    ];
+    chain = [`现代英语 ${card.originQuery}`];
   } else if (!chain.at(-1)?.includes(card.originQuery)) {
     chain[chain.length - 1] = `现代英语 ${card.originQuery}`;
   }
 
   const oldest = chain[0];
   const evidence = `${oldest} ${raw}`;
-  let family = "英语内部构词";
+  let family = "现代英语派生词";
   if (/希腊语/.test(evidence)) family = "希腊语词源";
   else if (/拉丁语/.test(evidence)) family = "拉丁语词源";
   else if (/原始日耳曼语|古英语|古诺斯语|荷兰语|德语/.test(evidence)) {
@@ -193,7 +205,7 @@ function originDetails(card: WordCard) {
 
   return {
     chain,
-    earlyMeaningZh: originalMeaningZh(earlyMeaning, card.meaning),
+    earlyMeaningZh: originalMeaningZh(earlyMeaning),
     family,
     oldest,
   };
@@ -328,17 +340,29 @@ export default function Home() {
 
   const buildPool = useCallback(
     (mode: SessionMode) => {
-      let pool = WORDS.map((_, index) => index);
-      if (mode === "new") {
-        pool = pool.filter(
-          (index) =>
-            !known.has(WORDS[index].id) && !hard.has(WORDS[index].id),
-        );
-      } else if (mode === "review") {
-        pool = pool.filter((index) => hard.has(WORDS[index].id));
-      }
-      pool = shuffled(pool);
-      return pool.slice(0, sessionSize);
+      const eligiblePairs = WORD_PAIRS.filter(({ indices }) => {
+        if (mode === "new") {
+          const hasHardCard = indices.some((index) =>
+            hard.has(WORDS[index].id),
+          );
+          const hasUnseenCard = indices.some(
+            (index) =>
+              !known.has(WORDS[index].id) && !hard.has(WORDS[index].id),
+          );
+          return !hasHardCard && hasUnseenCard;
+        }
+        if (mode === "review") {
+          return indices.some((index) => hard.has(WORDS[index].id));
+        }
+        return true;
+      });
+
+      // The source PDF is organized as adjacent synonym pairs. Keep that order
+      // and enqueue the complete pair so 1→2, 3→4 can never become 1→4.
+      const evenSessionSize = Math.max(2, sessionSize - (sessionSize % 2));
+      return eligiblePairs
+        .flatMap(({ indices }) => indices)
+        .slice(0, evenSessionSize);
     },
     [hard, known, sessionSize],
   );
@@ -415,10 +439,11 @@ export default function Home() {
       return next;
     });
     setSessionAgain((value) => value + 1);
-    const priorAttempts = attempts[card.id] ?? 0;
+    const key = pairKey(card.id) ?? card.id;
+    const priorAttempts = attempts[key] ?? 0;
     if (priorAttempts < 1) {
-      setQueue((old) => [...old, currentIndex]);
-      setAttempts((old) => ({ ...old, [card.id]: priorAttempts + 1 }));
+      setQueue((old) => [...old, ...pairForIndex(currentIndex)]);
+      setAttempts((old) => ({ ...old, [key]: priorAttempts + 1 }));
     }
     advance();
   }, [advance, attempts, card, currentIndex, sessionMode]);
@@ -510,7 +535,7 @@ export default function Home() {
           </div>
           <div className="session-choice">
             <span>本轮</span>
-            {[10, 25, 50].map((size) => (
+            {[10, 20, 50].map((size) => (
               <button
                 className={sessionSize === size ? "chip chip--active" : "chip"}
                 key={size}
@@ -530,13 +555,13 @@ export default function Home() {
               <div className="daily-progress" aria-label="今日新词进度">
                 <span style={{ width: `${newDailyProgress}%` }} />
               </div>
-              <p>从 {newRemaining} 个尚未学习的词中随机抽取；每天建议约 100 个。</p>
+              <p>按 PDF 原顺序学习；相邻的同义词始终成对出现。每天建议约 100 个。</p>
               <button
                 disabled={!newRemaining}
                 onClick={() => begin("new")}
                 type="button"
               >
-                {newRemaining ? "随机学习新词" : "新词已经全部刷过"} <span>→</span>
+                {newRemaining ? "按顺序学习新词" : "新词已经全部刷过"} <span>→</span>
               </button>
             </section>
             <section className="daily-section daily-section--review">
@@ -547,13 +572,13 @@ export default function Home() {
               <div className="daily-progress" aria-label="今日复习进度">
                 <span style={{ width: `${reviewDailyProgress}%` }} />
               </div>
-              <p>从 {hard.size} 个不熟词中随机抽取；记住后自动移出。</p>
+              <p>按 PDF 原顺序复习不熟词；同义词对不会被拆开。</p>
               <button
                 disabled={!hard.size}
                 onClick={() => begin("review")}
                 type="button"
               >
-                {hard.size ? "随机复习不熟词" : "不熟词库目前为空"} <span>→</span>
+                {hard.size ? "按顺序复习不熟词" : "不熟词库目前为空"} <span>→</span>
               </button>
             </section>
           </div>
