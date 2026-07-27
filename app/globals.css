@@ -346,17 +346,18 @@ kbd {
   font-weight: 600;
 }
 .study-word {
+  width: 100%;
   max-width: 100%;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.8rem, 9vw, 7.7rem);
   font-weight: 500;
   letter-spacing: -.06em;
   line-height: .98;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  text-align: center;
+  white-space: nowrap;
+  word-break: keep-all;
 }
-.study-word--long { font-size: clamp(2.8rem, 7vw, 5.2rem); }
-.study-word--xl { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.08; }
 .listen-prompt { margin: 1.6rem 0 0; color: #8a8997; font-size: .76rem; }
 .reveal-button {
   position: absolute;
@@ -678,9 +679,6 @@ kbd {
   .flashcard { min-height: 31rem; border-radius: 1.35rem; }
   .word-zone { min-height: 25.5rem; padding: 2.3rem 1.25rem 2rem; }
   .is-open .word-zone { min-height: 15rem; }
-  .study-word { font-size: clamp(3rem, 15vw, 5rem); }
-  .study-word--long { font-size: clamp(2.3rem, 11vw, 3.8rem); }
-  .study-word--xl { font-size: clamp(1.8rem, 8.5vw, 3rem); }
   .answer-zone { padding: 1.2rem; grid-template-columns: 1fr; }
   .origin-block, .example-block, .answer-actions { grid-column: 1; }
   .origin-story { align-items: flex-start; flex-direction: column; }

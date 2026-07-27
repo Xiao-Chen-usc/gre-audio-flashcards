@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { EXAMPLES } from "./exampleData";
 import { WORDS, type WordCard } from "./wordData";
 
@@ -472,12 +472,8 @@ export default function Home() {
   const sessionProgress = queue.length
     ? Math.min(100, Math.round((position / queue.length) * 100))
     : 0;
-  const longWordClass = useMemo(() => {
-    const length = card?.word.length ?? 0;
-    if (length > 25) return "study-word study-word--xl";
-    if (length > 16) return "study-word study-word--long";
-    return "study-word";
-  }, [card?.word]);
+  const wordLength = Math.max(card?.word.length ?? 1, 8);
+  const wordFontSize = `clamp(1.15rem, ${Math.min(14, 145 / wordLength)}vw, 5.4rem)`;
 
   if (!hydrated) {
     return (
@@ -632,7 +628,9 @@ export default function Home() {
                   >
                     <SpeakerIcon /><span>再听一次</span><kbd>R</kbd>
                   </button>
-                  <h1 className={longWordClass}>{card.word}</h1>
+                  <h1 className="study-word" style={{ fontSize: wordFontSize }}>
+                    {card.word}
+                  </h1>
                   <p className="listen-prompt">
                     {revealed ? "答案已展开" : "先听发音，在脑中说出它的意思"}
                   </p>
