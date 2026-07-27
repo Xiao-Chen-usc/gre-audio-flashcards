@@ -85,11 +85,6 @@ const WORD_PAIRS: WordPair[] = (() => {
   return [...groups.entries()].map(([key, indices]) => ({ key, indices }));
 })();
 
-function pairForIndex(index: number) {
-  const key = pairKey(WORDS[index]?.id ?? "");
-  return WORD_PAIRS.find((pair) => pair.key === key)?.indices ?? [index];
-}
-
 const EARLY_MEANING_ZH: Record<string, string> = {
   "not": "不、否定",
   "not, opposite of": "不、相反",
@@ -254,7 +249,6 @@ export default function Home() {
   const [resetArmed, setResetArmed] = useState(false);
   const [sessionKnown, setSessionKnown] = useState(0);
   const [sessionAgain, setSessionAgain] = useState(0);
-  const [attempts, setAttempts] = useState<Record<string, number>>({});
   const [sessionMode, setSessionMode] = useState<SessionMode>("new");
   const [speechMessage, setSpeechMessage] = useState("");
   const lastSpokenRef = useRef("");
@@ -387,7 +381,6 @@ export default function Home() {
       setSettingsOpen(false);
       setSessionKnown(0);
       setSessionAgain(0);
-      setAttempts({});
       setSessionMode(mode);
       creditedThisSessionRef.current = new Set();
       lastSpokenRef.current = first.id;
@@ -446,14 +439,8 @@ export default function Home() {
       return next;
     });
     setSessionAgain((value) => value + 1);
-    const key = pairKey(card.id) ?? card.id;
-    const priorAttempts = attempts[key] ?? 0;
-    if (priorAttempts < 1) {
-      setQueue((old) => [...old, ...pairForIndex(currentIndex)]);
-      setAttempts((old) => ({ ...old, [key]: priorAttempts + 1 }));
-    }
     advance();
-  }, [advance, attempts, card, currentIndex, sessionMode]);
+  }, [advance, card, sessionMode]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
