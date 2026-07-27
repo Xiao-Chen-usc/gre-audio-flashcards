@@ -407,6 +407,39 @@ kbd {
 .origin-heading { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
 .origin-heading a { color: #8374bf; font-size: .64rem; text-decoration: none; white-space: nowrap; }
 .origin-block p { margin: 0; color: #4d4964; font-size: .84rem; line-height: 1.8; }
+.example-block {
+  overflow: hidden;
+  margin: 0;
+  padding: 1.05rem 1.2rem 1.2rem;
+  border: 1px solid #d9e7f8;
+  background: #f8fbff;
+  border-radius: 1rem;
+  grid-column: 1 / -1;
+}
+.example-block figcaption {
+  display: flex;
+  margin-bottom: .85rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.example-block figcaption span { display: flex; flex-direction: column; gap: .2rem; }
+.example-block figcaption b { color: #304660; font-size: .78rem; }
+.example-block figcaption small { color: #7e8c9c; font-size: .66rem; }
+.example-block figcaption em {
+  color: #7d8ea2;
+  font-size: .62rem;
+  font-style: normal;
+  white-space: nowrap;
+}
+.example-block img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(42, 91, 145, .08);
+  background: white;
+  border-radius: .65rem;
+}
 .answer-actions {
   display: grid;
   margin-top: .3rem;
@@ -596,7 +629,9 @@ kbd {
   .study-word--long { font-size: clamp(2.3rem, 11vw, 3.8rem); }
   .study-word--xl { font-size: clamp(1.8rem, 8.5vw, 3rem); }
   .answer-zone { padding: 1.2rem; grid-template-columns: 1fr; }
-  .origin-block, .answer-actions { grid-column: 1; }
+  .origin-block, .example-block, .answer-actions { grid-column: 1; }
+  .example-block { padding: .9rem; }
+  .example-block figcaption { align-items: flex-start; flex-direction: column; gap: .35rem; }
   .under-card { justify-content: center; }
   .under-card p { display: none; }
   .complete-card { margin-top: 4vh; padding: 3rem 1.4rem 2.5rem; }

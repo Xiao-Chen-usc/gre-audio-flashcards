@@ -55,6 +55,11 @@ function SettingsIcon() {
   );
 }
 
+function exampleImageFor(cardId: string) {
+  const match = cardId.match(/^(p\d{2}r\d{2})[ab]$/);
+  return match ? `/example-crops/${match[1]}.webp` : null;
+}
+
 export default function Home() {
   const [hydrated, setHydrated] = useState(false);
   const [known, setKnown] = useState<Set<string>>(new Set());
@@ -445,6 +450,22 @@ export default function Home() {
                       </div>
                       <p>{card.origin}</p>
                     </div>
+                    {exampleImageFor(card.id) ? (
+                      <figure className="example-block">
+                        <figcaption>
+                          <span>
+                            <b>GRE 语境例句</b>
+                            <small>先读英文，再用中文核对理解</small>
+                          </span>
+                          <em>原书第 {card.page} 页</em>
+                        </figcaption>
+                        <img
+                          alt={`${card.word} 和 ${card.pair} 的 GRE 英文例句及中文翻译`}
+                          loading="eager"
+                          src={exampleImageFor(card.id) ?? undefined}
+                        />
+                      </figure>
+                    ) : null}
                     <div className="answer-actions">
                       <button className="again-button" onClick={markAgain} type="button">
                         <span>还不熟</span><kbd>1</kbd>
