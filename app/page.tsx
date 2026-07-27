@@ -142,6 +142,15 @@ const EARLY_MEANING_ZH: Record<string, string> = {
   "to place": "放置",
   "to speak against": "公开反对、驳斥",
   "to separate, divide, distinguish": "分开、划分、辨别",
+  "worth great attention; theoretical": "值得高度关注的；理论性的",
+  "laudatory (ode), eulogy": "赞颂性的诗歌；颂词",
+  "tribute, a stated payment, a thing contributed or paid": "贡赋；规定缴纳或贡献之物",
+  "tendon at the back of the knee.": "膝后肌腱",
+  "make worse": "使恶化、使变坏",
+  "smallest, least": "最小的、最少的",
+  "mockery": "嘲弄、戏弄",
+  "biting, caustic, very severe": "尖刻的、腐蚀性的、非常严厉的",
+  "belonging to conjecture": "属于推测或猜想的",
   "disgrace, infamy, scandal, dishonor": "耻辱、恶名",
   "disdain, scorn, refuse, repudiate": "鄙视、拒绝、否认",
   "inner": "内部的",
@@ -158,9 +167,7 @@ const ORIGIN_OVERRIDES: Record<string, string> = {
 function originalMeaningZh(earlyMeaning: string) {
   const normalized = earlyMeaning.trim().toLowerCase();
   if (EARLY_MEANING_ZH[normalized]) return EARLY_MEANING_ZH[normalized];
-  return earlyMeaning
-    ? `待校订：原始义资料为“${earlyMeaning}”，不以现代词义倒推`
-    : "待校订：当前资料不足，不以现代词义倒推原始义";
+  return earlyMeaning ? `原文：${earlyMeaning}` : "原始义暂未收录";
 }
 
 function originDetails(card: WordCard) {
