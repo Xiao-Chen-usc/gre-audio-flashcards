@@ -495,6 +495,11 @@ export default function Home() {
           </div>
           <p className="eyebrow">ADHD 友好 · 声音记忆模式</p>
           <h1 id="welcome-title">ADHDer GRE<br />同义词1000</h1>
+          <aside className="publisher-note" aria-label="发布者信息">
+            <b>发布者</b>
+            <span>小红书 Andrew潇</span>
+            <i>欢迎讨论、提供意见，或者交个朋友</i>
+          </aside>
           <p className="welcome-copy">
             一次只记一个词。切到新词就自动念出来，再用等价词、词源和例句加深记忆。
           </p>
@@ -555,11 +560,6 @@ export default function Home() {
           <p className="privacy-note">
             进度只保存在这台电脑。建议戴耳机，完成一小轮就停一下。
           </p>
-          <aside className="publisher-note" aria-label="发布者信息">
-            <b>发布者</b>
-            <span>小红书 Andrew潇</span>
-            <i>欢迎讨论、提供意见，或者交个朋友</i>
-          </aside>
         </section>
       ) : (
         <div className="study-layout">
