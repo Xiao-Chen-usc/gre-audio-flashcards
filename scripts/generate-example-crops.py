@@ -22,7 +22,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 WORD_DATA = ROOT / "app" / "wordData.ts"
-OUTPUT = ROOT / "public" / "example-crops"
+OUTPUT = ROOT / "tmp" / "example-crops"
 
 
 def table_boundaries(source: Image.Image) -> list[int]:

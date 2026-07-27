@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { EXAMPLES } from "./exampleData";
 import { WORDS, type WordCard } from "./wordData";
 
 type SessionMode = "new" | "review" | "all";
@@ -55,9 +56,71 @@ function SettingsIcon() {
   );
 }
 
-function exampleImageFor(cardId: string) {
+function pairKey(cardId: string) {
   const match = cardId.match(/^(p\d{2}r\d{2})[ab]$/);
-  return match ? `/example-crops/${match[1]}.webp` : null;
+  return match?.[1] ?? null;
+}
+
+function originDetails(card: WordCard) {
+  const raw = card.origin.replace(/^原形 [^；]+；/, "");
+  const earlyMeaning =
+    raw.match(/早期义 [“"]([^”"]+)[”"]/)?.[1]?.trim() ?? "";
+  const chainPart = raw
+    .split("｜")
+    .find((part) => part.includes("←"))
+    ?.replace(/。$/, "")
+    .trim();
+
+  let chain = chainPart
+    ? chainPart
+        .split("←")
+        .map((part) => part.trim())
+        .filter(Boolean)
+        .reverse()
+    : [];
+  chain = chain.map((node) =>
+    node === "英语" ? `现代英语 ${card.originQuery}` : node,
+  );
+  if (!chain.length) {
+    chain = [
+      raw.split("｜")[1]?.replace(/。$/, "").trim() || "英语内部构词",
+      `现代英语 ${card.originQuery}`,
+    ];
+  } else if (!chain.at(-1)?.includes(card.originQuery)) {
+    chain[chain.length - 1] = `现代英语 ${card.originQuery}`;
+  }
+
+  const oldest = chain[0];
+  const evidence = `${oldest} ${raw}`;
+  let family = "英语内部构词";
+  if (/希腊语/.test(evidence)) family = "希腊语词源";
+  else if (/拉丁语/.test(evidence)) family = "拉丁语词源";
+  else if (/原始日耳曼语|古英语|古诺斯语|荷兰语|德语/.test(evidence)) {
+    family = "日耳曼语词源";
+  } else if (/法语|古法语/.test(evidence)) family = "罗曼语族 · 法语来源";
+  else if (/阿拉伯语/.test(evidence)) family = "阿拉伯语词源";
+  else if (/梵语/.test(evidence)) family = "印欧语系 · 梵语同源";
+
+  return { chain, earlyMeaning, family, oldest };
+}
+
+function highlightedExample(text: string, terms: string[]) {
+  const cleaned = terms
+    .flatMap((term) => term.split(/\s*&\s*|\s+/))
+    .map((term) => term.replace(/^[^A-Za-z]+|[^A-Za-z]+$/g, ""))
+    .filter((term) => term.length > 3);
+  if (!cleaned.length) return text;
+  const pattern = new RegExp(
+    `(${cleaned.map((term) => term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`,
+    "gi",
+  );
+  return text.split(pattern).map((part, index) =>
+    cleaned.some((term) => term.toLowerCase() === part.toLowerCase()) ? (
+      <mark key={`${part}-${index}`}>{part}</mark>
+    ) : (
+      part
+    ),
+  );
 }
 
 export default function Home() {
@@ -448,24 +511,67 @@ export default function Home() {
                           完整词源 ↗
                         </a>
                       </div>
-                      <p>{card.origin}</p>
+                      {(() => {
+                        const details = originDetails(card);
+                        return (
+                          <div className="origin-story">
+                            <section className="origin-source">
+                              <span className="origin-step">01 · 源头</span>
+                              <strong>{details.family}</strong>
+                              <p>
+                                最早可追溯形式：
+                                <b>{details.oldest}</b>
+                              </p>
+                            </section>
+                            <section className="origin-evolution">
+                              <span className="origin-step">02 · 演变路径</span>
+                              <div className="origin-chain">
+                                {details.chain.map((node, index) => (
+                                  <span className="origin-node" key={`${node}-${index}`}>
+                                    <b>{node}</b>
+                                    {index < details.chain.length - 1 ? (
+                                      <i aria-hidden="true">→</i>
+                                    ) : null}
+                                  </span>
+                                ))}
+                              </div>
+                              {details.earlyMeaning ? (
+                                <p className="early-meaning">
+                                  早期含义：“{details.earlyMeaning}”
+                                </p>
+                              ) : null}
+                            </section>
+                          </div>
+                        );
+                      })()}
                     </div>
-                    {exampleImageFor(card.id) ? (
-                      <figure className="example-block">
-                        <figcaption>
-                          <span>
-                            <b>GRE 语境例句</b>
-                            <small>先读英文，再用中文核对理解</small>
-                          </span>
-                          <em>原书第 {card.page} 页</em>
-                        </figcaption>
-                        <img
-                          alt={`${card.word} 和 ${card.pair} 的 GRE 英文例句及中文翻译`}
-                          loading="eager"
-                          src={exampleImageFor(card.id) ?? undefined}
-                        />
-                      </figure>
-                    ) : null}
+                    {(() => {
+                      const key = pairKey(card.id);
+                      const example = key ? EXAMPLES[key] : undefined;
+                      return example ? (
+                        <section className="example-block">
+                          <div className="example-heading">
+                            <span>
+                              <b>GRE 语境例句</b>
+                              <small>OCR 提取文字 · 可复制、可缩放</small>
+                            </span>
+                            <em>原书第 {card.page} 页</em>
+                          </div>
+                          <p className="example-english">
+                            {example.english
+                              ? highlightedExample(example.english, [
+                                  card.word,
+                                  card.pair,
+                                ])
+                              : `${card.word} 与 ${card.pair} 在原例句中构成等价表达。`}
+                          </p>
+                          <p className="example-chinese">
+                            {example.chinese ||
+                              "中文 OCR 暂未识别完整，请以原 PDF 为准。"}
+                          </p>
+                        </section>
+                      ) : null;
+                    })()}
                     <div className="answer-actions">
                       <button className="again-button" onClick={markAgain} type="button">
                         <span>还不熟</span><kbd>1</kbd>
