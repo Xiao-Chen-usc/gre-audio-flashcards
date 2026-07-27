@@ -555,6 +555,11 @@ export default function Home() {
           <p className="privacy-note">
             进度只保存在这台电脑。建议戴耳机，完成一小轮就停一下。
           </p>
+          <aside className="publisher-note" aria-label="发布者信息">
+            <b>发布者</b>
+            <span>小红书 Andrew潇</span>
+            <i>欢迎讨论、提供意见，或者交个朋友</i>
+          </aside>
         </section>
       ) : (
         <div className="study-layout">

@@ -210,6 +210,23 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   font-weight: 650;
 }
 .privacy-note { margin: auto 0 0; padding-top: 2.5rem; color: #9694a2; font-size: .74rem; }
+.publisher-note {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: .7rem;
+  padding: .48rem .72rem;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid rgba(66, 57, 111, .09);
+  background: rgba(255, 254, 250, .58);
+  border-radius: .7rem;
+  color: #8b8994;
+  font-size: .66rem;
+  gap: .28rem .45rem;
+}
+.publisher-note b { color: #777481; font-weight: 720; }
+.publisher-note span { color: #625d78; font-weight: 680; }
+.publisher-note i { font-style: normal; }
 
 .study-layout { min-height: 100vh; }
 .topbar {
