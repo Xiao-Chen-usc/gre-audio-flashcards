@@ -6,26 +6,33 @@ import { WORDS, type WordCard } from "./wordData";
 
 type SessionMode = "new" | "review" | "all";
 
-type ReviewRecord = {
-  dueAt: number;
-  intervalDays: number;
-  streak: number;
-  lapses: number;
+type DailyProgress = {
+  date: string;
+  newCompleted: number;
+  reviewCompleted: number;
 };
 
 type SavedState = {
   known: string[];
   hard: string[];
-  reviews?: Record<string, ReviewRecord>;
+  daily?: DailyProgress;
   sessionSize: number;
-  randomOrder: boolean;
   autoSpeak: boolean;
   rate: number;
 };
 
 const STORAGE_KEY = "gre-voice-memory-v1";
-const REVIEW_INTERVALS = [1, 3, 7, 14, 30, 60];
-const DAY_MS = 24 * 60 * 60 * 1000;
+const DAILY_NEW_TARGET = 100;
+const DAILY_REVIEW_TARGET = 40;
+
+function localDateKey() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+}
+
+function emptyDailyProgress(): DailyProgress {
+  return { date: localDateKey(), newCompleted: 0, reviewCompleted: 0 };
+}
 
 function shuffled(values: number[]) {
   const next = [...values];
@@ -137,9 +144,8 @@ export default function Home() {
   const [hydrated, setHydrated] = useState(false);
   const [known, setKnown] = useState<Set<string>>(new Set());
   const [hard, setHard] = useState<Set<string>>(new Set());
-  const [reviews, setReviews] = useState<Record<string, ReviewRecord>>({});
+  const [daily, setDaily] = useState<DailyProgress>(emptyDailyProgress);
   const [sessionSize, setSessionSize] = useState(10);
-  const [randomOrder, setRandomOrder] = useState(false);
   const [autoSpeak, setAutoSpeak] = useState(true);
   const [rate, setRate] = useState(0.82);
   const [queue, setQueue] = useState<number[]>([]);
@@ -152,8 +158,10 @@ export default function Home() {
   const [sessionKnown, setSessionKnown] = useState(0);
   const [sessionAgain, setSessionAgain] = useState(0);
   const [attempts, setAttempts] = useState<Record<string, number>>({});
+  const [sessionMode, setSessionMode] = useState<SessionMode>("new");
   const [speechMessage, setSpeechMessage] = useState("");
   const lastSpokenRef = useRef("");
+  const creditedThisSessionRef = useRef(new Set<string>());
 
   const currentIndex = queue[position];
   const card: WordCard | undefined =
@@ -168,27 +176,12 @@ export default function Home() {
         const saved = JSON.parse(raw) as Partial<SavedState>;
         setKnown(new Set(saved.known ?? []));
         setHard(new Set(saved.hard ?? []));
-        const now = Date.now();
-        const migratedReviews = { ...(saved.reviews ?? {}) };
-        for (const id of saved.hard ?? []) {
-          migratedReviews[id] ??= {
-            dueAt: now,
-            intervalDays: 0,
-            streak: 0,
-            lapses: 1,
-          };
-        }
-        for (const id of saved.known ?? []) {
-          migratedReviews[id] ??= {
-            dueAt: now + DAY_MS,
-            intervalDays: 1,
-            streak: 1,
-            lapses: 0,
-          };
-        }
-        setReviews(migratedReviews);
+        setDaily(
+          saved.daily?.date === localDateKey()
+            ? saved.daily
+            : emptyDailyProgress(),
+        );
         setSessionSize(saved.sessionSize ?? 10);
-        setRandomOrder(saved.randomOrder ?? false);
         setAutoSpeak(saved.autoSpeak ?? true);
         setRate(saved.rate ?? 0.82);
       }
@@ -204,23 +197,13 @@ export default function Home() {
     const saved: SavedState = {
       known: [...known],
       hard: [...hard],
-      reviews,
+      daily,
       sessionSize,
-      randomOrder,
       autoSpeak,
       rate,
     };
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
-  }, [autoSpeak, hard, hydrated, known, randomOrder, rate, reviews, sessionSize]);
-
-  const dueIds = useMemo(() => {
-    const now = Date.now();
-    return new Set(
-      Object.entries(reviews)
-        .filter(([, review]) => review.dueAt <= now)
-        .map(([id]) => id),
-    );
-  }, [reviews]);
+  }, [autoSpeak, daily, hard, hydrated, known, rate, sessionSize]);
 
   const speak = useCallback(
     (text: string, force = false) => {
@@ -269,24 +252,17 @@ export default function Home() {
     (mode: SessionMode) => {
       let pool = WORDS.map((_, index) => index);
       if (mode === "new") {
-        const unseen = pool.filter((index) => !known.has(WORDS[index].id));
-        pool = unseen.length ? unseen : pool;
+        pool = pool.filter(
+          (index) =>
+            !known.has(WORDS[index].id) && !hard.has(WORDS[index].id),
+        );
       } else if (mode === "review") {
-        const review = pool
-          .filter((index) => dueIds.has(WORDS[index].id))
-          .sort(
-            (a, b) =>
-              (reviews[WORDS[a].id]?.dueAt ?? 0) -
-              (reviews[WORDS[b].id]?.dueAt ?? 0),
-          );
-        pool = review.length
-          ? review
-          : pool.filter((index) => hard.has(WORDS[index].id));
+        pool = pool.filter((index) => hard.has(WORDS[index].id));
       }
-      if (randomOrder) pool = shuffled(pool);
+      pool = shuffled(pool);
       return pool.slice(0, sessionSize);
     },
-    [dueIds, hard, known, randomOrder, reviews, sessionSize],
+    [hard, known, sessionSize],
   );
 
   const begin = useCallback(
@@ -303,6 +279,8 @@ export default function Home() {
       setSessionKnown(0);
       setSessionAgain(0);
       setAttempts({});
+      setSessionMode(mode);
+      creditedThisSessionRef.current = new Set();
       lastSpokenRef.current = first.id;
       speak(first.word, true);
     },
@@ -322,19 +300,15 @@ export default function Home() {
 
   const markKnown = useCallback(() => {
     if (!card) return;
-    const previous = reviews[card.id];
-    const nextStreak = (previous?.streak ?? 0) + 1;
-    const intervalDays =
-      REVIEW_INTERVALS[Math.min(nextStreak - 1, REVIEW_INTERVALS.length - 1)];
-    setReviews((old) => ({
-      ...old,
-      [card.id]: {
-        dueAt: Date.now() + intervalDays * DAY_MS,
-        intervalDays,
-        streak: nextStreak,
-        lapses: previous?.lapses ?? 0,
-      },
-    }));
+    if (!creditedThisSessionRef.current.has(card.id)) {
+      creditedThisSessionRef.current.add(card.id);
+      setDaily((old) => ({
+        ...old,
+        newCompleted: old.newCompleted + (sessionMode === "new" ? 1 : 0),
+        reviewCompleted:
+          old.reviewCompleted + (sessionMode === "review" ? 1 : 0),
+      }));
+    }
     setKnown((old) => new Set(old).add(card.id));
     setHard((old) => {
       const next = new Set(old);
@@ -343,20 +317,19 @@ export default function Home() {
     });
     setSessionKnown((value) => value + 1);
     advance();
-  }, [advance, card, reviews]);
+  }, [advance, card, sessionMode]);
 
   const markAgain = useCallback(() => {
     if (!card) return;
-    const previous = reviews[card.id];
-    setReviews((old) => ({
-      ...old,
-      [card.id]: {
-        dueAt: Date.now(),
-        intervalDays: 0,
-        streak: 0,
-        lapses: (previous?.lapses ?? 0) + 1,
-      },
-    }));
+    if (!creditedThisSessionRef.current.has(card.id)) {
+      creditedThisSessionRef.current.add(card.id);
+      setDaily((old) => ({
+        ...old,
+        newCompleted: old.newCompleted + (sessionMode === "new" ? 1 : 0),
+        reviewCompleted:
+          old.reviewCompleted + (sessionMode === "review" ? 1 : 0),
+      }));
+    }
     setHard((old) => new Set(old).add(card.id));
     setKnown((old) => {
       const next = new Set(old);
@@ -370,7 +343,7 @@ export default function Home() {
       setAttempts((old) => ({ ...old, [card.id]: priorAttempts + 1 }));
     }
     advance();
-  }, [advance, attempts, card, currentIndex, reviews]);
+  }, [advance, attempts, card, currentIndex, sessionMode]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -409,6 +382,15 @@ export default function Home() {
   ]);
 
   const fullProgress = Math.round((known.size / WORDS.length) * 100);
+  const newRemaining = Math.max(0, WORDS.length - known.size - hard.size);
+  const newDailyProgress = Math.min(
+    100,
+    Math.round((daily.newCompleted / DAILY_NEW_TARGET) * 100),
+  );
+  const reviewDailyProgress = Math.min(
+    100,
+    Math.round((daily.reviewCompleted / DAILY_REVIEW_TARGET) * 100),
+  );
   const sessionProgress = queue.length
     ? Math.min(100, Math.round((position / queue.length) * 100))
     : 0;
@@ -445,7 +427,7 @@ export default function Home() {
           <div className="welcome-stats" aria-label="学习进度">
             <div><strong>{WORDS.length}</strong><span>张发声词卡</span></div>
             <div><strong>{known.size}</strong><span>已经记住</span></div>
-            <div><strong>{dueIds.size}</strong><span>今天到期</span></div>
+            <div><strong>{hard.size}</strong><span>不熟词库</span></div>
           </div>
           <div className="session-choice">
             <span>本轮</span>
@@ -460,22 +442,42 @@ export default function Home() {
               </button>
             ))}
           </div>
-          <button className="primary-start" onClick={() => begin("new")} type="button">
-            开始，并打开声音 <span>→</span>
-          </button>
-          <button
-            className="text-start"
-            disabled={!dueIds.size}
-            onClick={() => begin("review")}
-            type="button"
-          >
-            {dueIds.size
-              ? `复习今天到期的 ${dueIds.size} 个词`
-              : "今天的复习已经完成"}
-          </button>
-          <p className="review-note">
-            间隔复习：记住后按 1 → 3 → 7 → 14 → 30 天再次出现。
-          </p>
+          <div className="daily-sections">
+            <section className="daily-section daily-section--new">
+              <div className="daily-section-heading">
+                <span>01 · 今日新词</span>
+                <strong>{daily.newCompleted} / {DAILY_NEW_TARGET}</strong>
+              </div>
+              <div className="daily-progress" aria-label="今日新词进度">
+                <span style={{ width: `${newDailyProgress}%` }} />
+              </div>
+              <p>从 {newRemaining} 个尚未学习的词中随机抽取；每天建议约 100 个。</p>
+              <button
+                disabled={!newRemaining}
+                onClick={() => begin("new")}
+                type="button"
+              >
+                {newRemaining ? "随机学习新词" : "新词已经全部刷过"} <span>→</span>
+              </button>
+            </section>
+            <section className="daily-section daily-section--review">
+              <div className="daily-section-heading">
+                <span>02 · 今日复习</span>
+                <strong>{daily.reviewCompleted} / {DAILY_REVIEW_TARGET}</strong>
+              </div>
+              <div className="daily-progress" aria-label="今日复习进度">
+                <span style={{ width: `${reviewDailyProgress}%` }} />
+              </div>
+              <p>从 {hard.size} 个不熟词中随机抽取；记住后自动移出。</p>
+              <button
+                disabled={!hard.size}
+                onClick={() => begin("review")}
+                type="button"
+              >
+                {hard.size ? "随机复习不熟词" : "不熟词库目前为空"} <span>→</span>
+              </button>
+            </section>
+          </div>
           <p className="privacy-note">
             进度只保存在这台电脑。建议戴耳机，完成一小轮就停一下。
           </p>
@@ -521,16 +523,15 @@ export default function Home() {
                 <strong>{sessionAgain}</strong> 次。
               </p>
               <div className="complete-actions">
-                <button onClick={() => begin("new")} type="button">
-                  再来 {sessionSize} 词
+                <button onClick={() => begin(sessionMode)} type="button">
+                  继续这一类 {sessionSize} 词
                 </button>
                 <button
                   className="secondary-button"
-                  disabled={!dueIds.size}
-                  onClick={() => begin("review")}
+                  onClick={() => setStarted(false)}
                   type="button"
                 >
-                  复习今天到期的词
+                  查看今日两项进度
                 </button>
               </div>
               <button className="quiet-link" onClick={() => setStarted(false)} type="button">
@@ -714,20 +715,11 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="setting-row">
-              <div><strong>随机顺序</strong><span>关闭时按 PDF 原顺序学习</span></div>
-              <button
-                aria-pressed={randomOrder}
-                className={randomOrder ? "toggle is-on" : "toggle"}
-                onClick={() => setRandomOrder((value) => !value)}
-                type="button"
-              ><i /></button>
-            </div>
             <div className="mastery-summary">
               <span style={{ width: `${fullProgress}%` }} />
               <p>
                 总进度 <strong>{fullProgress}%</strong> · {known.size} 已掌握 ·{" "}
-                {dueIds.size} 今天到期
+                {hard.size} 个不熟词
               </p>
             </div>
             <button
@@ -739,7 +731,7 @@ export default function Home() {
                 }
                 setKnown(new Set());
                 setHard(new Set());
-                setReviews({});
+                setDaily(emptyDailyProgress());
                 setResetArmed(false);
               }}
               type="button"
