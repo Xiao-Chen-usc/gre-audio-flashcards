@@ -6,9 +6,17 @@ import { WORDS, type WordCard } from "./wordData";
 
 type SessionMode = "new" | "review" | "all";
 
+type ReviewRecord = {
+  dueAt: number;
+  intervalDays: number;
+  streak: number;
+  lapses: number;
+};
+
 type SavedState = {
   known: string[];
   hard: string[];
+  reviews?: Record<string, ReviewRecord>;
   sessionSize: number;
   randomOrder: boolean;
   autoSpeak: boolean;
@@ -16,6 +24,8 @@ type SavedState = {
 };
 
 const STORAGE_KEY = "gre-voice-memory-v1";
+const REVIEW_INTERVALS = [1, 3, 7, 14, 30, 60];
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 function shuffled(values: number[]) {
   const next = [...values];
@@ -127,6 +137,7 @@ export default function Home() {
   const [hydrated, setHydrated] = useState(false);
   const [known, setKnown] = useState<Set<string>>(new Set());
   const [hard, setHard] = useState<Set<string>>(new Set());
+  const [reviews, setReviews] = useState<Record<string, ReviewRecord>>({});
   const [sessionSize, setSessionSize] = useState(10);
   const [randomOrder, setRandomOrder] = useState(false);
   const [autoSpeak, setAutoSpeak] = useState(true);
@@ -157,6 +168,25 @@ export default function Home() {
         const saved = JSON.parse(raw) as Partial<SavedState>;
         setKnown(new Set(saved.known ?? []));
         setHard(new Set(saved.hard ?? []));
+        const now = Date.now();
+        const migratedReviews = { ...(saved.reviews ?? {}) };
+        for (const id of saved.hard ?? []) {
+          migratedReviews[id] ??= {
+            dueAt: now,
+            intervalDays: 0,
+            streak: 0,
+            lapses: 1,
+          };
+        }
+        for (const id of saved.known ?? []) {
+          migratedReviews[id] ??= {
+            dueAt: now + DAY_MS,
+            intervalDays: 1,
+            streak: 1,
+            lapses: 0,
+          };
+        }
+        setReviews(migratedReviews);
         setSessionSize(saved.sessionSize ?? 10);
         setRandomOrder(saved.randomOrder ?? false);
         setAutoSpeak(saved.autoSpeak ?? true);
@@ -174,13 +204,23 @@ export default function Home() {
     const saved: SavedState = {
       known: [...known],
       hard: [...hard],
+      reviews,
       sessionSize,
       randomOrder,
       autoSpeak,
       rate,
     };
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
-  }, [autoSpeak, hard, hydrated, known, randomOrder, rate, sessionSize]);
+  }, [autoSpeak, hard, hydrated, known, randomOrder, rate, reviews, sessionSize]);
+
+  const dueIds = useMemo(() => {
+    const now = Date.now();
+    return new Set(
+      Object.entries(reviews)
+        .filter(([, review]) => review.dueAt <= now)
+        .map(([id]) => id),
+    );
+  }, [reviews]);
 
   const speak = useCallback(
     (text: string, force = false) => {
@@ -232,15 +272,21 @@ export default function Home() {
         const unseen = pool.filter((index) => !known.has(WORDS[index].id));
         pool = unseen.length ? unseen : pool;
       } else if (mode === "review") {
-        const review = pool.filter((index) => hard.has(WORDS[index].id));
+        const review = pool
+          .filter((index) => dueIds.has(WORDS[index].id))
+          .sort(
+            (a, b) =>
+              (reviews[WORDS[a].id]?.dueAt ?? 0) -
+              (reviews[WORDS[b].id]?.dueAt ?? 0),
+          );
         pool = review.length
           ? review
-          : pool.filter((index) => !known.has(WORDS[index].id));
+          : pool.filter((index) => hard.has(WORDS[index].id));
       }
       if (randomOrder) pool = shuffled(pool);
       return pool.slice(0, sessionSize);
     },
-    [hard, known, randomOrder, sessionSize],
+    [dueIds, hard, known, randomOrder, reviews, sessionSize],
   );
 
   const begin = useCallback(
@@ -276,6 +322,19 @@ export default function Home() {
 
   const markKnown = useCallback(() => {
     if (!card) return;
+    const previous = reviews[card.id];
+    const nextStreak = (previous?.streak ?? 0) + 1;
+    const intervalDays =
+      REVIEW_INTERVALS[Math.min(nextStreak - 1, REVIEW_INTERVALS.length - 1)];
+    setReviews((old) => ({
+      ...old,
+      [card.id]: {
+        dueAt: Date.now() + intervalDays * DAY_MS,
+        intervalDays,
+        streak: nextStreak,
+        lapses: previous?.lapses ?? 0,
+      },
+    }));
     setKnown((old) => new Set(old).add(card.id));
     setHard((old) => {
       const next = new Set(old);
@@ -284,10 +343,20 @@ export default function Home() {
     });
     setSessionKnown((value) => value + 1);
     advance();
-  }, [advance, card]);
+  }, [advance, card, reviews]);
 
   const markAgain = useCallback(() => {
     if (!card) return;
+    const previous = reviews[card.id];
+    setReviews((old) => ({
+      ...old,
+      [card.id]: {
+        dueAt: Date.now(),
+        intervalDays: 0,
+        streak: 0,
+        lapses: (previous?.lapses ?? 0) + 1,
+      },
+    }));
     setHard((old) => new Set(old).add(card.id));
     setKnown((old) => {
       const next = new Set(old);
@@ -301,7 +370,7 @@ export default function Home() {
       setAttempts((old) => ({ ...old, [card.id]: priorAttempts + 1 }));
     }
     advance();
-  }, [advance, attempts, card, currentIndex]);
+  }, [advance, attempts, card, currentIndex, reviews]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -376,7 +445,7 @@ export default function Home() {
           <div className="welcome-stats" aria-label="学习进度">
             <div><strong>{WORDS.length}</strong><span>张发声词卡</span></div>
             <div><strong>{known.size}</strong><span>已经记住</span></div>
-            <div><strong>{hard.size}</strong><span>待加强</span></div>
+            <div><strong>{dueIds.size}</strong><span>今天到期</span></div>
           </div>
           <div className="session-choice">
             <span>本轮</span>
@@ -396,12 +465,17 @@ export default function Home() {
           </button>
           <button
             className="text-start"
-            disabled={!hard.size}
+            disabled={!dueIds.size}
             onClick={() => begin("review")}
             type="button"
           >
-            {hard.size ? `只复习 ${hard.size} 个不熟词` : "还没有待复习词"}
+            {dueIds.size
+              ? `复习今天到期的 ${dueIds.size} 个词`
+              : "今天的复习已经完成"}
           </button>
+          <p className="review-note">
+            间隔复习：记住后按 1 → 3 → 7 → 14 → 30 天再次出现。
+          </p>
           <p className="privacy-note">
             进度只保存在这台电脑。建议戴耳机，完成一小轮就停一下。
           </p>
@@ -452,11 +526,11 @@ export default function Home() {
                 </button>
                 <button
                   className="secondary-button"
-                  disabled={!hard.size}
+                  disabled={!dueIds.size}
                   onClick={() => begin("review")}
                   type="button"
                 >
-                  复习不熟词
+                  复习今天到期的词
                 </button>
               </div>
               <button className="quiet-link" onClick={() => setStarted(false)} type="button">
@@ -651,7 +725,10 @@ export default function Home() {
             </div>
             <div className="mastery-summary">
               <span style={{ width: `${fullProgress}%` }} />
-              <p>总进度 <strong>{fullProgress}%</strong> · {known.size} 已掌握 · {hard.size} 待加强</p>
+              <p>
+                总进度 <strong>{fullProgress}%</strong> · {known.size} 已掌握 ·{" "}
+                {dueIds.size} 今天到期
+              </p>
             </div>
             <button
               className={resetArmed ? "reset-button is-armed" : "reset-button"}
@@ -662,6 +739,7 @@ export default function Home() {
                 }
                 setKnown(new Set());
                 setHard(new Set());
+                setReviews({});
                 setResetArmed(false);
               }}
               type="button"

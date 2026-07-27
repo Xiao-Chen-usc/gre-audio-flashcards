@@ -195,6 +195,7 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 .text-start:disabled { cursor: default; color: #a5a4ae; }
 .privacy-note { margin: auto 0 0; padding-top: 2.5rem; color: #9694a2; font-size: .74rem; }
+.review-note { margin: .7rem auto 0; color: #777481; font-size: .78rem; line-height: 1.55; }
 
 .study-layout { min-height: 100vh; }
 .topbar {
