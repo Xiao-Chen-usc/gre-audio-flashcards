@@ -14,6 +14,22 @@ export type OriginView = {
 };
 
 const SPECIAL: Record<string, OriginView> = {
+  surreptitious: {
+    label: "拉丁语词根组合",
+    formula: "sub- + rapere",
+    parts: [
+      { form: "sub-", meaningZh: "在下面；暗中" },
+      { form: "rapere", meaningZh: "抓走、夺取" },
+    ],
+    memoryZh:
+      "暗中把东西抓走 → 偷偷取得的 → 秘密的、暗中的。sub- 在后面的 r 前发生同化，词形变为 sur-/surr-。",
+    chain: [
+      "拉丁语 sub- + rapere（暗中 + 抓走）",
+      "拉丁语 surripere / surreptus（暗中夺取；偷走）",
+      "拉丁语 surrepticius（偷来的；秘密进行的）",
+      "现代英语 surreptitious",
+    ],
+  },
   undergird: {
     label: "现代英语复合词",
     formula: "under + gird",
@@ -197,4 +213,3 @@ export function getOriginView(card: WordCard): OriginView {
     historicalOrigin(card)
   );
 }
-
