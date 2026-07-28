@@ -722,20 +722,26 @@ export default function Home() {
                         return (
                           <div className="origin-story">
                             <div className="origin-summary">
-                              <strong>{details.label}</strong>
-                              <span className="origin-formula">{details.formula}</span>
+                              {details.label ? <strong>{details.label}</strong> : null}
+                              {details.formula ? (
+                                <span className="origin-formula">{details.formula}</span>
+                              ) : null}
                             </div>
-                            <div className="origin-parts">
-                              {details.parts.map((part) => (
-                                <span key={`${part.form}-${part.meaningZh}`}>
-                                  <b>{part.form}</b>
-                                  <i>{part.meaningZh}</i>
-                                </span>
-                              ))}
-                            </div>
-                            <p className="origin-memory">
-                              <b>记忆连接</b>{details.memoryZh}
-                            </p>
+                            {details.parts.length ? (
+                              <div className="origin-parts">
+                                {details.parts.map((part) => (
+                                  <span key={`${part.form}-${part.meaningZh}`}>
+                                    <b>{part.form}</b>
+                                    {part.meaningZh ? <i>{part.meaningZh}</i> : null}
+                                  </span>
+                                ))}
+                              </div>
+                            ) : null}
+                            {details.memoryZh ? (
+                              <p className="origin-memory">
+                                <b>记忆连接</b>{details.memoryZh}
+                              </p>
+                            ) : null}
                             {details.chain.length ? (
                             <div className="origin-chain" aria-label="词源演变路径">
                               {details.chain.map((node, index) => (

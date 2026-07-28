@@ -14,6 +14,21 @@ export type OriginView = {
 };
 
 const SPECIAL: Record<string, OriginView> = {
+  abstracted: {
+    label: "拉丁语词根组合",
+    formula: "ab-/abs- + tract",
+    parts: [
+      { form: "ab-/abs-", meaningZh: "离开、从……脱离" },
+      { form: "tract", meaningZh: "拉、拖（来自拉丁语 trahere）" },
+    ],
+    memoryZh:
+      "把某物从原处“拉开、抽走” → 抽离、脱离；人的注意力被抽走 → 心不在焉。",
+    chain: [
+      "拉丁语 abstrahere（拉开、抽走）",
+      "拉丁语 abstractus（被拉开的）",
+      "现代英语 abstract / abstracted",
+    ],
+  },
   surreptitious: {
     label: "拉丁语词根组合",
     formula: "sub- + rapere",
@@ -174,7 +189,7 @@ function modernFormation(card: WordCard): OriginView | null {
   const parts: OriginPart[] = [];
   if (prefix) parts.push({ form: prefix[0], meaningZh: prefix[1] });
   if (base && (prefix || suffix)) {
-    parts.push({ form: base, meaningZh: `核心词干；联系“${card.meaning}”记忆` });
+    parts.push({ form: base, meaningZh: "" });
   }
   if (suffix) parts.push({ form: `-${suffix[0]}`, meaningZh: suffix[1] });
   if (parts.length < 2) return null;
@@ -183,7 +198,7 @@ function modernFormation(card: WordCard): OriginView | null {
     label: prefix && !suffix ? "现代英语复合 / 前缀构词" : "现代英语派生词",
     formula: parts.map((part) => part.form).join(" + "),
     parts,
-    memoryZh: `把各部分合起来理解 → ${card.meaning}`,
+    memoryZh: `${parts.map((part) => part.form).join(" + ")} → ${card.meaning}`,
     chain: cleanChain(card),
   };
 }
@@ -191,17 +206,12 @@ function modernFormation(card: WordCard): OriginView | null {
 function historicalOrigin(card: WordCard): OriginView {
   const chain = cleanChain(card);
   const oldest = chain[0]?.match(LANG);
-  const label = oldest ? `${oldest[1]}来源` : "词形与来源";
+  const label = oldest ? `${oldest[1]}来源` : "";
   return {
     label,
-    formula: card.originQuery,
-    parts: [
-      {
-        form: card.originQuery,
-        meaningZh: `本词在这组 GRE 语境中表示“${card.meaning}”`,
-      },
-    ],
-    memoryZh: `先用同义词 ${card.pair} 建立联系；历史路径只保留可辨认的语言节点`,
+    formula: "",
+    parts: [],
+    memoryZh: "",
     chain,
   };
 }
