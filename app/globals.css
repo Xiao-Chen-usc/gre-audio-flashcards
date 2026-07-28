@@ -418,7 +418,35 @@ kbd {
   letter-spacing: .09em;
   text-transform: uppercase;
 }
-.meaning-block strong { font-size: 1.18rem; font-weight: 690; line-height: 1.5; }
+.meaning-speak-button {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  gap: .8rem;
+}
+.meaning-speak-button strong { font-size: 1.18rem; font-weight: 690; line-height: 1.5; }
+.meaning-speak-button > span { display: inline-flex; align-items: center; color: var(--purple); gap: .35rem; }
+.meaning-speak-button svg { width: 1.15rem; min-width: 1.15rem; height: 1.15rem; }
+.meaning-speak-button kbd {
+  display: inline-grid;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  place-items: center;
+  border: 1px solid #ddd6f5;
+  border-radius: .35rem;
+  background: #f3efff;
+  color: #8178a0;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: .56rem;
+}
+.meaning-speak-button:hover strong { color: var(--purple); }
 .pair-block button {
   display: flex;
   width: 100%;

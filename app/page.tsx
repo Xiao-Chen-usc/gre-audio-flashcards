@@ -302,7 +302,7 @@ export default function Home() {
   }, [autoSpeak, daily, hard, hydrated, known, rate, sessionSize]);
 
   const speak = useCallback(
-    (text: string, force = false) => {
+    (text: string, force = false, language: "en-US" | "zh-CN" = "en-US") => {
       if (!force && !autoSpeak) return;
       if (!("speechSynthesis" in window)) {
         setSpeechMessage("当前浏览器不支持朗读，建议使用 Chrome、Edge 或 Safari。");
@@ -310,18 +310,31 @@ export default function Home() {
       }
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = "en-US";
+      utterance.lang = language;
       utterance.rate = rate;
       utterance.pitch = 1;
       const voices = window.speechSynthesis.getVoices();
-      const preferred = voices.find(
-        (voice) =>
-          voice.lang === "en-US" &&
-          /Samantha|Aria|Jenny|Google US English|Microsoft David/i.test(
-            voice.name,
-          ),
+      const preferred =
+        language === "zh-CN"
+          ? voices.find(
+              (voice) =>
+                /^zh(-CN)?$/i.test(voice.lang) &&
+                /Tingting|Meijia|Xiaoxiao|Huihui|普通话|Mandarin|Chinese/i.test(
+                  voice.name,
+                ),
+            )
+          : voices.find(
+              (voice) =>
+                voice.lang === "en-US" &&
+                /Samantha|Aria|Jenny|Google US English|Microsoft David/i.test(
+                  voice.name,
+                ),
+            );
+      const fallback = voices.find((voice) =>
+        language === "zh-CN"
+          ? voice.lang.toLowerCase().startsWith("zh")
+          : voice.lang === "en-US",
       );
-      const fallback = voices.find((voice) => voice.lang === "en-US");
       utterance.voice = preferred ?? fallback ?? null;
       utterance.onerror = () =>
         setSpeechMessage("没有成功发声，请点一下喇叭后再试。");
@@ -461,6 +474,8 @@ export default function Home() {
         setRevealed(true);
       } else if (event.key.toLowerCase() === "r") {
         speak(card.word, true);
+      } else if (event.key.toLowerCase() === "c" && revealed) {
+        speak(card.meaning, true, "zh-CN");
       } else if (event.key === "1" && revealed) {
         markAgain();
       } else if (event.key === "2" && revealed) {
@@ -672,7 +687,18 @@ export default function Home() {
                   <div className="answer-zone">
                     <div className="meaning-block">
                       <span className="answer-label">中文</span>
-                      <strong>{card.meaning}</strong>
+                      <button
+                        aria-label={`朗读中文释义：${card.meaning}`}
+                        className="meaning-speak-button"
+                        onClick={() => speak(card.meaning, true, "zh-CN")}
+                        type="button"
+                      >
+                        <strong>{card.meaning}</strong>
+                        <span>
+                          <SpeakerIcon />
+                          <kbd>C</kbd>
+                        </span>
+                      </button>
                     </div>
                     <div className="pair-block">
                       <span className="answer-label">六选二等价词</span>
