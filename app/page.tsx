@@ -86,138 +86,6 @@ const WORD_PAIRS: WordPair[] = (() => {
   return [...groups.entries()].map(([key, indices]) => ({ key, indices }));
 })();
 
-/* Legacy origin strings remain in wordData.ts only as source material. The UI
-   always renders the cleaned, structured result from originEngine.ts. */
-/*
-const EARLY_MEANING_ZH: Record<string, string> = {
-  "not": "不、否定",
-  "not, opposite of": "不、相反",
-  "without, not, opposite of": "没有、不、相反",
-  "common, commonplace, vulgar": "普通的、平常的、粗俗的",
-  "evident, palpable": "明显的、可感知的",
-  "whimsical": "反复无常的、异想天开的",
-  "scanty, scarce": "稀少的、不足的",
-  "a tendency, predisposition, propensity": "倾向、习性",
-  "to get around, be around, encircle, surround": "环绕、包围",
-  "only, single, sole, alone of its kind": "唯一的、单独的",
-  "first": "第一、最初",
-  "fewness, scarcity, a small number": "稀少、少量",
-  "obtained by asking or praying": "通过请求或祈求获得的",
-  "elude, frustrate": "躲避、挫败",
-  "to travel": "旅行、行走",
-  "perilous, dangerous": "危险的",
-  "shun, eschew, avoid, dispense with": "躲开、避开、不用",
-  "bold, brave, fearless": "大胆的、勇敢无畏的",
-  "again": "再次、重新",
-  "harsh to the taste, sharp, bitter, sour": "味道尖锐、苦或酸",
-  "to counterbalance, render inoperative, invalidate": "抵消、使失效",
-  "distasteful, disagreeable": "令人厌恶的、不合意的",
-  "prefer before others": "优先选择、偏爱",
-  "to make one's own": "据为己有、使之属于自己",
-  "give birth to, beget, bear; cause, bring about": "生育；引起、产生",
-  "being, essence": "存在、本质",
-  "to lie, tell lies.": "说谎",
-  "fluid, flowing, moist": "流动的、湿润的",
-  "facing, opposite": "面对的、相对的",
-  "toned down by admixture": "掺入其他成分而变得缓和",
-  "harmless; innocent; inoffensive": "无害的、无辜的、不冒犯人的",
-  "obstinate, quarrelsome": "固执的、好争吵的",
-  "rapid": "迅速的",
-  "separation, dissolution of marriage": "分离、解除婚姻",
-  "hold up, bear; suffer, endure": "支撑、承受、忍耐",
-  "full of words, wordy": "话多的、冗长的",
-  "precious, costly": "珍贵的、昂贵的",
-  "inconvenient, disagreeable, troublesome": "不方便的、麻烦的",
-  "derision, mockery": "嘲笑、讥讽",
-  "brilliance, brightness": "光辉、明亮",
-  "tendency": "倾向",
-  "with, together": "共同、一起",
-  "strong and hardy": "强壮而坚韧的",
-  "thin": "薄的、稀薄的",
-  "without a name": "没有名字的",
-  "dark, clouded, gloomy; dim, not clear": "黑暗的、阴沉的、模糊不清的",
-  "good-looking, beautiful, fair": "好看的、美丽的",
-  "visible, open to view; attracting attention, striking": "可见的、引人注意的",
-  "to place": "放置",
-  "to speak against": "公开反对、驳斥",
-  "to separate, divide, distinguish": "分开、划分、辨别",
-  "worth great attention; theoretical": "值得高度关注的；理论性的",
-  "laudatory (ode), eulogy": "赞颂性的诗歌；颂词",
-  "tribute, a stated payment, a thing contributed or paid": "贡赋；规定缴纳或贡献之物",
-  "tendon at the back of the knee.": "膝后肌腱",
-  "make worse": "使恶化、使变坏",
-  "smallest, least": "最小的、最少的",
-  "mockery": "嘲弄、戏弄",
-  "biting, caustic, very severe": "尖刻的、腐蚀性的、非常严厉的",
-  "belonging to conjecture": "属于推测或猜想的",
-  "disgrace, infamy, scandal, dishonor": "耻辱、恶名",
-  "disdain, scorn, refuse, repudiate": "鄙视、拒绝、否认",
-  "inner": "内部的",
-  "to trip up, overthrow, drive out, usurp": "绊倒、推翻、驱逐、夺取",
-  "to yield, give place; to give up some right or property": "让步、让出权利或财产",
-  "new, young, fresh, recent; additional; early, soon": "新的、年轻的、新近的；额外的",
-};
-
-const ORIGIN_OVERRIDES: Record<string, string> = {
-  discernment:
-    "1580年代｜现代英语 discern + -ment（名词后缀）← 中古英语 discernen ← 古法语 discerner ← 拉丁语 discernere｜早期义 “to separate, divide, distinguish”。",
-};
-
-function originalMeaningZh(earlyMeaning: string) {
-  const normalized = earlyMeaning.trim().toLowerCase();
-  if (EARLY_MEANING_ZH[normalized]) return EARLY_MEANING_ZH[normalized];
-  return earlyMeaning ? `原文：${earlyMeaning}` : "原始义暂未收录";
-}
-
-function originDetails(card: WordCard) {
-  const raw = (ORIGIN_OVERRIDES[card.originQuery] ?? card.origin).replace(
-    /^原形 [^；]+；/,
-    "",
-  );
-  const earlyMeaning =
-    raw.match(/早期义 [“"]([^”"]+)[”"]/)?.[1]?.trim() ?? "";
-  const chainPart = raw
-    .split("｜")
-    .find((part) => part.includes("←"))
-    ?.replace(/。$/, "")
-    .trim();
-
-  let chain = chainPart
-    ? chainPart
-        .split("←")
-        .map((part) => part.trim())
-        .filter(Boolean)
-        .reverse()
-    : [];
-  chain = chain.map((node) =>
-    node === "英语" ? `现代英语 ${card.originQuery}` : node,
-  );
-  if (!chain.length) {
-    chain = [`现代英语 ${card.originQuery}`];
-  } else if (!chain.at(-1)?.includes(card.originQuery)) {
-    chain[chain.length - 1] = `现代英语 ${card.originQuery}`;
-  }
-
-  const oldest = chain[0];
-  const evidence = `${oldest} ${raw}`;
-  let family = "现代英语派生词";
-  if (/希腊语/.test(evidence)) family = "希腊语词源";
-  else if (/拉丁语/.test(evidence)) family = "拉丁语词源";
-  else if (/原始日耳曼语|古英语|古诺斯语|荷兰语|德语/.test(evidence)) {
-    family = "日耳曼语词源";
-  } else if (/法语|古法语/.test(evidence)) family = "罗曼语族 · 法语来源";
-  else if (/阿拉伯语/.test(evidence)) family = "阿拉伯语词源";
-  else if (/梵语/.test(evidence)) family = "印欧语系 · 梵语同源";
-
-  return {
-    chain,
-    earlyMeaningZh: originalMeaningZh(earlyMeaning),
-    family,
-    oldest,
-  };
-}
-*/
-
 function highlightedExample(text: string, terms: string[]) {
   const cleaned = terms
     .flatMap((term) => term.split(/\s*&\s*|\s+/))
@@ -710,7 +578,7 @@ export default function Home() {
                       <div className="origin-heading">
                         <span className="answer-label">词源 · Origin</span>
                         <a
-                          href={`https://www.etymonline.com/search?q=${encodeURIComponent(card.originQuery)}`}
+                          href={`https://www.etymonline.com.cn/word/${encodeURIComponent(card.originQuery)}`}
                           rel="noreferrer"
                           target="_blank"
                         >
@@ -719,43 +587,9 @@ export default function Home() {
                       </div>
                       {(() => {
                         const details = getOriginView(card);
-                        return (
-                          <div className="origin-story">
-                            <div className="origin-summary">
-                              {details.label ? <strong>{details.label}</strong> : null}
-                              {details.formula ? (
-                                <span className="origin-formula">{details.formula}</span>
-                              ) : null}
-                            </div>
-                            {details.parts.length ? (
-                              <div className="origin-parts">
-                                {details.parts.map((part) => (
-                                  <span key={`${part.form}-${part.meaningZh}`}>
-                                    <b>{part.form}</b>
-                                    {part.meaningZh ? <i>{part.meaningZh}</i> : null}
-                                  </span>
-                                ))}
-                              </div>
-                            ) : null}
-                            {details.memoryZh ? (
-                              <p className="origin-memory">
-                                <b>记忆连接</b>{details.memoryZh}
-                              </p>
-                            ) : null}
-                            {details.chain.length ? (
-                            <div className="origin-chain" aria-label="词源演变路径">
-                              {details.chain.map((node, index) => (
-                                <span className="origin-node" key={`${node}-${index}`}>
-                                  <b>{node}</b>
-                                  {index < details.chain.length - 1 ? (
-                                    <i aria-hidden="true">→</i>
-                                  ) : null}
-                                </span>
-                              ))}
-                            </div>
-                            ) : null}
-                          </div>
-                        );
+                        return details.paragraph ? (
+                          <p className="origin-paragraph">{details.paragraph}</p>
+                        ) : null;
                       })()}
                     </div>
                     {(() => {

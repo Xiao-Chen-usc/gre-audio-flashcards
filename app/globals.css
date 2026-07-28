@@ -467,43 +467,12 @@ kbd {
 .origin-block { grid-column: 1 / -1; padding: .85rem 1rem; border-color: #ded7ff; background: #f7f4ff; }
 .origin-heading { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
 .origin-heading a { color: #8374bf; font-size: .64rem; text-decoration: none; white-space: nowrap; }
-.origin-story { display: grid; margin-top: .28rem; gap: .42rem; }
-.origin-summary {
-  display: flex;
-  min-width: 0;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: .25rem .55rem;
+.origin-paragraph {
+  margin: .22rem 0 0;
+  color: #554e68;
+  font-size: .75rem;
+  line-height: 1.72;
 }
-.origin-summary strong { color: #453a79; font-size: .75rem; }
-.origin-summary span { color: #5e5870; font-size: .7rem; font-weight: 650; }
-.origin-formula { padding: .13rem .38rem; border-radius: .4rem; background: #eee9ff; }
-.origin-parts { display: flex; flex-wrap: wrap; gap: .32rem; }
-.origin-parts > span {
-  display: inline-flex;
-  padding: .25rem .42rem;
-  align-items: baseline;
-  border: 1px solid #e4def8;
-  border-radius: .45rem;
-  background: #fff;
-  gap: .32rem;
-}
-.origin-parts b { color: #514487; font-size: .69rem; }
-.origin-parts i { color: #746d82; font-size: .64rem; font-style: normal; }
-.origin-memory { margin: 0; color: #615975; font-size: .67rem; line-height: 1.45; }
-.origin-memory b { margin-right: .35rem; color: #8a7bbd; font-size: .6rem; letter-spacing: .05em; }
-.origin-chain { display: inline-flex; min-width: 0; align-items: center; flex-wrap: wrap; gap: .25rem; }
-.origin-node { display: inline-flex; align-items: center; gap: .25rem; }
-.origin-node b {
-  padding: .22rem .38rem;
-  border: 0;
-  background: rgba(255,255,255,.66);
-  border-radius: .4rem;
-  color: #50447e;
-  font-size: .62rem;
-  font-weight: 650;
-}
-.origin-node i { color: #a397cf; font-size: .65rem; font-style: normal; }
 .example-block {
   padding: 1.05rem 1.2rem 1.2rem;
   border: 1px solid #d9e7f8;
@@ -738,7 +707,6 @@ kbd {
   .is-open .word-zone { min-height: 15rem; }
   .answer-zone { padding: 1.2rem; grid-template-columns: 1fr; }
   .origin-block, .example-block, .answer-actions { grid-column: 1; }
-  .origin-story { align-items: stretch; }
   .example-block { padding: .9rem; }
   .example-heading { align-items: flex-start; flex-direction: column; gap: .35rem; }
   .under-card { justify-content: center; }
