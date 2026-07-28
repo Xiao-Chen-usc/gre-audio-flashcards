@@ -14,6 +14,22 @@ export type OriginView = {
 };
 
 const SPECIAL: Record<string, OriginView> = {
+  buoy: {
+    label: "日耳曼语词源 · 语义演变",
+    formula: "“信号标记” → “浮标” → “托起、支持”",
+    parts: [
+      { form: "*baukna-", meaningZh: "信标、信号（beacon, signal）" },
+      { form: "boeye", meaningZh: "浮标；水上的标记物" },
+    ],
+    memoryZh:
+      "浮标漂在水面并托住东西 → buoy 作动词表示“使浮起、支撑”；buoyed 即“受到支持、被提振”。",
+    chain: [
+      "原始日耳曼语 *baukna-（信标、信号）",
+      "中古荷兰语 boeye（浮标）",
+      "中古英语 boye（浮标）",
+      "现代英语 buoy / buoyed（使浮起；支持、鼓舞）",
+    ],
+  },
   abstracted: {
     label: "拉丁语词根组合",
     formula: "ab-/abs- + tract",
@@ -70,7 +86,7 @@ const SPECIAL: Record<string, OriginView> = {
     chain: [
       "拉丁语 fides（信任、忠诚）",
       "古法语 feid / fei（信仰、信任）",
-      "中古英语 faith",
+      "中古英语 faith（信仰、信任）",
       "现代英语 faithful",
     ],
   },
@@ -84,8 +100,8 @@ const SPECIAL: Record<string, OriginView> = {
     memoryZh: "辨别出来的能力或结果 → 洞察力、判断力",
     chain: [
       "拉丁语 discernere（分开、辨别）",
-      "古法语 discerner",
-      "中古英语 discernen",
+      "古法语 discerner（分辨、识别）",
+      "中古英语 discernen（辨别、理解）",
       "现代英语 discernment",
     ],
   },
@@ -143,6 +159,7 @@ const SUFFIXES: Array<[string, string]> = [
 const BAD_NODE =
   /\b(used|from greek|sense of|in different forms|powder|opposite of)\b|（\d{3,4}s?）|\(\d{3,4}s?\)/i;
 const LANG = /^(原始印欧语|原始日耳曼语|古英语|中古英语|古诺斯语|古高地德语|古法语|中古法语|通俗拉丁语|晚期拉丁语|中世纪拉丁语|拉丁语|希腊语|法语|德语|荷兰语|意大利语|西班牙语|阿拉伯语|苏格兰语|希伯来语|梵语)\s+/;
+const HAS_CHINESE_GLOSS = /（[^）]*[\u3400-\u9fff][^）]*）/;
 
 function titleCaseLanguage(raw: string) {
   return raw.replace(/^英语\b/, "现代英语").trim();
@@ -160,6 +177,9 @@ function cleanChain(card: WordCard) {
     .map((node) => titleCaseLanguage(node.replace(/。$/, "").trim()))
     .filter((node) => node && !BAD_NODE.test(node))
     .filter((node) => node.startsWith("现代英语") || LANG.test(node))
+    // A bare historical form is useless to a learner. Only curated nodes with
+    // a Chinese gloss may be shown; unglossed legacy nodes stay hidden.
+    .filter((node) => node.startsWith("现代英语") || HAS_CHINESE_GLOSS.test(node))
     .reverse();
 
   if (nodes.length < 2) return [];
