@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { EXAMPLES } from "./exampleData";
+import { getOriginView } from "./originEngine";
 import { WORDS, type WordCard } from "./wordData";
 
 type SessionMode = "new" | "review" | "all";
@@ -85,6 +86,9 @@ const WORD_PAIRS: WordPair[] = (() => {
   return [...groups.entries()].map(([key, indices]) => ({ key, indices }));
 })();
 
+/* Legacy origin strings remain in wordData.ts only as source material. The UI
+   always renders the cleaned, structured result from originEngine.ts. */
+/*
 const EARLY_MEANING_ZH: Record<string, string> = {
   "not": "不、否定",
   "not, opposite of": "不、相反",
@@ -212,6 +216,7 @@ function originDetails(card: WordCard) {
     oldest,
   };
 }
+*/
 
 function highlightedExample(text: string, terms: string[]) {
   const cleaned = terms
@@ -687,14 +692,25 @@ export default function Home() {
                         </a>
                       </div>
                       {(() => {
-                        const details = originDetails(card);
+                        const details = getOriginView(card);
                         return (
                           <div className="origin-story">
                             <div className="origin-summary">
-                              <strong>{details.family}</strong>
-                              <span>{details.oldest}</span>
-                              <em>原始义：{details.earlyMeaningZh}</em>
+                              <strong>{details.label}</strong>
+                              <span className="origin-formula">{details.formula}</span>
                             </div>
+                            <div className="origin-parts">
+                              {details.parts.map((part) => (
+                                <span key={`${part.form}-${part.meaningZh}`}>
+                                  <b>{part.form}</b>
+                                  <i>{part.meaningZh}</i>
+                                </span>
+                              ))}
+                            </div>
+                            <p className="origin-memory">
+                              <b>记忆连接</b>{details.memoryZh}
+                            </p>
+                            {details.chain.length ? (
                             <div className="origin-chain" aria-label="词源演变路径">
                               {details.chain.map((node, index) => (
                                 <span className="origin-node" key={`${node}-${index}`}>
@@ -705,6 +721,7 @@ export default function Home() {
                                 </span>
                               ))}
                             </div>
+                            ) : null}
                           </div>
                         );
                       })()}
