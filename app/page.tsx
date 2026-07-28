@@ -86,6 +86,38 @@ const WORD_PAIRS: WordPair[] = (() => {
   return [...groups.entries()].map(([key, indices]) => ({ key, indices }));
 })();
 
+function bestSpeechVoice(
+  voices: SpeechSynthesisVoice[],
+  language: "en-US" | "zh-CN",
+) {
+  const candidates = voices.filter((voice) =>
+    language === "zh-CN"
+      ? /^zh(?:-CN|-Hans)?$/i.test(voice.lang)
+      : /^en-US$/i.test(voice.lang),
+  );
+  return (
+    candidates
+      .map((voice) => {
+        const name = voice.name;
+        let score = voice.default ? 2 : 0;
+        if (language === "zh-CN") {
+          if (/Xiaoxiao.*Natural|Xiaoyi.*Natural|Yunxi.*Natural/i.test(name)) score += 100;
+          else if (/Google.*普通话|Google.*Mandarin/i.test(name)) score += 90;
+          else if (/Tingting|Ting-Ting|Yu-shu|Mandarin/i.test(name)) score += 80;
+          else if (/Xiaoxiao|Xiaoyi|Yunxi/i.test(name)) score += 70;
+          if (/Huihui|Kangkang|Hanhan|Compact|eSpeak/i.test(name)) score -= 80;
+        } else {
+          if (/Ava.*Premium|Samantha.*Premium|Zoe.*Premium/i.test(name)) score += 100;
+          else if (/Aria.*Natural|Jenny.*Natural/i.test(name)) score += 90;
+          else if (/Samantha|Google US English|Ava|Zoe/i.test(name)) score += 80;
+          if (/Compact|eSpeak/i.test(name)) score -= 60;
+        }
+        return { score, voice };
+      })
+      .sort((a, b) => b.score - a.score)[0]?.voice ?? null
+  );
+}
+
 function highlightedExample(text: string, terms: string[]) {
   const cleaned = terms
     .flatMap((term) => term.split(/\s*&\s*|\s+/))
@@ -125,6 +157,7 @@ export default function Home() {
   const [sessionMode, setSessionMode] = useState<SessionMode>("new");
   const [speechMessage, setSpeechMessage] = useState("");
   const lastSpokenRef = useRef("");
+  const speechRunRef = useRef(0);
   const creditedThisSessionRef = useRef(new Set<string>());
 
   const currentIndex = queue[position];
@@ -176,40 +209,55 @@ export default function Home() {
         setSpeechMessage("当前浏览器不支持朗读，建议使用 Chrome、Edge 或 Safari。");
         return;
       }
+      speechRunRef.current += 1;
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = language;
       utterance.rate = rate;
       utterance.pitch = 1;
       const voices = window.speechSynthesis.getVoices();
-      const preferred =
-        language === "zh-CN"
-          ? voices.find(
-              (voice) =>
-                /^zh(-CN)?$/i.test(voice.lang) &&
-                /Tingting|Meijia|Xiaoxiao|Huihui|普通话|Mandarin|Chinese/i.test(
-                  voice.name,
-                ),
-            )
-          : voices.find(
-              (voice) =>
-                voice.lang === "en-US" &&
-                /Samantha|Aria|Jenny|Google US English|Microsoft David/i.test(
-                  voice.name,
-                ),
-            );
-      const fallback = voices.find((voice) =>
-        language === "zh-CN"
-          ? voice.lang.toLowerCase().startsWith("zh")
-          : voice.lang === "en-US",
-      );
-      utterance.voice = preferred ?? fallback ?? null;
+      utterance.voice = bestSpeechVoice(voices, language);
       utterance.onerror = () =>
         setSpeechMessage("没有成功发声，请点一下喇叭后再试。");
       utterance.onstart = () => setSpeechMessage("");
       window.speechSynthesis.speak(utterance);
     },
     [autoSpeak, rate],
+  );
+
+  const speakMeaningAndWord = useCallback(
+    (meaning: string, word: string) => {
+      if (!("speechSynthesis" in window)) {
+        setSpeechMessage("当前浏览器不支持朗读，建议使用 Chrome、Edge 或 Safari。");
+        return;
+      }
+      const run = speechRunRef.current + 1;
+      speechRunRef.current = run;
+      window.speechSynthesis.cancel();
+      const voices = window.speechSynthesis.getVoices();
+      const chinese = new SpeechSynthesisUtterance(meaning);
+      chinese.lang = "zh-CN";
+      chinese.rate = rate;
+      chinese.pitch = 1;
+      chinese.voice = bestSpeechVoice(voices, "zh-CN");
+      const english = new SpeechSynthesisUtterance(word);
+      english.lang = "en-US";
+      english.rate = rate;
+      english.pitch = 1;
+      english.voice = bestSpeechVoice(voices, "en-US");
+      chinese.onstart = () => setSpeechMessage("");
+      chinese.onerror = () =>
+        setSpeechMessage("中文没有成功发声，请点一下喇叭后再试。");
+      chinese.onend = () => {
+        if (speechRunRef.current === run) {
+          window.speechSynthesis.speak(english);
+        }
+      };
+      english.onerror = () =>
+        setSpeechMessage("英文没有成功发声，请点一下喇叭后再试。");
+      window.speechSynthesis.speak(chinese);
+    },
+    [rate],
   );
 
   useEffect(() => {
@@ -343,7 +391,7 @@ export default function Home() {
       } else if (event.key.toLowerCase() === "r") {
         speak(card.word, true);
       } else if (event.key.toLowerCase() === "c" && revealed) {
-        speak(card.meaning, true, "zh-CN");
+        speakMeaningAndWord(card.meaning, card.word);
       } else if (event.key === "1" && revealed) {
         markAgain();
       } else if (event.key === "2" && revealed) {
@@ -363,6 +411,7 @@ export default function Home() {
     revealed,
     settingsOpen,
     speak,
+    speakMeaningAndWord,
     started,
   ]);
 
@@ -556,9 +605,11 @@ export default function Home() {
                     <div className="meaning-block">
                       <span className="answer-label">中文</span>
                       <button
-                        aria-label={`朗读中文释义：${card.meaning}`}
+                        aria-label={`先朗读中文释义，再朗读英文单词：${card.meaning}，${card.word}`}
                         className="meaning-speak-button"
-                        onClick={() => speak(card.meaning, true, "zh-CN")}
+                        onClick={() =>
+                          speakMeaningAndWord(card.meaning, card.word)
+                        }
                         type="button"
                       >
                         <strong>{card.meaning}</strong>
