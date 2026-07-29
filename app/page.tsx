@@ -450,12 +450,7 @@ export default function Home() {
             A<span>音</span>
           </div>
           <p className="eyebrow">ADHD 友好 · 声音记忆模式</p>
-          <h1 id="welcome-title">ADHDer GRE<br />同义词1000</h1>
-          <aside className="publisher-note" aria-label="发布者信息">
-            <b>发布者</b>
-            <span>小红书 Andrew潇</span>
-            <i>欢迎讨论、提供意见，或者交个朋友</i>
-          </aside>
+          <h1 id="welcome-title">GRE同义词<br />一千速记</h1>
           <p className="welcome-copy">
             一次只记一个词。切到新词就自动念出来，再用等价词、词源和例句加深记忆。
           </p>
@@ -529,7 +524,7 @@ export default function Home() {
               }}
               type="button"
             >
-              <span>A音</span> ADHDer GRE 同义词1000
+              <span>A音</span> GRE同义词一千速记
             </button>
             <div className="topbar-center">
               <span>{autoSpeak ? "自动朗读 开" : "自动朗读 关"}</span>
