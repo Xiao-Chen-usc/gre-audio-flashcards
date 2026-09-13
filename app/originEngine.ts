@@ -310,6 +310,8 @@ function historicalParagraph(card: WordCard) {
 export function getOriginView(card: WordCard): OriginView {
   return {
     paragraph:
-      CURATED[card.originQuery.toLowerCase()] ?? historicalParagraph(card),
+      card.origin ||
+      CURATED[card.originQuery.toLowerCase()] ||
+      historicalParagraph(card),
   };
 }
