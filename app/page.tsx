@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { type ChangeEvent, useCallback, useEffect, useRef, useState } from "react";
 import { EXAMPLES } from "./exampleData";
 import { EXAMPLE_AUDIO } from "./exampleAudio";
 import { getOriginView } from "./originEngine";
@@ -21,6 +21,11 @@ type SavedState = {
   sessionSize: number;
   autoSpeak: boolean;
   rate: number;
+};
+
+type ProgressExport = {
+  learnedWords: string[];
+  reviewWords: string[];
 };
 
 const STORAGE_KEY = "gre-voice-memory-v1";
@@ -166,6 +171,7 @@ export default function Home() {
   const lastSpokenRef = useRef("");
   const speechRunRef = useRef(0);
   const creditedThisSessionRef = useRef(new Set<string>());
+  const importInputRef = useRef<HTMLInputElement | null>(null);
 
   const currentIndex = queue[position];
   const card: WordCard | undefined =
@@ -208,6 +214,60 @@ export default function Home() {
     };
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
   }, [autoSpeak, daily, hard, hydrated, known, rate, sessionSize]);
+
+  const exportProgress = useCallback(() => {
+    const progress: ProgressExport = {
+      learnedWords: [...new Set([...known, ...hard])],
+      reviewWords: [...hard],
+    };
+    const url = URL.createObjectURL(
+      new Blob([JSON.stringify(progress, null, 2)], {
+        type: "application/json",
+      }),
+    );
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "gre-progress.json";
+    link.click();
+    URL.revokeObjectURL(url);
+  }, [hard, known]);
+
+  const importProgress = useCallback(
+    async (event: ChangeEvent<HTMLInputElement>) => {
+      const file = event.currentTarget.files?.[0];
+      event.currentTarget.value = "";
+      if (!file) return;
+
+      try {
+        const progress = JSON.parse(await file.text()) as Partial<ProgressExport>;
+        if (
+          !Array.isArray(progress.learnedWords) ||
+          !Array.isArray(progress.reviewWords) ||
+          !progress.learnedWords.every((value) => typeof value === "string") ||
+          !progress.reviewWords.every((value) => typeof value === "string")
+        ) {
+          window.alert("导入失败");
+          return;
+        }
+
+        const learned = new Set(progress.learnedWords);
+        const review = new Set(progress.reviewWords);
+        const saved: SavedState = {
+          known: [...learned].filter((id) => !review.has(id)),
+          hard: [...review],
+          daily,
+          sessionSize,
+          autoSpeak,
+          rate,
+        };
+        window.localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+        window.location.reload();
+      } catch {
+        window.alert("导入失败");
+      }
+    },
+    [autoSpeak, daily, rate, sessionSize],
+  );
 
   const stopExampleAudio = useCallback(() => {
     exampleBusyRef.current = false;
@@ -831,6 +891,19 @@ export default function Home() {
                 总进度 <strong>{fullProgress}%</strong> · {known.size} 已掌握 ·{" "}
                 {hard.size} 个不熟词
               </p>
+            </div>
+            <div className="progress-transfer">
+              <button onClick={exportProgress} type="button">导出学习数据</button>
+              <button onClick={() => importInputRef.current?.click()} type="button">
+                导入学习数据
+              </button>
+              <input
+                ref={importInputRef}
+                accept="application/json,.json"
+                aria-label="选择要导入的学习数据"
+                onChange={importProgress}
+                type="file"
+              />
             </div>
             <button
               className={resetArmed ? "reset-button is-armed" : "reset-button"}

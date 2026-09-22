@@ -671,6 +671,19 @@ kbd {
 .mastery-summary { position: relative; overflow: hidden; margin-top: 1rem; padding: 1rem; background: #f4f1ff; border-radius: .9rem; }
 .mastery-summary > span { position: absolute; right: 0; bottom: 0; left: 0; height: 3px; background: var(--violet); }
 .mastery-summary p { margin: 0; color: #6f6886; font-size: .72rem; }
+.progress-transfer { display: grid; margin-top: 1rem; grid-template-columns: 1fr 1fr; gap: .65rem; }
+.progress-transfer button {
+  padding: .75rem;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: .8rem;
+  color: var(--violet-dark);
+  font-size: .72rem;
+  font-weight: 680;
+}
+.progress-transfer button:hover { border-color: #c8bffa; background: var(--violet-soft); }
+.progress-transfer input { display: none; }
 .reset-button {
   width: 100%;
   margin-top: 1rem;
