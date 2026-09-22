@@ -486,6 +486,7 @@ kbd {
 .example-speak-button svg { width: 1.15rem; height: 1.15rem; }
 .example-speak-button:hover { background: #eef0ff; }
 .example-speak-button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.example-voice-note { display: block; margin-top: .35rem; color: #617084; font-size: .8rem; }
 .example-heading span { display: flex; flex-direction: column; gap: .2rem; }
 .example-heading b { color: #304660; font-size: .78rem; }
 .example-heading small { color: #7e8c9c; font-size: .66rem; }

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { EXAMPLES } from "./exampleData";
+import { EXAMPLE_AUDIO } from "./exampleAudio";
 import { getOriginView } from "./originEngine";
 import { WORDS, type WordCard } from "./wordData";
 
@@ -156,6 +157,12 @@ export default function Home() {
   const [sessionAgain, setSessionAgain] = useState(0);
   const [sessionMode, setSessionMode] = useState<SessionMode>("new");
   const [speechMessage, setSpeechMessage] = useState("");
+  const [exampleAudioState, setExampleAudioState] = useState<"idle" | "loading" | "playing">("idle");
+  const exampleWorkerRef = useRef<Worker | null>(null);
+  const exampleRequestRef = useRef(0);
+  const exampleUrlRef = useRef<string | null>(null);
+  const exampleBusyRef = useRef(false);
+  const exampleAudioRef = useRef<HTMLAudioElement | null>(null);
   const lastSpokenRef = useRef("");
   const speechRunRef = useRef(0);
   const creditedThisSessionRef = useRef(new Set<string>());
@@ -202,9 +209,79 @@ export default function Home() {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
   }, [autoSpeak, daily, hard, hydrated, known, rate, sessionSize]);
 
+  const stopExampleAudio = useCallback(() => {
+    exampleBusyRef.current = false;
+    exampleRequestRef.current += 1;
+    exampleWorkerRef.current?.postMessage({id: exampleRequestRef.current});
+    if (exampleUrlRef.current) URL.revokeObjectURL(exampleUrlRef.current);
+    exampleUrlRef.current = null;
+    const audio = exampleAudioRef.current;
+    exampleAudioRef.current = null;
+    if (audio) {
+      audio.onended = null;
+      audio.onerror = null;
+      audio.onplaying = null;
+      audio.pause();
+      audio.removeAttribute("src");
+      audio.load();
+    }
+    setExampleAudioState("idle");
+  }, []);
+
+  useEffect(() => () => {
+    exampleWorkerRef.current?.terminate();
+    if (exampleUrlRef.current) URL.revokeObjectURL(exampleUrlRef.current);
+    exampleAudioRef.current?.pause();
+    exampleAudioRef.current = null;
+  }, []);
+
+  useEffect(() => {
+    if (exampleAudioRef.current) exampleAudioRef.current.playbackRate = rate;
+  }, [rate]);
+
+  const playExample = useCallback((key: string, text: string) => {
+    if (exampleBusyRef.current) { stopExampleAudio(); setSpeechMessage(""); return; }
+    exampleBusyRef.current = true;
+    const id = ++exampleRequestRef.current;
+    speechRunRef.current += 1;
+    window.speechSynthesis?.cancel();
+    setExampleAudioState("loading");
+    setSpeechMessage("");
+    const play = (source: string) => {
+      if (id !== exampleRequestRef.current) return;
+      const audio = new Audio(source);
+      exampleAudioRef.current = audio;
+      audio.playbackRate = rate;
+      audio.preservesPitch = true;
+      const failed = (error?: {name?: string}) => {
+        if (id !== exampleRequestRef.current) return;
+        stopExampleAudio();
+        setSpeechMessage(error?.name === "NotAllowedError" ? "音频已缓存，请再点一次朗读。" : "例句音频未能播放，请检查网络后重试。");
+      };
+      audio.onplaying = () => { if (id === exampleRequestRef.current) { setExampleAudioState("playing"); setSpeechMessage(""); } };
+      audio.onended = () => { if (id === exampleRequestRef.current) stopExampleAudio(); };
+      audio.onerror = () => failed();
+      void audio.play().catch(failed);
+    };
+    if (EXAMPLE_AUDIO[key]) { play(EXAMPLE_AUDIO[key]); return; }
+    try {
+      const worker = exampleWorkerRef.current ??= new Worker(new URL("./kokoro.worker.ts", import.meta.url), {type: "module"});
+      worker.onmessage = (event) => {
+        const data = event.data;
+        if (data.id !== exampleRequestRef.current) return;
+        if (data.type === "progress") setSpeechMessage(data.message);
+        if (data.type === "ready") { const url = URL.createObjectURL(data.blob); exampleUrlRef.current = url; play(url); }
+        if (data.type === "error") { console.error("Kokoro:", data.detail); stopExampleAudio(); setSpeechMessage(data.message); }
+      };
+      worker.onerror = () => { stopExampleAudio(); worker.terminate(); exampleWorkerRef.current = null; setSpeechMessage("语音引擎未能启动，请重试或使用新版 Chrome / Edge。"); };
+      worker.postMessage({id, text});
+    } catch { stopExampleAudio(); setSpeechMessage("当前浏览器无法启动 Kokoro 语音，请使用新版 Chrome / Edge。"); }
+  }, [rate, stopExampleAudio]);
+
   const speak = useCallback(
     (text: string, force = false, language: "en-US" | "zh-CN" = "en-US") => {
       if (!force && !autoSpeak) return;
+      stopExampleAudio();
       if (!("speechSynthesis" in window)) {
         setSpeechMessage("当前浏览器不支持朗读，建议使用 Chrome、Edge 或 Safari。");
         return;
@@ -222,11 +299,12 @@ export default function Home() {
       utterance.onstart = () => setSpeechMessage("");
       window.speechSynthesis.speak(utterance);
     },
-    [autoSpeak, rate],
+    [autoSpeak, rate, stopExampleAudio],
   );
 
   const speakMeaningAndWord = useCallback(
     (meaning: string, word: string) => {
+      stopExampleAudio();
       if (!("speechSynthesis" in window)) {
         setSpeechMessage("当前浏览器不支持朗读，建议使用 Chrome、Edge 或 Safari。");
         return;
@@ -257,7 +335,7 @@ export default function Home() {
         setSpeechMessage("英文没有成功发声，请点一下喇叭后再试。");
       window.speechSynthesis.speak(chinese);
     },
-    [rate],
+    [rate, stopExampleAudio],
   );
 
   useEffect(() => {
@@ -324,6 +402,7 @@ export default function Home() {
   );
 
   const advance = useCallback(() => {
+    stopExampleAudio();
     setRevealed(false);
     setPosition((value) => {
       if (value + 1 >= queue.length) {
@@ -332,7 +411,7 @@ export default function Home() {
       }
       return value + 1;
     });
-  }, [queue.length]);
+  }, [queue.length, stopExampleAudio]);
 
   const markKnown = useCallback(() => {
     if (!card) return;
@@ -520,6 +599,7 @@ export default function Home() {
               onClick={() => {
                 setStarted(false);
                 setComplete(false);
+                stopExampleAudio();
                 window.speechSynthesis?.cancel();
               }}
               type="button"
@@ -650,16 +730,18 @@ export default function Home() {
                             </span>
                             <em>原书第 {card.page} 页</em>
                           </div>
-                          {example.english?.trim() ? (
+                          {key && example.english?.trim() ? (
                             <button
                               className="example-speak-button"
                               type="button"
-                              aria-label="朗读英文例句"
-                              onClick={() => speak(example.english, true, "en-US")}
+                              aria-label={exampleAudioState === "idle" ? "朗读英文例句" : "停止例句朗读"}
+                              aria-pressed={exampleAudioState !== "idle"}
+                              onClick={() => playExample(key, example.english)}
                             >
-                              <SpeakerIcon /> 朗读英文例句
+                              <SpeakerIcon /> {exampleAudioState === "loading" ? "正在加载 · 点击取消" : exampleAudioState === "playing" ? "停止朗读" : "朗读英文例句"}
                             </button>
                           ) : null}
+                          {key && example.english?.trim() ? <small className="example-voice-note">Kokoro AI · 美式女声{!EXAMPLE_AUDIO[key] ? " · 首次需下载模型，之后缓存复用" : ""}</small> : null}
                           <p className="example-english">
                             {example.english
                               ? highlightedExample(example.english, [

@@ -51,6 +51,7 @@ export default defineConfig(async () => {
         ? { watch: { useFsEvents: false, usePolling: true } }
         : {}),
     },
+    worker: { format: "es" as const },
     plugins: [
       vinext(),
       sites(),

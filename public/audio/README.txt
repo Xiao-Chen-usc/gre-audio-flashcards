@@ -1,0 +1,1 @@
+English example narration: Kokoro v1.0, af_heart. Existing MP3 assets play directly. Other examples are generated in a browser worker using kokoro-js and the q8 ONNX model, then cached locally. Models and voices download from Hugging Face on first use. Only English example text is narrated. Kokoro model license: Apache-2.0 (see licenses).
