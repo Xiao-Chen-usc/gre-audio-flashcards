@@ -650,6 +650,16 @@ export default function Home() {
                             </span>
                             <em>原书第 {card.page} 页</em>
                           </div>
+                          {example.english?.trim() ? (
+                            <button
+                              className="example-speak-button"
+                              type="button"
+                              aria-label="朗读英文例句"
+                              onClick={() => speak(example.english, true, "en-US")}
+                            >
+                              <SpeakerIcon /> 朗读英文例句
+                            </button>
+                          ) : null}
                           <p className="example-english">
                             {example.english
                               ? highlightedExample(example.english, [

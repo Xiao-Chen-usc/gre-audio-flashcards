@@ -469,6 +469,23 @@ kbd {
   justify-content: space-between;
   gap: 1rem;
 }
+.example-speak-button {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-top: .75rem;
+  padding: .45rem .65rem;
+  border: 1px solid currentColor;
+  border-radius: .5rem;
+  background: transparent;
+  color: var(--purple);
+  font: inherit;
+  font-size: .875rem;
+  cursor: pointer;
+}
+.example-speak-button svg { width: 1.15rem; height: 1.15rem; }
+.example-speak-button:hover { background: #eef0ff; }
+.example-speak-button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
 .example-heading span { display: flex; flex-direction: column; gap: .2rem; }
 .example-heading b { color: #304660; font-size: .78rem; }
 .example-heading small { color: #7e8c9c; font-size: .66rem; }
