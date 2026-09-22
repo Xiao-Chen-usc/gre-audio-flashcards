@@ -5,7 +5,7 @@ if (env.backends.onnx.wasm) {
   env.backends.onnx.wasm.numThreads = 1;
   env.backends.onnx.wasm.wasmPaths = {
     mjs: 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0-dev.20250409-89f8206ba4/dist/ort-wasm-simd-threaded.jsep.mjs',
-    wasm: new URL('/onnx/ort-wasm-simd-threaded.jsep.wasm', self.location.origin).href,
+    wasm: new URL('../onnx/ort-wasm-simd-threaded.jsep.wasm', self.location.href).href,
   };
 }
 let model: ReturnType<typeof KokoroTTS.from_pretrained> | undefined;
@@ -21,7 +21,7 @@ self.onmessage = (event: MessageEvent<{id: number; text?: string}>) => {
     const progress = (message: string) => { if (current === id) self.postMessage({id, type: 'progress', message}); };
     try {
       const english = text.replace(/[\u3400-\u9fff]/g, '').replace(/&/g, 'and').replace(/\s+/g, ' ').trim();
-      const cacheKey = new URL('/audio/generated/af-heart-v1?text=' + encodeURIComponent(english), self.location.origin).href;
+      const cacheKey = new URL('../audio/generated/af-heart-v1?text=' + encodeURIComponent(english), self.location.href).href;
       const cache = typeof caches !== 'undefined' ? await caches.open('gre-kokoro-af-heart-v1').catch(() => null) : null;
       let blob = memoryCache.get(cacheKey) ?? await cache?.match(cacheKey).then(r => r?.blob());
       if (!blob) {

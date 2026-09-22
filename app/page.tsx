@@ -323,7 +323,11 @@ export default function Home() {
       audio.onerror = () => failed();
       void audio.play().catch(failed);
     };
-    if (EXAMPLE_AUDIO[key]) { play(EXAMPLE_AUDIO[key]); return; }
+    if (EXAMPLE_AUDIO[key]) {
+      const basePath = window.location.pathname.replace(/\/$/, "");
+      play(`${basePath}${EXAMPLE_AUDIO[key]}`);
+      return;
+    }
     try {
       const worker = exampleWorkerRef.current ??= new Worker(new URL("./kokoro.worker.ts", import.meta.url), {type: "module"});
       worker.onmessage = (event) => {
