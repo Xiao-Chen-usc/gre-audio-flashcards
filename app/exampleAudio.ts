@@ -489,5 +489,8 @@ export const EXAMPLE_AUDIO: Record<string, string> = {
   "p51r04": "/audio/examples/p51r04-34498c92db0545df.mp3",
   "p51r05": "/audio/examples/p51r05-3fa88da36ae80663.mp3",
   "p51r06": "/audio/examples/p51r06-93af35d0aa425bf8.mp3",
-  "p51r07": "/audio/examples/p51r07-336b2313d8b0ea45.mp3"
+  "p51r07": "/audio/examples/p51r07-336b2313d8b0ea45.mp3",
+  "p51r08": "/audio/examples/p51r08-907db71af40b2dfc.mp3",
+  "p51r09": "/audio/examples/p51r09-a801628c59644ab9.mp3",
+  "p51r10": "/audio/examples/p51r10-b51be92f9d9bcc34.mp3"
 };
