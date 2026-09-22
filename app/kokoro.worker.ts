@@ -3,7 +3,10 @@ import { env } from '@huggingface/transformers';
 env.allowLocalModels = false;
 if (env.backends.onnx.wasm) {
   env.backends.onnx.wasm.numThreads = 1;
-  env.backends.onnx.wasm.wasmPaths = '/onnx/';
+  env.backends.onnx.wasm.wasmPaths = {
+    mjs: 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0-dev.20250409-89f8206ba4/dist/ort-wasm-simd-threaded.jsep.mjs',
+    wasm: new URL('/onnx/ort-wasm-simd-threaded.jsep.wasm', self.location.origin).href,
+  };
 }
 let model: ReturnType<typeof KokoroTTS.from_pretrained> | undefined;
 let current = 0;
