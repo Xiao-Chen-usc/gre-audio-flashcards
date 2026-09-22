@@ -9,6 +9,7 @@ if (env.backends.onnx.wasm) {
   };
 }
 let model: ReturnType<typeof KokoroTTS.from_pretrained> | undefined;
+const memoryCache = new Map<string, Blob>();
 let current = 0;
 let queue = Promise.resolve();
 self.onmessage = (event: MessageEvent<{id: number; text?: string}>) => {
@@ -22,7 +23,7 @@ self.onmessage = (event: MessageEvent<{id: number; text?: string}>) => {
       const english = text.replace(/[\u3400-\u9fff]/g, '').replace(/&/g, 'and').replace(/\s+/g, ' ').trim();
       const cacheKey = new URL('/audio/generated/af-heart-v1?text=' + encodeURIComponent(english), self.location.origin).href;
       const cache = typeof caches !== 'undefined' ? await caches.open('gre-kokoro-af-heart-v1').catch(() => null) : null;
-      let blob = await cache?.match(cacheKey).then(r => r?.blob());
+      let blob = memoryCache.get(cacheKey) ?? await cache?.match(cacheKey).then(r => r?.blob());
       if (!blob) {
         progress('首次需下载语音模型，之后会缓存复用，请稍候…');
         model ??= KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', {dtype: 'q8', device: 'wasm'}).catch(error => { model = undefined; throw error; });
@@ -51,6 +52,8 @@ self.onmessage = (event: MessageEvent<{id: number; text?: string}>) => {
         blob = first.toBlob();
         await cache?.put(cacheKey, new Response(blob)).catch(() => {});
       }
+      memoryCache.set(cacheKey, blob);
+      if (memoryCache.size > 12) memoryCache.delete(memoryCache.keys().next().value!);
       if (current === id) self.postMessage({id, type: 'ready', blob});
     } catch (error) {
       console.error("Kokoro speech generation failed", error);
