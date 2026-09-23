@@ -764,9 +764,15 @@ export default function Home() {
                         <span>{card.pair}</span><SpeakerIcon />
                       </button>
                     </div>
-                    <div className="origin-block">
-                      <div className="origin-heading">
+                    <details className="origin-block" key={card.id}>
+                      <summary className="origin-heading">
                         <span className="answer-label">词源 · Origin</span>
+                        <span className="origin-toggle">
+                          <span className="origin-toggle-closed">展开全文 ⌄</span>
+                          <span className="origin-toggle-open">收起 ⌃</span>
+                        </span>
+                      </summary>
+                      <div className="origin-content">
                         <a
                           href={`https://www.etymonline.com.cn/word/${encodeURIComponent(card.originQuery)}`}
                           rel="noreferrer"
@@ -774,14 +780,14 @@ export default function Home() {
                         >
                           完整词源 ↗
                         </a>
+                        {(() => {
+                          const details = getOriginView(card);
+                          return details.paragraph ? (
+                            <p className="origin-paragraph">{details.paragraph}</p>
+                          ) : null;
+                        })()}
                       </div>
-                      {(() => {
-                        const details = getOriginView(card);
-                        return details.paragraph ? (
-                          <p className="origin-paragraph">{details.paragraph}</p>
-                        ) : null;
-                      })()}
-                    </div>
+                    </details>
                     {(() => {
                       const key = pairKey(card.id);
                       const example = key ? EXAMPLES[key] : undefined;

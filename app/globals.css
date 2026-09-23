@@ -447,8 +447,15 @@ kbd {
 }
 .pair-block button svg { width: 1.15rem; min-width: 1.15rem; height: 1.15rem; }
 .origin-block { grid-column: 1 / -1; padding: .85rem 1rem; border-color: #ded7ff; background: #f7f4ff; }
-.origin-heading { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
-.origin-heading a { color: #8374bf; font-size: .64rem; text-decoration: none; white-space: nowrap; }
+.origin-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; list-style: none; }
+.origin-heading::-webkit-details-marker { display: none; }
+.origin-heading .answer-label { margin-bottom: 0; }
+.origin-heading:focus-visible { outline: 2px solid #8374bf; outline-offset: 4px; border-radius: .25rem; }
+.origin-toggle { color: #8374bf; font-size: .7rem; white-space: nowrap; }
+.origin-toggle-open, .origin-block[open] .origin-toggle-closed { display: none; }
+.origin-block[open] .origin-toggle-open { display: inline; }
+.origin-content { padding-top: .65rem; }
+.origin-content a { display: block; width: fit-content; margin-left: auto; color: #8374bf; font-size: .64rem; text-decoration: none; white-space: nowrap; }
 .origin-paragraph {
   margin: .22rem 0 0;
   color: #554e68;
