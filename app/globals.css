@@ -454,6 +454,7 @@ kbd {
   color: #554e68;
   font-size: .75rem;
   line-height: 1.72;
+  white-space: pre-line;
 }
 .example-block {
   padding: 1.05rem 1.2rem 1.2rem;
