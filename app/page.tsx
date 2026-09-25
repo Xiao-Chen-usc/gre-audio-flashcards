@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { type ChangeEvent, useCallback, useEffect, useRef, useState } from "react";
 import { EXAMPLES } from "./exampleData";
 import { EXAMPLE_AUDIO } from "./exampleAudio";
@@ -20,6 +19,7 @@ import {
   saveSaved,
   shuffled,
 } from "./progress";
+import WordList from "./WordList";
 import { WORDS, type WordCard } from "./wordData";
 
 type SessionMode = "new" | "review" | "recall" | "all";
@@ -121,6 +121,7 @@ export default function Home() {
   const [known, setKnown] = useState<Set<string>>(new Set());
   const [hard, setHard] = useState<Set<string>>(new Set());
   const [history, setHistory] = useState<History>({});
+  const [showWords, setShowWords] = useState(false);
   const [daily, setDaily] = useState<DailyProgress>(emptyDailyProgress);
   const [sessionSize, setSessionSize] = useState(10);
   const [autoSpeak, setAutoSpeak] = useState(true);
@@ -173,6 +174,22 @@ export default function Home() {
     }
     setHistory(loadHistory());
     setHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash === "#words") setShowWords(true);
+  }, []);
+
+  // The word list is a view of this page, not a route: the site is served as a
+  // single pre-rendered /gre page. Only replaceState is used, because the
+  // framework router reacts to hash links and history traversal.
+  const openWords = useCallback((open: boolean) => {
+    setShowWords(open);
+    const url = open
+      ? "#words"
+      : window.location.pathname + window.location.search;
+    window.history.replaceState(window.history.state, "", url);
+    window.scrollTo(0, 0);
   }, []);
   /* eslint-enable react-hooks/set-state-in-effect */
 
@@ -254,6 +271,21 @@ export default function Home() {
     },
     [autoSpeak, daily, rate, sessionSize],
   );
+
+  const demotePair = useCallback((key: string, ids: string[]) => {
+    setHard((old) => {
+      const next = new Set(old);
+      ids.forEach((id) => next.add(id));
+      return next;
+    });
+    setKnown((old) => {
+      const next = new Set(old);
+      ids.forEach((id) => next.delete(id));
+      return next;
+    });
+    const now = Date.now();
+    setHistory((old) => ({ ...old, [key]: { ...old[key], hardAt: now } }));
+  }, []);
 
   const stopExampleAudio = useCallback(() => {
     exampleBusyRef.current = false;
@@ -621,6 +653,17 @@ export default function Home() {
     );
   }
 
+  if (showWords && !started) {
+    return (
+      <WordList
+        hard={hard}
+        known={known}
+        onBack={() => openWords(false)}
+        onDemote={demotePair}
+      />
+    );
+  }
+
   return (
     <main className="app-shell">
       <div className="ambient ambient-one" />
@@ -640,9 +683,13 @@ export default function Home() {
             <div><strong>{known.size}</strong><span>已经记住</span></div>
             <div><strong>{hard.size}</strong><span>不熟词库</span></div>
           </div>
-          <Link className="word-list-link" href="/words">
+          <button
+            className="word-list-link"
+            onClick={() => openWords(true)}
+            type="button"
+          >
             查看全部词表 · 掌握地图 <span>→</span>
-          </Link>
+          </button>
           <div className="session-choice">
             <span>本轮</span>
             {[10, 20, 50].map((size) => (

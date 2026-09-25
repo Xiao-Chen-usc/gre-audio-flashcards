@@ -748,6 +748,7 @@ kbd {
 
 /* Home: entry to the word list and the recall section */
 .word-list-link {
+  cursor: pointer;
   display: inline-flex;
   margin: -.6rem 0 1.4rem;
   padding: .5rem 1rem;
@@ -775,7 +776,7 @@ kbd {
 }
 .words-top { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; }
 .words-top h1 { margin: 0; font-family: Georgia, "Noto Serif SC", serif; font-size: 1.5rem; font-weight: 600; }
-.words-back { color: var(--violet-dark); font-size: .85rem; font-weight: 700; text-decoration: none; }
+.words-back { padding: 0; cursor: pointer; border: 0; background: transparent; justify-self: start; color: var(--violet-dark); font-size: .85rem; font-weight: 700; text-decoration: none; }
 .words-total { justify-self: end; color: var(--muted); font-size: .76rem; font-variant-numeric: tabular-nums; }
 .words-summary { display: flex; margin: 1.4rem 0 .9rem; flex-wrap: wrap; gap: .4rem 1.3rem; color: var(--muted); font-size: .82rem; }
 .words-summary span { display: inline-flex; align-items: center; gap: .4rem; }
@@ -874,3 +875,4 @@ kbd {
   .words-meaning { grid-column: 1; grid-row: 3; justify-self: start; }
   .words-demote, .words-demote-placeholder { grid-column: 2; grid-row: 1; }
 }
+.words-map-col { padding: 0; cursor: pointer; border: 0; background: transparent; }

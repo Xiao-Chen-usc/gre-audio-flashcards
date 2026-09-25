@@ -1,17 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
-import {
-  type SavedState,
-  WORD_PAIRS,
-  emptyDailyProgress,
-  loadHistory,
-  loadSaved,
-  saveHistory,
-  saveSaved,
-} from "../progress";
-import { WORDS } from "../wordData";
+import { useMemo, useState } from "react";
+import { WORD_PAIRS } from "./progress";
+import { WORDS } from "./wordData";
 
 type Status = "known" | "hard" | "new";
 type Filter = Status | "all";
@@ -36,48 +27,22 @@ function pairStatus(ids: string[], known: Set<string>, hard: Set<string>): Statu
 
 const PAGES = [...new Set(WORDS.map((card) => card.page))].sort((a, b) => a - b);
 
-export default function WordList() {
-  const [hydrated, setHydrated] = useState(false);
-  const [known, setKnown] = useState<Set<string>>(new Set());
-  const [hard, setHard] = useState<Set<string>>(new Set());
+// Rendered as a view of the home page (#words) rather than its own route: the
+// site is deployed as a single pre-rendered /gre page on static nginx.
+export default function WordList({
+  known,
+  hard,
+  onBack,
+  onDemote,
+}: {
+  known: Set<string>;
+  hard: Set<string>;
+  onBack: () => void;
+  onDemote: (key: string, ids: string[]) => void;
+}) {
   const [filter, setFilter] = useState<Filter>("all");
   const [masked, setMasked] = useState(true);
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
-
-  /* Local storage is an external source; hydrate it once after the client mounts. */
-  /* eslint-disable react-hooks/set-state-in-effect */
-  useEffect(() => {
-    const saved = loadSaved();
-    setKnown(new Set(saved?.known ?? []));
-    setHard(new Set(saved?.hard ?? []));
-    setHydrated(true);
-  }, []);
-  /* eslint-enable react-hooks/set-state-in-effect */
-
-  const moveToHard = useCallback((key: string, ids: string[]) => {
-    // Re-read storage so fields owned by the study page (daily progress,
-    // settings) are written back untouched.
-    const saved = loadSaved() ?? {};
-    const nextKnown = new Set(saved.known ?? []);
-    const nextHard = new Set(saved.hard ?? []);
-    ids.forEach((id) => {
-      nextKnown.delete(id);
-      nextHard.add(id);
-    });
-    const next: SavedState = {
-      known: [...nextKnown],
-      hard: [...nextHard],
-      daily: saved.daily ?? emptyDailyProgress(),
-      sessionSize: saved.sessionSize ?? 10,
-      autoSpeak: saved.autoSpeak ?? true,
-      rate: saved.rate ?? 0.82,
-    };
-    saveSaved(next);
-    const history = loadHistory();
-    saveHistory({ ...history, [key]: { ...history[key], hardAt: Date.now() } });
-    setKnown(nextKnown);
-    setHard(nextHard);
-  }, []);
 
   const rows = useMemo(
     () =>
@@ -117,19 +82,10 @@ export default function WordList() {
     return [...groups.entries()];
   }, [filter, rows]);
 
-  if (!hydrated) {
-    return (
-      <main className="app-shell loading-shell">
-        <div className="loading-dot" />
-        <p>正在整理你的词表…</p>
-      </main>
-    );
-  }
-
   return (
     <main className="app-shell words-shell">
       <header className="words-top">
-        <Link className="words-back" href="/">← 首页</Link>
+        <button className="words-back" onClick={onBack} type="button">← 首页</button>
         <h1>全部词表</h1>
         <span className="words-total">{rows.length} 对 · {WORDS.length} 张</span>
       </header>
@@ -150,12 +106,19 @@ export default function WordList() {
         </div>
         <div className="words-map">
           {PAGES.map((page) => (
-            <a
+            <button
               aria-label={`跳到第 ${page} 页`}
               className="words-map-col"
-              href={`#page-${page}`}
               key={page}
-              onClick={() => setFilter("all")}
+              onClick={() => {
+                setFilter("all");
+                // Scroll after the unfiltered list renders; a #page-N hash
+                // would replace #words and leave the list.
+                window.setTimeout(() =>
+                  document.getElementById(`page-${page}`)?.scrollIntoView(),
+                );
+              }}
+              type="button"
             >
               {WORDS.filter((card) => card.page === page).map((card) => (
                 <i
@@ -164,7 +127,7 @@ export default function WordList() {
                   title={`${card.word} · ${STATUS_LABEL[cardStatus(card.id, known, hard)]}`}
                 />
               ))}
-            </a>
+            </button>
           ))}
         </div>
         <div className="words-map-axis">
@@ -248,7 +211,7 @@ export default function WordList() {
                     <button
                       className="words-demote"
                       onClick={() =>
-                        moveToHard(
+                        onDemote(
                           row.key,
                           row.cards.map((card) => card.id),
                         )
