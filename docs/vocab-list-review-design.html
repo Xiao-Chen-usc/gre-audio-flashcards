@@ -77,6 +77,7 @@ li { margin-bottom: .35rem; }
 strong { font-weight: 650; }
 code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .86em; background: var(--accent-soft); color: var(--accent-ink); padding: .08em .35em; border-radius: 4px; }
 a { color: var(--accent-ink); }
+.prose kbd { font-family: var(--sans); font-size: .8em; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 .35em; background: var(--surface); }
 .cite { color: var(--faint); font-size: .82em; }
 
 /* TL;DR */
@@ -256,7 +257,7 @@ details.data summary { cursor: pointer; }
   <header>
     <p class="eyebrow">设计评审稿 · GRE同义词一千速记</p>
     <h1>全部词表页，和“记住了”之后怎么复习</h1>
-    <p class="lede">这份文档回答两个问题。第一，从首页进入一个能看到全部 990 张卡、并能一眼看出掌握情况的词表页，应该怎么设计。第二，按遗忘曲线，点了“记住了”的词还要不要复习、什么时候复习。结尾列了 5 个需要你拍板的决定。</p>
+    <p class="lede">这份文档回答两个问题。第一，从首页进入一个能看到全部 990 张卡、并能一眼看出掌握情况的词表页，应该怎么设计。第二，按遗忘曲线，点了“记住了”的词还要不要复习、什么时候复习。结尾列了 5 个需要你拍板的决定。所有改动都向后兼容：旧进度、旧导出文件、回退到旧版本都不受影响（见 03b）。</p>
 
     <div class="tldr">
       <div>
@@ -530,11 +531,11 @@ details.data summary { cursor: pointer; }
 
     <div class="prose">
       <h3>数据怎么存（方案 C）</h3>
-      <p>仍然只存浏览器 localStorage，换一个新键，旧数据自动迁移：</p>
+      <p>仍然只存浏览器 localStorage。<strong>旧键 <code>gre-voice-memory-v1</code> 原样保留、继续写入</strong>，新增的排程数据放进一个单独的新键 <code>gre-voice-schedule-v2</code>：</p>
     </div>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>字段</th><th>说明</th></tr></thead>
+        <thead><tr><th>字段（新键 v2）</th><th>说明</th></tr></thead>
         <tbody>
           <tr><td><code>pairs[key].step</code></td><td>阶梯位置 0–5，对应 1/3/7/14/30/60 天</td></tr>
           <tr><td><code>pairs[key].due</code></td><td>下次复习日期，如 <code>2026-09-28</code>，按本地日期</td></tr>
@@ -542,11 +543,51 @@ details.data summary { cursor: pointer; }
           <tr><td><code>pairs[key].last</code></td><td>上次作答的时间和反馈等级</td></tr>
           <tr><td><code>log[]</code></td><td>每次作答一条 <code>{key, t, grade}</code>，约 30 字节。刷完一遍加复习一个月约 15 万字节，远低于 localStorage 上限</td></tr>
           <tr><td><code>examDate?</code></td><td>可选考试日期，用来给间隔封顶</td></tr>
+          <tr><td><code>v1Snapshot</code></td><td>上次同步时旧键里 <code>known / hard</code> 的样子，用来发现旧版本在期间改过什么</td></tr>
         </tbody>
       </table>
     </div>
     <div class="prose">
-      <p><strong>旧数据迁移</strong>：一对里两张卡都在 <code>known</code> 的，放到第 2 级（7 天那一档），到期日在接下来 7 天里随机分散，避免迁移第一天就砸下几百个复习；有任何一张在 <code>hard</code> 的，放到第 0 级，今天到期。导入导出换成 v2 格式，但仍然能读旧的 <code>learnedWords / reviewWords</code> 文件。</p>
+      <p><strong>旧数据迁移</strong>：新版第一次打开时，一对里两张卡都在 <code>known</code> 的，放到第 2 级（7 天那一档），到期日在接下来 7 天里随机分散，避免迁移第一天就砸下几百个复习；有任何一张在 <code>hard</code> 的，放到第 0 级，今天到期。迁移只读旧键，不删也不改写它的结构。</p>
+    </div>
+  </section>
+
+  <!-- ============ 3b 向后兼容 ============ -->
+  <section class="block" id="compat">
+    <span class="sec-no">03b</span>
+    <h2>向后兼容：旧进度、旧文件、旧版本都不受影响</h2>
+    <div class="prose">
+      <p>要做到三件事：你现在的进度一个不丢；以前导出的 <code>gre-progress.json</code> 还能导入；如果新版出问题需要回退，或者某个浏览器标签还开着旧版，数据也不会坏。</p>
+
+      <h3>为什么必须用新键，不能往旧键里加字段</h3>
+      <p>旧版在每次状态变化时，会用它认识的 6 个字段（<code>known, hard, daily, sessionSize, autoSpeak, rate</code>）重新拼出整个对象，覆盖写回 <code>gre-voice-memory-v1</code>（见 <code>app/page.tsx</code> 第 205–216 行）。如果把排程数据塞进这个键，只要打开一次旧版，新字段就会被悄悄抹掉。所以新数据放在单独的键里，旧版根本看不到它。</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:24%">场景</th><th>新版怎么处理</th><th style="width:24%">结果</th></tr></thead>
+        <tbody>
+          <tr><td>现有用户第一次打开新版</td><td>读旧键，按上面的规则生成排程，写入新键。旧键保留。</td><td>进度完整保留，复习分散到 7 天里</td></tr>
+          <tr><td>新版里正常学习</td><td>每次作答同时更新两个键。旧键里的 <code>known / hard</code> 由排程推导：在“不熟”阶段的对放进 <code>hard</code>，答对过的放进 <code>known</code>。<code>daily</code> 等其余字段格式不变。</td><td>旧键始终是一份有效的旧格式数据</td></tr>
+          <tr><td>回退到旧版</td><td>旧版照常读旧键，看到的 <code>known / hard</code> 是最新的。新键原封不动留在浏览器里。</td><td>旧版正常可用；再升级回来时排程和日志都还在</td></tr>
+          <tr><td>旧版期间学过的词</td><td>新版打开时把旧键和 <code>v1Snapshot</code> 对比：新进 <code>hard</code> 的对放到第 0 级、今天到期；新进 <code>known</code> 的对若没有排程，放到第 1 级、明天到期。</td><td>两边的学习记录合并，不会互相覆盖</td></tr>
+          <tr><td>导入旧导出文件<br><span class="cite">只有 learnedWords / reviewWords</span></td><td>先写成旧键，再走一遍上面的迁移。</td><td>和现在导入的效果一样</td></tr>
+          <tr><td>导出</td><td>顶层仍然保留 <code>learnedWords / reviewWords</code>，另外加 <code>version: 2</code>、<code>schedule</code>、<code>log</code>。</td><td>旧版能导入新文件（它只校验这两个数组，多出的字段会忽略）</td></tr>
+          <tr><td>清空进度</td><td>两个键一起清。</td><td>不会留下孤立的排程数据</td></tr>
+          <tr><td>数据损坏</td><td>新键解析失败就当作没有，从旧键重新迁移；和现在一样，坏数据不阻止学习。</td><td>最坏情况只是丢了排程，学过哪些词还在</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prose">
+      <h3>操作习惯也保持兼容</h3>
+      <ul>
+        <li>卡片 id（如 <code>p02r01a</code>）不变，同义词对的 key 仍用现有的 <code>pairKey()</code> 算。</li>
+        <li>快捷键 <kbd>1</kbd> 还是“不熟”；<kbd>2</kbd> 变成“想了一下”，排程效果等同于原来的“记住了”；新增的 <kbd>3</kbd>“秒懂”可以不用。只用 1 和 2 的话，行为和现在一致，只是多了间隔复习。</li>
+        <li>首页“今日新词”“今日复习”两块保留，每日新词计数的规则不变。</li>
+        <li>现有网址 <code>/gre</code> 不变，词表页是新加的 <code>/gre/words</code>。</li>
+      </ul>
+      <p><strong>要写的测试</strong>：旧格式数据迁移的结果；新版写入后旧键仍能被旧的解析逻辑读出；模拟旧版覆盖写旧键之后，新键不受影响且能合并；旧导出文件导入；新导出文件通过旧的导入校验。</p>
     </div>
   </section>
 
@@ -555,7 +596,7 @@ details.data summary { cursor: pointer; }
     <span class="sec-no">04</span>
     <h2>建议的实现顺序</h2>
     <div class="flow">
-      <div><b>第 1 步 · 数据层</b>抽出 <code>useProgress()</code>，新存储格式、旧数据迁移、作答日志、导入导出 v2</div>
+      <div><b>第 1 步 · 数据层</b>抽出 <code>useProgress()</code>，新键 v2、旧数据迁移、双写旧键、旧版改动合并、作答日志、兼容旧格式的导入导出，加兼容性测试</div>
       <div><b>第 2 步 · 词表页</b><code>/words</code> 路由、摘要、掌握地图、筛选和搜索、遮住中文、开一轮；修 basePath</div>
       <div><b>第 3 步 · 复习排程</b>3 个按钮、当轮重考、“今天到期”替换固定的 40、首页入口</div>
       <div><b>第 4 步 · 考前模式</b>考试日期设置、间隔封顶、考前清扫、顽固词提示</div>
