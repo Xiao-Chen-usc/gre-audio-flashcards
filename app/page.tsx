@@ -4,42 +4,36 @@ import { type ChangeEvent, useCallback, useEffect, useRef, useState } from "reac
 import { EXAMPLES } from "./exampleData";
 import { EXAMPLE_AUDIO } from "./exampleAudio";
 import { getOriginView } from "./originEngine";
+import {
+  type DailyProgress,
+  type History,
+  type SavedState,
+  WORD_PAIRS,
+  emptyDailyProgress,
+  groupKeyOf,
+  loadHistory,
+  loadSaved,
+  localDateKey,
+  pairKey,
+  saveHistory,
+  saveSaved,
+  shuffled,
+} from "./progress";
+import WordList from "./WordList";
 import { WORDS, type WordCard } from "./wordData";
 
-type SessionMode = "new" | "review" | "all";
-
-type DailyProgress = {
-  date: string;
-  newCompleted: number;
-  reviewCompleted: number;
-};
-
-type SavedState = {
-  known: string[];
-  hard: string[];
-  daily?: DailyProgress;
-  sessionSize: number;
-  autoSpeak: boolean;
-  rate: number;
-};
+type SessionMode = "new" | "review" | "recall" | "all";
 
 type ProgressExport = {
   learnedWords: string[];
   reviewWords: string[];
+  // Optional so exports stay importable by builds that predate it.
+  history?: History;
 };
 
-const STORAGE_KEY = "gre-voice-memory-v1";
 const DAILY_NEW_TARGET = 100;
 const DAILY_REVIEW_TARGET = 40;
-
-function localDateKey() {
-  const now = new Date();
-  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
-}
-
-function emptyDailyProgress(): DailyProgress {
-  return { date: localDateKey(), newCompleted: 0, reviewCompleted: 0 };
-}
+const RECALL_SESSION_SIZE = 20;
 
 function SpeakerIcon() {
   return (
@@ -70,27 +64,6 @@ function SettingsIcon() {
     </svg>
   );
 }
-
-function pairKey(cardId: string) {
-  const match = cardId.match(/^(p\d{2}r\d{2})[ab]$/);
-  return match?.[1] ?? null;
-}
-
-type WordPair = {
-  key: string;
-  indices: number[];
-};
-
-const WORD_PAIRS: WordPair[] = (() => {
-  const groups = new Map<string, number[]>();
-  WORDS.forEach((card, index) => {
-    const key = pairKey(card.id) ?? card.id;
-    const indices = groups.get(key) ?? [];
-    indices.push(index);
-    groups.set(key, indices);
-  });
-  return [...groups.entries()].map(([key, indices]) => ({ key, indices }));
-})();
 
 function bestSpeechVoice(
   voices: SpeechSynthesisVoice[],
@@ -147,6 +120,8 @@ export default function Home() {
   const [hydrated, setHydrated] = useState(false);
   const [known, setKnown] = useState<Set<string>>(new Set());
   const [hard, setHard] = useState<Set<string>>(new Set());
+  const [history, setHistory] = useState<History>({});
+  const [showWords, setShowWords] = useState(false);
   const [daily, setDaily] = useState<DailyProgress>(emptyDailyProgress);
   const [sessionSize, setSessionSize] = useState(10);
   const [autoSpeak, setAutoSpeak] = useState(true);
@@ -181,9 +156,8 @@ export default function Home() {
   /* eslint-disable react-hooks/set-state-in-effect */
   useEffect(() => {
     try {
-      const raw = window.localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        const saved = JSON.parse(raw) as Partial<SavedState>;
+      const saved = loadSaved();
+      if (saved) {
         setKnown(new Set(saved.known ?? []));
         setHard(new Set(saved.hard ?? []));
         setDaily(
@@ -198,7 +172,24 @@ export default function Home() {
     } catch {
       // A corrupt local preference should never block studying.
     }
+    setHistory(loadHistory());
     setHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hash === "#words") setShowWords(true);
+  }, []);
+
+  // The word list is a view of this page, not a route: the site is served as a
+  // single pre-rendered /gre page. Only replaceState is used, because the
+  // framework router reacts to hash links and history traversal.
+  const openWords = useCallback((open: boolean) => {
+    setShowWords(open);
+    const url = open
+      ? "#words"
+      : window.location.pathname + window.location.search;
+    window.history.replaceState(window.history.state, "", url);
+    window.scrollTo(0, 0);
   }, []);
   /* eslint-enable react-hooks/set-state-in-effect */
 
@@ -212,13 +203,18 @@ export default function Home() {
       autoSpeak,
       rate,
     };
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+    saveSaved(saved);
   }, [autoSpeak, daily, hard, hydrated, known, rate, sessionSize]);
+
+  useEffect(() => {
+    if (hydrated) saveHistory(history);
+  }, [history, hydrated]);
 
   const exportProgress = useCallback(() => {
     const progress: ProgressExport = {
       learnedWords: [...new Set([...known, ...hard])],
       reviewWords: [...hard],
+      history,
     };
     const url = URL.createObjectURL(
       new Blob([JSON.stringify(progress, null, 2)], {
@@ -230,7 +226,7 @@ export default function Home() {
     link.download = "gre-progress.json";
     link.click();
     URL.revokeObjectURL(url);
-  }, [hard, known]);
+  }, [hard, history, known]);
 
   const importProgress = useCallback(
     async (event: ChangeEvent<HTMLInputElement>) => {
@@ -260,7 +256,14 @@ export default function Home() {
           autoSpeak,
           rate,
         };
-        window.localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+        saveSaved(saved);
+        if (
+          progress.history &&
+          typeof progress.history === "object" &&
+          !Array.isArray(progress.history)
+        ) {
+          saveHistory(progress.history);
+        }
         window.location.reload();
       } catch {
         window.alert("导入失败");
@@ -268,6 +271,21 @@ export default function Home() {
     },
     [autoSpeak, daily, rate, sessionSize],
   );
+
+  const demotePair = useCallback((key: string, ids: string[]) => {
+    setHard((old) => {
+      const next = new Set(old);
+      ids.forEach((id) => next.add(id));
+      return next;
+    });
+    setKnown((old) => {
+      const next = new Set(old);
+      ids.forEach((id) => next.delete(id));
+      return next;
+    });
+    const now = Date.now();
+    setHistory((old) => ({ ...old, [key]: { ...old[key], hardAt: now } }));
+  }, []);
 
   const stopExampleAudio = useCallback(() => {
     exampleBusyRef.current = false;
@@ -417,6 +435,21 @@ export default function Home() {
 
   const buildPool = useCallback(
     (mode: SessionMode) => {
+      if (mode === "recall") {
+        // Longest-unreviewed mastered pairs first. Pairs with no history
+        // (mastered before history was recorded) count as oldest; the stable
+        // sort keeps those in PDF order.
+        const mastered = WORD_PAIRS.filter(({ indices }) =>
+          indices.every((index) => known.has(WORDS[index].id)),
+        ).sort(
+          (a, b) => (history[a.key]?.seen ?? 0) - (history[b.key]?.seen ?? 0),
+        );
+        return shuffled(
+          mastered
+            .flatMap(({ indices }) => indices)
+            .slice(0, RECALL_SESSION_SIZE),
+        );
+      }
       const eligiblePairs = WORD_PAIRS.filter(({ indices }) => {
         if (mode === "new") {
           const hasHardCard = indices.some((index) =>
@@ -434,14 +467,26 @@ export default function Home() {
         return true;
       });
 
-      // The source PDF is organized as adjacent synonym pairs. Keep that order
-      // and enqueue the complete pair so 1→2, 3→4 can never become 1→4.
+      // The source PDF is organized as adjacent synonym pairs. Enqueue the
+      // complete pair so 1→2, 3→4 can never become 1→4.
       const evenSessionSize = Math.max(2, sessionSize - (sessionSize % 2));
+      if (mode === "review") {
+        // Most recently marked 还不熟 first; pairs without a timestamp
+        // (marked before history was recorded) go last, in PDF order.
+        const recent = [...eligiblePairs].sort(
+          (a, b) =>
+            (history[b.key]?.hardAt ?? 0) - (history[a.key]?.hardAt ?? 0),
+        );
+        // Shuffle so the first word of a pair no longer gives away the second.
+        return shuffled(
+          recent.flatMap(({ indices }) => indices).slice(0, evenSessionSize),
+        );
+      }
       return eligiblePairs
         .flatMap(({ indices }) => indices)
         .slice(0, evenSessionSize);
     },
-    [hard, known, sessionSize],
+    [hard, history, known, sessionSize],
   );
 
   const begin = useCallback(
@@ -485,9 +530,13 @@ export default function Home() {
         ...old,
         newCompleted: old.newCompleted + (sessionMode === "new" ? 1 : 0),
         reviewCompleted:
-          old.reviewCompleted + (sessionMode === "review" ? 1 : 0),
+          old.reviewCompleted +
+          (sessionMode === "review" || sessionMode === "recall" ? 1 : 0),
       }));
     }
+    const group = groupKeyOf(card.id);
+    const now = Date.now();
+    setHistory((old) => ({ ...old, [group]: { ...old[group], seen: now } }));
     setKnown((old) => new Set(old).add(card.id));
     setHard((old) => {
       const next = new Set(old);
@@ -506,13 +555,31 @@ export default function Home() {
         ...old,
         newCompleted: old.newCompleted + (sessionMode === "new" ? 1 : 0),
         reviewCompleted:
-          old.reviewCompleted + (sessionMode === "review" ? 1 : 0),
+          old.reviewCompleted +
+          (sessionMode === "review" || sessionMode === "recall" ? 1 : 0),
       }));
     }
-    setHard((old) => new Set(old).add(card.id));
+    const group = groupKeyOf(card.id);
+    const now = Date.now();
+    setHistory((old) => ({
+      ...old,
+      [group]: { ...old[group], seen: now, hardAt: now },
+    }));
+    // Forgetting a mastered word sends the whole pair back to 不熟.
+    const moved =
+      sessionMode === "recall"
+        ? (WORD_PAIRS.find(({ key }) => key === group)?.indices ?? []).map(
+            (index) => WORDS[index].id,
+          )
+        : [card.id];
+    setHard((old) => {
+      const next = new Set(old);
+      moved.forEach((id) => next.add(id));
+      return next;
+    });
     setKnown((old) => {
       const next = new Set(old);
-      next.delete(card.id);
+      moved.forEach((id) => next.delete(id));
       return next;
     });
     setSessionAgain((value) => value + 1);
@@ -558,6 +625,9 @@ export default function Home() {
     started,
   ]);
 
+  const masteredPairs = WORD_PAIRS.filter(({ indices }) =>
+    indices.every((index) => known.has(WORDS[index].id)),
+  ).length;
   const fullProgress = Math.round((known.size / WORDS.length) * 100);
   const newRemaining = Math.max(0, WORDS.length - known.size - hard.size);
   const newDailyProgress = Math.min(
@@ -583,6 +653,17 @@ export default function Home() {
     );
   }
 
+  if (showWords && !started) {
+    return (
+      <WordList
+        hard={hard}
+        known={known}
+        onBack={() => openWords(false)}
+        onDemote={demotePair}
+      />
+    );
+  }
+
   return (
     <main className="app-shell">
       <div className="ambient ambient-one" />
@@ -602,6 +683,13 @@ export default function Home() {
             <div><strong>{known.size}</strong><span>已经记住</span></div>
             <div><strong>{hard.size}</strong><span>不熟词库</span></div>
           </div>
+          <button
+            className="word-list-link"
+            onClick={() => openWords(true)}
+            type="button"
+          >
+            查看全部词表 · 掌握地图 <span>→</span>
+          </button>
           <div className="session-choice">
             <span>本轮</span>
             {[10, 20, 50].map((size) => (
@@ -641,13 +729,26 @@ export default function Home() {
               <div className="daily-progress" aria-label="今日复习进度">
                 <span style={{ width: `${reviewDailyProgress}%` }} />
               </div>
-              <p>按 PDF 原顺序复习不熟词；同义词对不会被拆开。</p>
+              <p>先复习最近标记的不熟词；同义词对一起出，顺序打乱。</p>
               <button
                 disabled={!hard.size}
                 onClick={() => begin("review")}
                 type="button"
               >
-                {hard.size ? "按顺序复习不熟词" : "不熟词库目前为空"} <span>→</span>
+                {hard.size ? "复习不熟词" : "不熟词库目前为空"} <span>→</span>
+              </button>
+            </section>
+            <section className="daily-section daily-section--recall">
+              <div className="daily-section-heading">
+                <span>03 · 复习已掌握</span>
+              </div>
+              <p>从最早记住的词里抽 {RECALL_SESSION_SIZE} 个，打乱顺序再考一次。想不起来的整对放回不熟库。</p>
+              <button
+                disabled={!masteredPairs}
+                onClick={() => begin("recall")}
+                type="button"
+              >
+                {masteredPairs ? `抽 ${RECALL_SESSION_SIZE} 个已掌握的词` : "还没有已掌握的词"} <span>→</span>
               </button>
             </section>
           </div>
@@ -698,7 +799,7 @@ export default function Home() {
               </p>
               <div className="complete-actions">
                 <button onClick={() => begin(sessionMode)} type="button">
-                  继续这一类 {sessionSize} 词
+                  继续这一类 {sessionMode === "recall" ? RECALL_SESSION_SIZE : sessionSize} 词
                 </button>
                 <button
                   className="secondary-button"
@@ -924,6 +1025,7 @@ export default function Home() {
                 }
                 setKnown(new Set());
                 setHard(new Set());
+                setHistory({});
                 setDaily(emptyDailyProgress());
                 setResetArmed(false);
               }}
