@@ -143,7 +143,6 @@ export default function Home() {
   const exampleUrlRef = useRef<string | null>(null);
   const exampleBusyRef = useRef(false);
   const exampleAudioRef = useRef<HTMLAudioElement | null>(null);
-  const lastSpokenRef = useRef("");
   const speechRunRef = useRef(0);
   const creditedThisSessionRef = useRef(new Set<string>());
   const importInputRef = useRef<HTMLInputElement | null>(null);
@@ -420,18 +419,13 @@ export default function Home() {
     [rate, stopExampleAudio],
   );
 
-  useEffect(() => {
-    if (
-      started &&
-      !complete &&
-      card &&
-      autoSpeak &&
-      lastSpokenRef.current !== card.id
-    ) {
-      lastSpokenRef.current = card.id;
-      speak(card.word);
-    }
-  }, [autoSpeak, card, complete, speak, started]);
+  // Speak inside the reveal gesture (click / Space) so iOS Safari allows it;
+  // the card stays silent until the learner asks for the answer.
+  const reveal = useCallback(() => {
+    if (!card || revealed) return;
+    setRevealed(true);
+    speak(card.word);
+  }, [card, revealed, speak]);
 
   const buildPool = useCallback(
     (mode: SessionMode) => {
@@ -493,7 +487,6 @@ export default function Home() {
     (mode: SessionMode = "new") => {
       const nextQueue = buildPool(mode);
       if (!nextQueue.length) return;
-      const first = WORDS[nextQueue[0]];
       setQueue(nextQueue);
       setPosition(0);
       setStarted(true);
@@ -504,10 +497,8 @@ export default function Home() {
       setSessionAgain(0);
       setSessionMode(mode);
       creditedThisSessionRef.current = new Set();
-      lastSpokenRef.current = first.id;
-      speak(first.word, true);
     },
-    [buildPool, speak],
+    [buildPool],
   );
 
   const advance = useCallback(() => {
@@ -597,7 +588,7 @@ export default function Home() {
       }
       if (event.code === "Space" || event.key === "Enter") {
         event.preventDefault();
-        setRevealed(true);
+        reveal();
       } else if (event.key.toLowerCase() === "r") {
         speak(card.word, true);
       } else if (event.key.toLowerCase() === "c" && revealed) {
@@ -618,6 +609,7 @@ export default function Home() {
     complete,
     markAgain,
     markKnown,
+    reveal,
     revealed,
     settingsOpen,
     speak,
@@ -676,7 +668,7 @@ export default function Home() {
           <p className="eyebrow">ADHD 友好 · 声音记忆模式</p>
           <h1 id="welcome-title">GRE同义词<br />一千速记</h1>
           <p className="welcome-copy">
-            一次只记一个词。切到新词就自动念出来，再用等价词、词源和例句加深记忆。
+            一次只记一个词。先自己回想，显示答案后自动念出来，再用等价词、词源和例句加深记忆。
           </p>
           <div className="welcome-stats" aria-label="学习进度">
             <div><strong>{WORDS.length}</strong><span>张发声词卡</span></div>
@@ -827,17 +819,17 @@ export default function Home() {
                     onClick={() => speak(card.word, true)}
                     type="button"
                   >
-                    <SpeakerIcon /><span>再听一次</span><kbd>R</kbd>
+                    <SpeakerIcon /><span>{revealed ? "再听一次" : "听发音"}</span><kbd>R</kbd>
                   </button>
                   <h1 className="study-word" style={{ fontSize: wordFontSize }}>
                     {card.word}
                   </h1>
                   <p className="listen-prompt">
-                    {revealed ? "答案已展开" : "先听发音，在脑中说出它的意思"}
+                    {revealed ? "答案已展开" : "先看单词，在脑中说出它的意思"}
                   </p>
                 </div>
                 {!revealed ? (
-                  <button className="reveal-button" onClick={() => setRevealed(true)} type="button">
+                  <button className="reveal-button" onClick={reveal} type="button">
                     显示答案 <span>Space</span>
                   </button>
                 ) : (
@@ -963,7 +955,7 @@ export default function Home() {
               <button aria-label="关闭设置" onClick={() => setSettingsOpen(false)} type="button">×</button>
             </div>
             <div className="setting-row">
-              <div><strong>切词自动朗读</strong><span>每张新卡出现时自动念一次</span></div>
+              <div><strong>显示答案后自动朗读</strong><span>点显示答案后自动念一次单词</span></div>
               <button
                 aria-pressed={autoSpeak}
                 className={autoSpeak ? "toggle is-on" : "toggle"}
