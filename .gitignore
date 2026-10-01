@@ -44,3 +44,7 @@ next-env.d.ts
 /.example-ocr-progress.json
 
 *.tsbuildinfo
+
+# Python cache
+__pycache__/
+*.pyc
