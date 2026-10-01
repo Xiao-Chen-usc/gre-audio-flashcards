@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { WORD_PAIRS } from "./progress";
-import { WORDS } from "./wordData";
+import { wordGroups } from "./progress";
+import { WORDS as DEFAULT_WORDS, type WordCard } from "./wordData";
 
 type Status = "known" | "hard" | "new";
 type Filter = Status | "all";
@@ -25,7 +25,7 @@ function pairStatus(ids: string[], known: Set<string>, hard: Set<string>): Statu
   return "new";
 }
 
-const PAGES = [...new Set(WORDS.map((card) => card.page))].sort((a, b) => a - b);
+
 
 // Rendered as a view of the home page (#words) rather than its own route: the
 // site is deployed as a single pre-rendered /gre page on static nginx.
@@ -34,12 +34,18 @@ export default function WordList({
   hard,
   onBack,
   onDemote,
+  words: WORDS = DEFAULT_WORDS,
+  collected = false,
 }: {
+  words?: WordCard[];
+  collected?: boolean;
   known: Set<string>;
   hard: Set<string>;
   onBack: () => void;
   onDemote: (key: string, ids: string[]) => void;
 }) {
+  const WORD_PAIRS = useMemo(() => wordGroups(WORDS), [WORDS]);
+  const PAGES = [...new Set(WORDS.map((card) => card.page))].sort((a, b) => a - b);
   const [filter, setFilter] = useState<Filter>("all");
   const [masked, setMasked] = useState(true);
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
@@ -59,7 +65,7 @@ export default function WordList({
           ),
         };
       }),
-    [hard, known],
+    [hard, known, WORD_PAIRS, WORDS],
   );
 
   const counts = useMemo(() => {
@@ -87,14 +93,14 @@ export default function WordList({
       <header className="words-top">
         <button className="words-back" onClick={onBack} type="button">← 首页</button>
         <h1>全部词表</h1>
-        <span className="words-total">{rows.length} 对 · {WORDS.length} 张</span>
+        <span className="words-total">{collected ? `${WORDS.length} 个收集词` : `${rows.length} 对 · ${WORDS.length} 张`}</span>
       </header>
 
       <section className="words-summary" aria-label="掌握情况">
         {(["known", "hard", "new"] as Status[]).map((status) => (
           <span key={status}>
             <i className={`words-dot words-dot--${status}`} />
-            {STATUS_LABEL[status]} <b>{counts[status]}</b> 对
+            {STATUS_LABEL[status]} <b>{counts[status]}</b> {collected ? "词" : "对"}
           </span>
         ))}
       </section>
@@ -102,7 +108,7 @@ export default function WordList({
       <section className="words-map-card" aria-label="掌握地图">
         <div className="words-map-head">
           <strong>掌握地图</strong>
-          <span>每格一张卡，每列是原书一页，点一列跳到那一页</span>
+          <span>{collected ? "每格一个收集词，每列对应收集来源页" : "每格一张卡，每列是原书一页，点一列跳到那一页"}</span>
         </div>
         <div className="words-map">
           {PAGES.map((page) => (
@@ -173,7 +179,7 @@ export default function WordList({
           <section className="words-page" id={`page-${page}`} key={page}>
             <h2>
               <span>第 {page} 页</span>
-              <small>{pageRows.length} 对</small>
+              <small>{pageRows.length} {collected ? "词" : "对"}</small>
             </h2>
             {pageRows.map((row) => {
               const hidden = masked && !revealed.has(row.key);

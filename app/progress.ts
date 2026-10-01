@@ -1,4 +1,4 @@
-import { WORDS } from "./wordData";
+import { WORDS, type WordCard } from "./wordData";
 
 export type DailyProgress = {
   date: string;
@@ -43,37 +43,39 @@ export type WordPair = {
   indices: number[];
 };
 
-export const WORD_PAIRS: WordPair[] = (() => {
+export function wordGroups(words: WordCard[]): WordPair[] {
   const groups = new Map<string, number[]>();
-  WORDS.forEach((card, index) => {
+  words.forEach((card, index) => {
     const key = pairKey(card.id) ?? card.id;
     const indices = groups.get(key) ?? [];
     indices.push(index);
     groups.set(key, indices);
   });
   return [...groups.entries()].map(([key, indices]) => ({ key, indices }));
-})();
+}
+
+export const WORD_PAIRS = wordGroups(WORDS);
 
 export function groupKeyOf(cardId: string) {
   return pairKey(cardId) ?? cardId;
 }
 
-export function loadSaved(): Partial<SavedState> | null {
+export function loadSaved(storageKey = STORAGE_KEY): Partial<SavedState> | null {
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const raw = window.localStorage.getItem(storageKey);
     return raw ? (JSON.parse(raw) as Partial<SavedState>) : null;
   } catch {
     return null;
   }
 }
 
-export function saveSaved(saved: SavedState) {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+export function saveSaved(saved: SavedState, storageKey = STORAGE_KEY) {
+  window.localStorage.setItem(storageKey, JSON.stringify(saved));
 }
 
-export function loadHistory(): History {
+export function loadHistory(storageKey = HISTORY_KEY): History {
   try {
-    const raw = window.localStorage.getItem(HISTORY_KEY);
+    const raw = window.localStorage.getItem(storageKey);
     const parsed = raw ? (JSON.parse(raw) as unknown) : null;
     return parsed && typeof parsed === "object" && !Array.isArray(parsed)
       ? (parsed as History)
@@ -83,9 +85,9 @@ export function loadHistory(): History {
   }
 }
 
-export function saveHistory(history: History) {
+export function saveHistory(history: History, storageKey = HISTORY_KEY) {
   try {
-    window.localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+    window.localStorage.setItem(storageKey, JSON.stringify(history));
   } catch {
     // History only orders review rounds; losing it must not block studying.
   }

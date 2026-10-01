@@ -1,0 +1,1249 @@
+{
+  "source_url": "https://gre.kmf.com/profile/collect/word",
+  "collected_on": "2026-10-01",
+  "sort_order": "时间倒序（网站原顺序）",
+  "total_pages": 7,
+  "total_words": 123,
+  "notes": [
+    "音标和释义保留网站原文，未做词义校订。",
+    "13 个单词在收藏页缺少音标，记录为 null。",
+    "censure 的释义由同站详情页补充。",
+    "daunting 的原发音地址未指向音频文件，audio_url 设为 null 并保留原地址。",
+    "音频仅收集链接，未下载或验证播放。"
+  ],
+  "words": [
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/eb034/eb03403ab0e5fc2f78e602eb56a8d8a2.mp3",
+      "detail_url": "https://dict.kmf.com/?word=mirthful",
+      "phonetic": "['mɜθfəl]",
+      "translation": "愉快的，高兴的",
+      "word": "mirthful",
+      "page": 1,
+      "position": 1,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_te/US_tepid.mp3",
+      "detail_url": "https://dict.kmf.com/?word=tepid",
+      "phonetic": "['tepid]",
+      "translation": "微温的",
+      "word": "tepid",
+      "page": 1,
+      "position": 2,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_jo/US_jovial.mp3",
+      "detail_url": "https://dict.kmf.com/?word=jovial",
+      "phonetic": "['dʒəuviəl]",
+      "translation": "快活的",
+      "word": "jovial",
+      "page": 1,
+      "position": 3,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/0a415/0a4157771aa704f441d542d31ebfab7e.mp3",
+      "detail_url": "https://dict.kmf.com/?word=lugubrious",
+      "phonetic": "[lʊˈɡubriəs, -ˈɡju-]",
+      "translation": "悲哀的;阴郁的;令人伤心的;令人灰心的",
+      "word": "lugubrious",
+      "page": 1,
+      "position": 4,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_un/US_unblemished.mp3",
+      "detail_url": "https://dict.kmf.com/?word=unblemished",
+      "phonetic": "[ ʌnˈblemɪʃt ]",
+      "translation": "洁白的，无疵的",
+      "word": "unblemished",
+      "page": 1,
+      "position": 5,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/68339/6833974ef48f7df50b4b4bc375661889.mp3",
+      "detail_url": "https://dict.kmf.com/?word=grimy",
+      "phonetic": "[ˈɡraɪmi]",
+      "translation": "沾满污垢的，满是灰尘的，肮脏的",
+      "word": "grimy",
+      "page": 1,
+      "position": 6,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_pr/US_pristine.mp3",
+      "detail_url": "https://dict.kmf.com/?word=pristine",
+      "phonetic": "['pristain; -ti:n]",
+      "translation": "原始的,未被破坏的",
+      "word": "pristine",
+      "page": 1,
+      "position": 7,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/ada13/ada1383c0b20c710215d3136ba58ab75.mp3",
+      "detail_url": "https://dict.kmf.com/?word=murky",
+      "phonetic": "[ˈmɜrki]",
+      "translation": "阴暗的，昏暗的;朦胧的，含糊的，暧昧的;（指水）脏的，（雾等）浓的;（陷入）心中无数的困境（或险境）",
+      "word": "murky",
+      "page": 1,
+      "position": 8,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_po/US_portend.mp3",
+      "detail_url": "https://dict.kmf.com/?word=portend",
+      "phonetic": "[pɔ:'tend; pəu-]",
+      "translation": "预兆,预示",
+      "word": "portend",
+      "page": 1,
+      "position": 9,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/cc1fd/cc1fdfe83a0bfe724aef0269fc1702c8.mp3",
+      "detail_url": "https://dict.kmf.com/?word=derided",
+      "phonetic": null,
+      "translation": "取笑，嘲笑( deride的过去式和过去分词 )",
+      "word": "derided",
+      "page": 1,
+      "position": 10,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/d9157/d91573cda3940de35b9f3e7f234983fe.mp3",
+      "detail_url": "https://dict.kmf.com/?word=vindication",
+      "phonetic": "[ˌvɪndɪˈkeʃən]",
+      "translation": "（对所受到的责难或嫌疑的）澄清，证实，辩护",
+      "word": "vindication",
+      "page": 1,
+      "position": 11,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/aa847/aa8479a61df0dc22cccbbbbb9d0db355.mp3",
+      "detail_url": "https://dict.kmf.com/?word=disquisition",
+      "phonetic": "[ˌdɪskwɪˈzɪʃən]",
+      "translation": "专题论文，专题演讲",
+      "word": "disquisition",
+      "page": 1,
+      "position": 12,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/5bbda/5bbda5672e1e13ee83c4f681be1afe84.mp3",
+      "detail_url": "https://dict.kmf.com/?word=rant",
+      "phonetic": "[rænt]",
+      "translation": "咆哮;粗野的下结论;大声责骂",
+      "word": "rant",
+      "page": 1,
+      "position": 13,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/59345/59345468ebe596a479845e66deecd951.mp3",
+      "detail_url": "https://dict.kmf.com/?word=diatribe",
+      "phonetic": "[ˈdaɪəˌtraɪb]",
+      "translation": "谩骂，讽刺",
+      "word": "diatribe",
+      "page": 1,
+      "position": 14,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_tr/US_tractable.mp3",
+      "detail_url": "https://dict.kmf.com/?word=tractable",
+      "phonetic": "['træktəbl]",
+      "translation": "易架驭的，温顺的",
+      "word": "tractable",
+      "page": 1,
+      "position": 15,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/d9b56/d9b5677b61f55d83b1756196e6969bd1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=cliquish",
+      "phonetic": "['klikɪʃ]",
+      "translation": "小集团的",
+      "word": "cliquish",
+      "page": 1,
+      "position": 16,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/86355/86355473829d0c0ca0bff21861ac08c9.mp3",
+      "detail_url": "https://dict.kmf.com/?word=disseminates",
+      "phonetic": null,
+      "translation": "散布，传播( disseminate的第三人称单数 )",
+      "word": "disseminates",
+      "page": 1,
+      "position": 17,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/ef64c/ef64c78a675c2601be0bd278eb8828b4.mp3",
+      "detail_url": "https://dict.kmf.com/?word=stipulates",
+      "phonetic": null,
+      "translation": "（尤指在协议或建议中）规定，约定，讲明（条件等）( stipulate的名词复数 );规定，明确要求",
+      "word": "stipulates",
+      "page": 1,
+      "position": 18,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=1"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/02352/023527bd3c8b4999054cb55e87fe69a5.mp3",
+      "detail_url": "https://dict.kmf.com/?word=obfuscation",
+      "phonetic": null,
+      "translation": "昏迷，困惑;发暗",
+      "word": "obfuscation",
+      "page": 2,
+      "position": 1,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/a38fa/a38fad39bcefd224c2bf2e76db5d2d19.mp3",
+      "detail_url": "https://dict.kmf.com/?word=elucidation",
+      "phonetic": "[ɪˌlusɪ'deɪʃn]",
+      "translation": "说明，阐明",
+      "word": "elucidation",
+      "page": 2,
+      "position": 2,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_el/US_eloquence.mp3",
+      "detail_url": "https://dict.kmf.com/?word=eloquence",
+      "phonetic": "[ 'eləkwəns ]",
+      "translation": "雄辩",
+      "word": "eloquence",
+      "page": 2,
+      "position": 3,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_fl/US_flout.mp3",
+      "detail_url": "https://dict.kmf.com/?word=flout",
+      "phonetic": "['flaut]",
+      "translation": "嘲弄",
+      "word": "flout",
+      "page": 2,
+      "position": 4,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_fu/US_futile.mp3",
+      "detail_url": "https://dict.kmf.com/?word=futile",
+      "phonetic": "['fju:tail]",
+      "translation": "无意的，徒劳的",
+      "word": "futile",
+      "page": 2,
+      "position": 5,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/30387/30387116b297d248f46ac59eb88f0756.mp3",
+      "detail_url": "https://dict.kmf.com/?word=spurns",
+      "phonetic": null,
+      "translation": "一脚踢开，拒绝接受( spurn的第三人称单数 )",
+      "word": "spurns",
+      "page": 2,
+      "position": 6,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/72ad2/72ad242e9b2d4da7bd929db102889463.mp3",
+      "detail_url": "https://dict.kmf.com/?word=animating",
+      "phonetic": "['ænəˌmeɪtɪŋ]",
+      "translation": "使有生气( animate的现在分词 );驱动;使栩栩如生地动作;赋予…以生命",
+      "word": "animating",
+      "page": 2,
+      "position": 7,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/ea291/ea291c36d4169627d578c68a86198acb.mp3",
+      "detail_url": "https://dict.kmf.com/?word=spiraling",
+      "phonetic": null,
+      "translation": "盘旋上升（或下降）( spiral的现在分词 );（物价等）不断急剧地上升（或下降）",
+      "word": "spiraling",
+      "page": 2,
+      "position": 8,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/e7e38/e7e384f146dbe1c8b182308771036128.mp3",
+      "detail_url": "https://dict.kmf.com/?word=circumstellar",
+      "phonetic": "[ˌsərkəm'stelə]",
+      "translation": "环绕恒星的",
+      "word": "circumstellar",
+      "page": 2,
+      "position": 9,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ch/US_churn1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=churn",
+      "phonetic": "[tʃə:n]",
+      "translation": "(波涛)翻腾；剧烈搅动",
+      "word": "churn",
+      "page": 2,
+      "position": 10,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/bc0d7/bc0d7acad592be15c99a2fff5a5d384e.mp3",
+      "detail_url": "https://dict.kmf.com/?word=flares",
+      "phonetic": "[flers]",
+      "translation": "喇叭裤",
+      "word": "flares",
+      "page": 2,
+      "position": 11,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/d825f/d825fc515789a528433c1d923c6ebdb1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=unostentatious",
+      "phonetic": "[ˌʌnɒstən'teɪʃəs]",
+      "translation": "不夸耀的;不傲慢的;不虚饰的;朴素的",
+      "word": "unostentatious",
+      "page": 2,
+      "position": 12,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_fu/US_futility.mp3",
+      "detail_url": "https://dict.kmf.com/?word=futility",
+      "phonetic": "[ fju:'tɪlətɪ ]",
+      "translation": "无用；无益",
+      "word": "futility",
+      "page": 2,
+      "position": 13,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/70200/70200019cb098703059fb4d3b5bcb90d.mp3",
+      "detail_url": "https://dict.kmf.com/?word=concomitants",
+      "phonetic": "[kən'kɒmɪtənts]",
+      "translation": "伴随发生的事( concomitant的名词复数 );伴随物;共存",
+      "word": "concomitants",
+      "page": 2,
+      "position": 14,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/47415/4741570dfe0119b5ac407e5e87354823.mp3",
+      "detail_url": "https://dict.kmf.com/?word=avowing",
+      "phonetic": null,
+      "translation": "公开声明，承认( avow的现在分词 )",
+      "word": "avowing",
+      "page": 2,
+      "position": 15,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/189a7/189a70f65941309a0fe16ba307d3d445.mp3",
+      "detail_url": "https://dict.kmf.com/?word=averring",
+      "phonetic": "['əvɜrɪŋ]",
+      "translation": "<正>断言( aver的现在分词 );证实;<律>证明…属实;作为事实提出",
+      "word": "averring",
+      "page": 2,
+      "position": 16,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/b3139/b3139a69ed390339e7cb3fc2cb73468e.mp3",
+      "detail_url": "https://dict.kmf.com/?word=paraphernalia",
+      "phonetic": "[ˌpærəfɚˈneljə, -fəˈneljə]",
+      "translation": "随身物品;装备，设备;[法]妻子的财产",
+      "word": "paraphernalia",
+      "page": 2,
+      "position": 17,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/038cf/038cf188bb5944f49258fdc9a2612e1f.mp3",
+      "detail_url": "https://dict.kmf.com/?word=gleaming",
+      "phonetic": "[ˈɡlimɪŋ]",
+      "translation": "闪闪发光的",
+      "word": "gleaming",
+      "page": 2,
+      "position": 18,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=2"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_el/US_elusive.mp3",
+      "detail_url": "https://dict.kmf.com/?word=elusive",
+      "phonetic": "[ iˈlu:sɪv ]",
+      "translation": "难懂的,难捉摸的",
+      "word": "elusive",
+      "page": 3,
+      "position": 1,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/ad425/ad425176433f3ce79709784fff81a3bf.mp3",
+      "detail_url": "https://dict.kmf.com/?word=spate",
+      "phonetic": "[spet]",
+      "translation": "大量;发洪水，（河流）暴涨;大雨;一连串",
+      "word": "spate",
+      "page": 3,
+      "position": 2,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/933ed/933edd0fd7b33ec1dc81bf9555adbb27.mp3",
+      "detail_url": "https://dict.kmf.com/?word=conspired",
+      "phonetic": null,
+      "translation": "密谋( conspire的过去式和过去分词 );搞阴谋;（事件等）巧合;共同导致",
+      "word": "conspired",
+      "page": 3,
+      "position": 3,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/727e3/727e3760fd745714c839aac5f454229f.mp3",
+      "detail_url": "https://dict.kmf.com/?word=recant",
+      "phonetic": "[rɪˈkænt]",
+      "translation": "撤回（声明），放弃（信仰或主张）",
+      "word": "recant",
+      "page": 3,
+      "position": 4,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ro/US_rote.mp3",
+      "detail_url": "https://dict.kmf.com/?word=rote",
+      "phonetic": "[rəut]",
+      "translation": "死记硬背,生搬硬套",
+      "word": "rote",
+      "page": 3,
+      "position": 5,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_co/US_condone.mp3",
+      "detail_url": "https://dict.kmf.com/?word=condone",
+      "phonetic": "[kən'dəun]",
+      "translation": "宽恕，赦免",
+      "word": "condone",
+      "page": 3,
+      "position": 6,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/985ed/985ed38f66d8b2fd35ec1715c569b198.mp3",
+      "detail_url": "https://dict.kmf.com/?word=anthropogenic",
+      "phonetic": "[ˌænθrəpə'dʒnɪk]",
+      "translation": "人类起源论的;人为的，人类活动产生的",
+      "word": "anthropogenic",
+      "page": 3,
+      "position": 7,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_im/US_impasse.mp3",
+      "detail_url": "https://dict.kmf.com/?word=impasse",
+      "phonetic": "[im'pɑ:s]",
+      "translation": "僵局",
+      "word": "impasse",
+      "page": 3,
+      "position": 8,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/e71cc/e71cc0543fc6563e43132daf83dfc4e8.mp3",
+      "detail_url": "https://dict.kmf.com/?word=transience",
+      "phonetic": "[ˈtrænʃəns, -ʒəns, -ziəns]",
+      "translation": "短暂",
+      "word": "transience",
+      "page": 3,
+      "position": 9,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_in/US_insipid.mp3",
+      "detail_url": "https://dict.kmf.com/?word=insipid",
+      "phonetic": "[in'sipid]",
+      "translation": "淡而无味的",
+      "word": "insipid",
+      "page": 3,
+      "position": 10,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/3140c/3140cac4623208635f0432f8163ee907.mp3",
+      "detail_url": "https://dict.kmf.com/?word=gingerbread",
+      "phonetic": "[ˈdʒɪndʒərbred]",
+      "translation": "姜饼，姜味饼干;华而不实的东西",
+      "word": "gingerbread",
+      "page": 3,
+      "position": 11,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ex/US_extensive.mp3",
+      "detail_url": "https://dict.kmf.com/?word=extensive",
+      "phonetic": "[ik'stensiv]",
+      "translation": "广的,多方面的,广泛的",
+      "word": "extensive",
+      "page": 3,
+      "position": 12,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_er/US_erudite.mp3",
+      "detail_url": "https://dict.kmf.com/?word=erudite",
+      "phonetic": "['eru:dait]",
+      "translation": "博学的",
+      "word": "erudite",
+      "page": 3,
+      "position": 13,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_er/US_erratic.mp3",
+      "detail_url": "https://dict.kmf.com/?word=erratic",
+      "phonetic": "[i'rætik]",
+      "translation": "古怪的,反复无常的",
+      "word": "erratic",
+      "page": 3,
+      "position": 14,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/61956/61956df589cadf0c656aeba2e4ac3bb5.mp3",
+      "detail_url": "https://dict.kmf.com/?word=tendentious",
+      "phonetic": "[tɛnˈdɛnʃəs]",
+      "translation": "（指演说、文章等）宣传性的;有偏见的;淘气的;倔强的",
+      "word": "tendentious",
+      "page": 3,
+      "position": 15,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/4562c/4562cdd17db319ecdd62216fec3c0416.mp3",
+      "detail_url": "https://dict.kmf.com/?word=jejune",
+      "phonetic": "[dʒəˈdʒun]",
+      "translation": "（指思想、著作等）浅薄的;幼稚的;缺乏营养的;贫瘠的",
+      "word": "jejune",
+      "page": 3,
+      "position": 16,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_va/US_vapid.mp3",
+      "detail_url": "https://dict.kmf.com/?word=vapid",
+      "phonetic": "['væpid]",
+      "translation": "无生气的",
+      "word": "vapid",
+      "page": 3,
+      "position": 17,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_l3/US_l3precipitate2.mp3",
+      "detail_url": "https://dict.kmf.com/?word=precipitate",
+      "phonetic": "[pri'sipitit; -teit]",
+      "translation": "促成,加速",
+      "word": "precipitate",
+      "page": 3,
+      "position": 18,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=3"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_co/US_conjectural.mp3",
+      "detail_url": "https://dict.kmf.com/?word=conjectural",
+      "phonetic": "[ kən'dʒektʃərəl ]",
+      "translation": "推测的",
+      "word": "conjectural",
+      "page": 4,
+      "position": 1,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_sp/US_speculative.mp3",
+      "detail_url": "https://dict.kmf.com/?word=speculative",
+      "phonetic": "['spekjulətiv; -lei-]",
+      "translation": "推测的；好投机的",
+      "word": "speculative",
+      "page": 4,
+      "position": 2,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_st/US_startling.mp3",
+      "detail_url": "https://dict.kmf.com/?word=startling",
+      "phonetic": "[ ˈstɑ:tlɪŋ ]",
+      "translation": "令人吃惊的",
+      "word": "startling",
+      "page": 4,
+      "position": 3,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_or/US_ornamental.mp3",
+      "detail_url": "https://dict.kmf.com/?word=ornamental",
+      "phonetic": "[,ɔ:nə'mentəl]",
+      "translation": "装饰的",
+      "word": "ornamental",
+      "page": 4,
+      "position": 4,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_sp/US_spontaneous.mp3",
+      "detail_url": "https://dict.kmf.com/?word=spontaneous",
+      "phonetic": "[spɔn'teiniəs]",
+      "translation": "自发的,自然产生的",
+      "word": "spontaneous",
+      "page": 4,
+      "position": 5,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/e8176/e8176d619e0e9be4f0598cb448ee0382.mp3",
+      "detail_url": "https://dict.kmf.com/?word=degenerative",
+      "phonetic": "[dɪˈdʒɛnərətɪv]",
+      "translation": "退步的，变质的，退化的",
+      "word": "degenerative",
+      "page": 4,
+      "position": 6,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_au/US_auspicious.mp3",
+      "detail_url": "https://dict.kmf.com/?word=auspicious",
+      "phonetic": "[ɔ:'spiʃəs]",
+      "translation": "吉兆的，幸运的",
+      "word": "auspicious",
+      "page": 4,
+      "position": 7,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/6cd45/6cd45a08f74fbaf8e0c7688d90ac448b.mp3",
+      "detail_url": "https://dict.kmf.com/?word=prognosis",
+      "phonetic": "[prɑgˈnoʊsɪs]",
+      "translation": "[医]预后，判病结局;预测",
+      "word": "prognosis",
+      "page": 4,
+      "position": 8,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_th/US_thwart1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=thwart",
+      "phonetic": "[θwɔ:t]",
+      "translation": "反对；阻挠；挫败(对方意图等)",
+      "word": "thwart",
+      "page": 4,
+      "position": 9,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_pr/US_presume.mp3",
+      "detail_url": "https://dict.kmf.com/?word=presume",
+      "phonetic": "[pri'zju:m; -'zu:m]",
+      "translation": "假定，假设",
+      "word": "presume",
+      "page": 4,
+      "position": 10,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_la/US_laadgalvanize.mp3",
+      "detail_url": "https://dict.kmf.com/?word=galvanize",
+      "phonetic": "['ɡælvənaiz]",
+      "translation": "通电流于,刺激,激起",
+      "word": "galvanize",
+      "page": 4,
+      "position": 11,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_l3/US_l3animate.mp3",
+      "detail_url": "https://dict.kmf.com/?word=animate",
+      "phonetic": "['ænimeit; 'ænimət]",
+      "translation": "使有生气",
+      "word": "animate",
+      "page": 4,
+      "position": 12,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ap/US_appeal1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=appeal",
+      "phonetic": "[ə'pi:l]",
+      "translation": "吸引力",
+      "word": "appeal",
+      "page": 4,
+      "position": 13,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/a9dbc/a9dbc046c741ecf4793fbb1bc889373e.mp3",
+      "detail_url": "https://dict.kmf.com/?word=ephemerality",
+      "phonetic": "[əˌfemə'rælətɪ]",
+      "translation": "朝生暮死，无常的事物，短命",
+      "word": "ephemerality",
+      "page": 4,
+      "position": 14,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_in/US_ingenuity.mp3",
+      "detail_url": "https://dict.kmf.com/?word=ingenuity",
+      "phonetic": "[,indʒi'nju:əti]",
+      "translation": "独创性，独出心裁",
+      "word": "ingenuity",
+      "page": 4,
+      "position": 15,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": null,
+      "detail_url": "https://dict.kmf.com/?word=daunting",
+      "phonetic": "[ dɔ:ntɪŋ ]",
+      "translation": "使人畏缩的",
+      "word": "daunting",
+      "page": 4,
+      "position": 16,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4",
+      "audio_url_raw": "https://img.kmf.com/toefl/dict//"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_pr/US_proclivity.mp3",
+      "detail_url": "https://dict.kmf.com/?word=proclivity",
+      "phonetic": "[prəu'kliviti]",
+      "translation": "倾向,癖性",
+      "word": "proclivity",
+      "page": 4,
+      "position": 17,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_va/US_vacillation.mp3",
+      "detail_url": "https://dict.kmf.com/?word=vacillation",
+      "phonetic": "[ ˌvæsə'leɪʃn ]",
+      "translation": "优柔寡断",
+      "word": "vacillation",
+      "page": 4,
+      "position": 18,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=4"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_pr/US_predilection.mp3",
+      "detail_url": "https://dict.kmf.com/?word=predilection",
+      "phonetic": "[,pri:di'lekʃən]",
+      "translation": "偏爱",
+      "word": "predilection",
+      "page": 5,
+      "position": 1,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/68c48/68c483cd77d94d6036dfb7529a3de89f.mp3",
+      "detail_url": "https://dict.kmf.com/?word=peculiarities",
+      "phonetic": null,
+      "translation": "古怪( peculiarity的名词复数 );怪癖;特色;奇形怪状",
+      "word": "peculiarities",
+      "page": 5,
+      "position": 2,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/b3155/b3155cd642ce0b13f830b8bbb09023a1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=evanescent",
+      "phonetic": "[ˌɛvəˈnɛsənt]",
+      "translation": "迅速消失遗忘的，短暂的;生命无常",
+      "word": "evanescent",
+      "page": 5,
+      "position": 3,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ep/US_ephemeral.mp3",
+      "detail_url": "https://dict.kmf.com/?word=ephemeral",
+      "phonetic": "[i'femərəl]",
+      "translation": "短暂的,转瞬即逝的",
+      "word": "ephemeral",
+      "page": 5,
+      "position": 4,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/93ba7/93ba7f90b932f615ff4208ae74a4bcb7.mp3",
+      "detail_url": "https://dict.kmf.com/?word=arcane",
+      "phonetic": "[ɑrˈkeɪn]",
+      "translation": "秘密的;神秘的;晦涩难解的",
+      "word": "arcane",
+      "page": 5,
+      "position": 5,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_cu/US_cutting1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=cutting",
+      "phonetic": "['kʌtiŋ]",
+      "translation": "砍，割；剪报",
+      "word": "cutting",
+      "page": 5,
+      "position": 6,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_in/US_ingenuous.mp3",
+      "detail_url": "https://dict.kmf.com/?word=ingenuous",
+      "phonetic": "[in'dʒenjuəs]",
+      "translation": "天真的",
+      "word": "ingenuous",
+      "page": 5,
+      "position": 7,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/02628/02628c2f42c3b157ee9b5a48de2010d8.mp3",
+      "detail_url": "https://dict.kmf.com/?word=acerbic",
+      "phonetic": "[əˈsɜrbɪk]",
+      "translation": "酸的，尖刻的;酸性",
+      "word": "acerbic",
+      "page": 5,
+      "position": 8,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/f109b/f109bd0f8b798bd1aa5b2030dc2231d0.mp3",
+      "detail_url": "https://dict.kmf.com/?word=egotists",
+      "phonetic": null,
+      "translation": "自我中心主义者( egotist的名词复数 )",
+      "word": "egotists",
+      "page": 5,
+      "position": 9,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_je/US_jettison.mp3",
+      "detail_url": "https://dict.kmf.com/?word=jettison",
+      "phonetic": "['dʒetisən]",
+      "translation": "抛弃",
+      "word": "jettison",
+      "page": 5,
+      "position": 10,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_as/US_astute.mp3",
+      "detail_url": "https://dict.kmf.com/?word=astute",
+      "phonetic": "[ə'stju:t]",
+      "translation": "机敏的,精明的",
+      "word": "astute",
+      "page": 5,
+      "position": 11,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_aw/US_awry.mp3",
+      "detail_url": "https://dict.kmf.com/?word=awry",
+      "phonetic": "[ə'rai]",
+      "translation": "歪的",
+      "word": "awry",
+      "page": 5,
+      "position": 12,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/3af5e/3af5eb982bfce4a0c9786e10f244ea70.mp3",
+      "detail_url": "https://dict.kmf.com/?word=synopses",
+      "phonetic": "[sɪ'nɑpsiz]",
+      "translation": "摘要，梗概( synopsis的名词复数 );大纲",
+      "word": "synopses",
+      "page": 5,
+      "position": 13,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/9cdac/9cdac3ac013744938021adea8634efeb.mp3",
+      "detail_url": "https://dict.kmf.com/?word=contentious",
+      "phonetic": "[kənˈtɛnʃəs]",
+      "translation": "引起争论的，有争论的;爱争论的;爱议论的;矫情",
+      "word": "contentious",
+      "page": 5,
+      "position": 14,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_in/US_innovative.mp3",
+      "detail_url": "https://dict.kmf.com/?word=innovative",
+      "phonetic": "['inəuveitiv]",
+      "translation": "创新的,革新的",
+      "word": "innovative",
+      "page": 5,
+      "position": 15,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ov/US_overbearing.mp3",
+      "detail_url": "https://dict.kmf.com/?word=overbearing",
+      "phonetic": "[ ˌəʊvəˈbeərɪŋ ]",
+      "translation": "傲慢的",
+      "word": "overbearing",
+      "page": 5,
+      "position": 16,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ra/US_rambling.mp3",
+      "detail_url": "https://dict.kmf.com/?word=rambling",
+      "phonetic": "[ ˈræmblɪŋ ]",
+      "translation": "[建]凌乱的，杂乱的",
+      "word": "rambling",
+      "page": 5,
+      "position": 17,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/222d9/222d97c3e67f1bd255d16e7905219814.mp3",
+      "detail_url": "https://dict.kmf.com/?word=tenacity",
+      "phonetic": "[təˈnæsɪti]",
+      "translation": "[物]韧性，韧度;固执，坚持;不屈不挠;黏性",
+      "word": "tenacity",
+      "page": 5,
+      "position": 18,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=5"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_em/US_eminence1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=eminence",
+      "phonetic": "['eminəns]",
+      "translation": "显赫的声望",
+      "word": "eminence",
+      "page": 6,
+      "position": 1,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/0d95f/0d95fd58b54acae4ff4e5ead69f0f55f.mp3",
+      "detail_url": "https://dict.kmf.com/?word=meticulousness",
+      "phonetic": "[mə'tɪkjələsnəs]",
+      "translation": "谨小慎微",
+      "word": "meticulousness",
+      "page": 6,
+      "position": 2,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/bfc2a/bfc2abcc08c4c5aba71b3bbafc78f68d.mp3",
+      "detail_url": "https://dict.kmf.com/?word=exactitude",
+      "phonetic": "[ɪgˈzæktɪtud]",
+      "translation": "正确;精密;精确;严格",
+      "word": "exactitude",
+      "page": 6,
+      "position": 3,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_en/US_endurance.mp3",
+      "detail_url": "https://dict.kmf.com/?word=endurance",
+      "phonetic": "[in'djuərəns]",
+      "translation": "忍耐（力）,持久（力）",
+      "word": "endurance",
+      "page": 6,
+      "position": 4,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/e85a0/e85a08afaeaefe57419f6b68995a5ed9.mp3",
+      "detail_url": "https://dict.kmf.com/?word=collegiality",
+      "phonetic": "[kəˌlidʒɪ'ɑlətɪ]",
+      "translation": "共同掌权",
+      "word": "collegiality",
+      "page": 6,
+      "position": 5,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_pe/US_perplex.mp3",
+      "detail_url": "https://dict.kmf.com/?word=perplex",
+      "phonetic": "[pə'pleks]",
+      "translation": "迷惑,困惑,难住",
+      "word": "perplex",
+      "page": 6,
+      "position": 6,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_en/US_entice.mp3",
+      "detail_url": "https://dict.kmf.com/?word=entice",
+      "phonetic": "[in'tais]",
+      "translation": "诱惑",
+      "word": "entice",
+      "page": 6,
+      "position": 7,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_gr/US_gratify.mp3",
+      "detail_url": "https://dict.kmf.com/?word=gratify",
+      "phonetic": "['ɡrætifai]",
+      "translation": "使满意",
+      "word": "gratify",
+      "page": 6,
+      "position": 8,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_am/US_amalgam.mp3",
+      "detail_url": "https://dict.kmf.com/?word=amalgam",
+      "phonetic": "[ə'mælɡəm]",
+      "translation": "混合物",
+      "word": "amalgam",
+      "page": 6,
+      "position": 9,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_re/US_respite.mp3",
+      "detail_url": "https://dict.kmf.com/?word=respite",
+      "phonetic": "['respait; -pit; ri'spait]",
+      "translation": "暂时的缓和；缓刑",
+      "word": "respite",
+      "page": 6,
+      "position": 10,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_lu/US_lull1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=lull",
+      "phonetic": "[lʌl]",
+      "translation": "使平静,使安静",
+      "word": "lull",
+      "page": 6,
+      "position": 11,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_po/US_portent.mp3",
+      "detail_url": "https://dict.kmf.com/?word=portent",
+      "phonetic": "['pɔ:tent; 'pəu-]",
+      "translation": "预兆",
+      "word": "portent",
+      "page": 6,
+      "position": 12,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/b83d7/b83d796ee5cedae7891af650edd7681c.mp3",
+      "detail_url": "https://dict.kmf.com/?word=harbinger",
+      "phonetic": "[ˈhɑrbɪndʒə(r)]",
+      "translation": "预言者，预兆",
+      "word": "harbinger",
+      "page": 6,
+      "position": 13,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/c8249/c82498d3abb98881c9e85daafcdb6845.mp3",
+      "detail_url": "https://dict.kmf.com/?word=panoply",
+      "phonetic": "[ˈpænəpli]",
+      "translation": "全套礼服;盛装;全副甲胄;雄伟的阵式",
+      "word": "panoply",
+      "page": 6,
+      "position": 14,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ce/US_censure1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=censure",
+      "phonetic": "['senʃə]",
+      "translation": "n. 严厉批评，谴责；v. 严厉批评，正式谴责",
+      "word": "censure",
+      "page": 6,
+      "position": 15,
+      "translation_source": "https://dict.kmf.com/?word=censure",
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6",
+      "translation_original": null
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/777dc/777dc48375fa82f76b65239f5cacaae7.mp3",
+      "detail_url": "https://dict.kmf.com/?word=supplanted",
+      "phonetic": null,
+      "translation": "把…排挤掉，取代( supplant的过去式和过去分词 )",
+      "word": "supplanted",
+      "page": 6,
+      "position": 16,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_la/US_laadpedantic.mp3",
+      "detail_url": "https://dict.kmf.com/?word=pedantic",
+      "phonetic": "[pi'dæntik; -pə]",
+      "translation": "学究的；迂腐的",
+      "word": "pedantic",
+      "page": 6,
+      "position": 17,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/25aef/25aef6d95742912ec60763479575ed12.mp3",
+      "detail_url": "https://dict.kmf.com/?word=sycophantic",
+      "phonetic": "[ˌsɪkə'fæntɪk]",
+      "translation": "说奉承话的",
+      "word": "sycophantic",
+      "page": 6,
+      "position": 18,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=6"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/6b042/6b04284b5e9a009679fd432520901854.mp3",
+      "detail_url": "https://dict.kmf.com/?word=ushered",
+      "phonetic": null,
+      "translation": "引，领，陪同( usher的过去式和过去分词 )",
+      "word": "ushered",
+      "page": 7,
+      "position": 1,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/b2648/b26481c0e990af7fbbb83e2d563c06e0.mp3",
+      "detail_url": "https://dict.kmf.com/?word=ploy",
+      "phonetic": "[plɔɪ]",
+      "translation": "策略，手法;工作",
+      "word": "ploy",
+      "page": 7,
+      "position": 2,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_qu/US_quandary.mp3",
+      "detail_url": "https://dict.kmf.com/?word=quandary",
+      "phonetic": "['kwɔndəri]",
+      "translation": "困境",
+      "word": "quandary",
+      "page": 7,
+      "position": 3,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/ccf3d/ccf3dad98a65bf32cac608ba0b7abdbc.mp3",
+      "detail_url": "https://dict.kmf.com/?word=encomiums",
+      "phonetic": null,
+      "translation": "赞美词，颂词，极度颂誉之词( encomium的名词复数 )",
+      "word": "encomiums",
+      "page": 7,
+      "position": 4,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/cb683/cb683d3cd5e1226c1ff238056cc260c1.mp3",
+      "detail_url": "https://dict.kmf.com/?word=replete",
+      "phonetic": "[rɪˈplit]",
+      "translation": "饱食的;充满的，供应充足的",
+      "word": "replete",
+      "page": 7,
+      "position": 5,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/93e0f/93e0ff7f678109703706be4022907365.mp3",
+      "detail_url": "https://dict.kmf.com/?word=excoriate",
+      "phonetic": "[ɪkˈskɔriˌet, -ˈskor-]",
+      "translation": "擦伤;擦破（皮肤）;剥（皮）;严厉指责",
+      "word": "excoriate",
+      "page": 7,
+      "position": 6,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_em/US_emulate.mp3",
+      "detail_url": "https://dict.kmf.com/?word=emulate",
+      "phonetic": "['emjuleit; 'emjulit]",
+      "translation": "与竞争，仿效",
+      "word": "emulate",
+      "page": 7,
+      "position": 7,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/be5a7/be5a7e0cb364eab4a2fe33957524fe61.mp3",
+      "detail_url": "https://dict.kmf.com/?word=valorize",
+      "phonetic": "['væləˌraɪz]",
+      "translation": "规定价格，稳定物价",
+      "word": "valorize",
+      "page": 7,
+      "position": 8,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ex/US_exalt.mp3",
+      "detail_url": "https://dict.kmf.com/?word=exalt",
+      "phonetic": "[iɡ'zɔ:lt]",
+      "translation": "称赞，提升",
+      "word": "exalt",
+      "page": 7,
+      "position": 9,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_re/US_rehabilitate.mp3",
+      "detail_url": "https://dict.kmf.com/?word=rehabilitate",
+      "phonetic": "[,ri:hə'biliteit]",
+      "translation": "使(身体)康复,使复职,使复元",
+      "word": "rehabilitate",
+      "page": 7,
+      "position": 10,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_in/US_indict.mp3",
+      "detail_url": "https://dict.kmf.com/?word=indict",
+      "phonetic": "[in'dait]",
+      "translation": "控告",
+      "word": "indict",
+      "page": 7,
+      "position": 11,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_ub/US_ubiquity.mp3",
+      "detail_url": "https://dict.kmf.com/?word=ubiquity",
+      "phonetic": "[ ju:'bɪkwətɪ ]",
+      "translation": "普遍存在，无所不在",
+      "word": "ubiquity",
+      "page": 7,
+      "position": 12,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/37c8a/37c8a2b73619e9329da60897b3174524.mp3",
+      "detail_url": "https://dict.kmf.com/?word=omnipresence",
+      "phonetic": "[ˌɒmnɪ'prezns]",
+      "translation": "遍在",
+      "word": "omnipresence",
+      "page": 7,
+      "position": 13,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/US_pe/US_pervasive.mp3",
+      "detail_url": "https://dict.kmf.com/?word=pervasive",
+      "phonetic": "[pə:'veisiv; pə-]",
+      "translation": "普遍的；深入的",
+      "word": "pervasive",
+      "page": 7,
+      "position": 14,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    },
+    {
+      "audio_url": "https://img.kmf.com/toefl/dict/162c4/162c4d526ef4eb05b3fc29c18fd6d0ce.mp3",
+      "detail_url": "https://dict.kmf.com/?word=specious",
+      "phonetic": "['spiʃəs]",
+      "translation": "似是而非的",
+      "word": "specious",
+      "page": 7,
+      "position": 15,
+      "source_url": "https://gre.kmf.com/profile/collect/word/1?page=7"
+    }
+  ]
+}

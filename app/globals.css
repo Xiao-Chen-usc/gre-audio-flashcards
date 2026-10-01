@@ -876,3 +876,13 @@ kbd {
   .words-demote, .words-demote-placeholder { grid-column: 2; grid-row: 1; }
 }
 .words-map-col { padding: 0; cursor: pointer; border: 0; background: transparent; }
+
+.collection-nav { position: relative; z-index: 1; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; padding: 20px 16px 0; }
+.collection-nav button { padding: 10px 16px; border-radius: 999px; color: inherit; text-decoration: none; border: 1px solid rgba(128,128,128,.25); font-size: .88rem; }
+.collection-nav button[aria-current="page"] { background: var(--accent, #b6f09c); color: #18231a; border-color: transparent; }
+.collection-nav button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.collection-empty { margin: 24px 0; padding: 20px; border: 1px solid rgba(128,128,128,.25); border-radius: 16px; text-align: left; }
+.collection-empty p { margin: 8px 0 0; line-height: 1.7; font-size: .9rem; }
+.collected-sources { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.collection-nav button { background: transparent; cursor: pointer; font-family: inherit; }

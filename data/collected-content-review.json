@@ -1,0 +1,868 @@
+{
+  "source_file": "data/kmf-collected-words-2026-10-01.json",
+  "source_words": 123,
+  "draft_model": "deepseek-flash",
+  "review_model": "deepseek-flash",
+  "drafts": 123,
+  "reviews": 123,
+  "model_review_edits": 361,
+  "editorially_corrected_words": [
+    "amalgam",
+    "animating",
+    "astute",
+    "censure",
+    "churn",
+    "collegiality",
+    "concomitants",
+    "daunting",
+    "derided",
+    "encomiums",
+    "entice",
+    "ephemeral",
+    "exalt",
+    "flares",
+    "galvanize",
+    "jejune",
+    "jettison",
+    "jovial",
+    "lull",
+    "obfuscation",
+    "panoply",
+    "pervasive",
+    "ploy",
+    "precipitate",
+    "predilection",
+    "rant",
+    "sycophantic",
+    "tendentious",
+    "thwart",
+    "tractable",
+    "transience"
+  ],
+  "examples": 123,
+  "paired_memory_words": 0,
+  "source_urls": {
+    "kmf-mirthful": [
+      {
+        "label": "Etymonline · mirthful",
+        "url": "https://www.etymonline.com/word/mirthful"
+      },
+      {
+        "label": "Etymonline · mirth",
+        "url": "https://www.etymonline.com/word/mirth"
+      }
+    ],
+    "kmf-tepid": [
+      {
+        "label": "Etymonline · tepid",
+        "url": "https://www.etymonline.com/word/tepid"
+      }
+    ],
+    "kmf-jovial": [
+      {
+        "label": "Etymonline · jovial",
+        "url": "https://www.etymonline.com/word/jovial"
+      }
+    ],
+    "kmf-lugubrious": [
+      {
+        "label": "Etymonline · lugubrious",
+        "url": "https://www.etymonline.com/word/lugubrious"
+      }
+    ],
+    "kmf-unblemished": [
+      {
+        "label": "Etymonline · unblemished",
+        "url": "https://www.etymonline.com/word/unblemished"
+      },
+      {
+        "label": "Etymonline · blemish",
+        "url": "https://www.etymonline.com/word/blemish"
+      }
+    ],
+    "kmf-grimy": [
+      {
+        "label": "Etymonline · grimy",
+        "url": "https://www.etymonline.com/word/grimy"
+      },
+      {
+        "label": "Etymonline · grime",
+        "url": "https://www.etymonline.com/word/grime"
+      }
+    ],
+    "kmf-pristine": [
+      {
+        "label": "Etymonline · pristine",
+        "url": "https://www.etymonline.com/word/pristine"
+      }
+    ],
+    "kmf-murky": [
+      {
+        "label": "Etymonline · murky",
+        "url": "https://www.etymonline.com/word/murky"
+      }
+    ],
+    "kmf-portend": [
+      {
+        "label": "Etymonline · portend",
+        "url": "https://www.etymonline.com/word/portend"
+      }
+    ],
+    "kmf-derided": [
+      {
+        "label": "Etymonline · deride",
+        "url": "https://www.etymonline.com/word/deride"
+      }
+    ],
+    "kmf-vindication": [
+      {
+        "label": "Etymonline · vindication",
+        "url": "https://www.etymonline.com/word/vindication"
+      },
+      {
+        "label": "Etymonline · vindicate",
+        "url": "https://www.etymonline.com/word/vindicate"
+      }
+    ],
+    "kmf-disquisition": [
+      {
+        "label": "Etymonline · disquisition",
+        "url": "https://www.etymonline.com/word/disquisition"
+      }
+    ],
+    "kmf-rant": [
+      {
+        "label": "Etymonline · rant",
+        "url": "https://www.etymonline.com/word/rant"
+      }
+    ],
+    "kmf-diatribe": [
+      {
+        "label": "Etymonline · diatribe",
+        "url": "https://www.etymonline.com/word/diatribe"
+      }
+    ],
+    "kmf-tractable": [
+      {
+        "label": "Etymonline · tractable",
+        "url": "https://www.etymonline.com/word/tractable"
+      }
+    ],
+    "kmf-cliquish": [
+      {
+        "label": "Etymonline · cliquish",
+        "url": "https://www.etymonline.com/word/cliquish"
+      },
+      {
+        "label": "Etymonline · clique",
+        "url": "https://www.etymonline.com/word/clique"
+      }
+    ],
+    "kmf-disseminates": [
+      {
+        "label": "Etymonline · disseminate",
+        "url": "https://www.etymonline.com/word/disseminate"
+      }
+    ],
+    "kmf-stipulates": [
+      {
+        "label": "Etymonline · stipulate",
+        "url": "https://www.etymonline.com/word/stipulate"
+      }
+    ],
+    "kmf-obfuscation": [
+      {
+        "label": "Etymonline · obfuscation",
+        "url": "https://www.etymonline.com/word/obfuscation"
+      },
+      {
+        "label": "Etymonline · obfuscate",
+        "url": "https://www.etymonline.com/word/obfuscate"
+      }
+    ],
+    "kmf-elucidation": [
+      {
+        "label": "Etymonline · elucidation",
+        "url": "https://www.etymonline.com/word/elucidation"
+      },
+      {
+        "label": "Etymonline · elucidate",
+        "url": "https://www.etymonline.com/word/elucidate"
+      }
+    ],
+    "kmf-eloquence": [
+      {
+        "label": "Etymonline · eloquence",
+        "url": "https://www.etymonline.com/word/eloquence"
+      }
+    ],
+    "kmf-flout": [
+      {
+        "label": "Etymonline · flout",
+        "url": "https://www.etymonline.com/word/flout"
+      }
+    ],
+    "kmf-futile": [
+      {
+        "label": "Etymonline · futile",
+        "url": "https://www.etymonline.com/word/futile"
+      }
+    ],
+    "kmf-spurns": [
+      {
+        "label": "Etymonline · spurn",
+        "url": "https://www.etymonline.com/word/spurn"
+      }
+    ],
+    "kmf-animating": [
+      {
+        "label": "Etymonline · animate",
+        "url": "https://www.etymonline.com/word/animate"
+      }
+    ],
+    "kmf-spiraling": [
+      {
+        "label": "Etymonline · spiral",
+        "url": "https://www.etymonline.com/word/spiral"
+      }
+    ],
+    "kmf-circumstellar": [
+      {
+        "label": "Etymonline · stellar",
+        "url": "https://www.etymonline.com/word/stellar"
+      }
+    ],
+    "kmf-churn": [
+      {
+        "label": "Etymonline · churn",
+        "url": "https://www.etymonline.com/word/churn"
+      }
+    ],
+    "kmf-flares": [
+      {
+        "label": "Etymonline · flare",
+        "url": "https://www.etymonline.com/word/flare"
+      }
+    ],
+    "kmf-unostentatious": [
+      {
+        "label": "Etymonline · unostentatious",
+        "url": "https://www.etymonline.com/word/unostentatious"
+      },
+      {
+        "label": "Etymonline · ostentation",
+        "url": "https://www.etymonline.com/word/ostentation"
+      }
+    ],
+    "kmf-futility": [
+      {
+        "label": "Etymonline · futility",
+        "url": "https://www.etymonline.com/word/futility"
+      }
+    ],
+    "kmf-concomitants": [
+      {
+        "label": "Etymonline · concomitant",
+        "url": "https://www.etymonline.com/word/concomitant"
+      },
+      {
+        "label": "Etymonline · companion",
+        "url": "https://www.etymonline.com/word/companion"
+      }
+    ],
+    "kmf-avowing": [
+      {
+        "label": "Etymonline · avow",
+        "url": "https://www.etymonline.com/word/avow"
+      }
+    ],
+    "kmf-averring": [
+      {
+        "label": "Etymonline · aver",
+        "url": "https://www.etymonline.com/word/aver"
+      }
+    ],
+    "kmf-paraphernalia": [
+      {
+        "label": "Etymonline · paraphernalia",
+        "url": "https://www.etymonline.com/word/paraphernalia"
+      }
+    ],
+    "kmf-gleaming": [
+      {
+        "label": "Etymonline · gleam",
+        "url": "https://www.etymonline.com/word/gleam"
+      }
+    ],
+    "kmf-elusive": [
+      {
+        "label": "Etymonline · elusive",
+        "url": "https://www.etymonline.com/word/elusive"
+      }
+    ],
+    "kmf-spate": [
+      {
+        "label": "Etymonline · spate",
+        "url": "https://www.etymonline.com/word/spate"
+      }
+    ],
+    "kmf-conspired": [
+      {
+        "label": "Etymonline · conspire",
+        "url": "https://www.etymonline.com/word/conspire"
+      }
+    ],
+    "kmf-recant": [
+      {
+        "label": "Etymonline · recant",
+        "url": "https://www.etymonline.com/word/recant"
+      }
+    ],
+    "kmf-rote": [
+      {
+        "label": "Etymonline · rote",
+        "url": "https://www.etymonline.com/word/rote"
+      }
+    ],
+    "kmf-condone": [
+      {
+        "label": "Etymonline · condone",
+        "url": "https://www.etymonline.com/word/condone"
+      }
+    ],
+    "kmf-anthropogenic": [
+      {
+        "label": "Etymonline · anthropogenic",
+        "url": "https://www.etymonline.com/word/anthropogenic"
+      },
+      {
+        "label": "Etymonline · anthropo-",
+        "url": "https://www.etymonline.com/word/anthropo-"
+      }
+    ],
+    "kmf-impasse": [
+      {
+        "label": "Etymonline · impasse",
+        "url": "https://www.etymonline.com/word/impasse"
+      }
+    ],
+    "kmf-transience": [
+      {
+        "label": "Etymonline · transience",
+        "url": "https://www.etymonline.com/word/transience"
+      },
+      {
+        "label": "Etymonline · transient",
+        "url": "https://www.etymonline.com/word/transient"
+      }
+    ],
+    "kmf-insipid": [
+      {
+        "label": "Etymonline · insipid",
+        "url": "https://www.etymonline.com/word/insipid"
+      }
+    ],
+    "kmf-gingerbread": [
+      {
+        "label": "Etymonline · gingerbread",
+        "url": "https://www.etymonline.com/word/gingerbread"
+      }
+    ],
+    "kmf-extensive": [
+      {
+        "label": "Etymonline · extensive",
+        "url": "https://www.etymonline.com/word/extensive"
+      }
+    ],
+    "kmf-erudite": [
+      {
+        "label": "Etymonline · erudite",
+        "url": "https://www.etymonline.com/word/erudite"
+      }
+    ],
+    "kmf-erratic": [
+      {
+        "label": "Etymonline · erratic",
+        "url": "https://www.etymonline.com/word/erratic"
+      }
+    ],
+    "kmf-tendentious": [
+      {
+        "label": "Etymonline · tendentious",
+        "url": "https://www.etymonline.com/word/tendentious"
+      }
+    ],
+    "kmf-jejune": [
+      {
+        "label": "Etymonline · jejune",
+        "url": "https://www.etymonline.com/word/jejune"
+      }
+    ],
+    "kmf-vapid": [
+      {
+        "label": "Etymonline · vapid",
+        "url": "https://www.etymonline.com/word/vapid"
+      }
+    ],
+    "kmf-precipitate": [
+      {
+        "label": "Etymonline · precipitate",
+        "url": "https://www.etymonline.com/word/precipitate"
+      }
+    ],
+    "kmf-conjectural": [
+      {
+        "label": "Etymonline · conjectural",
+        "url": "https://www.etymonline.com/word/conjectural"
+      }
+    ],
+    "kmf-speculative": [
+      {
+        "label": "Etymonline · speculative",
+        "url": "https://www.etymonline.com/word/speculative"
+      }
+    ],
+    "kmf-startling": [
+      {
+        "label": "Etymonline · startle",
+        "url": "https://www.etymonline.com/word/startle"
+      }
+    ],
+    "kmf-ornamental": [
+      {
+        "label": "Etymonline · ornamental",
+        "url": "https://www.etymonline.com/word/ornamental"
+      },
+      {
+        "label": "Etymonline · ornament",
+        "url": "https://www.etymonline.com/word/ornament"
+      }
+    ],
+    "kmf-spontaneous": [
+      {
+        "label": "Etymonline · spontaneous",
+        "url": "https://www.etymonline.com/word/spontaneous"
+      }
+    ],
+    "kmf-degenerative": [
+      {
+        "label": "Etymonline · degenerative",
+        "url": "https://www.etymonline.com/word/degenerative"
+      },
+      {
+        "label": "Etymonline · degenerate",
+        "url": "https://www.etymonline.com/word/degenerate"
+      }
+    ],
+    "kmf-auspicious": [
+      {
+        "label": "Etymonline · auspicious",
+        "url": "https://www.etymonline.com/word/auspicious"
+      }
+    ],
+    "kmf-prognosis": [
+      {
+        "label": "Etymonline · prognosis",
+        "url": "https://www.etymonline.com/word/prognosis"
+      }
+    ],
+    "kmf-thwart": [
+      {
+        "label": "Etymonline · thwart",
+        "url": "https://www.etymonline.com/word/thwart"
+      }
+    ],
+    "kmf-presume": [
+      {
+        "label": "Etymonline · presume",
+        "url": "https://www.etymonline.com/word/presume"
+      }
+    ],
+    "kmf-galvanize": [
+      {
+        "label": "Etymonline · galvanize",
+        "url": "https://www.etymonline.com/word/galvanize"
+      }
+    ],
+    "kmf-animate": [
+      {
+        "label": "Etymonline · animate",
+        "url": "https://www.etymonline.com/word/animate"
+      }
+    ],
+    "kmf-appeal": [
+      {
+        "label": "Etymonline · appeal",
+        "url": "https://www.etymonline.com/word/appeal"
+      }
+    ],
+    "kmf-ephemerality": [
+      {
+        "label": "Etymonline · ephemeral",
+        "url": "https://www.etymonline.com/word/ephemeral"
+      }
+    ],
+    "kmf-ingenuity": [
+      {
+        "label": "Etymonline · ingenuity",
+        "url": "https://www.etymonline.com/word/ingenuity"
+      }
+    ],
+    "kmf-daunting": [
+      {
+        "label": "Etymonline · daunt",
+        "url": "https://www.etymonline.com/word/daunt"
+      }
+    ],
+    "kmf-proclivity": [
+      {
+        "label": "Etymonline · proclivity",
+        "url": "https://www.etymonline.com/word/proclivity"
+      }
+    ],
+    "kmf-vacillation": [
+      {
+        "label": "Etymonline · vacillation",
+        "url": "https://www.etymonline.com/word/vacillation"
+      }
+    ],
+    "kmf-predilection": [
+      {
+        "label": "Etymonline · predilection",
+        "url": "https://www.etymonline.com/word/predilection"
+      },
+      {
+        "label": "Etymonline · select",
+        "url": "https://www.etymonline.com/word/select"
+      },
+      {
+        "label": "Etymonline · eligible",
+        "url": "https://www.etymonline.com/word/eligible"
+      },
+      {
+        "label": "Etymonline · intelligent",
+        "url": "https://www.etymonline.com/word/intelligent"
+      }
+    ],
+    "kmf-peculiarities": [
+      {
+        "label": "Etymonline · peculiar",
+        "url": "https://www.etymonline.com/word/peculiar"
+      }
+    ],
+    "kmf-evanescent": [
+      {
+        "label": "Etymonline · evanescent",
+        "url": "https://www.etymonline.com/word/evanescent"
+      }
+    ],
+    "kmf-ephemeral": [
+      {
+        "label": "Etymonline · ephemeral",
+        "url": "https://www.etymonline.com/word/ephemeral"
+      }
+    ],
+    "kmf-arcane": [
+      {
+        "label": "Etymonline · arcane",
+        "url": "https://www.etymonline.com/word/arcane"
+      }
+    ],
+    "kmf-cutting": [
+      {
+        "label": "Etymonline · cutting",
+        "url": "https://www.etymonline.com/word/cutting"
+      }
+    ],
+    "kmf-ingenuous": [
+      {
+        "label": "Etymonline · ingenuous",
+        "url": "https://www.etymonline.com/word/ingenuous"
+      }
+    ],
+    "kmf-acerbic": [
+      {
+        "label": "Etymonline · acerbic",
+        "url": "https://www.etymonline.com/word/acerbic"
+      }
+    ],
+    "kmf-egotists": [
+      {
+        "label": "Etymonline · ego",
+        "url": "https://www.etymonline.com/word/ego"
+      }
+    ],
+    "kmf-jettison": [
+      {
+        "label": "Etymonline · jettison",
+        "url": "https://www.etymonline.com/word/jettison"
+      }
+    ],
+    "kmf-astute": [
+      {
+        "label": "Etymonline · astute",
+        "url": "https://www.etymonline.com/word/astute"
+      }
+    ],
+    "kmf-awry": [
+      {
+        "label": "Etymonline · awry",
+        "url": "https://www.etymonline.com/word/awry"
+      }
+    ],
+    "kmf-synopses": [
+      {
+        "label": "Etymonline · synopsis",
+        "url": "https://www.etymonline.com/word/synopsis"
+      }
+    ],
+    "kmf-contentious": [
+      {
+        "label": "Etymonline · contentious",
+        "url": "https://www.etymonline.com/word/contentious"
+      }
+    ],
+    "kmf-innovative": [
+      {
+        "label": "Etymonline · innovative",
+        "url": "https://www.etymonline.com/word/innovative"
+      }
+    ],
+    "kmf-overbearing": [
+      {
+        "label": "Etymonline · overbearing",
+        "url": "https://www.etymonline.com/word/overbearing"
+      }
+    ],
+    "kmf-rambling": [
+      {
+        "label": "Etymonline · rambling",
+        "url": "https://www.etymonline.com/word/rambling"
+      }
+    ],
+    "kmf-tenacity": [
+      {
+        "label": "Etymonline · tenacity",
+        "url": "https://www.etymonline.com/word/tenacity"
+      }
+    ],
+    "kmf-eminence": [
+      {
+        "label": "Etymonline · eminence",
+        "url": "https://www.etymonline.com/word/eminence"
+      }
+    ],
+    "kmf-meticulousness": [
+      {
+        "label": "Etymonline · meticulousness",
+        "url": "https://www.etymonline.com/word/meticulousness"
+      },
+      {
+        "label": "Etymonline · meticulous",
+        "url": "https://www.etymonline.com/word/meticulous"
+      }
+    ],
+    "kmf-exactitude": [
+      {
+        "label": "Etymonline · exactitude",
+        "url": "https://www.etymonline.com/word/exactitude"
+      }
+    ],
+    "kmf-endurance": [
+      {
+        "label": "Etymonline · endurance",
+        "url": "https://www.etymonline.com/word/endurance"
+      }
+    ],
+    "kmf-collegiality": [
+      {
+        "label": "Etymonline · collegial",
+        "url": "https://www.etymonline.com/word/collegial"
+      }
+    ],
+    "kmf-perplex": [
+      {
+        "label": "Etymonline · perplex",
+        "url": "https://www.etymonline.com/word/perplex"
+      }
+    ],
+    "kmf-entice": [
+      {
+        "label": "Etymonline · entice",
+        "url": "https://www.etymonline.com/word/entice"
+      }
+    ],
+    "kmf-gratify": [
+      {
+        "label": "Etymonline · gratify",
+        "url": "https://www.etymonline.com/word/gratify"
+      }
+    ],
+    "kmf-amalgam": [
+      {
+        "label": "Etymonline · amalgam",
+        "url": "https://www.etymonline.com/word/amalgam"
+      }
+    ],
+    "kmf-respite": [
+      {
+        "label": "Etymonline · respite",
+        "url": "https://www.etymonline.com/word/respite"
+      }
+    ],
+    "kmf-lull": [
+      {
+        "label": "Etymonline · lull",
+        "url": "https://www.etymonline.com/word/lull"
+      }
+    ],
+    "kmf-portent": [
+      {
+        "label": "Etymonline · portent",
+        "url": "https://www.etymonline.com/word/portent"
+      }
+    ],
+    "kmf-harbinger": [
+      {
+        "label": "Etymonline · harbinger",
+        "url": "https://www.etymonline.com/word/harbinger"
+      }
+    ],
+    "kmf-panoply": [
+      {
+        "label": "Etymonline · panoply",
+        "url": "https://www.etymonline.com/word/panoply"
+      }
+    ],
+    "kmf-censure": [
+      {
+        "label": "Etymonline · censure",
+        "url": "https://www.etymonline.com/word/censure"
+      }
+    ],
+    "kmf-supplanted": [
+      {
+        "label": "Etymonline · supplant",
+        "url": "https://www.etymonline.com/word/supplant"
+      }
+    ],
+    "kmf-pedantic": [
+      {
+        "label": "Etymonline · pedantic",
+        "url": "https://www.etymonline.com/word/pedantic"
+      }
+    ],
+    "kmf-sycophantic": [
+      {
+        "label": "Etymonline · sycophantic",
+        "url": "https://www.etymonline.com/word/sycophantic"
+      },
+      {
+        "label": "Etymonline · sycophant",
+        "url": "https://www.etymonline.com/word/sycophant"
+      }
+    ],
+    "kmf-ushered": [
+      {
+        "label": "Etymonline · usher",
+        "url": "https://www.etymonline.com/word/usher"
+      }
+    ],
+    "kmf-ploy": [
+      {
+        "label": "Etymonline · ploy",
+        "url": "https://www.etymonline.com/word/ploy"
+      }
+    ],
+    "kmf-quandary": [
+      {
+        "label": "Etymonline · quandary",
+        "url": "https://www.etymonline.com/word/quandary"
+      }
+    ],
+    "kmf-encomiums": [
+      {
+        "label": "Etymonline · encomium",
+        "url": "https://www.etymonline.com/word/encomium"
+      }
+    ],
+    "kmf-replete": [
+      {
+        "label": "Etymonline · replete",
+        "url": "https://www.etymonline.com/word/replete"
+      }
+    ],
+    "kmf-excoriate": [
+      {
+        "label": "Etymonline · excoriate",
+        "url": "https://www.etymonline.com/word/excoriate"
+      }
+    ],
+    "kmf-emulate": [
+      {
+        "label": "Etymonline · emulate",
+        "url": "https://www.etymonline.com/word/emulate"
+      }
+    ],
+    "kmf-valorize": [
+      {
+        "label": "Etymonline · valorize",
+        "url": "https://www.etymonline.com/word/valorize"
+      }
+    ],
+    "kmf-exalt": [
+      {
+        "label": "Etymonline · exalt",
+        "url": "https://www.etymonline.com/word/exalt"
+      }
+    ],
+    "kmf-rehabilitate": [
+      {
+        "label": "Etymonline · rehabilitate",
+        "url": "https://www.etymonline.com/word/rehabilitate"
+      }
+    ],
+    "kmf-indict": [
+      {
+        "label": "Etymonline · indict",
+        "url": "https://www.etymonline.com/word/indict"
+      }
+    ],
+    "kmf-ubiquity": [
+      {
+        "label": "Etymonline · ubiquity",
+        "url": "https://www.etymonline.com/word/ubiquity"
+      }
+    ],
+    "kmf-omnipresence": [
+      {
+        "label": "Etymonline · omnipresence",
+        "url": "https://www.etymonline.com/word/omnipresence"
+      },
+      {
+        "label": "Etymonline · omnipresent",
+        "url": "https://www.etymonline.com/word/omnipresent"
+      }
+    ],
+    "kmf-pervasive": [
+      {
+        "label": "Etymonline · pervasive",
+        "url": "https://www.etymonline.com/word/pervasive"
+      },
+      {
+        "label": "Etymonline · invade",
+        "url": "https://www.etymonline.com/word/invade"
+      },
+      {
+        "label": "Etymonline · evade",
+        "url": "https://www.etymonline.com/word/evade"
+      }
+    ],
+    "kmf-specious": [
+      {
+        "label": "Etymonline · specious",
+        "url": "https://www.etymonline.com/word/specious"
+      }
+    ]
+  }
+}
