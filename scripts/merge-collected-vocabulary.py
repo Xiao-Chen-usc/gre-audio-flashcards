@@ -8,7 +8,13 @@ ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT.parent / '.collected-build'
 
 def main():
-    raw = json.loads((ROOT / 'data/kmf-collected-words-2026-10-01.json').read_text())
+    inputs = sorted((ROOT / 'data').glob('*collected-words-*.json'))
+    batches = [json.loads(path.read_text()) for path in inputs]
+    ordered = {}
+    for batch in batches:
+        for row in batch['words']:
+            ordered.setdefault(row['word'], row)
+    raw = {'words': list(ordered.values()), 'total_words': len(ordered)}
     corrections = json.loads((ROOT / 'data/collected-editorial-corrections.json').read_text())
     cards = []; examples = {}; sources = {}; seen = set(); edit_count = 0
     for row in raw['words']:
@@ -38,7 +44,7 @@ def main():
     content += 'export const COLLECTED_SOURCES: Record<string, { label: string; url: string }[]> = ' + json.dumps(sources, ensure_ascii=False, indent=2) + ';\n'
     target = ROOT / 'app/collectedWordData.ts'
     tmp = target.with_suffix('.tmp'); tmp.write_text(content); tmp.replace(target)
-    report = {'source_file': 'data/kmf-collected-words-2026-10-01.json', 'source_words': len(cards), 'draft_model': 'deepseek-flash', 'review_model': 'deepseek-flash', 'drafts': len(cards), 'reviews': len(cards), 'model_review_edits': edit_count, 'editorially_corrected_words': sorted(corrections), 'examples': len(examples), 'paired_memory_words': 0, 'source_urls': sources}
+    report = {'source_files': [str(path.relative_to(ROOT)) for path in inputs], 'source_words': len(cards), 'draft_model': 'deepseek-flash', 'review_model': 'deepseek-flash', 'drafts': len(cards), 'reviews': len(cards), 'model_review_edits': edit_count, 'editorially_corrected_words': sorted(corrections), 'examples': len(examples), 'paired_memory_words': 0, 'source_urls': sources}
     (ROOT / 'data/collected-content-review.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps({k: v for k, v in report.items() if k != 'source_urls'}, ensure_ascii=False))
 

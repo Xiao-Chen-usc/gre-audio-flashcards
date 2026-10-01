@@ -1109,6 +1109,78 @@ export const COLLECTED_WORDS: WordCard[] = [
     "origin": "specious 的核心是“看起来好看、表面上说得通，但经不起深究”。它来自拉丁语 speciosus，本义是“好看的、漂亮的、外观悦目的”，进一步来自拉丁语 species，意思是“外观、形状、景象、美貌”。species 又源自动词 specere“看、注视”，最终追溯到原始印欧语词根 *spek-“观察”。\n\n从词形上看，specious 对应拉丁语 speciosus，后者由 species“外观、形状、景象、美貌”加形容词后缀 -osus 构成，字面意思就是“有外观的”或“与外观有关的”，但重点在于：它强调的仅仅是外观，而不是实质。14世纪末它进入英语时，意思还是“悦目的、好看的”，这层含义今天在 specious 中已经基本消失。到了1610年代，才出现了我们今天熟悉的贬义——“表面上有道理、有吸引力，但实际上是错的或站不住脚的”。\n\n这个语义转变很自然：如果一件事物只是“看起来好看”，就暗示它可能仅仅停留在外观层面，一旦考察实质，就可能暴露出缺陷。于是“外观悦目”逐渐引申为“表面合理”，再进一步专门用来指论证、理由、承诺等“似是而非”。所以 specious 现在的典型语境是：specious argument（似是而非的论证）、specious reasoning（貌似合理的推理）。\n\n词源亲戚方面，首先是与 specious 同根的 species，从“外观”转指“种类、物种”，因为一个物种可以被看作具有共同外观的一类事物。其次是 spice（香料），它经由古法语 espice 来自拉丁语 species，最初泛指“种类、物品”，后来特指珍贵的香料。还有 spectacle，来自拉丁语 spectaculum“景象、表演”，与“看”直接相关。circumspect（谨慎的）则是 circum-“周围”加 specere“看”，字面是“环顾四周的”，所以引申为谨慎。perspicacious（洞察力强的）则是 per-“穿过”加 specere“看”，字面是“看穿的”，所以指目光敏锐、能看透本质。这些词最终都与拉丁语 specere“看”或名词 species“外观”有渊源，但各自经由不同的派生路径进入英语。\n\n近义词辨析：plausible 也指“似乎合理的”，但语气比 specious 弱，它仅仅表示“听起来可信，不排除实际为真”；specious 则暗示“表面合理，但实际上是错的或骗人的”，贬义更强。ostensible 强调“表面上宣称的、名义上的”，不一定带有欺骗意图，而 specious 更明确地暗示表面与实质不符。meretricious 则更侧重“华而不实、俗艳的吸引力”，常用于外表或风格，而 specious 多用于论证、理由。\n\n记忆链：specious 来自 specere“看”，本义是“好看的”，后来变成“只是表面好看、经不起看的”，所以就是“似是而非的”。",
     "originQuery": "specious",
     "page": 7
+  },
+  {
+    "id": "kmf-abstemiousness",
+    "word": "abstemiousness",
+    "pair": "",
+    "meaning": "节制，适度（尤指饮食有度）",
+    "origin": "abstemiousness 是形容词 abstemious 加后缀 -ness 构成的抽象名词，字面就是“有节制的性质或状态”，现代英语中通常指在饮食上自我克制、不过量，也可引申为生活其他方面的节制。要理解这个词，得先拆开它的拉丁来源。\n\nabstemious 大约在公元1600年前后进入英语，借自拉丁语 abstemius。这个拉丁词由 ab- 加 temetum 的词干构成。ab- 来自拉丁介词 ab，意为“离开、远离、从……离开”，这个词中它在 t 前呈现 abs- 的形式，因此可以看出 abs- + tem- 的组合。其他拉丁复合词中，ab- 也会在 m、p、v 前缩为 a-。temetum 是拉丁语中表示“烈酒、醉人饮料”的词，与 temulentus“醉酒的”有亲缘关系。所以 abstemius 的字面画面是“远离烈酒的”，也就是不喝酒、保持清醒。\n\n这里有一个值得注意的语义演变：abstemius 最初只针对酒精饮料——不饮酒、戒酒。但拉丁语中它的意义已经扩展为更宽泛的“生活有节制、适度”。进入英语后，abstemious 继承了这种扩展义，指在饮食上不过量、有节制，尤其常用来形容吃得少、喝得少的人。从“远离烈酒”这一具体行为，到“饮食有度”，再到“生活节制”，这是典型的从具体对象到抽象品质的词义泛化过程：最初是空间上的“离开”某种饮料，后来变成行为上的“不沾染”，最后沉淀为性格上的“节制”。\n\n再看词形变化：abstemious 中的 -ous 是常见的形容词后缀，在这个词里表示“具有不饮酒/节制性质的”。加 -ness 后构成 abstemiousness，-ness 是英语中极为能产的名词后缀，把形容词转化为抽象名词，表示状态或性质。因此 abstemiousness 就是从形容词“节制的”到名词“节制、适度”的常规派生。这个词没有经过法语中转，而是直接借自拉丁语，所以词形上还保留着拉丁词根的模样。\n\n词源亲戚\nabstemious：abstemius 借入英语并形成形容词 → 饮食有节制的，是 abstemiousness 的直接基础。\nabstemiously：abstemious + -ly → 以有节制的方式，是同一个形容词的副词形式。\n这个词族在常用英语里并不大，不必为了凑数拉入无关词。abstain 和 abstinent 虽然意思接近、也含 ab-，但来自拉丁语 abstinere，核心是 tenere“持有、保持”，与 temetum“烈酒”不同。它们可用来比较“戒除”与“适度”，不能因此说成共享完整词根。\n\n近义词辨析方面，abstemiousness 与 moderation、temperance、abstinence 容易混淆。moderation 是最一般的“适度、不极端”，不特指饮食，也不必然暗示自我克制，更多是“不过分”的中庸状态。temperance 常指饮酒有度或戒酒，历史上也与禁酒运动相关，语域偏正式，有时带道德意味。abstinence 则强调完全戒除，尤其是戒酒、戒烟或禁欲，比 abstemiousness 更绝对。abstemiousness 处在中间：它不是完全禁绝，而是“有节制地享用”，但比 moderation 更强调主动的自我克制，且尤其常用于饮食语境。\n\n记忆链：ab-（离开）+ temetum（烈酒）→ 远离烈酒 → 饮食有度 → 节制。abstemiousness 就是这种节制品质本身。",
+    "originQuery": "abstemious",
+    "page": 8
+  },
+  {
+    "id": "kmf-contentiousness",
+    "word": "contentiousness",
+    "pair": "",
+    "meaning": "好争论；爱争吵的倾向",
+    "origin": "contentiousness 是形容词 contentious 加 -ness 构成的抽象名词，表示“好争论、动辄与人争辩的性情”。contentious 最早见于 15 世纪初，写作 contencios，意思是“以争执为特征的”；到约 1500 年又发展出“好争吵的、动辄要争的”这一指人的意思。这个词来自拉丁语 contentiosus（固执的、好争吵的），而 contentiosus 又出自名词 contentio（激烈的较量、争讼、打斗）。contentio 是动词 contendere 的动作名词，contentiosus 由 contentio 派生，再进入英语成为 contentious，因此整条线索是 contendere → contentio → contentiosus → contentious → contentiousness。\n\n关键在于 contendere 的构词。它由前缀 com-（在 contendere 中同化为 con-）加 tendere（拉、伸）构成。com- 在这里可能不是“共同”，而是起加强作用；tendere 来自原始印欧词根 *ten-“拉、伸”。所以 contendere 的字面画面是“把（身体的、力量的）东西使劲伸出去”。拉丁语里它的实际用法包括“伸展；投掷、射出；比试力气、搏斗、竞争”，还有“在思想上奋力追求”。由“把力伸向对方”自然发展出“与对方较量”，再进一步抽象为“在言语和主张上与人相争”，于是有了“争辩、主张、坚持认为”的意思——英语 contend 从 1540 年代起也表示“断言、主张、坚持”。\n\n从“伸展”到“争吵”，语义演变的推力是把物理动作隐喻化为言语和意志的对抗：两个人各把自己的主张“伸”出去，互不相让，就是 contention；习惯这样做的人，就是 contentious，其性质就是 contentiousness。要注意，contentiousness 描述的是人的性格倾向或话题的争议性，比单纯“意见不同”程度重，带有主动挑起、爱斗的色彩。\n\n词源亲戚\ncontentious：contentiosus → 具有争执性质的 → 好争论的；形容议题则指有争议的。\ncontend：contendere → 较量、争辩，也可表示坚持主张。\ncontention：contentio → 争执、竞争；也可指提出的论点。\ntension：经拉丁语 tensio，来自 tendere 的另一种词干 → 拉紧的状态 → 张力、紧张。\nextend：ex- + tendere → 向外伸展 → 延长、扩展。\n这些词能连接“拉伸”和“较量”的意象；但从身体用力到言语对抗的画面，是帮助理解抽象义的类比，不是某个具体历史事件。\n\n近义词辨析：contentiousness 强调爱争的性情，带有主动好斗的色彩。quarrelsomeness 更口语化，偏重“爱吵架、脾气冲”，不一定有观点之争。argumentativeness 强调爱用论证反驳别人，偏重辩论风格。disputatiousness 较正式，指喜欢抬杠、凡事都要争一争。combativeness 则更广，可用于任何竞争或对抗场合，不限于言语。\n\n记忆链：con-（可能为加强前缀）+ tendere（伸、拉）→ 把力或主张伸向对方 → contendere 较量、争辩 → contentio 争执 → contentiosus 好争的 → contentious 好争论的 → contentiousness 好争论的性情。",
+    "originQuery": "contentious",
+    "page": 8
+  },
+  {
+    "id": "kmf-insouciance",
+    "word": "insouciance",
+    "pair": "",
+    "meaning": "漫不经心，无忧无虑；不为事情操心、满不在乎的态度",
+    "origin": "insouciance 是 1820 年前后从法语整体借入英语的名词，法语 insouciance 意为“满不在乎、不关心”，来自形容词 insouciant“无忧无虑的、不留心的”，其动词是 soucier“操心、挂念”。soucier 的前身是拉丁语 sollicitare“搅动、使不安、骚扰”，这个词又由 sollicitus“被搅动的、不安的”派生，而 sollicitus 常被词源资料分析为 sollus“整个的、完好的”加 citus“被激起的”（来自动词 ciere“摇动、使运动”），字面近于“整个被搅动起来”；这一构词分析带有词源学推断成分。这条链解释了 insouciance 的核心语感：不是简单的“不知道”，而是“内心没有被动摇、没有被搅扰”。\n\n构词上分两部分。前缀 in- 来自拉丁语否定前缀 in-（意为“不、无”），在法语中拼作 in-，本词写作 in- 而不是 im-、il-。法语 soucier“操心”的现在分词是 souciant“关心的”；否定形式 insouciant 表示“不操心的、漫不经心的”，相关名词 insouciance 表示这种状态。不要把 souciance 当作一个必须独立存在的英语单词。英语保留了法语拼写，但读音按英语习惯调整；常见英语读音 /ɪnˈsuːsiəns/ 的重音在第二音节。-ance 构成抽象名词，表示状态或性质。\n\n意义变化从“被搅动”到“操心”再到“不操心”，走的是具体到抽象的路径。拉丁语 sollicitare 原本指身体上被摇动、被骚扰，后来引申为心理上的忧虑和挂念；法语 soucier 保留的正是这种“挂心”义。加上否定前缀后，得到的是“不给心搅扰”的态度，所以在现代英语中 insouciance 指轻松的、甚至有点轻率的无忧无虑，常用于描写人物的气质、神情或处世方式，如以 insouciance 面对危机。它略带文学色彩，比 concern 的否定式更强调一种洒脱甚至漠然。\n\n词源亲戚部分选取 3 个高价值现代英语词。solicit 直接来自同一拉丁词 sollicitare，字面是“使不安、搅动”，现代义为“请求、恳求、招揽”；英语早期有“搅扰、激起”的意思，后来还出现“办理事务”和“恳求”的义项；可以理解为不断向对方提出诉求，但这幅画面只是帮助理解，不能代替词典记录的各义项。solicitous 是同一拉丁词根的形容词，意为“关切的、焦虑的”，正好是 insouciance 的反面状态，对照记忆极有效。solicitude 是名词“关切、焦虑”，与 insouciance 构成一对反义抽象名词。另可对照 innocuous（无害的）、inert（惰性的）等词，它们只共享否定前缀 in-，并非同一词根的亲戚。\n\n近义词辨析方面，indifference 是最中性的“不关心”，不含 insouciance 的轻松洒脱色彩；insouciance 更带一种外显的从容或不以为意。nonchalance 与 insouciance 最接近，都指轻松、满不在乎，但 nonchalance 更强调冷淡和不动声色，insouciance 更强调无忧无虑、不被搅扰。carefree 是形容词性的日常表达，语域较低，而 insouciance 偏书面和文学。apathy 则指缺乏情感或兴趣的淡漠或缺乏热情，负面色彩明显强于 insouciance。\n\n记忆链：拉丁语 sollus（整个）加 citus（被激起）组成 sollicitus“被搅动、不安”，进而 sollicitare“搅动、使操心”；法语 soucier 是“操心”，加否定前缀 in- 得 insouciant“不操心的”，名词 insouciance 即“不被搅扰的轻松状态”。",
+    "originQuery": "insouciance",
+    "page": 8
+  },
+  {
+    "id": "kmf-surreptitiousness",
+    "word": "surreptitiousness",
+    "pair": "",
+    "meaning": "偷偷摸摸，隐秘；秘密进行（常带不正当、规避注意的意味）",
+    "origin": "surreptitiousness 是形容词 surreptitious 加后缀 -ness 构成的抽象名词，表示“偷偷摸摸、隐秘”这一性质或状态。-ness 是英语本土的构词后缀（古英语 -nes），只把形容词变成名词，不改变核心意义，因此要理解这个词，全部线索都在 surreptitious 上。\n\nsurreptitious 于 15 世纪中期进入英语，早期拼作 surrepticious，直接借自拉丁语 surrepticius“偷来的、鬼鬼祟祟的、秘密的”。这个词又来自 surreptus，是动词 surripere 的过去分词。surripere 由前缀 sub- 和动词 rapere 合成：sub 本义“在下面、从下面”，引申出“暗地里、不让上面的人察觉”；rapere 是“猛抓、抢走、夺去”。两者相加，字面就是“从底下悄悄抓走”——不是光明正大地夺，而是趁人不备把东西拿走。这正是“偷偷摸摸”这一含义的源头，也解释了它为什么常与“不当、规避、未经授权”联系在一起：最初描述的就是隐秘地窃取或绕过正当程序。\n\n词形上有一个明显变化值得注意。sub- 在拉丁语中遇到后面的 r- 会发生同化，写成 sur-，因此产生了 surripere 这一同化形式；拉丁语里确实两种形式并存，英语在约 1600 年也一度使用未同化的 subreptitious 表示“秘密的”，但最终通行的形式是 assimilated（同化）后的 surreptitious。同一动词的名词形式 subreptio 在约 1600 年借入英语，成为 subreption，指“通过隐瞒事实、欺骗手段获得批准或许可”，尤其在法律和教会语境中使用，这条线索能帮我们看清这个词的“制度性”味道。\n\n意义层面，surreptitious 从具体的“偷”逐步抽象为“秘密地做、不让旁人知道”，再到“规避审查或授权”，由身体动作走向社会与心理领域。现代英语中它通常修饰行为或方式，如 a surreptitious glance（偷偷一瞥）、surreptitious copying（私下抄袭），往往暗示当事人知道这事不宜公开。\n\n词源亲戚\nsurreptitious：拉丁语 surrepticius → 偷偷的、秘密的，是名词 surreptitiousness 的直接基础。\nsurreptitiously：surreptitious + -ly → 偷偷地，是描述行为方式的副词。\nrapid：拉丁语 rapidus，来自 rapere“猛抓、夺去” → 迅速的，保留了猛然行动的速度感。\nrapture：同样通向 rapere → 仿佛被带离自身的状态 → 狂喜、入迷；这是词义演变的理解画面。\nsubreption：拉丁语 subreptio，与 surripere／subripere 同族 → 通过隐瞒事实取得利益或许可。\n\n近义词辨析\nsecret 语气中性，只表示“不为人知”，不含道德判断，适用范围最广。\ncovert 强调有意图地隐藏、有组织地保密，常见于政府、军事语境，如 covert operation，语域较正式。\nfurtive 侧重行为上的鬼祟与心虚，常修饰眼神、动作，如 a furtive look；与 surreptitious 很接近，但 surreptitious 更常暗示规避规则或正当程序。\nclandestine 强调秘密活动本身，多用于组织性、持续性的隐秘行为，如 clandestine meeting，道德色彩比 surreptitious 更依赖语境。\n\n记忆链\nsub-（在下面、暗地）+ rapere（抓走）→ 拉丁语 surripere“从底下悄悄抓走”→ surrepticius“偷偷的、秘密的”→ 英语 surreptitious“偷偷摸摸的”→ 加 -ness 抽象化为 surreptitiousness“偷偷摸摸、隐秘”。核心画面始终是“趁人不备，从下面把东西拿走”，因而带有规避正当性、不愿被看见的意味。",
+    "originQuery": "surreptitious",
+    "page": 8
+  },
+  {
+    "id": "kmf-exhilarating",
+    "word": "exhilarating",
+    "pair": "",
+    "meaning": "令人兴奋的，使人精神振奋的",
+    "origin": "exhilarating 是动词 exhilarate 的现在分词，也可独立作形容词。exhilarate 于1530年代进入英语，来自拉丁语 exhilaratus，是 exhilarare 的过去分词，意思是“使高兴、使愉快”。这个词由两部分组成：前缀 ex- 加上 hilarare（使愉快），而 hilarare 源于形容词 hilarus（高兴的），hilarus 又源自希腊语 hilaros（高兴的）。\n\n先说 ex-。拉丁语 ex 的本义是“从……里面出来”，与 in-（在里面）相对，来自原始印欧语 *eghs（出）。在英语的许多 ex- 词里，这个“出来”的空间义逐渐引申为“彻底、完全”，成了一个加强语气的成分。exhilarate 正是这一类：这里的 ex- 并不表示真的“从里面出来”，而是把“愉快”这件事推到十足的强度，所以字面感觉是“使人彻底高兴起来”。同样的用法还见于 exhort（极力劝告）、exaggerate（夸大）、exuberant（茂盛的）等词。\n\n再说 hilar-。它来自希腊语 hilaros，意思是“高兴的、欢乐的、喜悦的”，与 hilaos（优雅的、和善的）相关，词根可能与 hilaskomai（安抚、使和解）有关，更早也许追溯到原始印欧语 *selh-（使和解）。在古罗马，Hilaria 是一类节庆的名称，既包括春分时为库柏勒女神举行的公共庆典，也包括婚礼或儿子出生当天的私人庆祝。这一背景说明“高兴”在古典文化里常常与“节日、庆祝、和解”联系在一起。\n\n从词义演变看：拉丁语 hilarus 本是描述人的情绪状态——“愉快的”；加后缀构成 hilarare，变成使役动作“使某人愉快”；再加加强前缀 ex-，成为 exhilarare“使人彻底高兴、使人振奋”。进入英语后，exhilarate 指使人从低落转为活跃、兴奋。现在分词 exhilarating 逐渐形容词化，专指“能带来这种兴奋感的”，多修饰经历、活动或消息，如令人兴奋的旅程、比赛、消息。它的兴奋带有身心被提升、精神被点燃的色彩，比单纯的 happy 更有动感和强度。\n\n词源亲戚\nexhilarate：ex-（加强）+ hilarare（使愉快）→ 使人振奋，是 exhilarating 的直接动词基础。\nexhilaration：exhilarate 的名词形式 → 振奋、兴奋，是这种高扬情绪本身。\nhilarity：拉丁语 hilaritas，与 hilarus／hilaris“愉快的”同族 → 欢乐、欢闹。\nhilarious：同一 hilar- 词族的形容词 → 现代常指极其好笑、令人捧腹的。\n它们都保留“欢乐”的核心；exult 和 exuberant 虽然也含 ex-、意思也积极，核心词根却不同，不能仅因相同前缀就归为同根词。\n\n近义词辨析：\n1. exciting：最泛指“令人激动”，强调引起兴趣或情绪波动，不一定有身心被提升的感觉；exhilarating 更强调高扬、振奋、活力充盈的体验。\n2. thrilling：强调紧张、刺激、心跳加速，常与冒险、悬疑相关；exhilarating 的兴奋更偏愉快和振奋，紧张感较弱。\n3. invigorating：强调使人恢复精力、神清气爽，偏生理或精神上的充电；exhilarating 更偏情绪高涨、欢欣鼓舞。\n4. stimulating：强调激发思考或兴趣，偏理性、感官的激活；exhilarating 则更情绪化、更强烈，带有快乐和兴奋的欢腾感。\n\n记忆链：ex-（彻底加强）+ hilar-（拉丁语 hilarus，源自希腊语“高兴”）→ exhilarate + -ing（使役动词的现在分词形容词）→ 字面“使人彻底高兴起来的” → 令人兴奋的、使人振奋的。",
+    "originQuery": "exhilarate",
+    "page": 8
+  },
+  {
+    "id": "kmf-perplexing",
+    "word": "perplexing",
+    "pair": "",
+    "meaning": "令人困惑的，使人费解的",
+    "origin": "perplexing 是动词 perplex 的现在分词形式，而 perplex 本身的来历相当特别：它并非直接从拉丁语继承来的动词，而是从形容词“回流”造出来的。拉丁语中有形容词 perplexus，意思是“纠缠在一起的、混乱的、错综复杂的”，但拉丁语并没有一个对应的动词 *perplectere。14世纪末，英语先借入了形容词 perplex（意为“困惑的、被弄糊涂的”），到15世纪末这个词形逐渐变为 perplexed，以符合其他过去分词形容词的形态，而形容词 perplex 到17世纪时已废弃；动词 perplex 直到1590年代才出现，显然是从 perplexed 逆向构词（back-formation）而来的。也就是说，形容词比动词早出现了一百多年，这在英语词源中并不常见。\n\n从构词上看，拉丁语 perplexus 由 per- 加 plexus 组成。per 来自原始印欧语词根 *per-（1），意为“向前”，引申为“穿过、通过”；plexus 是 plectere（编织、缠绕、折叠）的过去分词，来自原始印欧语词根 *plek-（编织）。所以 perplexus 的字面画面是“被缠绕在一起、交织得解不开”——一根线穿过另一根线，缠成一团，找不到头绪。\n\n语义从具体到抽象的转移非常自然：从“线缠在一起、物理上解不开”，到“事情纠缠复杂、难以理清”，再到“人的头脑被绕晕、感到困惑不安”。1610年代，动词 perplex 又发展出“使变得错综复杂、使难以理解”这一义项，即把事物本身弄复杂，而不只是让人感到困惑。perplexing 是由该动词产生的现在分词形容词，描述的是“正在让人困惑的”事物或局面，语气比仅仅 confusing 更强调那种纠缠不清、难以理出头绪的感觉。\n\n词源亲戚\nperplex：英语由 perplexed 逆构成的动词 → 使困惑；perplexing 是它加 -ing 的形式。\nperplexity：经拉丁语 perplexitas 等同族形式进入英语 → 困惑、困窘。\ncomplex：拉丁语 complexus，与 plectere“编织、交缠”同族 → 交织在一起 → 复杂的、复合体。\nimply：经拉丁语 implicare，in- + plicare“折叠”，与 *plek-“编织、折叠”这一词根网络相关 → 把意思含在里面 → 暗示。\n这个网络强调的是编织与折叠的不同派生路径，不是把所有含 plex 或 ply 的词都按同一种英语拼法硬拆。\n\n近义词辨析：\nconfusing 最通用，泛指让人不清楚、不容易理解，语气中性。\nperplexing 更强调因事情本身纠缠复杂、头绪繁多而令人困惑，常带一点焦虑、难以决断的意味。\npuzzling 侧重“奇怪、不合常理”，让人感到意外而想不通。\nbewildering 强调困惑程度更深，到了眼花缭乱、不知所措的地步。\n\n记忆链（理解画面）：per（穿过、通过）+ plexus（编织、缠绕）→ 缠在一起、解不开 → 事情错综复杂 → 令人困惑的。掌握这一条，perplexing、perplexity、complex、imply 等词都能串起来。",
+    "originQuery": "perplex",
+    "page": 8
+  },
+  {
+    "id": "kmf-mundane",
+    "word": "mundane",
+    "pair": "",
+    "meaning": "平凡的，乏味的；世俗的，尘世的",
+    "origin": "mundane 大约在15世纪中期进入英语，写作 mondeine，来自古法语 mondain，也直接借自晚期拉丁语 mundanus。这一路线的起点是拉丁语 mundus，意思是“宇宙、世界”。所以这个词最早的意思非常“大”：属于这个世界的、现世的、尘世的，与教会、天国相对。中古英语里它常出现在宗教语境中，mundane 与 spiritual、heavenly 构成对照，指人在此世要处理的俗务。\n\n到了19世纪，mundane 又长出了今天 GRE 最常考的那层意思：“乏味的、无聊的”。这一变化并不突兀。既然“此世”是相对于“彼岸”而言的，那么把目光从神圣、永恒、理想拉回到日常现实，就容易带上“琐碎、平庸”的色彩。1850年前后，英语中已见“dull, uninteresting”的用法。你可以把它理解成一种由具体到抽象的贬值：从“属于这个物质世界的”滑向“只关心柴米油盐的”，再滑向“因此毫无光彩的”。这不是词义的突然断裂，而是同一个视角的延伸。\n\n词形上，拉丁 mundanus 由 mundus 加形容词后缀 -anus 构成，法语的对应形式是 mondain；英语同时存在拉丁语直接借入的路径，不能把 -ane 简单说成法语词尾的机械改写。现代英语中还有 mundanity（平凡、庸常）这样的派生词。\n\n词源亲戚\nmundanity：mundane 的名词派生词 → 平凡、庸常，指日常事务的性质。\nmundanely：mundane + -ly → 平凡地、世俗地，是副词形式。\nantemundane：ante-（之前）+ mundane → 世界存在之前的，较罕见。\ndemimonde：法语 demi“半”+ monde“世界”；monde 与 mundane 同样通向拉丁语 mundus → 原指社会的某种边缘圈子。\n另一个值得分清的词是 cosmos：mundus 曾用于翻译希腊语 kosmos“宇宙”，这属于翻译和概念联系，并不能证明二者同源。mundus“世界”与同形形容词 mundus“干净、优雅”之间的确切联系也不清楚，更早词源未知；不要把“世界最初就是漂亮装饰”当成确定史实。\n\n近义词辨析上，ordinary 强调“普通、不特别”，语气中性，不必然带贬义；mundane 则暗示因为太日常、太现实而缺乏新鲜感或精神性，贬义更明显。routine 侧重“按部就班、例行公事”，常形容工作或程序，不强调“世界/世俗”的对比。prosaic 来自“散文的”，指缺乏诗意和想象力，和 mundane 的“乏味”一义接近，但 prosaic 更偏文学趣味上的平淡，mundane 更偏生活层面的琐碎。worldly 与 mundane 在“世俗的”这一义上相近，但 worldly 常含“老练、通晓世故”的中性甚至褒义，而 mundane 在宗教语境外多带贬义。\n\n记忆链：拉丁 mundus“世界”→ mundanus“属于世界的”→ 中古英语“尘世的、现世的”→ 19世纪“日常现实的”→ 今天的“平凡乏味的”。",
+    "originQuery": "mundane",
+    "page": 8
+  },
+  {
+    "id": "kmf-intriguing",
+    "word": "intriguing",
+    "pair": "",
+    "meaning": "引人入胜的，令人好奇的",
+    "origin": "intriguing 是动词 intrigue 的现在分词形容词，词源链条可追溯到拉丁语 intricare，意为“使纠缠、使困惑、使窘迫”。intricare 由前缀 in-（进入）加复数名词 tricae（纠缠、阻碍、琐碎之物、诡计）构成，tricae 来源不确定，但显然带有“乱麻般缠绕”的意象。从拉丁语 intricare 到意大利语 intrigare，意义已经发展为“策划阴谋、插手、使困惑、使费解”；16 世纪法语 intriguer 承袭此义，1610 年代进入英语。\n\n早期英语中这个词的形态是 entriken，直接来自古法语 entrique 或拉丁语动词，意思是“使纠缠、诱捕、使陷入困惑、使窘迫”。后来词形受法语影响变为 intrigue，但“缠绕”的核心意象一直保留。17 世纪时 intrigue 主要表示“欺骗、耍花招”，1714 年后“策划阴谋”的用法固定下来；同时它还发展出“暗中进行不正当性关系”的含义（1650 年代）。这些意义都带有“暗中纠缠、不光明”的意味。\n\n从“纠缠、困惑”到“激发好奇心”的转变发生在 19 世纪末：1894 年 intrigue 开始表示“引起兴趣”，1909 年 intriguing 作为形容词获得“激发好奇心”的词义。这一变化很自然：当一件事让人感到“被缠住、无法轻易理清”时，它同时也就抓住了注意力，让人产生想要弄明白的欲望。所以 intriguing 的现代义“引人入胜的”并不是凭空而来，而是从“令人困惑地纠缠”这一意象中生长出来的——令人好奇的东西往往正是那些一时看不透、却又吸引你去探究的东西。\n\n词源亲戚\nintricate：来自拉丁语 intricatus，字面义“被缠住的”，现代义“复杂精细的、错综的”。intriguing 与它是同根词，都源自 intricare。\nextricate：来自拉丁语 extricare，ex-（出）+ tricae（纠缠），字面义“从纠缠中脱出”，现代义“解脱、救出”；与 intriguing 同源于 tricae，但证据中仅作为比较词提及。\nintricate 与 extricate 同源于 tricae 的证据较直接；trick 与 tricae 的关系存在争议，不宜列为确定词源亲戚。\nintrigue：现代英语中的动词和名词，义为“激起兴趣；阴谋”。intriguing 正是它的分词形容词。\n\n近义词辨析\nintriguing 与 interesting 都表示“有趣的”，但 intriguing 更强调因神秘、复杂或出乎意料而激发探究欲，常带有“让人想一探究竟”的意味；interesting 则更中性、宽泛。与 fascinating 相比，fascinating 语气更强，近乎“令人着迷”；intriguing 则更多是“勾起好奇心”，强度适中。与 curious 不同，curious 形容人“好奇的”或事物“奇怪的”，intriguing 不强调奇怪，而强调吸引人去了解。\n\n记忆链\nintricare（使纠缠）→ intrigare / intriguer（使困惑、策划阴谋）→ intrigue（激起兴趣）→ intriguing（引人入胜的）。核心意象：被复杂的东西“缠住”，于是好奇心被勾起来。",
+    "originQuery": "intrigue",
+    "page": 8
   }
 ];
 
@@ -1604,6 +1676,38 @@ export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: stri
   "kmf-specious": {
     "english": "The lawyer's specious argument convinced the jury at first, but it fell apart under cross-examination.",
     "chinese": "律师那似是而非的论证起初说服了陪审团，但在交叉询问下就站不住脚了。"
+  },
+  "kmf-abstemiousness": {
+    "english": "Her abstemiousness was evident at every meal: she ate sparingly and drank only a little wine.",
+    "chinese": "她的节制在每一餐都显而易见：她吃得很少，只喝一点酒。"
+  },
+  "kmf-contentiousness": {
+    "english": "His constant contentiousness made even routine meetings exhausting for everyone involved.",
+    "chinese": "他无休止的好争论让每一次例行会议都令所有参与者疲惫不堪。"
+  },
+  "kmf-insouciance": {
+    "english": "She faced the hostile questions with such insouciance that even her opponents seemed disarmed.",
+    "chinese": "她面对那些充满敌意的提问时如此漫不经心，连对手似乎都被卸下了锋芒。"
+  },
+  "kmf-surreptitiousness": {
+    "english": "The surreptitiousness of his late-night file transfers raised suspicions among the auditors, who suspected he was hiding something.",
+    "chinese": "他深夜传输文件时偷偷摸摸的行为引起了审计人员的怀疑。"
+  },
+  "kmf-exhilarating": {
+    "english": "The final lap of the race was exhilarating, with the crowd roaring as the runners sprinted toward the finish line.",
+    "chinese": "比赛最后一圈令人振奋，人群在选手们冲向终点时高声呐喊。"
+  },
+  "kmf-perplexing": {
+    "english": "The instructions were so perplexing that even the experienced engineers had to ask for clarification.",
+    "chinese": "这些说明如此令人困惑，连经验丰富的工程师也不得不请求澄清。"
+  },
+  "kmf-mundane": {
+    "english": "After years of adventure, he found the mundane rhythm of office life surprisingly hard to bear.",
+    "chinese": "多年冒险之后，他发现办公室生活那种平凡的节奏竟难以忍受。"
+  },
+  "kmf-intriguing": {
+    "english": "The professor's intriguing question about the origin of language kept the students thinking long after class.",
+    "chinese": "教授关于语言起源的那个引人入胜的问题，让学生在课后很久仍在思考。"
   }
 };
 
@@ -2428,6 +2532,58 @@ export const COLLECTED_SOURCES: Record<string, { label: string; url: string }[]>
     {
       "label": "Etymonline · specious",
       "url": "https://www.etymonline.com/word/specious"
+    }
+  ],
+  "kmf-abstemiousness": [
+    {
+      "label": "Etymonline · abstemious",
+      "url": "https://www.etymonline.com/word/abstemious"
+    }
+  ],
+  "kmf-contentiousness": [
+    {
+      "label": "Etymonline · contentious",
+      "url": "https://www.etymonline.com/word/contentious"
+    }
+  ],
+  "kmf-insouciance": [
+    {
+      "label": "Etymonline · insouciance",
+      "url": "https://www.etymonline.com/word/insouciance"
+    }
+  ],
+  "kmf-surreptitiousness": [
+    {
+      "label": "Etymonline · surreptitious",
+      "url": "https://www.etymonline.com/word/surreptitious"
+    }
+  ],
+  "kmf-exhilarating": [
+    {
+      "label": "Etymonline · exhilarate",
+      "url": "https://www.etymonline.com/word/exhilarate"
+    }
+  ],
+  "kmf-perplexing": [
+    {
+      "label": "Etymonline · perplex",
+      "url": "https://www.etymonline.com/word/perplex"
+    }
+  ],
+  "kmf-mundane": [
+    {
+      "label": "Etymonline · mundane",
+      "url": "https://www.etymonline.com/word/mundane"
+    }
+  ],
+  "kmf-intriguing": [
+    {
+      "label": "Etymonline · intriguing",
+      "url": "https://www.etymonline.com/word/intriguing"
+    },
+    {
+      "label": "Etymonline · intrigue",
+      "url": "https://www.etymonline.com/word/intrigue"
     }
   ]
 };

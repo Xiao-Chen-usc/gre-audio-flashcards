@@ -116,11 +116,12 @@ function highlightedExample(text: string, terms: string[]) {
   );
 }
 
-export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAMPLES = DEFAULT_EXAMPLES, sources = {}, collected = false, onCollectionChange }: {
+export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAMPLES = DEFAULT_EXAMPLES, sources = {}, collected = false, collectionSize, onCollectionChange }: {
   words?: WordCard[];
   examples?: Record<string, { english: string; chinese: string }>;
   sources?: Record<string, { label: string; url: string }[]>;
   collected?: boolean;
+  collectionSize: number;
   onCollectionChange: (collected: boolean) => void;
 }) {
   const WORD_PAIRS = useMemo(() => wordGroups(WORDS), [WORDS]);
@@ -672,7 +673,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     <main className="app-shell">
       {!started && <nav className="collection-nav" aria-label="词库选择">
         <button aria-current={!collected ? "page" : undefined} onClick={() => onCollectionChange(false)} type="button">同义词一千速记</button>
-        <button aria-current={collected ? "page" : undefined} onClick={() => onCollectionChange(true)} type="button">零散 GRE 单词 · 123</button>
+        <button aria-current={collected ? "page" : undefined} onClick={() => onCollectionChange(true)} type="button">零散 GRE 单词 · {collectionSize}</button>
       </nav>}
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />

@@ -17,7 +17,7 @@ export default function Home() {
     setCollected(value);
     window.scrollTo(0, 0);
   }
-  return <StudyPage key={collected ? "collected" : "synonyms"} collected={collected}
+  return <StudyPage key={collected ? "collected" : "synonyms"} collected={collected} collectionSize={COLLECTED_WORDS.length}
     words={collected ? COLLECTED_WORDS : undefined}
     examples={collected ? COLLECTED_EXAMPLES : undefined}
     sources={collected ? COLLECTED_SOURCES : undefined}

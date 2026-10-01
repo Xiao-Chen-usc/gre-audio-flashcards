@@ -57,7 +57,8 @@ edits 必须是最少的必要修改，old 必须准确匹配该字段原文且�
 
 def main():
     key = os.environ['DEEPSEEK_API_KEY']
-    files = sorted((WORK / 'drafts').glob('*.json'))
+    words = json.loads(prepare.INPUT.read_text())['words']
+    files = [WORK / 'drafts' / (row['word'] + '.json') for row in words]
     failures = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         futures = [pool.submit(review, file, key) for file in files]

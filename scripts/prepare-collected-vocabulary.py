@@ -18,7 +18,7 @@ SKILL = Path.home() / '.codex/skills/gre-etymology/SKILL.md'
 BASES = dict(zip(
     'mirthful unblemished grimy derided vindication cliquish disseminates stipulates obfuscation elucidation spurns animating spiraling circumstellar flares unostentatious concomitants avowing averring gleaming conspired anthropogenic transience ornamental degenerative ephemerality peculiarities cutting egotists synopses meticulousness collegiality supplanted sycophantic ushered omnipresence'.split(),
     'mirth blemish grime deride vindicate clique disseminate stipulate obfuscate elucidate spurn animate spiral stellar flare ostentation concomitant avow aver gleam conspire anthropo- transient ornament degenerate ephemeral peculiar cut ego synopsis meticulous collegial supplant sycophant usher omnipresent'.split()))
-BASES.update({'startling': 'startle', 'daunting': 'daunt', 'encomiums': 'encomium'})
+BASES.update({'startling': 'startle', 'daunting': 'daunt', 'encomiums': 'encomium', 'abstemiousness': 'abstemious', 'contentiousness': 'contentious', 'surreptitiousness': 'surreptitious', 'exhilarating': 'exhilarate', 'perplexing': 'perplex', 'intriguing': 'intrigue'})
 
 class TextParser(HTMLParser):
     def __init__(self):

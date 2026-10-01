@@ -1,12 +1,16 @@
 {
-  "source_file": "data/kmf-collected-words-2026-10-01.json",
-  "source_words": 123,
+  "source_files": [
+    "data/kmf-collected-words-2026-10-01.json",
+    "data/manual-collected-words-2026-10-01.json"
+  ],
+  "source_words": 131,
   "draft_model": "deepseek-flash",
   "review_model": "deepseek-flash",
-  "drafts": 123,
-  "reviews": 123,
-  "model_review_edits": 361,
+  "drafts": 131,
+  "reviews": 131,
+  "model_review_edits": 390,
   "editorially_corrected_words": [
+    "abstemiousness",
     "amalgam",
     "animating",
     "astute",
@@ -14,32 +18,38 @@
     "churn",
     "collegiality",
     "concomitants",
+    "contentiousness",
     "daunting",
     "derided",
     "encomiums",
     "entice",
     "ephemeral",
     "exalt",
+    "exhilarating",
     "flares",
     "galvanize",
+    "insouciance",
     "jejune",
     "jettison",
     "jovial",
     "lull",
+    "mundane",
     "obfuscation",
     "panoply",
+    "perplexing",
     "pervasive",
     "ploy",
     "precipitate",
     "predilection",
     "rant",
+    "surreptitiousness",
     "sycophantic",
     "tendentious",
     "thwart",
     "tractable",
     "transience"
   ],
-  "examples": 123,
+  "examples": 131,
   "paired_memory_words": 0,
   "source_urls": {
     "kmf-mirthful": [
@@ -862,6 +872,58 @@
       {
         "label": "Etymonline · specious",
         "url": "https://www.etymonline.com/word/specious"
+      }
+    ],
+    "kmf-abstemiousness": [
+      {
+        "label": "Etymonline · abstemious",
+        "url": "https://www.etymonline.com/word/abstemious"
+      }
+    ],
+    "kmf-contentiousness": [
+      {
+        "label": "Etymonline · contentious",
+        "url": "https://www.etymonline.com/word/contentious"
+      }
+    ],
+    "kmf-insouciance": [
+      {
+        "label": "Etymonline · insouciance",
+        "url": "https://www.etymonline.com/word/insouciance"
+      }
+    ],
+    "kmf-surreptitiousness": [
+      {
+        "label": "Etymonline · surreptitious",
+        "url": "https://www.etymonline.com/word/surreptitious"
+      }
+    ],
+    "kmf-exhilarating": [
+      {
+        "label": "Etymonline · exhilarate",
+        "url": "https://www.etymonline.com/word/exhilarate"
+      }
+    ],
+    "kmf-perplexing": [
+      {
+        "label": "Etymonline · perplex",
+        "url": "https://www.etymonline.com/word/perplex"
+      }
+    ],
+    "kmf-mundane": [
+      {
+        "label": "Etymonline · mundane",
+        "url": "https://www.etymonline.com/word/mundane"
+      }
+    ],
+    "kmf-intriguing": [
+      {
+        "label": "Etymonline · intriguing",
+        "url": "https://www.etymonline.com/word/intriguing"
+      },
+      {
+        "label": "Etymonline · intrigue",
+        "url": "https://www.etymonline.com/word/intrigue"
       }
     ]
   }
