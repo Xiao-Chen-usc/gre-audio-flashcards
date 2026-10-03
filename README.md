@@ -111,6 +111,10 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 
 收集词库现有 177 个词，沿用 `/gre/#collected` 与 `/gre/#collected-words`；稳定 ID 和独立进度键保持不变。新增 46 词由 DeepSeek 批量起草、复核，再根据词源证据编辑修订。
 
-`data/collected-example-overrides.json` 保存 13 条用户原词书例句（OCR 校订、等价选词整理，含页码）；`data/collected-question-contexts.json` 保存 30 个考满分题库出处，其中 17 个含短题干节选。题库来源保留空格，标明目标词是题干用词、正确选项或干扰选项，并提供原题链接；不将干扰选项填入题干。未匹配到词书例句的词继续使用标明原创的双语例句。
+`data/collected-example-overrides.json` 保存 13 条用户原词书例句（OCR 校订、等价选词整理，含页码）；`data/collected-question-contexts.json` 保存 30 个考满分题库出处，其中 17 个含短题干节选。题库来源保留空格，标明目标词是题干用词、正确选项或干扰选项，并提供原题链接；不将干扰选项填入题干。后续按下述来源规则维护。
 
 后续更新先追加有日期的收集词 JSON，再运行 `scripts/prepare-collected-vocabulary.py`、词源复核及 `scripts/merge-collected-vocabulary.py`；合并按批次日期追加，保留旧词卡顺序。编辑修订、例句来源和题库来源分别保存在 `data/`，构建缓存留在仓库外。部署到 xiao-chen.org 必须运行个人网站仓库的 `deploy.sh`。
+
+## 原句来源规则（用户明确要求）
+
+收集词优先使用用户提供的 GRE 原词书例句（注明书名、页码和 OCR 校订），其次使用可核对的题库出处（原题链接，明确词的角色，节选保留空格）。不再使用 AI 自编例句补位；无可核对出处时显示“暂未找到可核对的原书例句或题库出处”。DeepSeek 只可整理和翻译已提供的原文，不能补造缺失内容。OCR 涉及实质性歧义的条目先排除。`merge-collected-vocabulary.py` 强制只发布 `collected-example-overrides.json` 中附原书定位的例句，没有模型草稿兜底。此前草稿仅保留在构建缓存/编辑历史中，不用于线上例句。

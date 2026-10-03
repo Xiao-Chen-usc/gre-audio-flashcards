@@ -67,10 +67,12 @@
     "transience",
     "wane"
   ],
-  "examples": 177,
-  "book_examples": 13,
-  "question_references": 30,
-  "question_excerpts": 17,
+  "examples": 54,
+  "book_examples": 54,
+  "original_generated_examples": 0,
+  "words_without_confirmed_context": 62,
+  "question_references": 74,
+  "question_excerpts": 42,
   "paired_memory_words": 0,
   "source_urls": {
     "kmf-mirthful": [

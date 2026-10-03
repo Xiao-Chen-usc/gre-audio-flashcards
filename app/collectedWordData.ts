@@ -1599,529 +1599,292 @@ export const COLLECTED_WORDS: WordCard[] = [
 ];
 
 export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: string; sourceLabel?: string; sourceNote?: string; sourceKey?: string }> = {
-  "kmf-mirthful": {
-    "english": "The dinner party grew mirthful as old friends swapped stories and laughed late into the night.",
-    "chinese": "晚宴上，老朋友们交换着故事，笑声不断，一直欢闹到深夜。"
-  },
-  "kmf-tepid": {
-    "english": "The soup arrived tepid, so she sent it back to the kitchen.",
-    "chinese": "汤端上来时只是温吞吞的，于是她把它退回厨房。"
-  },
-  "kmf-jovial": {
-    "english": "The old innkeeper greeted every guest with a jovial laugh and a generous pour of cider.",
-    "chinese": "那位老客栈老板用爽朗的笑声和一大杯苹果酒迎接每一位客人。"
-  },
   "kmf-lugubrious": {
-    "english": "The old mansion was filled with a lugubrious silence, broken only by the slow ticking of a clock.",
-    "chinese": "那座老宅子里弥漫着一种哀伤阴郁的寂静，只有一只钟缓慢的滴答声打破它。"
-  },
-  "kmf-unblemished": {
-    "english": "Her unblemished reputation made her the obvious choice to lead the ethics committee.",
-    "chinese": "她清白无瑕的名声使她成为领导道德委员会的当然人选。"
-  },
-  "kmf-grimy": {
-    "english": "After decades of coal mining, the windows of the old factory were grimy and almost opaque.",
-    "chinese": "经过几十年的采煤，老厂房的窗户沾满污垢，几乎不透明了。"
-  },
-  "kmf-pristine": {
-    "english": "The researchers were astonished to find a pristine coral reef in an area once assumed to be heavily damaged by industrial runoff.",
-    "chinese": "研究人员惊讶地发现了一片原始状态的珊瑚礁，而该海域此前被认为已遭到工业径流的严重破坏。"
-  },
-  "kmf-murky": {
-    "english": "The investigation was hampered by murky financial records that no one seemed willing to explain.",
-    "chinese": "调查因那些似乎无人愿意解释的、含混不清的财务记录而受阻。"
+    "english": "Mortoris is dour and lugubrious & gloomy, seemingly incapable of smiling, let alone laughing.",
+    "chinese": "莫托里斯性格阴沉、忧郁，似乎完全不会微笑，更别提大笑了。",
+    "sourceLabel": "GRE 原书例句 · 第 37 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p37r05"
   },
   "kmf-portend": {
-    "english": "The sudden drop in temperature may portend a severe winter.",
-    "chinese": "气温骤降可能预示着严冬的到来。"
-  },
-  "kmf-derided": {
-    "english": "The critics derided his latest novel as shallow and derivative.",
-    "chinese": "评论家们嘲笑他的最新小说肤浅且缺乏新意。"
-  },
-  "kmf-vindication": {
-    "english": "The scientist's later discoveries were seen as a vindication of her controversial theory.",
-    "chinese": "这位科学家后来的发现被视为对她那备受争议的理论的证实。"
-  },
-  "kmf-disquisition": {
-    "english": "The professor delivered a lengthy disquisition on the causes of the empire's decline.",
-    "chinese": "教授就帝国衰亡的原因发表了一篇冗长的专题论述。"
-  },
-  "kmf-rant": {
-    "english": "Rather than offer a solution, he began to rant about the new policy.",
-    "chinese": "他没有提出解决办法，而是开始怒气冲冲地长篇抨击新政策。"
-  },
-  "kmf-diatribe": {
-    "english": "In a scathing diatribe, the columnist accused the mayor of betraying the very voters who had elected him.",
-    "chinese": "在一篇措辞尖刻的长篇抨击文章中，这位专栏作家指责市长背叛了当初选他上台的选民。"
-  },
-  "kmf-tractable": {
-    "english": "The new manager found the young interns surprisingly tractable, following every instruction without complaint.",
-    "chinese": "新经理发现这些年轻实习生出奇地温顺，毫无怨言地听从每一条指示。"
-  },
-  "kmf-cliquish": {
-    "english": "The department has become increasingly cliquish, and new employees often feel excluded from informal gatherings.",
-    "chinese": "这个部门变得越来越小集团化，新员工常常感到被排斥在非正式聚会之外。"
-  },
-  "kmf-disseminates": {
-    "english": "The organization disseminates health information through social media and community workshops.",
-    "chinese": "该组织通过社交媒体和社区讲座传播健康信息。"
-  },
-  "kmf-stipulates": {
-    "english": "The contract stipulates that all disputes must be resolved through arbitration.",
-    "chinese": "合同规定，所有争议都必须通过仲裁解决。"
-  },
-  "kmf-obfuscation": {
-    "english": "The report's deliberate obfuscation of the budget figures made it nearly impossible for the committee to see where the money had gone.",
-    "chinese": "这份报告对预算数字的刻意含糊处理，使委员会几乎无法看清钱到底花到哪里去了。"
+    "english": "Tompkinson’s prior donations to the university, while very generous, failed to portend & predict the magnitude of her latest gift.",
+    "chinese": "汤普金森之前对大学的捐赠虽然非常慷慨，但未能预示她最新一笔捐赠的巨大规模。",
+    "sourceLabel": "GRE 原书例句 · 第 25 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p25r05"
   },
   "kmf-elucidation": {
-    "english": "The professor's careful elucidation of the poem's difficult metaphors helped the students see how its images fit together.",
-    "chinese": "教授对这首诗中难解隐喻的细致阐明，帮助学生看清了这些意象如何相互关联。"
+    "english": "Despite growing evidence of a positive association between consumption of whole grains and long-term health, a research gap exists between observational studies and the elucidation of the mechanism involved, mechanisms that in some cases are still quite speculative & unsubstantiated.",
+    "chinese": "尽管越来越多的证据表明全谷物消费与长期健康之间存在正相关，但在观察性研究与所涉及机制的阐明之间仍存在研究空白，这些机制在某些情况下仍相当推测性且未经证实。",
+    "sourceLabel": "GRE 原书例句 · 第 48 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p48r04"
   },
   "kmf-eloquence": {
-    "english": "Her eloquence moved the entire audience to tears.",
-    "chinese": "她的雄辩使全场观众感动落泪。"
-  },
-  "kmf-flout": {
-    "english": "The company continued to flout environmental regulations despite repeated warnings.",
-    "chinese": "尽管多次受到警告，该公司仍继续公然无视环保法规。"
+    "english": "People enjoy listening to the governor's inspiring speeches, and his eloquence lulls his adversaries into underestimating his tenacity & resolve, the tempered steel beneath the sleek suits.",
+    "chinese": "人们喜欢听州长鼓舞人心的演讲，而他的雄辩使对手低估了他的坚韧与决心，那是光鲜西装下经过锤炼的钢铁。",
+    "sourceLabel": "GRE 原书例句 · 第 40 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p40r09"
   },
   "kmf-futile": {
-    "english": "All their efforts to save the company proved futile.",
-    "chinese": "他们为挽救公司所做的一切努力都被证明是徒劳的。"
+    "english": "The fact that most hypotheses turn out to be wrong does not mean that hypothesizing is futile & fruitless. In fact, most hypotheses include useful ideas that survive to become part of the next model or scenario.",
+    "chinese": "大多数假设被证明是错误的这一事实并不意味着假设是徒劳无益的。事实上，大多数假设都包含有用的想法，这些想法会被保留下来，成为下一个模型或情景的一部分。",
+    "sourceLabel": "GRE 原书例句 · 第 29 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p29r07"
   },
   "kmf-spurns": {
-    "english": "She spurns every offer of help, preferring to struggle alone.",
-    "chinese": "她不屑地拒绝一切帮助，宁愿独自挣扎。"
-  },
-  "kmf-animating": {
-    "english": "Her animating presence turned a dull meeting into an energetic discussion.",
-    "chinese": "她那股富有感染力的活力把一场沉闷的会议变成了热烈的讨论。"
+    "english": "There is frequently a protracted time interval between the introduction of an innovative musical composition and its public acceptance; the concert-going public often spurns the novel & original in favor of the familiar for a prolonged period.",
+    "chinese": "创新的音乐作品从问世到被公众接受之间往往存在较长的时间间隔; 听众通常会在较长时间内拒绝新颖独特的作品， 而偏爱熟悉的作品。",
+    "sourceLabel": "GRE 原书例句 · 第 7 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p07r02"
   },
   "kmf-spiraling": {
-    "english": "With no one willing to cut spending, the country's debt kept spiraling out of control.",
-    "chinese": "由于没人愿意削减开支，该国的债务不断螺旋式上升，失去控制。"
+    "english": "If giant X-ray flares churn circumstellar disks enough to keep newborn planets, such as Earth once was, from spiraling into their suns, it would be an ironic twist on our conception of X-ray flares as dangerous & perilous.",
+    "chinese": "如果巨大的 X 射线辉斑剧烈搅动环绕恒星的盘面，从而阻止像地球曾经那样的新生行星螺旋陷入它们的恒星，这将是对我们将 X 射线辉斑视为危险的这一认知的讽刺性转变。",
+    "sourceLabel": "GRE 原书例句 · 第 37 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p37r02"
   },
   "kmf-circumstellar": {
-    "english": "Astronomers detected a dusty circumstellar disk around the young star.",
-    "chinese": "天文学家在这颗年轻恒星周围探测到了一个含尘的恒星周盘。"
+    "english": "If giant X-ray flares churn circumstellar disks enough to keep newborn planets, such as Earth once was, from spiraling into their suns, it would be an ironic twist on our conception of X-ray flares as dangerous & perilous.",
+    "chinese": "如果巨大的 X 射线辉斑剧烈搅动环绕恒星的盘面，从而阻止像地球曾经那样的新生行星螺旋陷入它们的恒星，这将是对我们将 X 射线辉斑视为危险的这一认知的讽刺性转变。",
+    "sourceLabel": "GRE 原书例句 · 第 37 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p37r02"
   },
   "kmf-churn": {
-    "english": "Strong winds can churn the shallow water into a muddy froth.",
-    "chinese": "强风能将浅水搅成浑浊的泡沫。"
+    "english": "If giant X-ray flares churn circumstellar disks enough to keep newborn planets, such as Earth once was, from spiraling into their suns, it would be an ironic twist on our conception of X-ray flares as dangerous & perilous.",
+    "chinese": "如果巨大的 X 射线辉斑剧烈搅动环绕恒星的盘面，从而阻止像地球曾经那样的新生行星螺旋陷入它们的恒星，这将是对我们将 X 射线辉斑视为危险的这一认知的讽刺性转变。",
+    "sourceLabel": "GRE 原书例句 · 第 37 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p37r02"
   },
   "kmf-flares": {
-    "english": "She wore a pair of faded flares and a striped T-shirt to the party.",
-    "chinese": "她穿着一条褪色的喇叭裤和一件条纹T恤去参加聚会。"
-  },
-  "kmf-unostentatious": {
-    "english": "She lived in an unostentatious house on the edge of town, driving an old car and wearing the same plain coat for years.",
-    "chinese": "她住在城边一栋毫不张扬的房子里，开着一辆旧车，同一件朴素的外套穿了很多年。"
+    "english": "If giant X-ray flares churn circumstellar disks enough to keep newborn planets, such as Earth once was, from spiraling into their suns, it would be an ironic twist on our conception of X-ray flares as dangerous & perilous.",
+    "chinese": "如果巨大的 X 射线辉斑剧烈搅动环绕恒星的盘面，从而阻止像地球曾经那样的新生行星螺旋陷入它们的恒星，这将是对我们将 X 射线辉斑视为危险的这一认知的讽刺性转变。",
+    "sourceLabel": "GRE 原书例句 · 第 37 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p37r02"
   },
   "kmf-futility": {
-    "english": "She eventually recognized the futility of arguing with someone who refused to listen.",
-    "chinese": "她最终意识到，和一个拒绝倾听的人争论是徒劳的。"
-  },
-  "kmf-concomitants": {
-    "english": "The study found that anxiety and sleep disturbances are common concomitants of chronic illness.",
-    "chinese": "研究发现，焦虑和睡眠障碍是慢性疾病常见的伴随现象。"
-  },
-  "kmf-avowing": {
-    "english": "She ended the interview by avowing her full support for the reform.",
-    "chinese": "她以公开声明全力支持这项改革结束了采访。"
-  },
-  "kmf-averring": {
-    "english": "The witness kept averring that he had seen the defendant at the scene of the crime.",
-    "chinese": "证人一再断言他在犯罪现场见过被告。"
-  },
-  "kmf-paraphernalia": {
-    "english": "The attic was cluttered with all the paraphernalia of his old magic act: silk scarves, false-bottomed boxes, and a dusty top hat.",
-    "chinese": "阁楼里堆满了他旧日魔术表演的全套零碎行头：丝巾、带暗格的盒子和一顶积灰的高顶礼帽。"
-  },
-  "kmf-gleaming": {
-    "english": "The freshly polished silverware was gleaming on the table under the warm lamplight.",
-    "chinese": "刚擦亮的银餐具在温暖的灯光下，在桌面上闪闪发光。"
+    "english": "A cure for the common cold has been so elusive that it has become a modern symbol of futility & pointlessness.",
+    "chinese": "治愈普通感冒一直难以实现，已成为现代徒劳无功的象征。",
+    "sourceLabel": "GRE 原书例句 · 第 7 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p07r01"
   },
   "kmf-elusive": {
-    "english": "Despite years of research, the exact mechanism of the disease remains elusive.",
-    "chinese": "尽管研究多年，这种疾病的确切机制仍然难以捉摸。"
-  },
-  "kmf-spate": {
-    "english": "The company received a spate of complaints after the new policy was announced.",
-    "chinese": "新政策宣布后，公司收到了一连串的投诉。"
-  },
-  "kmf-conspired": {
-    "english": "The two officials conspired to hide the evidence from the public.",
-    "chinese": "这两名官员密谋向公众隐瞒证据。"
-  },
-  "kmf-recant": {
-    "english": "Under threat of excommunication, Galileo was forced to recant his heliocentric views.",
-    "chinese": "在开除教籍的威胁下，伽利略被迫公开撤回他的日心说观点。"
-  },
-  "kmf-rote": {
-    "english": "He passed the exam by rote, reciting definitions he barely understood.",
-    "chinese": "他靠死记硬背通过了考试，背诵着那些他几乎并不理解的定义。"
-  },
-  "kmf-condone": {
-    "english": "The company's silence seemed to condone the unethical behavior of its managers.",
-    "chinese": "公司的沉默似乎是在纵容其经理们的不道德行为。"
-  },
-  "kmf-anthropogenic": {
-    "english": "Scientists are investigating the anthropogenic causes of the rapid decline in coral reefs.",
-    "chinese": "科学家正在调查珊瑚礁迅速减少的人为原因。"
-  },
-  "kmf-impasse": {
-    "english": "The negotiations reached an impasse after neither side would compromise on the border issue.",
-    "chinese": "双方都不肯在边界问题上让步，谈判陷入了僵局。"
-  },
-  "kmf-transience": {
-    "english": "The transience of the cherry blossoms is precisely what makes them so moving.",
-    "chinese": "樱花转瞬即逝，恰恰正是这一点让它如此动人。"
-  },
-  "kmf-insipid": {
-    "english": "The critic dismissed the film as an insipid romance that offered nothing new.",
-    "chinese": "那位影评人把这部电影斥为一部毫无新意、乏味无聊的爱情片。"
-  },
-  "kmf-gingerbread": {
-    "english": "The new town hall is pure gingerbread, all gilded trim and no useful space.",
-    "chinese": "新市政厅纯属华而不实，满身镀金装饰，却没有多少实用空间。"
+    "english": "A cure for the common cold has been so elusive that it has become a modern symbol of futility & pointlessness.",
+    "chinese": "治愈普通感冒一直难以实现，已成为现代徒劳无功的象征。",
+    "sourceLabel": "GRE 原书例句 · 第 7 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p07r01"
   },
   "kmf-extensive": {
-    "english": "The storm caused extensive damage across the coastal towns.",
-    "chinese": "这场风暴给沿海城镇造成了了大范围的破坏。"
+    "english": "It can be a daunting task to plunge into the disparate and extensive data sets on the carnivores and distill & extract meaningful patterns from their extraordinary morphological, behavioral, and ecological diversity.",
+    "chinese": "深入研究食肉动物的不同且广泛的数据集，并从其非凡的形态、行为和生态多样性中提炼出有意义的模式，可能是一项艰巨的任务。",
+    "sourceLabel": "GRE 原书例句 · 第 23 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p23r05"
   },
   "kmf-erudite": {
-    "english": "The erudite professor could discuss everything from ancient philosophy to modern physics.",
-    "chinese": "这位博学的教授能讨论从古代哲学到现代物理的一切话题。"
+    "english": "The book is impressively learned & erudite, drawing from multiple disciplines and perspectives, and resting on diverse and extensive archival sources, autobiographies, published collections of letter, and works of history.",
+    "chinese": "这本书博学多识，汲取了多个学科和视角的精华，基于多样且广泛的档案资料、自传、已出版的书信集以及历史著作。",
+    "sourceLabel": "GRE 原书例句 · 第 39 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p39r03"
   },
   "kmf-erratic": {
-    "english": "His breathing was erratic at first, then gradually settled into a slow, steady rhythm.",
-    "chinese": "他的呼吸起初很不规则，随后逐渐平稳下来，变成缓慢而均匀的节奏。"
-  },
-  "kmf-tendentious": {
-    "english": "The article's tendentious selection of facts made it clear that the author had already decided what conclusion to reach.",
-    "chinese": "那篇文章对事实的倾向性选取表明，作者早已拿定了要得出什么结论。"
-  },
-  "kmf-jejune": {
-    "english": "The professor dismissed the student's jejune argument as lacking both evidence and originality.",
-    "chinese": "教授认为那个学生浅薄幼稚的论点既缺乏证据又毫无新意，不予采纳。"
-  },
-  "kmf-vapid": {
-    "english": "The awards ceremony was full of vapid speeches that said nothing and moved no one.",
-    "chinese": "颁奖典礼上尽是些空洞乏味的演讲，什么也没说清，谁也没打动。"
-  },
-  "kmf-precipitate": {
-    "english": "A careless remark can precipitate a crisis that no one can control.",
-    "chinese": "一句不慎的话可能引发一场无人能控制的危机。"
-  },
-  "kmf-conjectural": {
-    "english": "Without further documents, any account of the author's intentions remains conjectural.",
-    "chinese": "在没有更多文献的情况下，任何关于作者意图的说法都只能是推测性的。"
-  },
-  "kmf-speculative": {
-    "english": "His theory remains speculative, since no experiment has yet confirmed it.",
-    "chinese": "他的理论目前仍属推测，因为还没有任何实验能证实它。"
-  },
-  "kmf-startling": {
-    "english": "The startling news that the company had gone bankrupt spread through the office within minutes.",
-    "chinese": "公司已经破产这条惊人的消息几分钟内就传遍了整个办公室。"
-  },
-  "kmf-ornamental": {
-    "english": "The garden is filled with ornamental plants that serve no practical purpose but add great beauty.",
-    "chinese": "花园里种满了观赏植物，它们没有实际用途，却增添了极大的美感。"
-  },
-  "kmf-spontaneous": {
-    "english": "Her spontaneous laughter filled the room and made everyone feel at ease.",
-    "chinese": "她自发的笑声充满了房间，让每个人都感到轻松自在。"
-  },
-  "kmf-degenerative": {
-    "english": "The patient was diagnosed with a degenerative joint disease that gradually limited his mobility.",
-    "chinese": "病人被诊断出患有退行性关节疾病，这逐渐限制了他的活动能力。"
+    "english": "Spiderwebs suspended on flexible supports waver & oscillate even in low airflow in patterns that are erratic, enhancing the probability of insect capture over a volume of space.",
+    "chinese": "悬挂在柔性支架上的蜘蛛网即使在低气流中也会摇摆晃动，其不规则的运动模式增加了在空间范围内捕捉昆虫的概率。",
+    "sourceLabel": "GRE 原书例句 · 第 26 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p26r10"
   },
   "kmf-auspicious": {
-    "english": "The clear weather on election day was an auspicious sign for the new government.",
-    "chinese": "选举日晴朗的天气对新政府来说是个吉兆。"
-  },
-  "kmf-prognosis": {
-    "english": "The doctor's prognosis was encouraging: with treatment, the patient had a good chance of a full recovery.",
-    "chinese": "医生的预后判断令人鼓舞：接受治疗后，病人完全康复的机会很大。"
-  },
-  "kmf-thwart": {
-    "english": "A sudden storm could thwart their plan to cross the channel.",
-    "chinese": "突如其来的暴风雨可能挫败他们横渡海峡的计划。"
-  },
-  "kmf-presume": {
-    "english": "I presume you have already read the report, since you mentioned its conclusions.",
-    "chinese": "既然你提到了报告的结论，我推测你已经读过了。"
-  },
-  "kmf-galvanize": {
-    "english": "The mayor hopes her speech will galvanize the volunteers into action.",
-    "chinese": "市长希望她的演讲能激励志愿者行动起来。"
-  },
-  "kmf-animate": {
-    "english": "The new score managed to animate the otherwise dull scene.",
-    "chinese": "新的配乐让原本沉闷的场景有了生气。"
-  },
-  "kmf-appeal": {
-    "english": "The charity's appeal for donations reached millions of people within a week.",
-    "chinese": "这家慈善机构的募捐呼吁在一周内就传到了数百万人那里。"
-  },
-  "kmf-ephemerality": {
-    "english": "The ephemerality of cherry blossoms makes them all the more precious to those who gather to watch them fall.",
-    "chinese": "樱花转瞬即逝的特性，让那些聚在一起看花落的人更加珍视它们。"
-  },
-  "kmf-ingenuity": {
-    "english": "Her ingenuity in turning a broken umbrella into a tent impressed everyone at the camp.",
-    "chinese": "她把破伞改造成帐篷的巧思让营地里的每个人都很佩服。"
+    "english": "The 1840s were a favorable & an auspicious time for young women beginning to study science, particularly astronomy; in 1847 Maria Mitchell discovered the Nantucket comet, the first of several important astronomical discoveries of the era.",
+    "chinese": "19世纪40年代是年轻女性开始学习科学，特别是天文学的一个有利且吉祥的时期。1847年，玛丽亚·米切尔发现了南塔克彗星，这是该时代几项重要天文发现中的第一项。",
+    "sourceLabel": "GRE 原书例句 · 第 42 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p42r09"
   },
   "kmf-daunting": {
-    "english": "The sheer scale of the project was daunting, but she refused to be intimidated.",
-    "chinese": "这个项目的规模之大令人望而生畏，但她拒绝被吓倒。"
+    "english": "It can be a daunting task to plunge into the disparate and extensive data sets on the carnivores and distill & extract meaningful patterns from their extraordinary morphological, behavioral, and ecological diversity.",
+    "chinese": "深入研究食肉动物的不同且广泛的数据集，并从其非凡的形态、行为和生态多样性中提炼出有意义的模式，可能是一项艰巨的任务。",
+    "sourceLabel": "GRE 原书例句 · 第 23 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p23r05"
   },
   "kmf-proclivity": {
-    "english": "He has a proclivity for exaggerating even the smallest achievements.",
-    "chinese": "他有一种连最小的成就都要夸大的癖性。"
+    "english": "The tribes’ proclivity toward & predilection for a settled mode of living was derived from their long-standing traditions, which, though differing from one tribal group to another, always included a resistance to nomadic lifestyles.",
+    "chinese": "部落对定居生活方式的倾向源于其长期的传统，这些传统虽然因部落群体不同而有所差异，但始终包含对游牧生活方式的抵制。",
+    "sourceLabel": "GRE 原书例句 · 第 3 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p03r08"
   },
   "kmf-vacillation": {
-    "english": "After weeks of vacillation between the two job offers, she finally chose the one closer to her family.",
-    "chinese": "在两份工作邀请之间摇摆了数周之后，她最终选择了离家更近的那一份。"
+    "english": "What they see in Jimenez is the one candidate capable of decisive leadership, in stark contrast to Diaz, whose team in office has been marred by irresolution & vacillation.",
+    "chinese": "他们眼中的希门尼斯是唯一能够果断领导的候选人，这与迪亚兹形成鲜明对比，后者的团队在任期间因优柔寡断和犹豫不决而受损。",
+    "sourceLabel": "GRE 原书例句 · 第 15 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p15r02"
   },
   "kmf-predilection": {
-    "english": "She has a predilection for obscure nineteenth-century novels.",
-    "chinese": "她对冷僻的十九世纪小说情有独钟。"
+    "english": "The tribes’ proclivity toward & predilection for a settled mode of living was derived from their long-standing traditions, which, though differing from one tribal group to another, always included a resistance to nomadic lifestyles.",
+    "chinese": "部落对定居生活方式的倾向源于其长期的传统，这些传统虽然因部落群体不同而有所差异，但始终包含对游牧生活方式的抵制。",
+    "sourceLabel": "GRE 原书例句 · 第 3 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p03r08"
   },
   "kmf-peculiarities": {
-    "english": "One of his many peculiarities is that he refuses to eat anything that is white.",
-    "chinese": "他的诸多怪癖之一是拒绝吃任何白色的食物。"
+    "english": "One of the peculiarities of humans is that we irrationally gravitate to the predictable and avoid risk, whatever the reasons for this predilection & proclivity, it is hardly a sound basis for dealing with complex, long-term problems.",
+    "chinese": "人类的一个特殊之处在于，我们非理性地倾向于可预测性并避免风险，无论这种偏好是什么原因，这都难以成为应对复杂且长期问题的可靠基础。",
+    "sourceLabel": "GRE 原书例句 · 第 9 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p09r09"
   },
   "kmf-evanescent": {
-    "english": "The evanescent beauty of the cherry blossoms reminds us to cherish the present moment.",
-    "chinese": "樱花转瞬即逝的美提醒我们珍惜当下。"
+    "english": "Devoted to beauty and the poetic, evanescent moment, artists of the period were often inspired by the charm of the capital city and of its bucolic & rustic_ countryside.",
+    "chinese": "专注于美与诗意的阴间，这一时期的艺术家常常受到首都城市及其田园乡村魅力的启发。",
+    "sourceLabel": "GRE 原书例句 · 第 35 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p35r03"
   },
   "kmf-ephemeral": {
-    "english": "The ephemeral beauty of the cherry blossoms reminds us that pleasure is often brief.",
-    "chinese": "樱花转瞬即逝的美提醒我们，欢愉往往是短暂的。"
-  },
-  "kmf-arcane": {
-    "english": "Only a handful of scholars can decipher the arcane symbols carved into the temple wall.",
-    "chinese": "只有少数几位学者能解读刻在神庙墙壁上的那些晦涩符号。"
+    "english": "Any antimatter in our part of the universe is necessarily short-lived & ephemeral because of the overwhelming preponderance of ordinary matter, by which antimatter is quickly annihilated.",
+    "chinese": "在我们宇宙的这一部分，任何反物质必然是短暂的，因为普通物质的绝对优势会迅速湮灭反物质。",
+    "sourceLabel": "GRE 原书例句 · 第 39 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p39r09"
   },
   "kmf-cutting": {
-    "english": "Her cutting remarks about his accent made the whole room fall silent.",
-    "chinese": "她对他口音的尖刻评论让整个房间安静了下来。"
-  },
-  "kmf-ingenuous": {
-    "english": "Her ingenuous smile made everyone in the room trust her immediately.",
-    "chinese": "她那坦诚天真的笑容让房间里的每个人都立刻信任了她。"
+    "english": "In their quest for kinder cutting, physicians increasingly rely on endoscopic surgery, replacing large scalpels and clamps with cameras and flexible & supple tools that snake into the body through tiny holes.",
+    "chinese": "在追求更温和的手术方式时，医生越来越依赖内窥镜手术，用摄像头和灵活工具代替大型手术刀和夹子，这些工具通过微小的孔进入体内。",
+    "sourceLabel": "GRE 原书例句 · 第 27 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p27r03"
   },
   "kmf-acerbic": {
-    "english": "Her acerbic wit made her both feared and admired in the literary circle.",
-    "chinese": "她尖刻的机智使她在文学圈中既令人畏惧又受人钦佩。"
+    "english": "Because the literary club often trumpeted itself as a sanctuary for temperate discussion, visitors were startled by the frequently acerbic & vitriolic tone of its recent debates.",
+    "chinese": "因为文学俱乐部经常自诩为温和讨论的避风港，访客们对其最近辩论中频繁出现的尖刻语调感到震惊。",
+    "sourceLabel": "GRE 原书例句 · 第 2 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p02r04"
   },
   "kmf-egotists": {
-    "english": "He is one of those egotists who turn every conversation back to themselves.",
-    "chinese": "他是那种总把任何话题都绕回自己身上的自我中心者。"
-  },
-  "kmf-jettison": {
-    "english": "The crew had to jettison most of the cargo to keep the ship afloat during the storm.",
-    "chinese": "暴风雨中，船员们不得不抛弃大部分货物以使船保持漂浮。"
+    "english": "In a field of egotists, Bloomfield is unassuming & modest, often praising her competitors and punctuating her correspondence with self-deprecating remarks.",
+    "chinese": "在一群自负的人中，布鲁姆菲尔德谦逊，总是赞扬她的竞争对手，并在通信中时常带有自嘲的言辞。",
+    "sourceLabel": "GRE 原书例句 · 第 3 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p03r05"
   },
   "kmf-astute": {
-    "english": "She was astute enough to realize that the offer was too good to be true.",
-    "chinese": "她足够机敏，意识到这个提议好得令人难以置信。"
-  },
-  "kmf-awry": {
-    "english": "The whole project went awry when the funding was suddenly cut.",
-    "chinese": "资金突然被削减后，整个项目都出了岔子。"
-  },
-  "kmf-synopses": {
-    "english": "The editor asked us to submit brief synopses of our proposed chapters before writing the full manuscript.",
-    "chinese": "编辑要求我们在写完整书稿之前，先提交各章提案的简短梗概。"
+    "english": "Throughout human history, intelligence and consciousness have been allied & conflated concepts: those possessing much of the former are assumed, in some ill-defined way, to be more conscious than those less astute.",
+    "chinese": "纵观人类历史，智慧与意识一直是密不可分的概念：拥有更多智慧的人通常被模糊地认为比不那么聪明的人更有意识。",
+    "sourceLabel": "GRE 原书例句 · 第 23 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p23r02"
   },
   "kmf-contentious": {
-    "english": "The proposal to change the voting rules proved highly contentious, splitting the committee into two camps.",
-    "chinese": "修改投票规则的提案引起了极大争议，使委员会分裂成两个阵营。"
+    "english": "The concept of increasing complexity of organisms has a contentious & a fraught history among evolutionary biologists, and yet many laypeople would unhesitatingly say that the pattern applies to the history of life on Earth",
+    "chinese": "生物体复杂性增加的概念在进化生物学家中一直存在争议且充满挑战的历史，然而许多普通人会毫不犹疑地认为这一模式适用于地球生命的历史。",
+    "sourceLabel": "GRE 原书例句 · 第 7 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p07r07"
   },
   "kmf-innovative": {
-    "english": "The company is known for its innovative approach to tackling old problems.",
-    "chinese": "这家公司以用创新方法解决老问题而闻名。"
-  },
-  "kmf-overbearing": {
-    "english": "His overbearing manner made it difficult for anyone to voice a different opinion.",
-    "chinese": "他专横的态度使得任何人都难以发表不同意见。"
+    "english": "There is frequently a protracted time interval between the introduction of an innovative musical composition and its public acceptance; the concert-going public often spurns the novel & original in favor of the familiar for a prolonged period.",
+    "chinese": "创新的音乐作品从问世到被公众接受之间往往存在较长的时间间隔; 听众通常会在较长时间内拒绝新颖独特的作品， 而偏爱熟悉的作品。",
+    "sourceLabel": "GRE 原书例句 · 第 7 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p07r02"
   },
   "kmf-rambling": {
-    "english": "His rambling speech lasted an hour but never came to the point.",
-    "chinese": "他那番东拉西扯的讲话持续了一个小时，却始终没有说到要点。"
+    "english": "According to some political analysts, the candidate's occasionally rambling responses to questions suggest that she has been out of circulation for a while and her debating skills need to be honed & enhanced,",
+    "chinese": "根据一些政治分析人士的看法，这位候选人偶尔漫无边际的回答表明，她已经有一段时间未曾活跃，她的辩论技巧需要打磨提升。",
+    "sourceLabel": "GRE 原书例句 · 第 20 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p20r01"
   },
   "kmf-tenacity": {
-    "english": "Her tenacity in pursuing the research question impressed even her harshest critics.",
-    "chinese": "她在追求这个研究问题上的坚韧不拔，连最苛刻的批评者都为之折服。"
-  },
-  "kmf-eminence": {
-    "english": "Her eminence in the field of neuroscience was recognized by a lifetime achievement award.",
-    "chinese": "她在神经科学领域的卓越地位因一项终身成就奖而得到公认。"
+    "english": "People enjoy listening to the governor's inspiring speeches, and his eloquence lulls his adversaries into underestimating his tenacity & resolve, the tempered steel beneath the sleek suits.",
+    "chinese": "人们喜欢听州长鼓舞人心的演讲，而他的雄辩使对手低估了他的坚韧与决心，那是光鲜西装下经过锤炼的钢铁。",
+    "sourceLabel": "GRE 原书例句 · 第 40 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p40r09"
   },
   "kmf-meticulousness": {
-    "english": "Her meticulousness in checking every footnote delayed the manuscript but spared the editors a great deal of embarrassment.",
-    "chinese": "她核对每一条脚注的一丝不苟拖慢了书稿进度，却让编辑们免去了许多难堪。"
+    "english": "Explorers could not build each other's knowledge if they could not trust records of previous explorers; thus exploration depended on the exactitude & meticulousness of those who had gone before.",
+    "chinese": "如果探险者无法信任前人记录，就无法相互建立知识；因此，探险依赖于前人记录的准确无误。",
+    "sourceLabel": "GRE 原书例句 · 第 25 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p25r10"
   },
   "kmf-exactitude": {
-    "english": "The old watchmaker repaired each movement with such exactitude that not a single gear was left misaligned.",
-    "chinese": "这位老钟表匠以一丝不苟的精确修复每一个机芯，没有一个齿轮错位。"
-  },
-  "kmf-endurance": {
-    "english": "Her endurance during the marathon surprised everyone, even the experienced runners.",
-    "chinese": "她在马拉松比赛中表现出的耐力让所有人惊讶，连经验丰富的跑者也自叹不如。"
-  },
-  "kmf-collegiality": {
-    "english": "The department prides itself on its collegiality, with junior and senior faculty sharing decisions rather than following a single leader.",
-    "chinese": "这个院系以同僚间的平等协作为荣，资深与年轻教师共同决策，而不是听命于某一个人。"
+    "english": "Explorers could not build each other's knowledge if they could not trust records of previous explorers; thus exploration depended on the exactitude & meticulousness of those who had gone before.",
+    "chinese": "如果探险者无法信任前人记录，就无法相互建立知识；因此，探险依赖于前人记录的准确无误。",
+    "sourceLabel": "GRE 原书例句 · 第 25 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p25r10"
   },
   "kmf-perplex": {
-    "english": "The instructions were so tangled and full of exceptions that they only served to perplex everyone in the room.",
-    "chinese": "这些说明混乱不堪、例外又多，结果只会让屋里所有人更加困惑。"
-  },
-  "kmf-entice": {
-    "english": "Advertisers entice teenagers with free samples and glossy images of a life they cannot yet afford.",
-    "chinese": "广告商用免费样品和光鲜的画面，诱使青少年向往一种他们还负担不起的生活。"
-  },
-  "kmf-gratify": {
-    "english": "He bought the rare painting merely to gratify his own vanity.",
-    "chinese": "他买下那幅名画，只是为了满足自己的虚荣心。"
-  },
-  "kmf-amalgam": {
-    "english": "The city's culture is an amalgam of immigrant traditions and native customs.",
-    "chinese": "这座城市的文化是移民传统与本土习俗的融合体。"
+    "english": "Although the essayist’s arguments did not confound & perplex her most perceptive readers, the extreme subtlety of the points she made explains why she was misinterpreted by most critics of her day.",
+    "chinese": "尽管这位散文家的论点并未让最敏锐的读者困惑，但她所提出观点的极度微妙性解释了为何她在当时被大多数评论家误解。",
+    "sourceLabel": "GRE 原书例句 · 第 18 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p18r09"
   },
   "kmf-respite": {
-    "english": "The ceasefire gave the exhausted villagers a brief respite from the shelling.",
-    "chinese": "停火让筋疲力尽的村民们暂时从炮击中获得了喘息。"
+    "english": "In the nineteenth century, the circus, for all its glitz and even its glamour, was entertainment with an old soul, a respite from & a break from the fast-forward pace of change in modern life.",
+    "chinese": "在19世纪，马戏团尽管浮华甚至魅力四射，却是一种有着古老灵魂的娱乐，是对现代生活中快进式变化节奏的暂缓与间歇。",
+    "sourceLabel": "GRE 原书例句 · 第 7 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p07r05"
   },
   "kmf-lull": {
-    "english": "The gentle rocking of the boat can lull a passenger to sleep.",
-    "chinese": "船的轻轻摇晃能使乘客渐渐入睡。"
-  },
-  "kmf-portent": {
-    "english": "The sudden silence in the courtroom was a portent of the verdict that everyone dreaded.",
-    "chinese": "法庭里突然的寂静，是人人惧怕的那份判决的不祥预兆。"
-  },
-  "kmf-harbinger": {
-    "english": "The first swallow is often seen as a harbinger of spring.",
-    "chinese": "第一只燕子常被视为春天来临的预兆。"
-  },
-  "kmf-panoply": {
-    "english": "The museum's grand hall displayed a panoply of medieval armor, ceremonial robes, and gilded banners.",
-    "chinese": "博物馆的大厅里陈列着一整套中世纪甲胄、礼袍和镀金旗帜，蔚为壮观。"
+    "english": "After rising continuously over the summer, commodity prices fell, leaving analyst wondering whether the downward trend is a turning point or merely a lull & respite before demand picks up in the winter months.",
+    "chinese": "在整个夏季持续上涨后，商品价格下跌，让分析师们思考这一下降趋势究竟是一个转折点，还是在冬季需求回升前的短暂平静。",
+    "sourceLabel": "GRE 原书例句 · 第 9 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p09r08"
   },
   "kmf-censure": {
-    "english": "The committee voted to censure the senator for unethical conduct.",
-    "chinese": "委员会投票决定正式谴责那位参议员的不道德行为。"
-  },
-  "kmf-supplanted": {
-    "english": "The typewriter was gradually supplanted by the personal computer in offices around the world.",
-    "chinese": "在世界各地的办公室里，打字机逐渐被个人电脑取代。"
-  },
-  "kmf-pedantic": {
-    "english": "His pedantic corrections about the comma placement annoyed everyone in the meeting, who cared far more about the budget.",
-    "chinese": "他对逗号位置那种迂腐的纠正让会上所有人都很恼火，大家更关心的是预算。"
-  },
-  "kmf-sycophantic": {
-    "english": "His sycophantic praise of the boss made everyone else uncomfortable.",
-    "chinese": "他对老板的谄媚奉承让其他人感到不舒服。"
+    "english": "An academic with a questionable record in either teaching, administration, or research may still be well regarded at many schools, but simultaneous failure in all three areas normally results in disapprobation & censure by superiors.",
+    "chinese": "一名在教学、行政或研究方面记录存疑的学者可能仍会在许多学校受到好评，但在这三个领域同时失败通常会导致上级的非难与谴责。",
+    "sourceLabel": "GRE 原书例句 · 第 24 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p24r04"
   },
   "kmf-ushered": {
-    "english": "The host ushered the guests into the dining room and showed them to their seats.",
-    "chinese": "主人把客人们引进餐厅，并把他们领到座位上。"
-  },
-  "kmf-ploy": {
-    "english": "His sudden resignation was just a ploy to force the board into giving him a better contract.",
-    "chinese": "他突然辞职只是迫使董事会给他更好合同的一个花招。"
-  },
-  "kmf-quandary": {
-    "english": "She was in a quandary about whether to accept the job offer or stay near her family.",
-    "chinese": "她进退两难，不知道是接受这份工作，还是留在家人身边。"
+    "english": "The book reaffirms the idea that Africans on the continent have not stopped generating & originating or responding to their own creations; in fact, African creative agents have ushered in their own modern forms rooted in traditional ideas.",
+    "chinese": "这本书重申了这样一个观点：非洲大陆上的非洲人从未停止创造或回应自己的创作；事实上，非洲的创意主体已经在传统理念的基础上引入了属于他们自己的现代形式。",
+    "sourceLabel": "GRE 原书例句 · 第 40 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p40r01"
   },
   "kmf-encomiums": {
-    "english": "The retiring professor received numerous encomiums from colleagues and former students at the farewell dinner.",
-    "chinese": "在告别晚宴上，这位退休教授收到了同事和昔日学生们的无数颂词。"
-  },
-  "kmf-replete": {
-    "english": "The report is replete with errors, which makes it hard to trust.",
-    "chinese": "这份报告错误百出，让人很难相信。"
-  },
-  "kmf-excoriate": {
-    "english": "The critic proceeded to excoriate the novel for its shallow characters and predictable plot.",
-    "chinese": "那位评论家痛斥这部小说人物浅薄、情节老套。"
-  },
-  "kmf-emulate": {
-    "english": "Many young engineers try to emulate the senior researcher's careful, patient approach to problem-solving.",
-    "chinese": "许多年轻工程师努力效法那位资深研究员谨慎而耐心地解决问题的方式。"
-  },
-  "kmf-valorize": {
-    "english": "The government tried to valorize coffee by setting a floor price and buying up surplus beans.",
-    "chinese": "政府试图通过设定最低价格并收购过剩的咖啡豆来支撑咖啡的价格。"
-  },
-  "kmf-exalt": {
-    "english": "The biography seeks to exalt the scientist as a selfless genius.",
-    "chinese": "这本传记试图把这位科学家颂扬为一位无私的天才。"
-  },
-  "kmf-rehabilitate": {
-    "english": "After the accident, he spent months in physical therapy to rehabilitate his injured leg.",
-    "chinese": "事故后，他花了几个月进行物理治疗，以使受伤的腿康复。"
-  },
-  "kmf-indict": {
-    "english": "The grand jury voted to indict the businessman on charges of fraud.",
-    "chinese": "大陪审团投票决定以欺诈罪名起诉这名商人。"
-  },
-  "kmf-ubiquity": {
-    "english": "The ubiquity of smartphones has changed the way people communicate.",
-    "chinese": "智能手机无处不在，改变了人们的交流方式。"
-  },
-  "kmf-omnipresence": {
-    "english": "The omnipresence of cameras in modern cities has made anonymity increasingly difficult.",
-    "chinese": "现代城市中摄像头无所不在，这使得匿名变得越来越困难。"
-  },
-  "kmf-pervasive": {
-    "english": "A pervasive sense of unease spread through the office after the announcement.",
-    "chinese": "公告发布后，一种挥之不去的不安感弥漫了整个办公室。"
+    "english": "For all the encomiums & tributes the new CEO has received from the press recently, her staff have a decidedly less rosy view of her.",
+    "chinese": "尽管新任 CEO 最近从媒体那里获得了大量赞美与颂扬，她的员工对她的看法却明显不那么乐观。",
+    "sourceLabel": "GRE 原书例句 · 第 2 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p02r01"
   },
   "kmf-specious": {
-    "english": "The lawyer's specious argument convinced the jury at first, but it fell apart under cross-examination.",
-    "chinese": "律师那似是而非的论证起初说服了陪审团，但在交叉询问下就站不住脚了。"
-  },
-  "kmf-abstemiousness": {
-    "english": "Her abstemiousness was evident at every meal: she ate sparingly and drank only a little wine.",
-    "chinese": "她的节制在每一餐都显而易见：她吃得很少，只喝一点酒。"
-  },
-  "kmf-contentiousness": {
-    "english": "His constant contentiousness made even routine meetings exhausting for everyone involved.",
-    "chinese": "他无休止的好争论让每一次例行会议都令所有参与者疲惫不堪。"
-  },
-  "kmf-insouciance": {
-    "english": "She faced the hostile questions with such insouciance that even her opponents seemed disarmed.",
-    "chinese": "她面对那些充满敌意的提问时如此漫不经心，连对手似乎都被卸下了锋芒。"
-  },
-  "kmf-surreptitiousness": {
-    "english": "The surreptitiousness of his late-night file transfers raised suspicions among the auditors, who suspected he was hiding something.",
-    "chinese": "他深夜传输文件时偷偷摸摸的行为引起了审计人员的怀疑。"
-  },
-  "kmf-exhilarating": {
-    "english": "The final lap of the race was exhilarating, with the crowd roaring as the runners sprinted toward the finish line.",
-    "chinese": "比赛最后一圈令人振奋，人群在选手们冲向终点时高声呐喊。"
+    "english": "British critics covering African American musicians performing in London in the 1910s had little idea how to distinguish what was authentic African American music from what was spurious & specious, but they knew such a distinction existed.",
+    "chinese": "20 世纪 10 年代，报道非裔美国音乐家在伦敦演出的英国评论家几乎无法分辨什么是真正的非裔美国音乐，什么是虚假与似是而非的，但他们知道这种区别是存在的。",
+    "sourceLabel": "GRE 原书例句 · 第 14 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p14r05"
   },
   "kmf-perplexing": {
-    "english": "The instructions were so perplexing that even the experienced engineers had to ask for clarification.",
-    "chinese": "这些说明如此令人困惑，连经验丰富的工程师也不得不请求澄清。"
-  },
-  "kmf-mundane": {
-    "english": "After years of adventure, he found the mundane rhythm of office life surprisingly hard to bear.",
-    "chinese": "多年冒险之后，他发现办公室生活那种平凡的节奏竟难以忍受。"
-  },
-  "kmf-intriguing": {
-    "english": "The professor's intriguing question about the origin of language kept the students thinking long after class.",
-    "chinese": "教授关于语言起源的那个引人入胜的问题，让学生在课后很久仍在思考。"
+    "english": "He was one of the most powerful chess players ever and one of the most perplexing & enigmatic; at the height of his fame he all but dropped out of chess, entering into a self-imposed exile.",
+    "chinese": "他曾是有史以来最强大的棋手之一，也是最令人费解和神秘的棋手之一；在他声名鼎盛之时，他几乎退出了棋坛，开始了自我放逐。",
+    "sourceLabel": "GRE 原书例句 · 第 43 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订；& 保留原书等价表达",
+    "sourceKey": "p43r04"
   },
   "kmf-surreptitious": {
     "english": "The photocopier, widely adopted in the 1960s, became not merely a vehicle for copying but one for publishing in a surreptitious manner, so that ideas could be circulated without interference from potential censors.",
@@ -2130,60 +1893,12 @@ export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: stri
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p03r01"
   },
-  "kmf-palpable": {
-    "english": "The tension in the room was so palpable that everyone fell silent.",
-    "chinese": "房间里的紧张气氛如此明显，以至于所有人都沉默了。"
-  },
-  "kmf-temporizing": {
-    "english": "Instead of answering the senator's question directly, the spokesman kept temporizing until the scandal had faded from the headlines.",
-    "chinese": "发言人没有正面回答参议员的提问，而是一直拖延敷衍，直到丑闻从新闻头条上淡出。"
-  },
-  "kmf-inaugural": {
-    "english": "The president's inaugural address focused on national unity and economic recovery.",
-    "chinese": "总统的就职演说聚焦于国家团结与经济复苏。"
-  },
-  "kmf-saga": {
-    "english": "The saga of the family's escape from the flood was passed down for generations.",
-    "chinese": "这家人逃离洪水的长篇故事代代相传。"
-  },
-  "kmf-chronicle": {
-    "english": "The medieval monk spent thirty years writing a chronicle of the kingdom's kings and wars.",
-    "chinese": "那位中世纪修士花了三十年撰写一部关于该国历代国王和战争的编年史。"
-  },
-  "kmf-elegy": {
-    "english": "The poet composed a moving elegy for his late friend.",
-    "chinese": "诗人为已故的朋友创作了一首感人的挽歌。"
-  },
-  "kmf-self-contained": {
-    "english": "The cabin is completely self-contained, with its own water supply and solar power.",
-    "chinese": "这间小屋完全自给自足，有自己的供水和太阳能电力。"
-  },
-  "kmf-discrete": {
-    "english": "In computer science, a discrete variable can take only a limited number of separate values, unlike a continuous one.",
-    "chinese": "在计算机科学中，离散变量只能取有限个彼此分开的取值，这与连续变量不同。"
-  },
-  "kmf-pugnacity": {
-    "english": "His pugnacity made him feared in every meeting, though few could deny his intelligence.",
-    "chinese": "他的好斗脾气让他在每次会议上都令人忌惮，尽管很少有人能否认他的聪明。"
-  },
-  "kmf-belligerence": {
-    "english": "His belligerence at the meeting surprised everyone, turning a simple discussion into a heated argument.",
-    "chinese": "他在会上的好斗态度让所有人吃惊，把一场简单的讨论变成了激烈的争吵。"
-  },
   "kmf-subsequent": {
     "english": "It is normal for artists who achieve great acclaim during their lifetimes to be considered outmoded shortly after their deaths, only to have their reputations restored by subsequent generations.",
     "chinese": "艺术家生前备受赞誉，去世后不久却被认为过时，随后又被后代重新认可，这是一种常见现象。",
     "sourceLabel": "GRE 原书例句 · 第 27 页",
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p27r07"
-  },
-  "kmf-voracious": {
-    "english": "She is a voracious reader, finishing several novels every week.",
-    "chinese": "她是个如饥似渴的读者，每周都要读完好几本小说。"
-  },
-  "kmf-fastidious": {
-    "english": "She is so fastidious about her handwriting that she rewrites a whole page if a single letter looks slightly uneven.",
-    "chinese": "她对字迹极为挑剔，哪怕一个字母稍有不匀，也会把整页重写。"
   },
   "kmf-prodigious": {
     "english": "Margaret Oliphant’s literary output was prodigious: it included almost 100 novels, 50 short stories, 25 nonfictional works, and in the region of 400 articles published in the periodical press.",
@@ -2192,10 +1907,6 @@ export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: stri
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p48r08"
   },
-  "kmf-vitality": {
-    "english": "After a long illness, she returned to work with surprising vitality and quickly took charge of the project.",
-    "chinese": "久病之后，她带着令人惊讶的活力重返工作岗位，并很快接管了这个项目。"
-  },
   "kmf-dwindling": {
     "english": "For decades, Pluto seemed to be the mysteriously dwindling planet: it was first thought to be about as large as Earth, but, subsequently, measurements had it smaller and smaller.",
     "chinese": "几十年来，冥王星似乎一直在神秘地缩小：最初人们认为它与地球差不多大，但后续测量得出的大小却越来越小。",
@@ -2203,28 +1914,12 @@ export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: stri
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p07r03"
   },
-  "kmf-morphing": {
-    "english": "The film used digital morphing to blend the actor's face seamlessly into the wolf's.",
-    "chinese": "这部电影使用数字变形技术，把演员的脸无缝地融入了狼的脸。"
-  },
   "kmf-wane": {
     "english": "One object of examining past medical practices is to identify useful knowledge amid its now outmoded trappings; the alternative is to let such knowledge wane along with the discredited theories with which it was associated.",
     "chinese": "考察以往医疗实践的一个目的，是从如今已过时的形式中找出有用的知识；另一种做法则是任由这些知识与其所依附、现已被否定的理论一起衰退。",
     "sourceLabel": "GRE 原书例句 · 第 32 页",
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p32r05"
-  },
-  "kmf-vehemently": {
-    "english": "She vehemently denied any involvement in the scandal.",
-    "chinese": "她激烈地否认自己与这桩丑闻有任何牵连。"
-  },
-  "kmf-exasperates": {
-    "english": "It exasperates her that he never listens to a word she says.",
-    "chinese": "他从来不把她的话当回事，这让她非常恼火。"
-  },
-  "kmf-anachronistic": {
-    "english": "The film's use of a smartphone in a story set in ancient Rome is anachronistic.",
-    "chinese": "这部电影在古罗马背景的故事里出现智能手机，是时代错误的。"
   },
   "kmf-unfathomable": {
     "english": "He found his new acquaintance to be unfathomable: trying to understand her personality was like peering into an unknown dimension.",
@@ -2240,14 +1935,6 @@ export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: stri
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p35r06"
   },
-  "kmf-interminable": {
-    "english": "The lecture was interminable, and half the audience had stopped taking notes long before it ended.",
-    "chinese": "那场讲座没完没了，还没结束，一半听众早就不做笔记了。"
-  },
-  "kmf-pejorative": {
-    "english": "Calling his proposal a \"scheme\" rather than a \"plan\" gives it a pejorative tone that he resented.",
-    "chinese": "把他的提议称作“scheme（诡计/图谋）”而不是“plan（计划）”，赋予了它一种贬损色彩，这让他很不满。"
-  },
   "kmf-shrewd": {
     "english": "Matsui is an extremely shrewd political tactician, as she generally will withhold her support for a political faction or a policy until she is confident it will prevail.",
     "chinese": "松井是一位极其精明的政治策略家：她通常会等到确信某个政治派别或政策将获胜，才给予支持。",
@@ -2262,56 +1949,12 @@ export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: stri
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p43r06"
   },
-  "kmf-accretion": {
-    "english": "The gradual accretion of sediment at the river mouth eventually formed a small delta.",
-    "chinese": "河口处沉积物的逐渐堆积最终形成了一小块三角洲。"
-  },
-  "kmf-abnegation": {
-    "english": "The monk's life of abnegation inspired many, but few could follow his example.",
-    "chinese": "这位修士克己的生活激励了很多人，但很少有人能效仿他。"
-  },
-  "kmf-pundit": {
-    "english": "The political pundit predicted a close election, but the results proved him wrong.",
-    "chinese": "这位政治评论员预测选举会势均力敌，但结果证明他错了。"
-  },
-  "kmf-sensuality": {
-    "english": "The novel depicts a world of decadent sensuality, where every pleasure is pursued to excess.",
-    "chinese": "这部小说描绘了一个颓废纵欲的世界，每一种享乐都被追逐到极致。"
-  },
-  "kmf-bookish": {
-    "english": "His bookish manner made him seem distant at parties, though he could discuss almost any novel in detail.",
-    "chinese": "他那种书卷气的举止让他在聚会上显得疏远，尽管他几乎能详细谈论任何一部小说。"
-  },
-  "kmf-tedium": {
-    "english": "The endless repetition of data entry turned what should have been a simple task into pure tedium.",
-    "chinese": "无休止地重复录入数据，把本该简单的任务变成了纯粹的单调乏味。"
-  },
-  "kmf-nostalgia": {
-    "english": "Looking at old photographs filled her with a bittersweet nostalgia for the summers of her childhood.",
-    "chinese": "翻看旧照片让她对童年的夏天涌起一种苦乐参半的怀旧之情。"
-  },
-  "kmf-solitude": {
-    "english": "After years of crowded city life, he moved to a cabin in the mountains and found a deep, deliberate solitude that felt like freedom.",
-    "chinese": "在拥挤的城市生活多年后，他搬到山间小屋，找到了一种深沉而自主的独处，感觉像自由。"
-  },
   "kmf-hyperbole": {
     "english": "Though initially presented in a blaze of hyperbole, the thesis is repeated even more soberly in the ensuing paragraphs.",
     "chinese": "该论点最初以大肆夸张的言辞提出，却在后续段落中以更冷静的方式反复陈述。",
     "sourceLabel": "GRE 原书例句 · 第 24 页",
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p24r02"
-  },
-  "kmf-cherishes": {
-    "english": "She cherishes the handwritten letters her grandmother left her and reads them whenever she feels lonely.",
-    "chinese": "她珍藏着祖母留给她的那些手写信，每当感到孤独时就拿出来读。"
-  },
-  "kmf-puerile": {
-    "english": "His puerile jokes embarrassed everyone at the serious meeting.",
-    "chinese": "他在严肃会议上讲的那些幼稚笑话让所有人尴尬。"
-  },
-  "kmf-invigorate": {
-    "english": "A brisk walk in the cold morning air never fails to invigorate me before a long day of work.",
-    "chinese": "在寒冷的晨风中快步走一走，总能让我在漫长工作日开始前精神一振。"
   },
   "kmf-revitalize": {
     "english": "As a way of checking the negative impacts of overdependence on a single export product—crude oil, the Nigerian government passed legislation in 1999 intended to revitalize the moribund solid minerals sector.",
@@ -2327,24 +1970,12 @@ export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: stri
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p24r03"
   },
-  "kmf-dictum": {
-    "english": "The judge's dictum about free speech was not binding but influenced later rulings.",
-    "chinese": "法官关于言论自由的附带意见虽无约束力，却影响了后来的裁决。"
-  },
-  "kmf-jettisons": {
-    "english": "To stay afloat, the crew jettisons heavy containers during the storm.",
-    "chinese": "为了不沉船，船员在暴风雨中抛弃沉重的集装箱。"
-  },
   "kmf-lucidity": {
     "english": "In her career as an editor, she pruned and shaped many a writer's prose into crisp lucidity.",
     "chinese": "在编辑生涯中，她精简并打磨了许多作家的文字，使之清晰明快。",
     "sourceLabel": "GRE 原书例句 · 第 20 页",
     "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
     "sourceKey": "p20r04"
-  },
-  "kmf-forbearance": {
-    "english": "The bank showed forbearance by allowing the struggling company to delay its loan payments.",
-    "chinese": "银行同意这家陷入困境的公司延期偿还贷款，表现出了宽容。"
   }
 };
 
@@ -3519,9 +3150,9 @@ export const COLLECTED_QUESTION_CONTEXTS: Record<string, { sourceUrl: string; la
     "note": "目标词在此题中是干扰选项，不能填入题干"
   },
   "kmf-interminable": {
-    "sourceUrl": "https://gre.kmf.com/question/d2dkkj.htm",
+    "sourceUrl": "https://gre.kmf.com/explain/index/34ktjk",
     "label": "考满分 GRE 题库",
-    "note": "目标词在此题中是干扰选项，不能填入题干"
+    "note": "目标词在此题中是正确选项"
   },
   "kmf-shrewd": {
     "sourceUrl": "https://gre.kmf.com/question/e2cw7j.htm",
@@ -3689,5 +3320,275 @@ export const COLLECTED_QUESTION_CONTEXTS: Record<string, { sourceUrl: string; la
     "note": "目标词在此题中是干扰选项，不能填入题干",
     "english": "Another challenge to biologists and land-use planners alike is that while human-induced changes to the landscape are somethings _____, they can nevertheless drastically alter …",
     "chinese": "对生物学家和土地利用规划者而言，另一个挑战是，虽然人类对景观的诱导变化有时是_____，但它们仍然能够极大地改变……"
+  },
+  "kmf-animating": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/aew43k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "The animating force in historical writing was rhetoric rather than (ii)_____.",
+    "chinese": "历史写作中的驱动力是修辞，而非(ii)_____。"
+  },
+  "kmf-disquisition": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=219928&qid=fcw4ik",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-vindication": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=219928&qid=fcw4ik",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-rant": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=219928&qid=fcw4ik",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "Readers looking for another condemnation of private equity firms should look elsewhere, this book is not _____ such firms.",
+    "chinese": "寻找对私募股权公司又一次谴责的读者应另寻他处，这本书并非_____这类公司。"
+  },
+  "kmf-diatribe": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=219928&qid=fcw4ik",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "kmf-tractable": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/41p1yk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… the rich hurly-burly of continental plant and animal communities is reduced to a scientifically (ii) _____ complexity.",
+    "chinese": "……大陆植物和动物群落的丰富喧嚣被简化为科学上(ii)_____的复杂性。"
+  },
+  "kmf-cliquish": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/51pnqj",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "To be sure, this process often plays out in (ii)_____ as a means of defining and shoring up the sense of self.",
+    "chinese": "诚然，这一过程往往在(ii)_____中展开，作为定义和巩固自我感的一种手段。"
+  },
+  "kmf-obfuscation": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/72292-292.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… the usual blandness and occasional (iii)_____ that typically characterizes such discussions.",
+    "chinese": "……通常描述此类讨论的惯常平淡和偶尔的(iii)_____。"
+  },
+  "kmf-tendentious": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/34ktjk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… but also because the director was so _____ as to provoke extremely lengthy debate.",
+    "chinese": "……但也因为导演如此_____以至于引发了极其冗长的辩论。"
+  },
+  "kmf-synopses": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=200902&qid=b1w21k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-awry": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=200902&qid=b1w21k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… certainly something (ii)_____ those who devote energy to its analysis.",
+    "chinese": "……当然是某种(ii)_____那些投入精力分析它的人的事物。"
+  },
+  "kmf-astute": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=200902&qid=b1w21k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-disseminates": {
+    "sourceUrl": "https://gre.kmf.com/question/87w4dk.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "The book is not comprehensive but is, instead, (i)_____ in the most positive sense:(ii)_____ rather than settles.",
+    "chinese": "这本书并不全面，而是，在最积极的意义上，(i)_____：(ii)_____而非定论。"
+  },
+  "kmf-stipulates": {
+    "sourceUrl": "https://gre.kmf.com/question/87w4dk.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-jejune": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/71q3sj",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "There the players tend to spell out their emotions in (ii)_____ aphorisms, and repeat them as necessary.",
+    "chinese": "在那里，球员们倾向于用(ii)_____的格言阐明他们的情感，并在必要时重复它们。"
+  },
+  "kmf-sycophantic": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/d5vnpk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… the odious Mr. Collins was invariably (ii)_____ to his betters, fawning in particular on his patron, Lady Catherine de Burgh.",
+    "chinese": "……可憎的柯林斯先生总是对他的长辈(ii)_____，尤其奉承他的赞助人凯瑟琳·德·伯夫夫人。"
+  },
+  "kmf-galvanize": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/722unj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "But the ability to galvanize a hundred musicians into giving a great performance requires more than proficiency and affability.",
+    "chinese": "但是，激发一百名音乐家进行精彩表演的能力需要的不仅仅是熟练和和蔼可亲。"
+  },
+  "kmf-collegiality": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/722unj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "kmf-innovative": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/722unj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-condone": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/2dkook-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "… any governmental action that initiated land reform without requisite attention to agrarian reform would (ii)_____the overall goal of economic modernization.",
+    "chinese": "……任何启动土地改革而未必要关注农业改革的政府行为都会(ii)_____经济现代化的总体目标。"
+  },
+  "kmf-insipid": {
+    "sourceUrl": "https://gre.kmf.com/question/f1j5mj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… _____ the insipid sweetness with which Andersen coated his life and reveals a vulnerable gingerbread man with a bitter almond …",
+    "chinese": "……_____安徒生用来粉饰其生活的乏味甜蜜，并揭示出一个带着苦杏仁的脆弱姜饼人……"
+  },
+  "kmf-gingerbread": {
+    "sourceUrl": "https://gre.kmf.com/question/f1j5mj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词"
+  },
+  "kmf-tedium": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/feperk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "The candidate responded to the (i)_____ of campaigning by being (ii)_____, relieving the tedium with her wry sense of humor.",
+    "chinese": "这位候选人对竞选活动的(i)_____做出了回应，表现出(ii)_____，用她讽刺的幽默感缓解了单调乏味。"
+  },
+  "kmf-gleaming": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/69w3xk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词"
+  },
+  "kmf-paraphernalia": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/69w3xk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "The dictator's gleaming military uniform and imperial paraphernalia sharply contrast with the _____ fashion favored by most other contemporary political leaders.",
+    "chinese": "独裁者闪亮的军装和帝王般的装备与大多数其他当代政治领导人青睐的_____时尚形成了鲜明对比。"
+  },
+  "kmf-unostentatious": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/69w3xk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "kmf-conspired": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=183349&qid=ffw83k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… but the conditions that conspired to cause the recession were also (i)_____.",
+    "chinese": "……但是共同导致经济衰退的条件也是(i)_____。"
+  },
+  "kmf-spate": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=183349&qid=ffw83k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词"
+  },
+  "kmf-concomitants": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=183349&qid=ffw83k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-anthropogenic": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/21h8gj",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "That inconsistency has led greenhouse contrarians to claim that any recent warming could be natural rather than anthropogenic.",
+    "chinese": "这种不一致导致温室效应反对者声称，任何近期的变暖都可能是自然现象，而非人为造成的。"
+  },
+  "kmf-harbinger": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/81pw9j",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "At first such observations tend to be treated as (i)_____, but those scientists (ii)_____ them sometimes discover …",
+    "chinese": "起初，这类观察往往被视为(i)_____，但那些(ii)_____它们的科学家有时会发现……"
+  },
+  "kmf-endurance": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/bawkzk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是阅读问题用词"
+  },
+  "kmf-rote": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/bawkzk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是阅读材料用词",
+    "english": "The \"note versus rote\" controversy in music education continued well into the mid-nineteenth century.",
+    "chinese": "音乐教育中关于“音符与死记硬背”的争论一直持续到19世纪中叶。"
+  },
+  "kmf-panoply": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/96w3nk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… patriotic sentiment and national pride wrapped in the panoply of history to manufacture a mythical past that is serviceable for public (iii)_____.",
+    "chinese": "……爱国情感和民族自豪感被包裹在历史的华服中，以制造一个可供公共(iii)_____的神话般的过去。"
+  },
+  "kmf-jettison": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/a1orok",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "the playwright's approach is (i)_____ in that her works (ii)_____ the theatrical devices normally used to create drama on the stage.",
+    "chinese": "这位剧作家的方法是 (i)_____ 的，因为她的作品 (ii)_____ 通常用于在舞台上创造戏剧性的戏剧手法。"
+  },
+  "kmf-startling": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/a1orok",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "kmf-pervasive": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/822cxj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… a garment that became so culturally (i)_____________ that today many women own at least one.",
+    "chinese": "……一件在文化上变得如此 (i)_____________ 的服装，以至于今天许多女性至少拥有一件。"
+  },
+  "kmf-ubiquity": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/822cxj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "kmf-mirthful": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/80w50k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "Mortoris is dour and __________, seemingly incapable of smiling, let alone laughing.",
+    "chinese": "莫托里斯阴郁且 __________，似乎连微笑都不会，更不用说大笑了。"
+  },
+  "kmf-tepid": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/80w50k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-jovial": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/80w50k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-lugubrious": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/80w50k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "kmf-mundane": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/022cwj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… for dreams are as likely to have been molded by (ii)_________ events as by extreme and life-changing ones.",
+    "chinese": "……因为梦境同样可能由 (ii)_________ 事件塑造，正如由极端且改变人生的事件塑造一样。"
+  },
+  "kmf-exhilarating": {
+    "sourceUrl": "https://gre.kmf.com/question/d2bcwj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "The play is undeniably cerebral—its plot turns on the interpretation of quantum mechanics, but critics have found this_____________ exhilarating, …",
+    "chinese": "这部戏剧无疑是理智的——其情节取决于对量子力学的解读，但评论家们发现这种_____________令人兴奋，……"
   }
 };

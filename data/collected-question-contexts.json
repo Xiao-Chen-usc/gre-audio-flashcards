@@ -12,9 +12,9 @@
     "note": "目标词在此题中是干扰选项，不能填入题干"
   },
   "interminable": {
-    "sourceUrl": "https://gre.kmf.com/question/d2dkkj.htm",
+    "sourceUrl": "https://gre.kmf.com/explain/index/34ktjk",
     "label": "考满分 GRE 题库",
-    "note": "目标词在此题中是干扰选项，不能填入题干"
+    "note": "目标词在此题中是正确选项"
   },
   "shrewd": {
     "sourceUrl": "https://gre.kmf.com/question/e2cw7j.htm",
@@ -182,5 +182,275 @@
     "note": "目标词在此题中是干扰选项，不能填入题干",
     "english": "Another challenge to biologists and land-use planners alike is that while human-induced changes to the landscape are somethings _____, they can nevertheless drastically alter …",
     "chinese": "对生物学家和土地利用规划者而言，另一个挑战是，虽然人类对景观的诱导变化有时是_____，但它们仍然能够极大地改变……"
+  },
+  "animating": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/aew43k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "The animating force in historical writing was rhetoric rather than (ii)_____.",
+    "chinese": "历史写作中的驱动力是修辞，而非(ii)_____。"
+  },
+  "disquisition": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=219928&qid=fcw4ik",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "vindication": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=219928&qid=fcw4ik",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "rant": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=219928&qid=fcw4ik",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "Readers looking for another condemnation of private equity firms should look elsewhere, this book is not _____ such firms.",
+    "chinese": "寻找对私募股权公司又一次谴责的读者应另寻他处，这本书并非_____这类公司。"
+  },
+  "diatribe": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=219928&qid=fcw4ik",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "tractable": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/41p1yk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… the rich hurly-burly of continental plant and animal communities is reduced to a scientifically (ii) _____ complexity.",
+    "chinese": "……大陆植物和动物群落的丰富喧嚣被简化为科学上(ii)_____的复杂性。"
+  },
+  "cliquish": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/51pnqj",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "To be sure, this process often plays out in (ii)_____ as a means of defining and shoring up the sense of self.",
+    "chinese": "诚然，这一过程往往在(ii)_____中展开，作为定义和巩固自我感的一种手段。"
+  },
+  "obfuscation": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/72292-292.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… the usual blandness and occasional (iii)_____ that typically characterizes such discussions.",
+    "chinese": "……通常描述此类讨论的惯常平淡和偶尔的(iii)_____。"
+  },
+  "tendentious": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/34ktjk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… but also because the director was so _____ as to provoke extremely lengthy debate.",
+    "chinese": "……但也因为导演如此_____以至于引发了极其冗长的辩论。"
+  },
+  "synopses": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=200902&qid=b1w21k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "awry": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=200902&qid=b1w21k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… certainly something (ii)_____ those who devote energy to its analysis.",
+    "chinese": "……当然是某种(ii)_____那些投入精力分析它的人的事物。"
+  },
+  "astute": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=200902&qid=b1w21k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "disseminates": {
+    "sourceUrl": "https://gre.kmf.com/question/87w4dk.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "The book is not comprehensive but is, instead, (i)_____ in the most positive sense:(ii)_____ rather than settles.",
+    "chinese": "这本书并不全面，而是，在最积极的意义上，(i)_____：(ii)_____而非定论。"
+  },
+  "stipulates": {
+    "sourceUrl": "https://gre.kmf.com/question/87w4dk.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "jejune": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/71q3sj",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "There the players tend to spell out their emotions in (ii)_____ aphorisms, and repeat them as necessary.",
+    "chinese": "在那里，球员们倾向于用(ii)_____的格言阐明他们的情感，并在必要时重复它们。"
+  },
+  "sycophantic": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/d5vnpk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… the odious Mr. Collins was invariably (ii)_____ to his betters, fawning in particular on his patron, Lady Catherine de Burgh.",
+    "chinese": "……可憎的柯林斯先生总是对他的长辈(ii)_____，尤其奉承他的赞助人凯瑟琳·德·伯夫夫人。"
+  },
+  "galvanize": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/722unj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "But the ability to galvanize a hundred musicians into giving a great performance requires more than proficiency and affability.",
+    "chinese": "但是，激发一百名音乐家进行精彩表演的能力需要的不仅仅是熟练和和蔼可亲。"
+  },
+  "collegiality": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/722unj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "innovative": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/722unj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "condone": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/2dkook-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "… any governmental action that initiated land reform without requisite attention to agrarian reform would (ii)_____the overall goal of economic modernization.",
+    "chinese": "……任何启动土地改革而未必要关注农业改革的政府行为都会(ii)_____经济现代化的总体目标。"
+  },
+  "insipid": {
+    "sourceUrl": "https://gre.kmf.com/question/f1j5mj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… _____ the insipid sweetness with which Andersen coated his life and reveals a vulnerable gingerbread man with a bitter almond …",
+    "chinese": "……_____安徒生用来粉饰其生活的乏味甜蜜，并揭示出一个带着苦杏仁的脆弱姜饼人……"
+  },
+  "gingerbread": {
+    "sourceUrl": "https://gre.kmf.com/question/f1j5mj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词"
+  },
+  "tedium": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/feperk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "The candidate responded to the (i)_____ of campaigning by being (ii)_____, relieving the tedium with her wry sense of humor.",
+    "chinese": "这位候选人对竞选活动的(i)_____做出了回应，表现出(ii)_____，用她讽刺的幽默感缓解了单调乏味。"
+  },
+  "gleaming": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/69w3xk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词"
+  },
+  "paraphernalia": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/69w3xk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "The dictator's gleaming military uniform and imperial paraphernalia sharply contrast with the _____ fashion favored by most other contemporary political leaders.",
+    "chinese": "独裁者闪亮的军装和帝王般的装备与大多数其他当代政治领导人青睐的_____时尚形成了鲜明对比。"
+  },
+  "unostentatious": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/69w3xk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "conspired": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=183349&qid=ffw83k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… but the conditions that conspired to cause the recession were also (i)_____.",
+    "chinese": "……但是共同导致经济衰退的条件也是(i)_____。"
+  },
+  "spate": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=183349&qid=ffw83k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词"
+  },
+  "concomitants": {
+    "sourceUrl": "https://gre.kmf.com/explain/index?cid=183349&qid=ffw83k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "anthropogenic": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/21h8gj",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "That inconsistency has led greenhouse contrarians to claim that any recent warming could be natural rather than anthropogenic.",
+    "chinese": "这种不一致导致温室效应反对者声称，任何近期的变暖都可能是自然现象，而非人为造成的。"
+  },
+  "harbinger": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/81pw9j",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "At first such observations tend to be treated as (i)_____, but those scientists (ii)_____ them sometimes discover …",
+    "chinese": "起初，这类观察往往被视为(i)_____，但那些(ii)_____它们的科学家有时会发现……"
+  },
+  "endurance": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/bawkzk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是阅读问题用词"
+  },
+  "rote": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/bawkzk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是阅读材料用词",
+    "english": "The \"note versus rote\" controversy in music education continued well into the mid-nineteenth century.",
+    "chinese": "音乐教育中关于“音符与死记硬背”的争论一直持续到19世纪中叶。"
+  },
+  "panoply": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/96w3nk",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… patriotic sentiment and national pride wrapped in the panoply of history to manufacture a mythical past that is serviceable for public (iii)_____.",
+    "chinese": "……爱国情感和民族自豪感被包裹在历史的华服中，以制造一个可供公共(iii)_____的神话般的过去。"
+  },
+  "jettison": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/a1orok",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "the playwright's approach is (i)_____ in that her works (ii)_____ the theatrical devices normally used to create drama on the stage.",
+    "chinese": "这位剧作家的方法是 (i)_____ 的，因为她的作品 (ii)_____ 通常用于在舞台上创造戏剧性的戏剧手法。"
+  },
+  "startling": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/a1orok",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "pervasive": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/822cxj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… a garment that became so culturally (i)_____________ that today many women own at least one.",
+    "chinese": "……一件在文化上变得如此 (i)_____________ 的服装，以至于今天许多女性至少拥有一件。"
+  },
+  "ubiquity": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/822cxj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "mirthful": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/80w50k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "Mortoris is dour and __________, seemingly incapable of smiling, let alone laughing.",
+    "chinese": "莫托里斯阴郁且 __________，似乎连微笑都不会，更不用说大笑了。"
+  },
+  "tepid": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/80w50k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "jovial": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/80w50k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "lugubrious": {
+    "sourceUrl": "https://gre.kmf.com/explain/index/80w50k",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "mundane": {
+    "sourceUrl": "https://gre.kmf.com/explain/question/022cwj-0.html",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "… for dreams are as likely to have been molded by (ii)_________ events as by extreme and life-changing ones.",
+    "chinese": "……因为梦境同样可能由 (ii)_________ 事件塑造，正如由极端且改变人生的事件塑造一样。"
+  },
+  "exhilarating": {
+    "sourceUrl": "https://gre.kmf.com/question/d2bcwj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "The play is undeniably cerebral—its plot turns on the interpretation of quantum mechanics, but critics have found this_____________ exhilarating, …",
+    "chinese": "这部戏剧无疑是理智的——其情节取决于对量子力学的解读，但评论家们发现这种_____________令人兴奋，……"
   }
 }
