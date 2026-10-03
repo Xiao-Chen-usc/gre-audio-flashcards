@@ -1055,7 +1055,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               {resetArmed ? "再点一次，确认清空进度" : "清空本机学习进度"}
             </button>
             <p className="source-note">
-              {collected ? "词表来自你的 KMF 收集词；词源附原始参考来源，例句为学习用途编写。" : "词表来自你上传的《学而思 GRE 高频六选二等价1000词（2026版）》；词源为便于记忆的简化整理。"}
+              {collected ? "词表来自你的 KMF 收集词；词源附参考来源，词书例句、题库出处和原创例句分别注明。" : "词表来自你上传的《学而思 GRE 高频六选二等价1000词（2026版）》；词源为便于记忆的简化整理。"}
             </p>
           </section>
         </div>
