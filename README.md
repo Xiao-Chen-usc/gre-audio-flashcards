@@ -106,3 +106,11 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)
 - [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+
+## 收集词更新（2026-10-02）
+
+收集词库现有 177 个词，沿用 `/gre/#collected` 与 `/gre/#collected-words`；稳定 ID 和独立进度键保持不变。新增 46 词由 DeepSeek 批量起草、复核，再根据词源证据编辑修订。
+
+`data/collected-example-overrides.json` 保存 13 条用户原词书例句（OCR 校订、等价选词整理，含页码）；`data/collected-question-contexts.json` 保存 30 个考满分题库出处，其中 17 个含短题干节选。题库来源保留空格，标明目标词是题干用词、正确选项或干扰选项，并提供原题链接；不将干扰选项填入题干。未匹配到词书例句的词继续使用标明原创的双语例句。
+
+后续更新先追加有日期的收集词 JSON，再运行 `scripts/prepare-collected-vocabulary.py`、词源复核及 `scripts/merge-collected-vocabulary.py`；合并按批次日期追加，保留旧词卡顺序。编辑修订、例句来源和题库来源分别保存在 `data/`，构建缓存留在仓库外。部署到 xiao-chen.org 必须运行个人网站仓库的 `deploy.sh`。

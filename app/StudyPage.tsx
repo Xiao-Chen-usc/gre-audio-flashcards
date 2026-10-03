@@ -116,9 +116,10 @@ function highlightedExample(text: string, terms: string[]) {
   );
 }
 
-export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAMPLES = DEFAULT_EXAMPLES, sources = {}, collected = false, collectionSize, onCollectionChange }: {
+export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAMPLES = DEFAULT_EXAMPLES, sources = {}, questionContexts = {}, collected = false, collectionSize, onCollectionChange }: {
   words?: WordCard[];
-  examples?: Record<string, { english: string; chinese: string }>;
+  examples?: Record<string, { english: string; chinese: string; sourceLabel?: string; sourceNote?: string }>;
+  questionContexts?: Record<string, { sourceUrl: string; label: string; note: string; english?: string; chinese?: string }>;
   sources?: Record<string, { label: string; url: string }[]>;
   collected?: boolean;
   collectionSize: number;
@@ -907,9 +908,9 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                           <div className="example-heading">
                             <span>
                               <b>GRE 语境例句</b>
-                              <small>{collected ? "原创双语例句 · 可复制、可缩放" : "OCR 提取文字 · 可复制、可缩放"}</small>
+                              <small>{collected ? (example.sourceNote || "原创双语例句 · 可复制、可缩放") : "OCR 提取文字 · 可复制、可缩放"}</small>
                             </span>
-                            <em>{collected ? "收集词语境" : `原书第 ${card.page} 页`}</em>
+                            <em>{collected ? (example.sourceLabel || "收集词语境") : `原书第 ${card.page} 页`}</em>
                           </div>
                           {key && example.english?.trim() ? (
                             <button
@@ -938,6 +939,16 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                         </section>
                       ) : null;
                     })()}
+                    {questionContexts[card.id] ? (
+                      <section className="example-block">
+                        <div className="example-heading">
+                          <span><b>GRE 题库出处{questionContexts[card.id].english ? " · 题干节选" : ""}</b><small>{questionContexts[card.id].label} · {questionContexts[card.id].note}</small></span>
+                          <a href={questionContexts[card.id].sourceUrl} target="_blank" rel="noreferrer">查看原题 ↗</a>
+                        </div>
+                        {questionContexts[card.id].english ? <p className="example-english">{highlightedExample(questionContexts[card.id].english!, [card.word])}</p> : null}
+                        {questionContexts[card.id].chinese ? <p className="example-chinese">{questionContexts[card.id].chinese}</p> : null}
+                      </section>
+                    ) : null}
                     <div className="answer-actions">
                       <button className="again-button" onClick={markAgain} type="button">
                         <span>还不熟</span><kbd>1</kbd>

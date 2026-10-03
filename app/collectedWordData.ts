@@ -1,6 +1,6 @@
 import type { WordCard } from "./wordData";
 
-// KMF collection, 2026-10-01. Preserve collection order and stable IDs.
+// KMF collection, updated 2026-10-02. Preserve collection order and stable IDs.
 // Drafted and checked with DeepSeek; editorial corrections are kept in data/.
 export const COLLECTED_WORDS: WordCard[] = [
   {
@@ -1181,10 +1181,424 @@ export const COLLECTED_WORDS: WordCard[] = [
     "origin": "intriguing 是动词 intrigue 的现在分词形容词，词源链条可追溯到拉丁语 intricare，意为“使纠缠、使困惑、使窘迫”。intricare 由前缀 in-（进入）加复数名词 tricae（纠缠、阻碍、琐碎之物、诡计）构成，tricae 来源不确定，但显然带有“乱麻般缠绕”的意象。从拉丁语 intricare 到意大利语 intrigare，意义已经发展为“策划阴谋、插手、使困惑、使费解”；16 世纪法语 intriguer 承袭此义，1610 年代进入英语。\n\n早期英语中这个词的形态是 entriken，直接来自古法语 entrique 或拉丁语动词，意思是“使纠缠、诱捕、使陷入困惑、使窘迫”。后来词形受法语影响变为 intrigue，但“缠绕”的核心意象一直保留。17 世纪时 intrigue 主要表示“欺骗、耍花招”，1714 年后“策划阴谋”的用法固定下来；同时它还发展出“暗中进行不正当性关系”的含义（1650 年代）。这些意义都带有“暗中纠缠、不光明”的意味。\n\n从“纠缠、困惑”到“激发好奇心”的转变发生在 19 世纪末：1894 年 intrigue 开始表示“引起兴趣”，1909 年 intriguing 作为形容词获得“激发好奇心”的词义。这一变化很自然：当一件事让人感到“被缠住、无法轻易理清”时，它同时也就抓住了注意力，让人产生想要弄明白的欲望。所以 intriguing 的现代义“引人入胜的”并不是凭空而来，而是从“令人困惑地纠缠”这一意象中生长出来的——令人好奇的东西往往正是那些一时看不透、却又吸引你去探究的东西。\n\n词源亲戚\nintricate：来自拉丁语 intricatus，字面义“被缠住的”，现代义“复杂精细的、错综的”。intriguing 与它是同根词，都源自 intricare。\nextricate：来自拉丁语 extricare，ex-（出）+ tricae（纠缠），字面义“从纠缠中脱出”，现代义“解脱、救出”；与 intriguing 同源于 tricae，但证据中仅作为比较词提及。\nintricate 与 extricate 同源于 tricae 的证据较直接；trick 与 tricae 的关系存在争议，不宜列为确定词源亲戚。\nintrigue：现代英语中的动词和名词，义为“激起兴趣；阴谋”。intriguing 正是它的分词形容词。\n\n近义词辨析\nintriguing 与 interesting 都表示“有趣的”，但 intriguing 更强调因神秘、复杂或出乎意料而激发探究欲，常带有“让人想一探究竟”的意味；interesting 则更中性、宽泛。与 fascinating 相比，fascinating 语气更强，近乎“令人着迷”；intriguing 则更多是“勾起好奇心”，强度适中。与 curious 不同，curious 形容人“好奇的”或事物“奇怪的”，intriguing 不强调奇怪，而强调吸引人去了解。\n\n记忆链\nintricare（使纠缠）→ intrigare / intriguer（使困惑、策划阴谋）→ intrigue（激起兴趣）→ intriguing（引人入胜的）。核心意象：被复杂的东西“缠住”，于是好奇心被勾起来。",
     "originQuery": "intrigue",
     "page": 8
+  },
+  {
+    "id": "kmf-surreptitious",
+    "word": "surreptitious",
+    "pair": "",
+    "meaning": "偷偷摸摸的，暗中进行的；鬼鬼祟祟的；秘密的（常含不正当、规避监督之意）",
+    "origin": "surreptitious 于15世纪中期进入英语，早期拼作 surrepticious，直接来自拉丁语 surrepticius（偷来的、偷偷摸摸的、秘密的）。这个拉丁形容词又出自动词 surripere 的过去分词 surreptus。surripere 由两个部分组成：前缀 sub-（在下面、从下面）加 rapere（猛抓、抢夺）。前缀 sub- 在 -r- 前发生同化，形式变为 sur-，于是 sub- + rapere 合为 surripere，字面意思就是“从下面把东西抓走”。这个动作画面很具体：手不抬到明处，而是从底下、从看不见的地方伸手把人家的东西攫走。抓住的是实物，但“不让人看见”这一层已经包含在动作方式里。\n\n由这个具体动作，语义自然向抽象推移。从“从下面偷走实物”，到“不让人察觉地做某事”，再到“靠隐瞒和规避取得某种好处”。15世纪的英语里，这个词还带 fraudulent（欺诈的）的意味，指“以偷偷的方式或没有正当权限做成的”，常与法律、文书、宗教程序相关：伪造、隐瞒关键事实以骗取批准，都可以叫 surreptitious。现代英语中“欺诈”的色彩淡了，保留下来的是核心的“不被看见、不当面来、可能见不得光”。因此它既可修饰动作（a surreptitious glance，偷偷一瞥），也可修饰行为方式（surreptitious dealings，暗箱操作）。要注意，它强调“规避他人注意”，并不等于“完全隐秘到无人知晓”；也常暗含做的人认为这事不该摆到台面上。拉丁动词另有未同化形式 subripere，所以17世纪英语也出现过 subreptitious 表示“秘密的”，但未能流行。\n\n词源亲戚\nrapid：来自拉丁语 rapidus，与 rapere“攫取、夺去”同族 → 迅速的。\nrapture：经拉丁语 raptura，通向 rapere → 狂喜、入迷，可用“仿佛被带走”理解抽象义。\nravish：经法语及拉丁语 rapere 一系 → 强行夺去，也可表示使人陶醉。\nsurreptitiously：surreptitious + -ly → 偷偷地，是直接派生副词。\nsurreptitiousness：surreptitious + -ness → 偷偷摸摸这一性质。\nsurprise 虽然也有“突袭、抓住”的历史画面，却通向拉丁语 prehendere，不是 rapere，不能仅凭相近意思当作同根词。\n\n近义词辨析。secret 只说明“不被人知道”，不带褒贬；surreptitious 更强调动作是偷偷进行的，带轻微的负面或心虚色彩。clandestine 语域更正式，多用于秘密组织、秘密交易或秘密恋情，暗示长期的隐蔽状态；surreptitious 多指单个动作或做法，时间跨度小。stealthy 强调动作本身轻、静、不易察觉，像猫的脚步；surreptitious 不强调安静，而强调“避开注意”。furtive 与 surreptitious 最近，都指“怕人看见的”，但 furtive 更偏神情、目光、举止上的躲闪，surreptitious 更偏行为本身的规避性。\n\n记忆链。sub-（从下面）+ rapere（猛抓），合成 surripere“从底下抓走、偷走”——不让人看见，就偷成了。于是 surreptitious 就是“偷偷摸摸的、暗中进行的”。",
+    "originQuery": "surreptitious",
+    "page": 9
+  },
+  {
+    "id": "kmf-palpable",
+    "word": "palpable",
+    "pair": "",
+    "meaning": "明显的，易察觉的；可触摸的",
+    "origin": "palpable 的核心是“手能摸到”，后来引申为“心能感到”。它来自晚期拉丁语 palpabilis，是拉丁语动词 palpare 的派生形容词，意为“可以触摸或感觉到的”。palpare 本身的意思是“轻轻触摸、抚摸”，但这个动词的更早来源已经不清楚：de Vaan 等词源学家认为它没有已知的词源，并且基于语音理由拒绝了 Watkins 等人将其与原始印欧语词根 *pal-（如 feel 动词）的叠音形式联系起来的做法。有些资料猜测它是拟声词，模拟触摸或拍打的声音，但这只是推测，没有确证。\n\n从“可触摸”到“明显”的语义演变非常自然：英语中 palpable 在 14 世纪晚期同时出现了两个义项——字面的“能摸到的”和比喻的“容易感知的、明显的”。比喻义基于一种认知隐喻：某个东西“好像能被摸到一样”，即它清楚到仿佛有了实体，伸手可及。比如 palpable tension（一触即发的紧张气氛）就是这种用法：紧张情绪虽然看不见，却强烈到像实物一样压在胸口。\n\n词形上，palpable 由拉丁词根 palp-（触摸）加形容词后缀 -able（能够……的）构成。这个后缀来自拉丁语 -abilis，加在动词词干后表示“可以被……的”，所以 palpabilis 就是“可以被触摸的”。英语直接借用了这个形容词，拼写基本未变，只是按照英语发音规则调整了重音。\n\n词源亲戚方面，现代英语中有几个紧密相关的词：palpate（动词，触摸检查，尤其是医学上的触诊）直接来自拉丁语 palpare；palpation（名词，触诊）是 palpate 的动作名词；palpitate（动词，急速跳动，如心脏悸动）也来自拉丁语 palpitare，是 palpare 的反复动词，本义“不断触摸、抖动”，后来专指心跳；palpitation（名词，心悸）即由此而来。另外，impalpable（形容词，无法触摸的，难以理解的）是在 palpable 前加否定前缀 in-（在 p 前同化为 im-）构成，1500 年左右出现，比喻义“无法理解的”到 1774 年才记录。这些词都围绕“触摸”这一核心概念，但发展方向不同：palpate 保留字面触诊义，palpitate 走向生理跳动，impalpable 则是 palpable 的反面。\n\n近义词辨析：与 palpable 容易混淆的有 tangible、obvious、perceptible。tangible 本义“可触摸的”，来自拉丁语 tangere（触摸），与 palpable 在字面义上几乎同义，但 tangible 更常用于商业、法律语境，如 tangible assets（有形资产），强调实际存在而非感觉明显；palpable 更强调感官或情感上的强烈可感，常修饰情绪、气氛等抽象事物。obvious 则纯粹指“一目了然的”，没有“触摸”的隐喻，语气更直接，常用于逻辑或事实。perceptible 强调“可感知的”，但程度较弱，指刚刚能被注意到，如 a perceptible change（可察觉的变化）；而 palpable 的程度更强，往往带有“几乎能摸到”的生动感。\n\n记忆链：palpable ← 拉丁语 palpare（轻轻触摸）→ 能触摸到的 → 明显到仿佛能触摸到。想象一个东西近在眼前，伸手就能摸到——这就是 palpable 从触觉到心理感觉的桥梁。",
+    "originQuery": "palpable",
+    "page": 9
+  },
+  {
+    "id": "kmf-temporizing",
+    "word": "temporizing",
+    "pair": "",
+    "meaning": "敷衍拖延；（为争取时间或顺应形势而）见风使舵、暂时妥协",
+    "origin": "temporize 是 16 世纪进入英语的动词，1550 年代已见于文献，最早的派生名词是 temporizer（见风使舵的人）。它经法语 temporiser（消磨时间、等待时机，14 世纪）来自中世纪拉丁语 temporizare“打发时间”，再往上大概经俗拉丁语 *temporare“拖延”，根子是拉丁语 tempus（属格 temporis）“时间、时节、恰当的时候”。\n\n这个拉丁词根的画面很具体：tempus 在早期拉丁语里不仅指“时间”，还带“时节、恰当的时机”的味道。原始意大利语 *tempos- 意为“拉伸、量度”，词源学家 de Vaan 认为它来自印欧语 *temp-os“被拉长的”，进一步来自根 *ten-“拉伸”，所以“时间”本是一段被“拉长、量出来”的东西（这一深层关系属学术推测）。这条线索解释了同族词为何都围绕“时间”转。\n\n从“花时间、等待时机”到“敷衍、拖延”，语义转移很自然：有意地耗着、不表态、不行动，就是在等待形势变好或压力过去。到 16 世纪，这个词已同时具备“顺应时势、表面上向主流意见妥协”的意思，也就是为了自保而随大流，与“敷衍拖延”并存。这条“看形势办事”的路线和 time-server（趋炎附势之徒）的构词思路一致，只是 temporizer 用的是拉丁词根、time-server 用的是本土英语词，两词指的是同一种人。所以现代英语里 temporizing 既可指“拖延不决”，也可指“巧于自保、见风使舵”，具体含义要看语境。\n\n词形方面，temporize 是规则动词，加 -ing 构成现在分词或动名词 temporizing；temporized 是过去式与过去分词，另一名词 temporation 现已罕用。中间那截 -iz- / -ize 是希腊语经由拉丁语进入法语、英语的使动后缀，法语 temporiser 把它带进来，英语拼作 -ize 或英式 -ise。\n\n词源亲戚\ntemporize：法语 temporiser → 等待时机、拖延，是 temporizing 的直接动词。\ntemporal：拉丁语 temporalis，来自 tempus“时间” → 时间的；也可指属于现世的。\ntemporary：同一 tempus 词族 → 暂时的、只持续一段时间的。\ncontemporary：con- 与 tempor- 结合 → 同一时代的，也可指当代的。\ntempo：借自意大利语，通向拉丁语 tempus → 音乐的速度、节奏。\n这些词把“时间”发展为持续长短、时代关系和节奏；temporizing 则侧重利用时间来回避决定。\n\n近义词辨析\n\ndelay 只强调“推迟、耽搁”，常带被动色彩，不一定有主观逢迎的动机。procrastinate 专指因懒散或逃避而一拖再拖，批评的正是行动者自己。temporize 则暗示拖延带有策略，往往是为了观察形势、等待更有利的时机，因此常和政客、外交交涉等语境搭配。equivocate 侧重用含糊话躲开表态，是语言层面的含糊，而 temporize 可以是行为层面拖延，也可以包含语言上的敷衍。hedge 侧重两边下注、预留退路，比 temporize 更强调同时押注，而非单纯等时机。\n\n记忆链\n\ntemporize ← 法语 temporiser ← 中世纪拉丁 temporizare“打发时间” ← 拉丁 tempus / tempor-“时间、时机”。花掉时间、等时机，于是成了拖延；专等形势对自己有利，于是成了敷衍和顺应时势。同族词 temporal、temporary、contemporary、tempo、extempore 都把“时间”这个根子摆在明面上。",
+    "originQuery": "temporize",
+    "page": 9
+  },
+  {
+    "id": "kmf-inaugural",
+    "word": "inaugural",
+    "pair": "",
+    "meaning": "就职的，开幕的；首次的（如 inaugural speech 就职演说、inaugural meeting 成立大会）",
+    "origin": "inaugural 的根子不在“开幕”这个现代意思上，而在古罗马的占卜。它的拉丁语源头是 inaugurare，由 in-（在……之上、向里）加 augurare（充当 augur、占卜预兆）构成，字面是“通过观察预兆来行事”。augur 是古罗马的占卜官，最著名的本事是观察鸟的飞行方向和叫声，从中判断神是否同意某件事——所谓“取鸟占”（take omens from the flight of birds）。所以 inauguratio 最初不是随便办个典礼，而是：人已经决定要做某件大事，先请占卜官求神批准；如果鸟兆吉利，人的决定就获得了神的认可，这件事才算正式“成立”。这就是英语里 inauguration 一开始带有的“庄严、正式地开启”味道的来源——1560 年代经由法语 inauguration 进入英语，指“授予职位、正式启动重要之事”。\n\ninaugural 是它的形容词，1680 年代从法语 inaugural 借来，最初就是“与就职典礼有关的、属于开幕仪式的”。名词用法“就职演说”（an inaugural address）出现于 1832 年的美国英语，因为美国总统就职时那篇演说太有代表性，人们干脆把 inaugural 单独当名词用。\n\n语义从具体到抽象的变化很清楚：本来指具体动作——看鸟、听鸟叫、判断吉凶；然后指有吉兆才能举行的具体仪式——把某人或某物献给神、正式就任；再抽象为任何“正式开启、首次举行”的场合。现代英语里“开幕的、就职的、首届的”都由此而来，鸟和预兆的画面已被磨掉，只剩“郑重开始”这一层。\n\n词源亲戚\n\naugur（占卜官；预兆）：来自拉丁语 augur，与 augurare 同源；由“鸟占者”引申为“预示”，如 augur well 预示吉利。\naugury（预兆、占卜）：augur 加名词后缀；从具体的占卜行为，发展为抽象的“征兆”。\naugurial（占卜官的、预兆的）：augur 加形容词后缀 -ial；直接由“占卜官”派生，指与占卜或预兆相关。\nauspicious（吉利的）：来自拉丁语 auspicium，本义“观察鸟的飞行”（avis“鸟”+ specere“看”），是古罗马另一套鸟占术语；与 augur 属同一占卜文化领域但词根不同，衍生出“有好兆头的”这一现代义。\n注意 auspicious 常与 augur 一并提起，但走的是 avis+specere 这条线，与 augur 不是同一词根；之所以放在这里，是因为它属于同一占卜语义场，而非词源亲戚。\n\n近义词辨析\n\nopening 最普通，可指任何“开头的”，如 opening remarks；inaugural 更正式，强调仪式性和首次性，必须有一个被郑重开启的机构、任期或系列。\nfirst 只陈述次序，不带仪式色彩；inaugural 的“首次”往往伴随典礼、就职或落成，语域更高。\ninitial 强调“最初的阶段或状态”，常用于过程的开端（initial stage），不一定有庆祝或授权意味；inaugural 则指向一个被正式赋予合法性的起点。\npremiere 专用于演出、影视的首演首映，娱乐语域；inaugural 用于政治、机构、会议等正式场合，范围更宽。\n\n记忆链\n\n拉丁语 in-（在……之上）+ augurare（占卜、取鸟兆）→ inaugurare（得吉兆后正式就任、开启）→ 法语 inaugurer/inaugural → 英语 inaugural（就职的、开幕的、首届的）。画面是：先看鸟定吉凶，再郑重开始。",
+    "originQuery": "inaugural",
+    "page": 9
+  },
+  {
+    "id": "kmf-saga",
+    "word": "saga",
+    "pair": "",
+    "meaning": "长篇英雄传奇；长篇、复杂的故事或系列事件",
+    "origin": "saga 在现代英语里有两个常用义：一是中世纪冰岛、挪威的长篇散文叙事，讲英雄冒险和奇异的远行；二是引申出来的“又长又曲折的故事、一连串事件”。后一个义大约 1857 年才出现，是从“长”和“复杂”这两个特点自然引申来的。\n\n这个词 1709 年才进入英语，而且不是日常口语借词，是古物学者为了描述北欧中世纪叙事作品而从古诺斯语（Old Norse）saga“故事、传说”中请回来的。古诺斯语 saga 与古英语 sagu“所说的话、讲述、传说”同源，二者都来自原始日耳曼语 *saga-、*sagon-，再往上追溯到原始印欧语词根 *sek(w)-“说、讲”。也就是说，saga 和英语本族词 saw（名词，意为“谚语、格言”）是同一个词的分身：saw 走的是英语本土路线，saga 走的是古诺斯语借回路线。\n\n从构词看，saga 在现代英语里不可再拆分，没有前缀后缀；它的词形变化也简单：saga 单数，sagas 复数，没有动词用法。要解释的“词形变化”更多是历史层面的：古诺斯语 saga 与古英语 sagu 的对应，说明日耳曼语各分支在“说”这个概念上有共同的词根；而英语最终同时保留 saw 和 saga 两个后代，一个表示“格言”，一个表示“北欧长篇叙事”。\n\n从“说”到“故事”再到“长篇传奇”，语义演变很自然：人类最早把“说出来的东西”统称为话语、讲述，随后特指有头有尾的叙事；当这类叙事被用来指冰岛、挪威那种篇幅长、人物多、冒险密集的中世纪作品时，就固定成专名 saga。到了 19 世纪，人们发现现代生活里也有同样漫长、曲折、充满分支的故事，于是把 saga 泛化到家族史、诉讼、竞选、公司兴衰等语境。具体到抽象的路径是：言语行为 → 口头传说 → 书面长篇叙事 → 任何冗长复杂的事件序列。\n\n词源亲戚\nsay：与 saga 共享“说、讲述”的古老词根 *sek(w)-，是英语本土动词。\nsaw：这里是名词“谚语、格言”，来自古英语 sagu，与古诺斯语 saga 同源；不是“锯子”，也不是 see 的过去式 saw。\n现代常用词中，关系最清楚的是这两个，不必重复列出古英语形式凑数。saga 借自古诺斯语，而 saw 是英语自身保留下来的同源词，这种关系叫 cognate，并非 saga 从 saw 派生。\n\n近义词辨析上，saga 与 legend、myth、epic 不同。legend 强调传说性，真假难辨，篇幅可长可短；myth 强调解释世界、神明和起源，带有信仰和神圣色彩；epic 强调诗歌体、宏大英雄主题，常指《伊利亚特》《奥德赛》一类作品。saga 则突出“长篇散文叙事”和“家族、世代、冒险的连续记录”。在引申义上，saga 与 story 也不同：story 是中性词，可长可短；saga 暗示时间跨度长、情节纠缠、还没完没了，例如 the saga of the company's collapse 往往带有“拖了很久、盘根错节”的语感。\n\n记忆链可以这样压缩：PIE *sek(w)-“说” → 日耳曼语 *saga-“所说的话” → 古英语 sagu / 古诺斯语 saga“讲述、传说” → 1709 年英语借入 saga，指北欧长篇英雄叙事 → 1857 年后泛指又长又复杂的故事或事件。核心就是“被讲出来的东西”，长而曲折，所以成了传奇。",
+    "originQuery": "saga",
+    "page": 9
+  },
+  {
+    "id": "kmf-chronicle",
+    "word": "chronicle",
+    "pair": "",
+    "meaning": "编年史；按时间顺序记录事件的记载；动词：按时间顺序记录、记述",
+    "origin": "chronicle 的核心是“时间”加上“记录”。它大约在公元1300年进入英语，来自盎格鲁-法语 cronicle，再往前是古法语 cronique（现代法语作 chronique），源头是拉丁语 chronica，而拉丁语又借自希腊语 ta khronika (biblia)，字面意思是“关于时间的那些书”，即编年记录、年代记。希腊语 khronikos 意为“与时间有关的”，来自 khronos“时间”。所以 chronicle 从诞生之初就带着一个明确的概念：不是随意记事，而是把事件按时间先后排列成线。\n\n这个词的词形变化很值得注意。拉丁语 chronica 原本是中性复数，进入中世纪语言时被误当成阴性单数，于是法语里出现了 cronique 这样的单数形式。英语经由盎格鲁-法语借入时写成 cronicle，词尾被改动，可能是因为受到了 article 一类词的影响。古英语原本已有 cranic“chronicle”和 cranicwritere“chronicler”，与借入形式一度并存。古典拉丁语中的 -h- 在英语里直到16世纪才被恢复，于是 cronicle 重新变成 chronicle，让人一眼能看到它和希腊语 khronos 的联系。古典希腊语本身还有单字形式 khronographia“chronicle, yearbook”，说明“按时间记录”这一概念在希腊语内部也已用构词法固定下来。这也解释了为什么 chronicle 和 chronic、chronology、chronometer 这些词看起来都有 chron- 这个成分：它们共享同一个时间概念。\n\n从语义上看，chronicle 从“编年史”这个具体名词出发，很自然地发展出动词用法。大约1400年起，它开始表示“把发生的事情按时间顺序记录下来”。这条意义演变并不突兀：一部编年史的内容就是被记录下来的事件，记录的行为和记录的成果本来就可以用同一个词表示。后来，这个词的适用范围从国家、王朝、战争等宏大历史，扩展到个人经历、某个机构的发展、甚至一连串琐事，只要强调按时间顺序叙述，都可以叫 chronicle。它通常比 history 更强调“时间线”和“如实记录”，而不是分析因果关系或解释意义。\n\n词源亲戚方面，最直接的是 chronology，来自希腊语 khronos 加 logos，字面是“对时间的研究”，现代意义是年代学、年表；chronic 经由拉丁语和法语，本义是“与时间有关的”，后来发展出“长期的、慢性的”这一医学含义，因为疾病在时间中持续；chronometer 由 khronos 加 metron“测量”构成，指精密计时器，尤其是航海用的经线仪；synchronize 中的 syn- 表示“共同”，字面是“使时间相同”，现代意义是使同步、使同时发生；anachronism 中的 ana- 表示“向后、错位”，字面是“时间上的错置”，指时代错误、不合时宜的人或事物。这几个词都围绕“时间”这个核心，能帮助理解 chronicle 为什么从“时间”出发来表示“按时间记录”。\n\n近义词辨析方面，chronicle 与 history 常被比较。history 既可以指过去发生的事，也可以指对过去的系统研究，重点在解释、分析和评价；chronicle 更像一部按时间顺序排列的实录，通常不强调因果分析，叙述也更朴素、连续。annals 与 chronicle 非常接近，都指按年份记录事件，但 annals 更常指逐年记载的正式文献，形式上更严格地以年为单位，而 chronicle 的时间单位可以更灵活，可以按年、按月、按事件顺序来记录。narrative 则强调讲故事的结构和连贯性，可以包含虚构和文学加工；chronicle 通常暗示对真实事件的有序记录，文学性较弱。diary 或 journal 是私人、日常的记录，通常以日为单位，主观色彩更强；chronicle 更像对公共或较长时段事件的整理，虽然也可以用于个人，但语气更正式。\n\n记忆链可以这样理解：希腊语 khronos“时间”进入拉丁语和法语，形成 chronica“按时间的记录”，再变成英语 chronicle“编年史”，随后又衍生出动词“按时间顺序记述”。看到 chron- 就想到时间，看到 -icle 就把这个词当成一部按时间写下来的书。",
+    "originQuery": "chronicle",
+    "page": 9
+  },
+  {
+    "id": "kmf-elegy",
+    "word": "elegy",
+    "pair": "",
+    "meaning": "哀歌，挽歌；挽诗；忧郁沉思的严肃诗",
+    "origin": "elegy 一词在英语中最早出现于 1510 年代，经由法语 elegie 和拉丁语 elegia，最终来自希腊语 elegeia ode，意为“哀歌”。希腊语 elegeia 是 elegeios（哀歌的）的阴性形式，而 elegeios 又源自 elegos，意为“哀歌、悲歌”，后来也指“用哀歌体写成的诗”。elegos 的词源不确定，可能来自弗里吉亚语，也就是说，它可能是一个借词，而非原生希腊语词汇。在古典诗歌中，elegy 首先指一种特定的韵律——哀歌体（elegiac meter）；与它相关的 elegiac 格律在古希腊尤其用于哀悼音乐，但也不限于哀悼。后来，elegy 逐渐专指内容悲伤、哀悼的诗歌或歌曲，尤其用于葬礼。到了 18 世纪，托马斯·格雷的《墓园挽歌》（Elegy Written in a Country Churchyard）影响巨大，使 elegy 又获得了一个更宽泛的含义：任何带有忧郁、沉思基调的严肃诗歌，即使不直接哀悼某人。\n\n从词形上看，elegy 经历了从希腊语到拉丁语再到法语、英语的 borrowings。希腊语 elegos 进入拉丁语时变为 elegia，并保留了“哀歌”的核心义。法语 elegie 直接继承了这个形式，英语再借入，拼写逐渐固定为 elegy。值得注意的是，elegiac（哀歌的；哀伤的）来自希腊语 elegeiakos，经拉丁语 elegiacus、法语 élégiaque 进入英语；它与 elegy 共享同一词根。\n\n词源亲戚方面，现代英语中有几个词与 elegy 有明确的同源关系：elegiac（形容词，哀歌的；哀伤的）直接来自希腊语 elegeiakos，通过拉丁语和法语进入英语；elegize（动词，写哀歌；以哀歌形式哀悼）由 elegy 加后缀 -ize 构成，首次记录于 1702 年；elegiast（名词，哀歌作者）可能与 elegy 共享词根，但证据未说明其确切派生方式。此外，诗歌术语中的“elegiac couplet”（哀歌体对句）与 elegy 共享同一希腊词根，是古典诗歌的一种格律形式。这些词都围绕“哀歌”这一核心概念，但词性和用法不同。\n\n近义词辨析：elegy 与 eulogy 容易混淆。eulogy 来自希腊语 eulogia，意为“赞美”，指悼词或颂词，强调对逝者的赞扬，但不限于葬礼；而 elegy 更侧重诗歌形式，表达哀伤和悼念，不一定包含赞美。另一个近义词是 lament，它可以是名词或动词，指表达悲伤或哀悼，但 lament 更口语化，可用于任何悲伤的表达，不限于诗歌。dirge 则专指葬礼上唱的哀歌，通常有音乐伴奏，比 elegy 更具体地指向仪式音乐。threnody 也是哀歌，但更正式、文学化，常指对死者或重大灾难的哀悼诗或歌曲。\n\n记忆链：elegy 来自希腊语 elegos（哀歌），经拉丁语 elegia、法语 elegie 进入英语，本义是“哀歌”，后扩展为“挽诗、忧郁的诗”。记住核心是“哀”和“诗”，与 eulogy（颂词）区别在于后者重“赞”。",
+    "originQuery": "elegy",
+    "page": 9
+  },
+  {
+    "id": "kmf-self-contained",
+    "word": "self-contained",
+    "pair": "",
+    "meaning": "自成一体、独立的；自给自足的；（人）矜持寡言的",
+    "origin": "self-contained 是英语本土构词法造出的复合形容词，不是从拉丁语或法语整体借来的词。它的两个部件都很好追：self 和 contain。\n\nself 来自古英语 self（代词“自己”）。古英语很早就把它当构词前项用，比如 selfbana 是“自杀者”，selflice 是“自爱、骄傲”，selfwill 是“自主意志”。中古英语时期这类复合词变少，但到 16 世纪中期又大量复活，其中一个重要推力是模仿希腊语用 auto-（自身）构成的复合词。所以 self- 这个前缀的现代生命力，既有本土基础，也有对希腊构词方式的借鉴。\n\ncontain 约 1300 年经古法语 contein- 进入英语，源头是拉丁语 continere。continere 拆开是 com-“一起”加 tenere“握住、保持”，字面义就是“握在一起、围住、容纳”。拉丁语里它既可以指“把东西装在里面”，也可以指“约束、控制”。英语 contain 保留了这两条线：一条是物理容器义（书里包含三章），一条是自控义（contain one’s anger）。\n\n把 self 和 contain 的过去分词合起来，self-contained 的字面画面就是“被自己围住、自己把自己装在里面”。这个词 1590 年代最早出现的义项是“矜持的、不轻易表露情感、不与人交流的”——一个人把自己的内心收住，不向外泄漏，正呼应 contain 的“约束、控制”那条义。到 1828 年才出现“自身完整、不需要外部补充”的用法，比如 a self-contained unit（自成一体、自给自足的单元）。从“把自己收住”到“自己就已完整”，语义转移是很自然的：如果一样东西内部已经齐备，就不必向外求；同样，一个人如果内心收得住，对外部认同的需求就低。\n\n意义这条链可以概括为：握在一起 → 自己握住自己 → 不外露 / 不依赖外部 → 独立、自足、自成一体。今天技术英语里 self-contained 常指“自带全部所需部件的”（如 self-contained breathing apparatus 自携式呼吸器），这个用法和 1828 年那条线一脉相承。\n\n词源亲戚\ncontain：拉丁 continere“握在一起”→ 包含、容纳、控制。\ntenant：来自拉丁 tenere 的现在分词 → 持有者、房客。\nmaintain：拉丁 manu tenere“用手握住”→ 维持、保养、坚持。\nretain：re-“回”+ tenere“握” → 保留、留住。\ncontained：contain 的过去分词，self-contained 的直接构词部件。\n\n近义词辨析\nself-sufficient 强调能力上不靠别人供给，多用于经济、粮食、能源等物质层面；self-contained 更强调结构上内部完整、自成一体，也可形容人。independent 范围最广，强调不受支配或控制，未必涉及“内含全部所需”。reserved 只对应 self-contained 最早那条“矜持寡言”义，不带“自足”含义；用 reserved 形容人时，语气比 self-contained 更直接。autonomous 强调有自主权、自我治理，多用于组织、地区、系统，和“内部是否完整”无关。\n\n记忆链\nself“自己” + contain“握住、围住” → 自己把自己围住 → 不外露、不依赖外物 → 自足的、自成一体的。",
+    "originQuery": "self-contained",
+    "page": 9
+  },
+  {
+    "id": "kmf-discrete",
+    "word": "discrete",
+    "pair": "",
+    "meaning": "离散的，分立的，各不相同的（指彼此分开、界限分明的个体，常与 continuous 相对）",
+    "origin": "discrete 和 discreet（谨慎的）其实同出一源，都来自拉丁语 discretus，是动词 discernere 的过去分词。discernere 由 dis-（分开、离开）加 cernere（分辨、筛分）构成，而 cernere 往上可追到 PIE 词根 *krei-“筛”，所以这个词的底层画面是“用筛子把东西分离开、挑拣出来”。因此 discretus 的字面义是“被分开的、被区分开的”。\n\n这个词义后来沿着两条路发展。一条是物理或逻辑上的“分开、彼此有别”，这正是今天 discrete 的意思。14 世纪末英语借入（经古法语 discret/discre，也直接借自拉丁语），最初就带“separate, distinct from others”之义，后来主要留在哲学、数学、医学、音乐等还记得拉丁语的学科里，用来描述可以一一分开、不连续的对象，比如离散的数据点、离散的音级。\n\n另一条路走向心理层面：能“分辨、区分”的人，就是有判断力、明辨是非的人，于是在中世纪拉丁语里 discretus 引申为“有辨别力的、审慎的”，这条路线在英语里变成 discreet（谨慎的、言行得体的）。discrete 和 discreet 的拼写直到 17 世纪左右还互相通用，1600 年之后才分工：discreet 专管“谨慎审慎”，discrete 专管“分开、分立”。\n\n词形上，dis- 在这里不是否定义，而是“分开、各自”的方向义；-ete 与 -eet 的差异只是两条借入路线后固定下来的拼写传统，并非构词不同。名词形式是 discreteness（离散性），副词是 discretely。这个词的核心是“可被区分开来”。\n\n词源亲戚\n\ndiscreet：同出拉丁语 discretus，另一路引申为“审慎的、谨慎的”。\ndiscreteness：直接派生名词，指“离散性、分立性”。\ndiscretion：同源，来自拉丁语 discretio，指“判断力、谨慎”。\ndiscern：dis-（分开）+ cernere（筛、区分）→ “辨别、看出”，与 discrete 共享词根。\ncertain：来自拉丁语 certus，与 cernere 同源，本义“已筛定的、确定的”。\n\n近义词辨析\n\ndiscrete 强调彼此分离、界限清楚，常与 continuous 对照，多用于技术、数学、正式语体。\ndistinct 强调“明显不同、可辨识”，侧重差异本身，不一定暗含一个个分开的个体。\nseparate 最日常，强调被分开的状态或动作，语域普通。\nindividual 强调作为单独个体存在，常指人或单个事物，不含“不连续”的专业含义。\n\n记忆链\n\ncernere“筛分、区分” → dis-“分开” + cernere → discretus“被分开的” → 学科用语 discrete“离散的、分立的”；同一分词的另一路引申出 discreet“审慎的”。记住“分开可辨”这个核心，discrete 与 discreet 的分工就清楚了。",
+    "originQuery": "discrete",
+    "page": 9
+  },
+  {
+    "id": "kmf-pugnacity",
+    "word": "pugnacity",
+    "pair": "",
+    "meaning": "好斗，好战；爱争吵的性情",
+    "origin": "pugnacity 大约在 1600 年前后进入英语，来自拉丁语 pugnacitas“好斗的性情”，其形容词是 pugnax（属格 pugnacis）“好斗的、爱打架的”，动词是 pugnare“打斗、对抗”，尤其指用拳头互殴；再往前是名词 pugnus“拳头”。这条链子的核心画面非常具体：拳头。拳头的动作是击打，击打的对象是对手，于是从“拳头”生出“用拳头打”，再抽象成一般的“争斗、对抗”，最后更进一步，从具体的行为抽象为一种稳定的性格倾向——好斗。pugnacity 表示的正是这种“性情”，而不是某一次具体的打架。\n\n词形上，pugn- 是这条拉丁词族的共同词干，后面的 -acity 来自拉丁语 -acitas，是构成抽象名词的后缀，表示“具有某种性质的倾向、状态”。所以 pugnacity 字面就是“好斗的性质”，与动词无关，它不是“打斗”这个动作，而是“爱打斗”的脾气。英语中的形容词 pugnacious（1640 年代）则反过来从 pugnacity 逆构而成，或者直接借自拉丁语 pugnacis，两者并存。\n\n词源再往上追，pugnus“拳头”通常被联系到原始印欧语词根 *peuk-（鼻化形式 *pung-）“刺、扎”。这个联系把“拳头”“尖刺”“刺穿”系在一起，但 *peuk- 与拉丁语 pugnus 之间的具体传承关系并非毫无争议，需谨慎对待。\n\n词源亲戚：pugilism“拳击”，源自拉丁语 pugil“拳击手”，与 pugnus 同属 *peuk- 词根族，画面同样是拳头；pungent“刺鼻的、辛辣的”，源自拉丁语 pungere“刺、扎”，同出 *peuk-，气味像针一样扎进鼻子；puncture“刺穿、扎破”，同出 *peuk- 词根，直接保留“刺”的动作感；repugnant“令人厌恶的”，来自 repugnare“反抗、抵触”，本义是“反着打”，由身体的对抗转为心理上的排斥；impugn“质疑、抨击”，来自 impugnare“攻击”，由拳头相向转为言语上的攻击。这几个词表面上分属搏斗、气味、穿刺、心理排斥、言语攻击，但底层都能追到“刺/戳/打”这一动作。\n\n近义词辨析：pugnacity 与 aggressiveness 都表示好斗，但 aggressiveness 更偏主动进攻、强势出击，中性甚至可用于褒义（如商业上的进取心）；pugnacity 更强调性格中爱争吵、爱挑事的倾向，带明显贬义。belligerence 偏“好战、敌对”，常用于国家、群体之间的对抗态度，规模感和政治色彩更强；pugnacity 则更多用于个人脾气。combativeness 与 pugnacity 最接近，也指争强好胜，但 combativeness 可能偏“有斗志、不认输”，pugnacity 更偏“爱吵架、爱动手”，倾向负面。\n\n记忆链：pugnus“拳头”→ pugnare“用拳头打、争斗”→ pugnax“好斗的”→ pugnacitas“好斗的性情”→ pugnacity“好斗、爱争吵”。看到 pugn-，就想“拳头”，脾气是拳头形状的性格。\n\n例句：His pugnacity made him feared in every meeting, though few could deny his intelligence.（他的好斗脾气让他在每次会议上都令人忌惮，尽管很少有人能否认他的聪明。）",
+    "originQuery": "pugnacity",
+    "page": 9
+  },
+  {
+    "id": "kmf-belligerence",
+    "word": "belligerence",
+    "pair": "",
+    "meaning": "好战性；交战状态；挑衅态度",
+    "origin": "belligerence 是一个从拉丁语直接借入的抽象名词，它的历史链条非常清楚，几乎每一步都有文献证据。要理解它，先要看它的形容词词根 belligerent。\n\nbelligerent 最早出现在 16 世纪 70 年代，意思是“正在进行战争、处于交战状态的”。它来自拉丁语 belligerantem（主格 belligerans），这是动词 belligerare“发动战争、进行战争”的过去分词形式。这个动词由两个非常常见的拉丁语成分复合而成：bellum“战争” + gerere“携带、进行、从事”。所以 belligerare 的字面画面就是“进行战争”。\n\n这里的关键是 gerere。它在拉丁语中本义是“背负、承载”，比如携带武器、承担任务；由此引申为“执行、进行、从事”，于是“进行战争”这个搭配就自然固定下来。英语中许多含 -ger- 的词都来自这个“携带、进行”的 gerere，例如 gesture（手势，本义是“携带身体的动作”）、digest（消化，本义是“分开携带”）、suggest（建议，本义是“在下面携带”）。\n\n到了 1804 年，英语在 belligerent 后面加上抽象名词后缀 -ence 造出了 belligerence，-ence 与 -ance 同源，表示一种性质、状态或行为。所以 belligerence 的字面意思就是“进行战争的性质或状态”，最初指“好战的本性或行为”。后来，它的使用范围从国家之间的战争扩展到个人的态度：一个人如果总是表现出挑衅、好斗、随时准备吵架的架势，也可以被称为 belligerence。\n\n值得注意的是，中世纪英语中曾有过 belligeration 一词，意思是“战争、战事”，但它后来没有留下来。而 belligerence 和 belligerency 后来并存，现在 belligerency 更多用于国际法上的“交战状态”，belligerence 则更常用于描述人或言辞的好斗性。\n\n词源亲戚（精选）\n\nbellicose：同样来自 bellum“战争”，加 -ose 后缀，直接表示“好战的、好斗的”，语气比 belligerent 更书面。\n\nrebel：来自拉丁语 rebellare“再次发动战争”，re-“再次” + bellum“战争”。本义是“重新开战”，引申为“反叛、造反”。\n\ngesture：来自 gerere“携带、进行”，本义是“身体的动作、姿态”，和 belligerence 共享“进行、承载”的核心概念。\n\ndigest：dis-“分开” + gerere“携带”，本义是“分开搬运、处理”，引申为“消化、领会”。\nsuggest：sub-“在下面” + gerere“携带”，本义是“在下面带上来”，引申为“提议、暗示”。\n\n近义词辨析\n\nbelligerence 与 aggression 都涉及攻击性，但侧重不同。aggression 强调主动侵犯、攻击行为，可以是物理的或心理的；belligerence 更强调一种好战、挑衅的姿态或态度，不一定已经动手，常带有“随时准备开战”的意味。\n\nbelligerence 与 hostility 相比，hostility 泛指敌意、敌对情绪，范围更广，可以是被动的冷淡或仇视；belligerence 则更外显、更主动，带有“好斗、好吵架”的色彩。\n\nbelligerence 与 combativeness 意思很近，combativeness 更侧重“好斗、爱争辩”的性格，belligerence 则还可以指国家间的交战状态，语域更正式。\n\n记忆链\n\nbellum（战争）+ gerere（进行、携带）→ belligerare（进行战争）→ belligerent（交战的、好斗的）→ belligerence（好战性、交战状态）。从“进行战争”这个动作，到“好战”的性质，再到个人态度上的“挑衅”，意义一步步从具体战争抽象为心理倾向。",
+    "originQuery": "belligerence",
+    "page": 9
+  },
+  {
+    "id": "kmf-subsequent",
+    "word": "subsequent",
+    "pair": "",
+    "meaning": "随后的，后来的，接着发生的",
+    "origin": "subsequent 是15世纪中期进入英语的形容词，来自古法语的 subsequent（14世纪），更直接地来自拉丁语现在分词 subsequens（主格形式），其动词原形是 subsequi。subsequi 由两个部分构成：前缀 sub- 和动词 sequi。这里的关键是 sub- 的意思，它不是现代英语中常见的“下面、次于”那条路，而是拉丁语 sub 的一个更古老的空间义“紧靠、一直到、紧接着”，词源上可追溯到 PIE 词根 *upo“在……下面、从下面向上”，与希腊语 hypo-、英语 up 同源。sequi 则来自 PIE 词根 *sekw-（1）“跟随”。所以 subsequi 的字面画面是“紧紧跟在后面”，sub- 起的是“紧贴、紧接着”的强化作用。这个词从具体的空间跟随，很自然地过渡到时间上的“之后发生”：先有“跟在后面”这个动作，再抽象为“在时间顺序上排在后面”，于是 subsequens 就有了“接下来的、随后的”这一时间义。现代英语中 subsequent 主要用于书面和正式语域，指时间或顺序上紧接着发生的，如 subsequent events、subsequent to the meeting。\n\n词形方面，拉丁语 sequi 的现在分词是 sequens，词干 sequent- 加上前缀 sub- 就得到 subsequens，其主格 subsequens 进入英语后按规则变为 subsequent。也就是说，-ent 是拉丁语现在分词后缀，表示“正在……的”，不表示被动。所以 subsequent 字面上就是“正在紧跟着的”。另外，sub- 在拉丁语中处于 -s- 前时通常保持 sub- 而不发生同化，所以这里写作 sub- 而不是 suc-、suf- 等。\n\n词源亲戚\nsequence：经拉丁语 sequentia，通向 sequi“跟随” → 顺序、序列，不是英语 sequi 直接加 -ence。\nconsequence：拉丁语 consequentia 一系 → 随之而来的事 → 后果。\nobsequious：拉丁语 obsequiosus 一系，通向 obsequi“顺从” → 谄媚、过分顺从的。\npursue：经法语及通俗拉丁语的“跟随”词族 → 追赶、追求。\nsubsequently：subsequent + -ly → 随后、后来，是直接派生的副词。\n\n近义词辨析\nsubsequent 强调在时间或顺序上紧跟其后，语气中性、书面。following 更口语、更泛，只表示“接下来的”，不强调紧接。later 侧重时间上“较晚”，但不一定紧接，可用于相隔很久之后。ensuing 强调由前事自然引出的紧随结果，常带因果意味，如 ensuing chaos。consequent 也指“随之而来的”，但更偏向逻辑上的推论或因果结果，而 subsequent 只讲时间先后，不必然含因果。\n\n记忆链\nsub-（紧靠、紧接着）+ sequi（跟随）→ subsequens“紧跟在后的”→ subsequent“随后的、后来的”。抓住“紧跟”这一核心，再延伸到时间上的“其后”，就能把 subsequent 与 sequence、consequence、obsequious 等一串同根词串起来。",
+    "originQuery": "subsequent",
+    "page": 9
+  },
+  {
+    "id": "kmf-voracious",
+    "word": "voracious",
+    "pair": "",
+    "meaning": "贪吃的；狼吞虎咽的；贪婪的（对知识、活动等如饥似渴的）",
+    "origin": "voracious 的核心画面是“张口大吞、迅速咽下”。它于 1630 年代作为名词 voracity 的形容词形式出现，而 voracity 在 15 世纪中叶来自法语 voracité 或直接来自拉丁语 vorācitās（主格 vorācitās，属格 vorācitātis）“贪食、贪婪”。拉丁语 vorāx（属格 vorācis）“贪吃的、吞噬的”来自动词 vorāre “吞下、吞食”，它可能追溯到印欧词根 *gwora-（也作 *gwera-），意为“食物；吞食”。这一词根也可能出现在希腊语 bibrōskein “吃、消化”、梵语 girati “吞下”、立陶宛语 gerti “喝”等词中，说明“吞、吃”这一动作在印欧语系中可能有共同表达。\n\n词形上，英语没有直接引入拉丁形容词 vorāx，而是先有名词 voracity，再在 17 世纪为其造出形容词形式 voracious，后缀 -ous 表示“具有……性质的”，因此 voracious 字面就是“有贪食性质的”。在词义演变上，它从最初具体的“吃东西狼吞虎咽”，很自然地扩展到对非食物的强烈欲望，因为“吞噬”这一身体动作可以隐喻为“大量、急切地获取并消耗”。于是今天可以说 a voracious reader（如饥似渴的读者）、a voracious appetite for knowledge（对知识的强烈渴求）等，而“贪婪”这一层含义也随之扩展到对财富、权力等抽象对象的过度攫取。\n\n词源亲戚（精选现代英语词）：\ncarnivorous：拉丁语 carō（肉）+ vorāre，字面“吃肉的”，即“食肉的”。\nherbivorous：拉丁语 herba（草）+ vorāre，字面“吃草的”，即“食草的”。\nomnivorous：拉丁语 omni-（全）+ vorāre，字面“什么都吃的”，即“杂食的”，引申为“兴趣广泛的”。\ndevour：来自拉丁语 dēvorāre，字面“吞下去”，即“狼吞虎咽地吃；吞噬；毁灭”。\nvoracity：来自拉丁语 vorācitās，名词“贪食、贪婪”。\n这些词共享同一个核心动作“吞”，能帮助把 vor- 系列串联起来。\n\n近义词辨析：\nvoracious 与 ravenous 都表示“极饿、贪吃”，但 ravenous 更强调因饥饿而急切，常指一时状态；voracious 则强调习惯性的“贪多、吞噬”，可用于形容长期大量阅读、收集等。\ngreedy 语气更贬义，泛指对财物、食物等的过度占有欲，不强调“吞”的动作；gluttonous 专门指在吃上放纵、暴食，道德谴责色彩强，而 voracious 在形容阅读等时可带中性甚至褒义（如“求知欲强”）。\n另如 insatiable 强调“无法满足”，但 insatiable 本身不包含“吞”的具体意象。\n\n记忆链：拉丁语 vorāre “吞下” → 名词 vorācitās “贪食” → 英语 voracity → 逆构形容词 voracious “狼吞虎咽的、贪婪的” → 引申为对知识、财富等的“如饥似渴”。",
+    "originQuery": "voracious",
+    "page": 9
+  },
+  {
+    "id": "kmf-fastidious",
+    "word": "fastidious",
+    "pair": "",
+    "meaning": "过分讲究的，挑剔的；苛求的",
+    "origin": "fastidious 于15世纪中期进入英语，最初的意思是“充满骄傲的、傲慢的”，而不是今天的“挑剔的”。它直接借自拉丁语 fastidiosus，意思是“轻蔑的、易反胃的、苛求的”，其名词 fastidium 表示“厌恶、反胃、嫌弃；过分的讲究”。\n\nfastidium 的来源在学界并不确定。一种较有影响的分析把它看作 *fastu-taidiom 的复合：fastus（傲慢、轻蔑、骄傲）加上 taedium（厌恶、厌倦）。若此说成立，fastus 可能追溯到原始印欧语 *bhars-（1）“突出、竖毛、尖刺”，取“竖起毛刺”的形象——人一傲慢或嫌恶，就像竖起刺一般。不过 de Vaan 指出，fastus 的 u-词干并无独立佐证，而且在 fastidium 中 fastus 与 taedium 语义重叠，会构成“同义重复”，因此这一拆解只是可能的解释，不能当作已证实的史实。词源资料明确标注 fastidium 的源头为“uncertain”。\n\n意义演变本身很自然：从“骄傲、居高临下”到“以居高临下的眼光看待事物”，再到“看什么都不顺眼、容易反胃”，最后收缩为今天最常用的“对细节过分讲究、难以取悦”。这条链体现了从社会态度（傲慢）到心理感受（嫌恶）再到行为特征（挑剔）的转移。英语中“squeamish, over-nice”这一今义直到1610年代才明确出现。早期英语里该词既可作被动（令人厌恶的），也可作主动（厌恶的），今义基本只保留主动色彩。常见派生形式有 fastidiously（副词）和 fastidiousness（名词）。\n\n词源亲戚方面，最值得记住的是 fash（苏格兰、古语，意为“使烦恼、激怒”，来自古法语 fascher，而 fascher 又源自拉丁语 fastidiosus / 中世纪拉丁语派生形式），以及 fashious（“令人烦恼的”，来自法语 fâcheux / fastidieux）。同一拉丁词族在现代英语中还可看到直接派生形式 fastidiously（副词）和 fastidiousness（名词）。它们清楚显示：同一个拉丁词既能向“嫌恶”方向走成“挑剔”，也能向“使恼怒”方向走成“惹恼”。\n\n近义词辨析：picky 最口语，指在小事上挑三拣四，贬义明显；choosy 强调选择时标准高，语域中性偏口语；meticulous 指对细节极为仔细，通常是褒义，不含“难以取悦”的意味；fastidious 则介于二者之间，既表示对细节的高标准，也常带一种近乎洁癖或难以满足的挑剔感，语域比 picky 正式，语气比 meticulous 更重。\n\n记忆链：拉丁 fastidium（厌恶、过分讲究）→ fastidiosus（苛求的、易嫌弃的）→ 英语 mid-15c. 先表“傲慢”→ 1610s 收缩为“对细节过分讲究、挑剔”。抓住“嫌弃”这一核心情绪，由骄傲到挑剔的演变就顺理成章了。",
+    "originQuery": "fastidious",
+    "page": 9
+  },
+  {
+    "id": "kmf-prodigious",
+    "word": "prodigious",
+    "pair": "",
+    "meaning": "巨大的，惊人的；异常的",
+    "origin": "prodigious 的词源要从拉丁语名词 prodigium 说起，它指“预兆、征兆、异象”，尤其指那些反常得让人心惊的自然现象，比如怪胎、血雨、天上异样的火光。古人相信这类反常之物是神在“向前说出”未来的事，因此 prodigium 天生带着两层含义：一是“反常、怪异”，二是“值得惊叹、预示重大”。拉丁语由此派生出形容词 prodigiosus，意为 strange, wonderful, marvelous, unnatural。英语在 1550 年代经法语 prodigieux 或直接借入拉丁语，形成 prodigious，最初的意思正是“预兆性的、不祥的”，这个义项今天已经废弃。1560 年代起它转向“引起惊奇或惊异的”，1570 年代得到“反常、异常”的意思，到约 1600 年才稳定出“巨大、庞大得令人惊叹”这一现代主义。这条语义链很自然：反常怪异的东西本身超出常规尺度，而超常之物总让人惊异，于是“反常”和“惊人”渐渐合流，最终落在“大得惊人”上。所以 prodigious 形容的“巨大”不是普通的 big，而是大到离谱、大到引人注目。\n\n词形上，英语 prodigious 直接来自拉丁语形容词 prodigiosus；拉丁语 -osus 表示“充满……的、具有……性质的”，因此 prodigiosus 字面是“充满 prodigium 性质的”，即“像异兆一样的”。词根 -igium 部分来源不明：一种说法认为与 aio（我说，见于 adage）有关，另一种说法把它联系到 agere（驱动、引出，见于 act、agent），但两者都是推测，无法确定。古词 prodigium 本身之后演变出现代名词 prodigy，所以 prodigy 与 prodigious 是同源近亲。\n\n词源亲戚可以从 prodigy 这个核心辐射出去。prodigy 本身即“奇才、神童；奇迹、异象”，来自同一 prodigium，与 prodigious 共享“超出常理而令人惊叹”的底色。prodigal 虽然也拼写相近、也含“pro-”部分，但它来自拉丁语 prodigere（挥霍、浪费），意为“挥霍的、浪费的”，与 prodigy 并非同一个词根，只是形近，不能算同源亲戚。由 prodigious 直接派生的常见名词是 prodigiousness“巨大、惊人”；prodigiosity 也是其派生名词，但较为罕用。若沿 pro-（向前）与可能的 *ag-（驱动）追得更远，可以接到 agent、agenda、act 这一组词，它们都含“驱动、做”的语义；但这些联系属于对 prodigium 后半部分的推测性分析，需谨慎对待。\n\n近义词辨析方面，prodigious 与 enormous、immense、colossal 都能表“巨大”，但语感不同。enormous 强调尺寸或数量超出正常范围，语气中性，使用最广；immense 偏书面，强调无边无际、难以测量；colossal 来自巨像（colossus），形象感强，常用于夸张的比喻，如 colossal failure。prodigious 则额外带有“因巨大而令人惊叹、甚至不合常理”的意味，常与 amount、quantity、memory、talent、appetite 搭配，如 a prodigious memory（惊人的记忆力）、a prodigious appetite（大得吓人的胃口）。相比之下，prodigious 不只是“大”，更是在提醒听者：这已经超出常理。\n\n记忆链：prodigium（异兆，预示大事的反常之物）→ prodigiosus（奇异、惊人）→ prodigious（由“预兆性、异常”经“引起惊叹”落到“大得惊人”）。抓住“反常到令人惊叹”这条线，就能同时理解它为什么既能指“惊人”，又能指“巨大”。",
+    "originQuery": "prodigious",
+    "page": 9
+  },
+  {
+    "id": "kmf-vitality",
+    "word": "vitality",
+    "pair": "",
+    "meaning": "活力，生命力；持久力，生机",
+    "origin": "vitality 出现于 1590 年代的英语，最初的意思是“生命或生命活动能力的显现”，是从拉丁语 vitalitatem（主格 vitalitas）“生命力、生命”借来的名词，而 vitalitas 又来自形容词 vitalis“与生命有关的”。再往前追，vitalis 出自拉丁语名词 vita“生命”，而 vita 与动词 vivere“活着”同源，最终可以追到原始印欧语词根 *gwei-“活着”。所以这条传承链是：PIE *gwei-（活）→ 拉丁语 vivere（活）/ vita（生命）→ vitalis（与生命有关的）→ vitalitas（生命力）→ 英语 vitality。\n\n词形上，-ity 是英语从法语和拉丁语借来的名词后缀，源自拉丁语 -itatem，作用是把形容词变成表示“性质、状态”的抽象名词。所以 vital（有生命的、至关重要的）+ -ity 就是“具有生命这一性质的状态”，即生命力。拼写中的 -ality 对应拉丁语 vitalitas 的词尾形式，可以理解为英语沿着拉丁语原有的词形模式借入，而非英语内部重新派生。\n\n语义的变化很能说明抽象化的过程。16 世纪末它指“生命机能的显现”，是相当生理性的概念，接近“有生命这件事本身在运作”。到 1844 年，它发展出“持久运作的能力”，也就是能撑得住、干得动的耐力。再到 1858 年，出现比喻义的“活动、生气、活泼”，把生理上的生命力投射到人的精神、谈话、艺术、机构甚至经济上：一个城市有 vitality，指它有人气、有动力；一篇论证有 vitality，指它仍有说服力和生命力。从“生命机能”→“持久能力”→“抽象活力”，这是典型的从具体身体经验向心理和社会领域扩展的隐喻路径。\n\n词源亲戚方面，首先是 vital（至关重要的、生命的）：来自拉丁语 vitalis，因“对生命必不可少”而引申出“极其重要”。其次是 vivid（生动的、鲜明的）：来自拉丁语 vividus“充满生气的”，同出 vivere“活”。第三是 survive（幸存）：来自拉丁语 supervivere，super-“超过”+ vivere“活”，字面是“活得超过（某事）”。第四是 revive（复活、恢复）：re-“再”+ vivere“活”，即“重新活过来”。第五是 vitamin（维生素）：20 世纪初由波兰化学家 Funk 从拉丁语 vita“生命”加上化学后缀 -amine 造出，最初指维持生命所必需的胺类物质，虽然后来发现并非都是胺，但词形保留了下来。这几个词的共同核心都是“活”，但各自走了不同的语义道路。\n\n近义词辨析上，vitality 强调内在的、持续的生机与能量，常指一个人、组织或作品自身具备的活的力量。energy 更广泛，可以是物理能量，也可以是人的精力，但未必含“生命力”这层生物学色彩。vigor 强调强健有力的劲头和旺盛的体力或执行力度，常用于身体、行动、风格。liveliness 偏重外显的活泼、热闹、有生气，通常描述气氛或表情，而不一定指持久的生命力。可以说，vitality 是“活着的底气”，vigor 是“使出来的劲”，liveliness 是“看起来的热闹”。\n\n记忆链：vitality 来自拉丁语 vita“生命”+ -ity“性质”，本义是“生命机能的显现”，后引申为持久运作的能力，再到抽象的“活力、生机”。抓住 vita / vivere“活”这个核心，vital、vivid、survive、revive、vitamin 就都串起来了。",
+    "originQuery": "vitality",
+    "page": 9
+  },
+  {
+    "id": "kmf-dwindling",
+    "word": "dwindling",
+    "pair": "",
+    "meaning": "逐渐减少的，日益萎缩的",
+    "origin": "dwindle 是 16 世纪 90 年代出现的英语动词，莎士比亚用过，意思是“变小、减少、萎缩”。它并不是凭空造出来的，而是从更早的 dwine 演变来的：dwine 意为“消瘦、憔悴、逐渐衰亡”，来自中古英语 dwinen，再往前是古英语 dwinan，可追溯到原始日耳曼语 *dwinana，同源词包括荷兰语 dwijnen“消失”、古诺斯语 dvina、丹麦语 tvine“憔悴”（据词典所列同源形式）。这一族词常被进一步追溯到原始印欧语词根 *dheu-(3)“死去、消逝、失去知觉”，该词根也见于英语 die 的深层词源追溯。所以 dwindle 的字面底色不是“变少”这么中性，而是“像生命一点点耗尽那样消逝”。\n\n词形上，dwindle 常被视为 dwine 的指小反复形式，词典用 apparently 表示这一派生关系带有推测性质。英语里有些 -le 动词带有反复或细碎动作的感觉，如 sparkle、crackle、wriggle，但这只是构词感觉，不是确定的历史派生规则。dwindle 因此更强调“一点点、持续不断地变小”，比单纯 decrease 更有过程感。从结构看，dwindle 可视为 dwine 的指小反复形式；不过这只是构词感觉，并非说历史上一定经过某个明确的派生规则。\n\n语义上，dwindle 的演变很清楚：从“肉体消瘦、生命衰亡”这个具体画面，扩展到数量、体积、力量、资源、声音、希望等抽象事物的持续减少。由身体到抽象，是词义演变里很常见的路径：人先观察到生命和肉体一点点枯竭，再把这个画面投射到粮食、金钱、人口、影响力上。今天说 dwindling resources，就是“资源日渐枯竭”；dwindling population 是“人口不断萎缩”；dwindling hopes 是“希望越来越渺茫”。它通常暗示减少是渐进的、难以逆转的，并且带有一种无奈或担忧的色彩。\n\n词源亲戚\ndwindle：中古英语 dwine 等形式加 -le 后发展出的动词 → 逐渐减少，是 dwindling 的直接基础。\ndwindling：dwindle 去词尾 e 后加 -ing → 正在减少的，是现代常见的分词形容词。\ndie：在更深的词源分析中可与 *dheu-“消逝、死去”的词根网络相连；它不是 dwindle 的英语派生基础。\n这一词族在常用现代英语里不大；低地德语 dwinen 可用于比较语言史，但它不是需要另记的现代英语亲戚。\n\n近义词辨析\n\ndecrease：最中性、最通用的“减少”，只陈述数量下降，不暗示方式和情绪。dwindle 强调持续、渐进，常含“所剩无几”的担忧。\ndiminish：偏正式，强调规模或重要性变小，可以是主动或被动；dwindle 更偏向自然、不可阻挡地变小。\nshrink：强调体积或数量收缩，常带“退缩、畏缩”的身体联想；dwindle 更侧重过程漫长和逐渐耗尽。\ndecline：可指数量下降，也可指质量、健康、权力衰退，语域较宽；dwindling 更聚焦于“越来越少”这一持续状态。\n\n记忆链\n\ndwindle 来自古英语 dwinan，与 die 的深层词源同涉远古词根“消逝”；加 -le 后感觉上表示“反复、一点点地变小”，于是从“生命枯竭”引申为“数量、资源、希望持续减少”。dwindling 就是“正在一点点消逝、越来越少”的状态。",
+    "originQuery": "dwindle",
+    "page": 9
+  },
+  {
+    "id": "kmf-morphing",
+    "word": "morphing",
+    "pair": "",
+    "meaning": "（电影特效、计算机图形、图像处理等中的）变形，渐变，平滑转换",
+    "origin": "morphing 是动词 morph 的现在分词，而 morph 是一条高度“人为提炼”出来的现代词，并非从古英语一代代口头传下来的老词。它的源头是希腊语 morphē（形状、形态）以及由它构成的 metamorphoun（使变形、变成另一形态），后者又派生出英语的 metamorphosis（变形、蜕变）。meta- 在希腊语中常表“变化、超越”，所以 metamorphosis 的字面意思就是“形态的改变”。1930 年代以后，英语从 metamorphosis 中截取后段 morph-，把它提炼成一个能独立使用的成分，先用在生物学里指“变种、形态型”（名词用法见于 1955 年前后），后来又被用作动词，表示“（使）改变形态、平滑地变换形状”，这一用法在电影特效中约始于 1987 年，于是有了 morphed 和 morphing。另外，morph 还曾于 1912 年作 morphine（吗啡）的口语缩略，但那一路用法与今天“变形”的含义没有直接关系。\n\n从词形上看，morphing 只是动词 morph 加后缀 -ing，构成动名词或现在分词，拼写上保留词干全部字母，没有发生音变或脱落。真正值得注意的是意义上的演变：希腊语 morphē 指的是可看见的、外部的“形状、样貌”，属于具体视觉层面；metamorphoun 把它放在“改变”框架里，形成“改变形状”的动作；到了现代英语，这个词从神话、巫术式的剧烈变身（奥维德《变形记》里的 metamorphosis），逐渐转用到一种技术性的、连续的、视觉可见的“形变过程”——图像从一张脸平滑过渡到另一张脸，或计算机模型在三维空间中改变轮廓。这就是“具体形状”到“技术化渐变过程”的抽象化路径，metonymy（以动作代过程）和 specialization（特指特效中的平滑变换）都在起作用。\n\n词源亲戚\n可以重点记住这几个现代英语词。metamorphosis 是 morph 的直接母体，字面即“改变形态”，现代常指昆虫从卵到成虫的彻底变态，也喻指人或事物的脱胎换骨。metamorphic 来自同一家族，在地质学中指“变质岩”——岩石在高温高压下改变结构但并未熔化，字面仍是“改变了形态的”。amorphous 由否定前缀 a- 加 morphē 构成，字面“没有形状的”，现代义为“无定形的、没有清晰结构的”，在科学和抽象论述中都很常见。morphology 是 morphē 加 logy（学科），字面“研究形状的学问”，现代义为“形态学”，用于生物学、语言学和材料科学。此外，希腊语 morphē 本身词源不确定，不要把它硬拆成更细的词根。\n\n近义词辨析\ntransformation 强调本质上的、往往彻底的改变，结果与原来差别很大，语域较正式；morphing 则强调外观或形态上连续、平滑的过渡，变化是渐进的，结果可以辨认出原来的影子。metamorphosis 带有生物学上的彻底变态或神话式剧变色彩，比 morphing 更重、更文学化；morphing 几乎总是技术和视觉语境里的中性词。shift 指位置、方向或态度的移动或转变，变化幅度和视觉性都弱于 morphing；fluctuation 则指来回起伏、反复变动，不隐含单向的形态改变。简单说，metamorphosis 偏“蜕变”、transformation 偏“彻底改造”、morphing 偏“平滑变形”，语域和画面感都不同。\n\n记忆链\nmorphing = morph（形状）+ -ing（进行中）。morph 取自希腊语 morphē“形状”和 metamorphosis“变形”。从“形状”到“改变形状”，再到电影特效里图像平滑变形、数字模型改变轮廓，就是这个词从具体视觉概念走向技术化“渐变过程”的路线。",
+    "originQuery": "morph",
+    "page": 9
+  },
+  {
+    "id": "kmf-wane",
+    "word": "wane",
+    "pair": "",
+    "meaning": "（逐渐）减少、衰落；尤指月亮的亏缺",
+    "origin": "wane 的核心画面非常具体：它最初几乎就是为描述月亮而生。古英语 wanian（“逐渐变小、减少、衰退、消退”）来自原始日耳曼语 *wanōnan，同源形式见于古撒克逊语 wanon、古诺斯语 vana、古弗里斯语 wania、中古荷兰语 waenen、古高地德语 wanon，意思都是“变小、变少”。这些形式又被构拟为来自 PIE 词根 *eue-（“离开、放弃、耗尽”）的带后缀形式 *weno-。这条线索很关键：wane 的底层含义不是单纯的“少”，而是“从有到无、从满到亏”的过程感——某物正在离开、正在耗尽。中古英语 wannen 继承了这层意思，特别常用于月亮可见部分周期性变小。名词用法“月亮的亏缺期”到 1560 年代才出现；古英语里 wane 本就有名词义“短缺、缺乏”，今天只在某些技术语境中残留。古英语和中古英语里 wane 还能当形容词，跟数词连用表示“差……”，如 one wane of a hundred 就是“九十九”，字面是“比一百少一”，这正说明它的语义中心是“差额、不足”。\n\n词形上需要注意：现代英语 wane 的拼写是古英语 wanian 经过中古英语 wannen 演变而来，不是从某个拉丁词直接借入，所以它属于日耳曼语底层词，而非诺曼法语借词。名词和动词同形也是古英语时期就存在的词类转换，不是后来硬造。\n\n词源亲戚\nwaning：wane 去掉 e 加 -ing → 正在衰减的，尤其可形容亏月。\nwaned：wane 的规则过去式与过去分词 → 已减弱、消退。\nwan：古英语 wann“暗淡、缺少光泽”，部分词源分析把它与 wanian 联系起来；由缺少鲜明色彩发展出“苍白的”。这不是 wane 简单删掉 e。\nwax“增长、盈月”是常见反义搭档；wax and wane 表示盈亏、盛衰，但 wax 不是 wane 的派生词。\n\n近义词辨析\n\ndiminish 比 wane 更中性、更书面，强调数量或程度变小，不必然含“周期、自然消退”的意味。\n\ndecline 强调下降趋势，可用于健康、经济、道德，语域较宽；wane 更常带“像月亮一样自然、逐渐、不可逆地变弱”的画面。\n\nebb 原指潮水退落，和 wane 一样有“退去”的意象，但 ebb 更强调水位下降，wane 更强调体量或光辉缩小。\n\nfade 强调逐渐失去颜色、声音或存在感，偏感官层面；wane 更偏力量、影响、规模或月相。\n\n记忆链\n\nwane 来自古英语 wanian“逐渐变小”，底层是“离开、耗尽”的 PIE 词根；最初最典型的场景是月亮由圆变亏。所以看到 wane，不要只记“减少”，而要记“像月亮一样，从满到亏地自然消退”。其名词是“亏缺”，其反义搭档是 wax。",
+    "originQuery": "wane",
+    "page": 10
+  },
+  {
+    "id": "kmf-vehemently",
+    "word": "vehemently",
+    "pair": "",
+    "meaning": "激烈地，猛烈地；强烈地（多指情绪、言辞、反对等）",
+    "origin": "vehemently 是形容词 vehement 加副词后缀 -ly 构成的副词，去掉 -ly 就是它的词典基本形。vehement 大约在 15 世纪初进入英语，是从古法语 vehement、veement（12 世纪，意为“急躁的、热切的”）借来的，而法语又来自拉丁语 vehemens（主格），词干形式是 vehementem，意思是“猛烈的、急切的、暴怒的、热烈的、被情绪带走的”。所以这个词从进入英语起就同时带着“力量、猛烈”和“情绪冲动、被卷走”两层含义，今天的副词 vehemently 表示“以极强的情绪和力度去做或说”，常用于 vehemently deny（激烈否认）、vehemently oppose（强烈反对）这类搭配。\n\n关键在于拉丁语 vehemens 到底怎么来的。较流行的现代解释是它与拉丁语 vehere“运载、携带”有关，而 vehere 可追溯到原始印欧语词根 *wegh-“行走、移动、用车运载”。按这条线索，vehemens 的核心画面是“被带着走、被情绪卷走、失去自持”，也就是一个人被自己的激情裹挟、控制不住。词源学家 Michiel de Vaan 在 2008 年的拉丁语词源词典中确认，较早的形式是 vehemēns 而不是 vēmēns，理由正是它基本表示“被情绪带走、在脾气中失控”，而不是“失去了理智”：如果是 ve-（缺、少）+ mens（心智），才该是“没脑子”。因此早期《牛津英语词典》（1989 年版）提出的 vehe-“缺乏”加 mens“心智”的拆法，现在一般被认为是旧说，不再采用。\n\n词形上，vehemens 的主格是 vehemens，其余格多用词干 vehement-，法语和英语继承的是词干这一形式，所以英语是 vehement 而看不到 -ens；副词加 -ly 只是英语常规派生。\n\n词源亲戚方面，最值得记的是与 *wegh-“运载、移动”同源的几个常见词。vehicle（拉丁 vehiculum“运载工具”）就是“用来运载的东西”，是同一词根最直白的后代。vector 来自拉丁 vehere 的“携带者”义，最初指“携带、传送之物”，后来在数学、生物和计算机里指有方向的量或传递媒介。convey 由 con-（一起、完全）+ vehere 构成，字面是“一起运走”，引申为“传达、运送”。way 和 wagon 虽然来自日耳曼语一支而非拉丁语，但同样可追到 *wegh-，分别是“路”和“运货车”，说明这个“车与路、载运”的意象遍布印欧语。若再选一个 GRE 常见词，inveigh（猛烈抨击）也由 in- + vehere 构成，字面接近“冲进去、猛烈攻击”，与 vehemently 的“猛烈情绪”语感相呼应。\n\n近义词辨析上，vehemently 强调情绪激烈、来势猛，常修饰言辞和态度：She vehemently denied the accusation（她激烈否认指控），比 simply denied 火气大得多。passionately 更偏“深情、热忱”，可以是正面的投入或爱慕，不一定有攻击性。fiercely 侧重“凶狠、拼斗”的力度，多和竞争、对抗、保护连用，像 fiercely competitive。ardently 则偏“热切、赤诚”，常与支持、追求、希望搭配，温度高但攻击性弱。简单说：vehemently 是“情绪冲上来、力度很猛”，passionately 是“用心用情”，fiercely 是“凶猛地争”，ardently 是“热切地向往”。\n\n记忆链：vehement 来自拉丁 vehemens“被情绪卷走的、猛烈的”，词根与 vehere“运载”及 *wegh-“用车运送、移动”相关；-ly 构成副词。于是从“被载着走、被情绪裹挟”到“激烈地、猛烈地”，意思一路顺下来。",
+    "originQuery": "vehement",
+    "page": 10
+  },
+  {
+    "id": "kmf-exasperates",
+    "word": "exasperates",
+    "pair": "",
+    "meaning": "激怒，使恼火",
+    "origin": "exasperate 于 1530 年代进入英语，义为“irritate, provoke to anger”，即激怒、惹恼。它借自拉丁语 exasperare 的过去分词 exasperatus。exasperare 由两个部分构成：前缀 ex- 加形容词 asper“粗糙的、粗粝的”。ex- 在拉丁语里本义是“out, out of（由内向外）”，但和形容词连用时自然发展出“thoroughly, utterly（彻底地）”的加强意味；asper 则指表面不平、粗糙，也用于酸酒、恶劣天气和艰难时世。因此 exasperare 的字面画面是“把某物表面弄得更加粗糙、更加扎人”。这一具体义后来转指情绪：外界刺激像砂纸一样摩擦一个人的耐心，把原本还算平顺的心境磨得毛糙、刺痛，于是“使粗糙”变成“使恼火”。英语中这个词从 1530 年代起就取的是这一抽象义，字面的“弄粗糙”在现代英语里已基本不用。\n\n词形上，exasperates 是第三人称单数现在时：exasperate + -s。而 exasperate 本身来自拉丁过去分词词干 exasperat-，所以英语动词带 -ate 后缀，与大量源自拉丁过去分词的动词（如 irritate、aggravate）同型。拉丁 asper 的来源不详，因此不要为它编造更早的 PIE 词根。\n\n词源亲戚\nasperity：来自拉丁 asper“粗糙、严酷”+ -ity；约 1200 年已有 asprete“困苦”的用法，15 世纪初出现“表面粗糙”的字面义，1660 年代起引申为“情感、语气的尖刻严厉”，如 the asperity of his tone（他语气的尖刻）。它保留了 exasperate 里“粗糙扎人”的核心意象。\nexasperation：来自晚期拉丁 exasperatio（名词形式，源自动词过去分词词干），1540 年代进入英语，是 exasperate 的名词形式，指“恼怒、被激怒的状态”，比 anger 更强调被反复摩擦、耐心耗尽的意味。\nexasperating：exasperate 的现在分词/形容词形式，意为“令人恼火的”，如 an exasperating delay（令人恼火的延误）。\nexasperated：exasperate 的过去分词/形容词形式，意为“被激怒的、恼火的”，如 an exasperated sigh（一声恼火的叹息）。\n\n近义词辨析\nirritate 侧重一般性的“惹烦、使不快”，程度可轻可重，常指持续的轻微刺激，如 irritation from noise。exasperate 程度更重，强调耐心被磨到极限，往往带有“再怎么努力也忍不下去”的意味。provoke 强调主动激起对方反应，常用于挑衅、激怒到对方采取行动，宾语可以是人也可以是愤怒、笑声等反应。aggravate 在口语中也可表示“惹恼”，但其本义是“使（病情、问题）加重”，正式语境中应保留“加剧”义，与 exasperate 的“使人恼火”不同。\n\n记忆链\nex-（彻底）+ asper（粗糙）→ 把表面磨得更粗糙 → 像砂纸反复摩擦耐心 → 激怒、使恼火。exasperates 就是“（某事）把人磨到火起”。",
+    "originQuery": "exasperate",
+    "page": 10
+  },
+  {
+    "id": "kmf-anachronistic",
+    "word": "anachronistic",
+    "pair": "",
+    "meaning": "时代错误的；与所处时代不符的",
+    "origin": "anachronistic 是名词 anachronism（1640年代）加形容词后缀 -istic 构成的，1775年首次出现。\n\n先看 anachronism 的来历。它借自拉丁语 anachronismus，再往前是希腊语 anakhronismos，动词 anakhronizein 意为“把……归到错误的时间”。这个词由两部分组成：前缀 ana- 在这里表示“against、back”，有“错位、反向”的意味；词根 khronos 就是“时间”。合起来字面意思就是“时间上的错置”。词源资料显示，它最早（1640年代）指“计算时间或确定日期时的错误”，属于技术性说法，多用于年代学、编年史。到1816年，才记录出今天更常用的意思：“与某个特定时代不协调的事物”。这一步是典型的从具体到抽象的转移：从“日期算错”这种技术性差错，扩展为“某物出现在不属于它的时代”这种更宽的判断，既可以指古人笔下出现后世才有的器物，也可以指今天仍抱持早已过时的观念。\n\n词形上，anachronistic 由 anachronism 去掉名词词尾、接上 -istic。这个后缀来自法语 -istique 或拉丁语 -isticus，本身是希腊语 -istikos，由形容词后缀 -ikos（即英语 -ic）加名词后缀 -istes（即英语 -ist）复合而成。所以 -istic 常带“具有……性质的、倾向于……的”意味，比单纯的 -ic 更强调某种做法或倾向。\n\n关于 ana- 需要说明：在本词中词源资料直接标注其义为“against”（反向、错位），据此理解即可；它并非一个在所有词中都固定不变的单一义项。khronos 这一词根则相当稳定，直接对应“时间”。\n\n词源亲戚方面，最直接的是 chronic（慢性的、长期的）：同样出自 khronos，由“时间”引申为“持续很长时间的”，医学上指病程拖延；chronicle（编年史、记录）也来自时间词根，指按时间顺序编排的记载；chronology（年代学、年表）由 khronos 加 logos（言说、学问）构成，字面就是“关于时间的学问”；synchronize（使同步）中的 syn- 表示“一起”，即“使时间一致”。这几个词都围绕“时间”这一核心，能帮助记住 anachronistic 的“时间错位”内核。\n\n近义词辨析。anachronistic 侧重“与所处时代不合”，评判基准是时间。outdated 侧重“过时、不再流行或被取代”，基准是当下效用，不一定隐含“放错时代”的画面，语气更日常。obsolete 更强，指“已废弃、不再使用”，常用于技术、设备、制度，强调功能上已被淘汰，比 outdated 更正式也更绝对。archaic 则指“古老、陈旧”，可指语言、风格、制度，带有“属于更早时期”的色彩，但不必然含贬义，有时甚至含古雅意味；anachronistic 通常带有明显的不协调感甚至批评意味。\n\n记忆链：ana-（错位、反向）+ khronos（时间）→“时间上的错置”→ anachronism（时代错误）→ 加 -istic 表性质 → anachronistic（具有时代错位性质的）。核心画面始终是“某物被放到了不属于它的时间轴上”。",
+    "originQuery": "anachronism",
+    "page": 10
+  },
+  {
+    "id": "kmf-unfathomable",
+    "word": "unfathomable",
+    "pair": "",
+    "meaning": "深不可测的；难以理解的，高深莫测的",
+    "origin": "unfathomable 由三块拼成：否定前缀 un- + 动词 fathom + 形容词后缀 -able，字面就是“不能被 fathom 的”。\n\n要理解这个词，关键在于 fathom 的来历。fathom 源自古英语 fæðm，原义是“双臂张开环抱的长度”，也就是一个人伸开两臂时两手之间的距离，约合 1.8 米。这个动作本身既是量度，也是拥抱：古英语里它既指“臂展、怀抱”，也指“测量水深的单位”。航海时水手用一根系着铅锤的绳子测水深，绳子按“臂展”分成一节一节，一节就叫一 fathom；“测水深”这个动作于是也叫 fathom。\n\n从“双臂环抱”到“测水深”，再到“测深度”这个具体动作，fathom 一步步从身体动作变成了测量术语。测量的最终目的是“弄清楚有多深、底下是什么”，于是 fathom 又从“测深”引申出“理解、看穿”的抽象义：能测得深浅，就等于能看透一件事。这条从“身体动作→物理测量→心理理解”的路径，正是具体到抽象的典型演变。\n\nunfathomable 最早出现在 1610 年代，最初就是比喻用法，指感情、处境等“深得无法理解”。它的字面义“（水域）深得测不到底”要到 1670 年代才见于文献。也就是说，这个形容词的抽象义反而比具体义更早。词尾 -able 表示“可以被……的”：fathomable 就是“可以被测深的、可以被理解的”（1630 年代出现比喻义，1690 年代出现字面义），前面加上 un- 就得到否定形式。un- 是英语最古老、最能产的前缀之一，古英语里就已构成上千个复合词，来自原始日耳曼语 *un-，再往上可追到 PIE 的否定词根 *ne-。\n\n值得留意的是，英语里表示“深不可测”的既有 unfathomable，也有 inscrutable、incomprehensible，但 unfathomable 自带航海和测深的画面，语感上强调“底下深得探不到底”，常带敬畏甚至神秘色彩；说一个人的心思 unfathomable，往往暗示他讳莫如深，而不是单纯“我看不懂”。\n\n词源亲戚\n\nfathom：古英语“臂展、怀抱”→ 测水深单位 → 动词“测深”→ 引申为“理解、看透”。He could not fathom her motives.（他无法看透她的动机。）\n\nfathomable：fathom + -able，“可测深的、可理解的”。与 unfathomable 只差一个否定前缀；语感上 fathomable 偏向“可以理解、可以掌控”，unfathomable 则强调超出理解能力。\n\nunfathomable：由 un- + fathomable 构成，fathomable 的否定形式；字面“不能被 fathom 的”，引申为“深不可测的、难以理解的”。\n\nunderstanding：由 understand + -ing 构成，与 fathom 的引申义共享“理解”语义场，但并非词源同源；可作近义联想，不是词源亲戚。\n\n近义词辨析\n\nunfathomable 与 incomprehensible 都表示“无法理解”，但 incompre-hensible 强调的是“超出理解能力、无法领会”，语气较中性，常用于抽象概念或复杂理论；unfathomable 则更形象，强调“深得探不到底”，常带神秘、敬畏甚至压抑感，多用于人的内心、命运、宇宙等。\n\n与 inscrutable 相比，inscrutable 侧重“难以解读、不露声色”，常形容人的表情或意图难以捉摸；unfathomable 更强调深度和不可测，不一定是刻意隐藏，可能只是深不可测。\n\n与 mysterious 相比，mysterious 范围最广、语气最弱，只表示“神秘、不明所以”；unfathomable 的强度更高，暗示理性探究也到不了底。与 immeasurable 相比，后者强调“无法测量”的量度义，可以指长度、数量大到无法计量；unfathomable 则把测量动作引申到理解层面，更偏“无法理解”。\n\n记忆链\n\nfathom 原本是“双臂张开的长度”→ 水手用绳按臂展测水深 → 测深就是“探究到底”→ un- + fathom + -able = 探不到底的 = 深不可测、难以理解。",
+    "originQuery": "unfathomable",
+    "page": 10
+  },
+  {
+    "id": "kmf-illicit",
+    "word": "illicit",
+    "pair": "",
+    "meaning": "非法的，违禁的；不正当的",
+    "origin": "illicit 大约在 1500 年进入英语，借自古法语 illicite，再往前追溯到拉丁语 illicitus。拉丁语 illicitus 由否定前缀 in-（不、非）和 licitus（被允许的、合法的）构成。在拉丁语中，in- 遇到后面以 l- 开头的 licitus 时，n 被同化为 l，于是写作 il-，这就是为什么今天拼写是 illicit 而不是 inlicit。licitus 是动词 licere（被允许、合法）的过去分词；licere 又来自原始印欧语词根 *leik-，意思是“出价、议价、达成交易”，这个词根暗示“许可”最初和双方谈妥条件有关。\n\n从具体到抽象的意义演变可以这样理解：*leik- 与“出价、议价、达成交易”有关，这可能与“许可”概念存在语义联系；由此产生 licere“被允许”，再衍生出 licitus“合法的”，加上否定前缀后成为 illicitus“不被允许的、非法的”。进入英语后，illicit 一直保持“违反法律或规则”的核心义，但常带有“偷偷摸摸、见不得光”的意味，因此不仅指违法行为，也常用于婚外情、毒品交易等语境，表示社会或道德上禁止的事物。现代英语中，illicit 与 legal 相对，兼有“被禁止”和“未获授权”两层含义。\n\n词源亲戚\n\nlicense（许可）：同样来自拉丁语 licere，字面是“被允许”，现代指官方授予的许可或执照。\n\nlicit（合法的）：illicit 去掉否定前缀 il- 后的形式，直接来自拉丁语 licitus，现代英语中较少用，但恰好是 illicit 的反义词。\n\nleisure（闲暇）：经古法语 leisir 追溯至拉丁语 licere 的相关名词用法，后指自由支配的时间；其与 licere 的语义联系属于历史推演，不宜当作直接释义。\n\nlicentious（放荡的）：与 licence 同源，最终可追溯至拉丁语 licentia“自由、放纵”，与 illicit 共享 licere 这一深层来源。\n\n这些词共同的核心概念都是“被允许”或“自由”，而 illicit 则通过否定前缀明确表示“不被允许”。\n\n近义词辨析\n\nillegal：最直接对应“违法的”，强调违反成文法，语气正式，常用于法律文件；illicit 则更宽泛，可指违反任何规则或道德，并常暗示秘密性。\n\nunlawful：与 illegal 接近，但更常出现在法律文本中，强调“不符合法律”，较少暗示偷偷摸摸；illicit 往往带有道德或社会禁忌色彩。\n\nforbidden：强调“被明令禁止的”，可指法律、规则或权威的禁止，但不一定违法；illicit 更侧重于“本身不正当”，常与交易、关系等搭配。\n\n记忆链\n\n拉丁语 *leik-（出价、达成协议）→ licere（被允许）→ licitus（合法的）→ 否定前缀 in-（同化为 il-）+ licitus → illicitus（不被允许的）→ 古法语 illicite → 英语 illicit（非法的，违禁的）。",
+    "originQuery": "illicit",
+    "page": 10
+  },
+  {
+    "id": "kmf-interminable",
+    "word": "interminable",
+    "pair": "",
+    "meaning": "没完没了的，冗长而令人厌烦的",
+    "origin": "interminable 是晚期拉丁语 interminabilis 直接进入英语（或经 14 世纪古法语 interminable 中转）的结果，14 世纪末已在英语中出现，本义就是“无边的、没有尽头的”。它是两个部分拼起来的：否定前缀 in- 加 terminabilis。in- 表示“不、非”，来自拉丁语 in-，与希腊语 an-、古英语 un- 同出 PIE 词根 *ne-“不”；英语里遇到明显的拉丁成分通常用 in-（如 incredible、infinite），遇到本族或已同化的词则多用 un-，这是英语的一条习惯分工。\n\n关键在 terminabilis 及其动词 terminare“限定、划定边界、结束”，源头是名词 terminus“终点、界限、边界线”。terminus 可追溯到 PIE *ter-men-“桩、柱”，再往上是 *ter-，一批表示“桩、界标、目标”的词都出自这里：赫梯语 tarma-“桩、钉”，希腊语 terma“边界、终点”。据 de Vaan 的说明，赫梯语名词和拉丁语用法提示，这个 PIE 词最初指的是一件具体物件，后来才转指界石——也就是立在田地或领地边界上的那根木桩。因为桩子标出“到此为止”，terminus 自然引申为“界限”，再引申为“终点、结束”，terminare 就是“给某事立个界桩”，即“加以限定、终止”。\n\n于是 interminabilis 字面是“不能被立界桩的”，即无法划定边界、看不到头。这里发生了从空间到时间的语义转移：界石本来是田地、道路上的空间标记，一旦用于时间与事件，就变成“结束、终止”的标记；不能设界，就成了一直延续下去。interminable 的现代义“没完没了的”正是这条线索的延伸，且几乎总是带负面评价——不是单纯的长，而是长到让人疲惫、抓不到终点，如 interminable meetings、an interminable wait。\n\n词形上，in- 在 n 前没有变化（对比 impossible 中 im-、illegal 中 il- 是 -n- 被后随辅音同化的结果）；terminabilis 里的 -abilis 是拉丁语被动形容词后缀，表示“可被……的”，所以 terminabilis 意为“可被限定的”，加否定前缀即“不可被限定的”。英语只借了这个整体，没有在中途重新构词。\n\n词源亲戚（精选）：terminus，拉丁借词，字面“界石、终点”，现代义“终点站、终点”；terminal，由 terminus 派生，本义“与边界／终点有关的”，现代义“终点的、末端的；终端”；terminate，拉丁 terminare 的英语形式，本义“给……立界桩”，现代义“终止、结束”；determine，de-（彻底）+ terminare，本义“彻底划定界限”，现代义“决定、确定”；exterminate，源自拉丁语 exterminare，与 terminus/terminare 同源，现代义“根除、消灭”。\n\n近义词辨析：interminable 强调没有可预期的终点且令人难以忍受，主观色彩最重；endless 最中性，可以只是事实上的无穷，也可带厌烦；unending 偏书面、中性或抒情，常用于 unending love 这类不带贬义的语境；long-winded 指说话或文章冗长啰嗦；lengthy 是较中性的“篇幅长”，不必然抱怨。要表达“长得让人受不了”，interminable 最贴切。\n\n记忆链：in-（不）+ terminus（界石／终点）→“无法立界桩、划不出边界的”→ 空间上无边，转到时间上无终 →“没完没了的”。",
+    "originQuery": "interminable",
+    "page": 10
+  },
+  {
+    "id": "kmf-pejorative",
+    "word": "pejorative",
+    "pair": "",
+    "meaning": "贬义的；带贬损意味的（形容词语）；贬义词（名词）",
+    "origin": "pejorative 最终来自拉丁语 peior“更坏”，它是 malus“坏”的比较级。Merriam-Webster 把英语形容词的借入来源列为新拉丁语 pejorativus，由晚期拉丁语 pejoratus（pejorare“使变坏”的过去分词）加 -ivus 构成。英语词尾对应 -ive，表示性质或作用，核心意思就是“带贬损作用的、含有负面评价的”。同族动词 pejorate 和名词 pejoration 在英语中出现较早，但这不表示 pejorative 一定由英语 pejoration 直接派生。\n\n关于 peior 的更深来源，etymonline 谨慎地将其上溯到 PIE *ped-yos-，说是 *ped-“走、绊、损害”的比较级形式，若此说成立，peior 原义或与“绊脚、失足”有关，即“走得差、跌跌撞撞”，由此引申为“更糟”。不过这一层联系在词源学界并非定论，词典用 perhaps originally“也许原义为”来标记，属于假设而非确证，学习者只需知道拉丁语 peior 确实意为“更坏”即可。\n\n语义上最值得注意的是从“变坏”到“语言中贬义化”的专门化。19 世纪语言学家用 pejoration 指一个词的意义向坏的方向漂移，例如 villain 原指“农奴、村民”，后来变成“恶棍”；silly 从“有福的、天真的”滑向“愚蠢的”。这种“中立或褒义→贬义”的演变在语言学中叫 pejoration 或 semantic pejoration，与 amelioration（褒义化）相对。pejorative 由此获得现代最常用的意义：形容某个说法、标签或措辞本身带有贬低、轻蔑的意味。比如可以说“那个词带有 pejorative 色彩”，意思是它不仅是描述，还暗含看不起。\n\n词源亲戚\npejorate：晚期拉丁语 peiorare → 使变坏，是较少用的动词。\npejoration：同一 peiorare 词族的名词 → 恶化；语言学里专指词义贬降。\npejoratively：pejorative + -ly → 以贬义的方式。\n更早的 peior“更坏”可能与“绊倒、失足”的古老词根有关，但这种追溯需保留不确定性；不必把 pedal、pedestrian 等“脚”词硬拉进常用记忆网络。\n\n近义词辨析\npejorative 偏技术、学术，指词语或表达“带有贬义”，常出现在语言学、评论和正式写作中，中性描述色彩强，不一定表示说话者本人有恶意。derogatory 更强调“不尊重、轻蔑”，语气更重，多指针对人或群体的冒犯性说法，如 derogatory remarks。disparaging 侧重“贬低、看低别人”，强调整体评价上的不屑，常用于 disparaging comments。depreciatory 较少见，接近“低估价值、贬损”，更偏书面和罕用。简单说：pejorative 是“语言属性”层面的贬义标签；derogatory 与 disparaging 更直接指向人的态度与伤害性。\n\n记忆链\npeior“更坏”→peiorare“使变坏”→pejoration“恶化；词义贬降”→pejorative“带贬损作用的、贬义的”。要记住这个词，抓住“pejor = worse”这条核心：只要在词里看到 pejor，就联想到“往坏的方向走”。",
+    "originQuery": "pejorative",
+    "page": 10
+  },
+  {
+    "id": "kmf-shrewd",
+    "word": "shrewd",
+    "pair": "",
+    "meaning": "精明的；机敏的，善于盘算的",
+    "origin": "shrewd 的词源很反直觉：它今天的褒义“精明、机敏”其实是从“恶毒”一路翻过来的。约 1300 年中古英语写作 shreued，意思是“邪恶的、堕落的、恶意的”，来自名词 shrewe“恶人、坏蛋”，加上形容词后缀 -ed。这里的 -ed 不是“被动”或“具有”那么简单，它和 crabbed（来自 crab 螃蟹）、dogged（来自 dog 狗）、wicked（来自 witch 女巫）是同一类构词：由某个动物或人物的名词派生出形容词，带上那个东西的“性格”，所以 crabbed 有“脾气坏、乖戾”，dogged 有“执拗”，wicked 有“邪恶”。shrewd 最初就是从 shrewe 这个人格类型派生出来的。\n\nshrewe 本身来自名词 shrew；shrew 既指“鼩鼱”这种小型哺乳动物，也在中古英语里被用来指“恶毒的人、坏家伙”。于是 shrew 在中古英语里兼有“鼩鼱”和“泼妇、恶人”两义，后来“泼妇”义还留在现代英语的 shrew 里。由“恶人”派生出的 shrewd，本义是“恶毒的”，词形变化也很清楚：shrewe + -ed，拼写逐渐从 shreued 演变为 shrewd。\n\n语义转折发生在 16 世纪初。1510 年代记录到较弱的、中性化的意思：“狡猾的、有手腕的、在实际事务中机敏的”，再由此发展出“敏锐、有洞察力、精明”。为什么“坏人”会变成“精明”？一种解释是，“恶毒之人”常被认为会算计、会钻营；当人们不再强调道德上的恶，只保留“算计能力强”这一面，贬义就可能被抽掉，变成对能力的称赞。这是词义从“道德评价”转向“智力评价”的典型例子，也是贬义弱化、褒义化的过程。今天说 a shrewd businessman，是称赞他判断准、会谈判、不容易吃亏，而不是说他邪恶。\n\n词源亲戚\nshrew：名词鼩鼱，也有旧时对人的贬称；shrewd 的早期负面义与这一词族相关。\nshrewdness：shrewd + -ness → 精明、机敏，是直接派生的名词。\nshrewdly：shrewd + -ly → 精明地、机敏地。\n动物名如何变为性格评价属于历史用法的变化；现代 shrewd 的精明义并不表示人像某种动物，也不能据此推断鼩鼱真有某种道德品质。\n\n近义词辨析\n与 astute 相比，shrewd 更强调实际事务中的算计和判断力，常见于商业、谈判、政治语境；astute 更书面，侧重理解深刻、判断敏锐。\ncunning 与 shrewd 都含“会算计”，但 cunning 保留更强的贬义，暗示狡猾、诡诈、为私利耍手段；shrewd 通常已是中性或褒义。\nclever 范围最广，可指聪明、手巧、点子多，不一定有 shrewd 那种“看穿利害、不易被占便宜”的意味。\nperceptive 强调感知敏锐、能注意到细节和言外之意，情绪和观察色彩更强；shrewd 则更偏对利益和局势的现实判断。\n\n记忆链\nshrew（鼩鼱／恶人）→ shreued（恶毒的，约 1300）→ 保留“会算计”这一面 → shrewd（精明的、机敏的，1510 年代起）。记住 shrew 这个“又凶又会咬”的小动物，就能串起从骂人到夸人的整条语义线。",
+    "originQuery": "shrewd",
+    "page": 10
+  },
+  {
+    "id": "kmf-taciturn",
+    "word": "taciturn",
+    "pair": "",
+    "meaning": "沉默寡言的，不爱说话的（性格上的寡言）",
+    "origin": "taciturn 是 1650 年代从名词 taciturnity 逆构（back-formation）而来的形容词，也可能直接借自 15 世纪的法国语 taciturne；往上追是拉丁语 taciturnus，意思是“不爱说话的、不出声的”。而 taciturnus 又来自拉丁语 tacitus，就是“沉默的、不言语的”——这个词你已经认识，就是英语里的 tacit（心照不宣的）。所以 taciturn 和 tacit 是同一个拉丁词根的两个分支：tacit 走的是“被沉默下来、没说出来”的路，引申为“不言而喻”；taciturn 走的是“人习惯于沉默”的路，成为描述性格的词。\n\n词形上要交代两点。第一，taciturn 的 -urn 不是英语后缀，它是拉丁形容词 taciturnus 的词尾，直接从拉丁整块搬进了英语；英语里 -urn 结尾的词本来极少，所以这个词看起来有点“怪”。第二，英语里本来先有名词 taciturnity（15 世纪中期，来自拉丁 taciturnitatem / taciturnitas，“保持沉默”的状态），1650 年代人们把这个名词的词尾去掉、换成 -urn，造出形容词 taciturn，这就是逆构——从抽象名词反推出一个形容词。\n\n词义从具体到抽象的变化很清晰。拉丁 tacitus 最初描述的是“不发出声音”这个可听见的物理事实：沉默、无声。把“没有声音”安到人身上，就变成“不说话”；再固定为一种持续、反复出现的状态，就得到“习惯性地不爱说话”。所以 taciturn 不是“此刻没开口”，而是性格倾向上的寡言——这正是英语词典标注 habitually silent 的原因。\n\n词源亲戚\ntacit：拉丁语 tacitus，是 tacere“保持沉默”的过去分词形式 → 未明说的、心照不宣的；不能把它拆成英语 tacit 再加 -it。\ntaciturnity：来自拉丁语 taciturnitas，与 taciturnus 同族 → 寡言、沉默的性情。\nreticent：通向拉丁语 reticere，re- 与 tacere 结合 → 保持缄默 → 不愿透露的。它与 taciturn 共享 tacere，但借入的具体拉丁形式不同。\ntaciturnly：taciturn + -ly → 寡言地，是英语直接派生的副词。\n\n近义词辨析要抓住三点。silent 是中性、可临时：一个人可以此刻 silent，但并非 taciturn。reserved 强调“有所保留”，是主动不把内心表露出来，可能内心活动丰富；taciturn 更强调话少这个外在事实，未必含有刻意防御。reticent 更偏“不愿说、回避谈”，常针对具体事情（reticent about his past），而不像 taciturn 那样是对整个人的性格概括。uncommunicative 是更冷淡的判断，暗示拒绝交流甚至不友好；taciturn 通常比较客观，不带明显的贬义。\n\n记忆链：拉丁 tacere “沉默” → tacitus “无声的” → taciturnus “习惯沉默的” → 英语 taciturn “寡言的”；同根名词 taciturnity，同源形容词 tacit（心照不宣的）。",
+    "originQuery": "taciturn",
+    "page": 10
+  },
+  {
+    "id": "kmf-accretion",
+    "word": "accretion",
+    "pair": "",
+    "meaning": "堆积；积聚物；（天体）吸积；（植物）连生",
+    "origin": "accretion 在英语中最早出现于1610年代，当时的意思是“通过有机生长而增大的行为”，到了1650年代又发展出“由持续的外部增长而形成的东西”这一具体含义。这个词来自拉丁语 accretionem（主格 accretio），意思是“增加、变大”，词源资料特别注明它曾被用来描述月亮由亏变盈的过程。accretio 是动作名词，来自动词 accrescere 的过去分词词干，而 accrescere 由 ad-（向、朝）加 crescere（生长）构成，字面意思就是“朝着更大的方向生长”，因此引申为“逐渐增长、变大”。crescere 又可追溯到原始印欧语词根 *ker-（2）“生长”。accretion 与英语动词 accrue 同源，两者共享同一个拉丁动词 accrescere；accrue 经由古法语 acreue 进入英语，原指财产或权利作为附加物“归于某人”，后来也发展出“自然增长、累积”的含义。从词形看，accretion 中的 -ion 是常见的拉丁动作名词后缀，表示“行为或过程”，所以这个词在拉丁语中的构词逻辑就是“ad-（朝向）+ crescere（生长）+ -io（名词后缀）”，意为“朝着某处不断生长、附加而增大”。其语义从最初的有机生长，逐渐扩展到一般意义上的堆积、积聚，再到天文学中描述天体通过引力吸引周围物质而增大的“吸积”过程，以及植物学中描述组织连生、添加生长的现象。这一系列意义变化体现了从具体生物过程向抽象物理过程的自然延伸：任何通过不断添加而增大的过程，都可以用 accretion 来表达。词源亲戚方面，除了前面提到的 accrue（累积、自然增加），crescere 这一词根还衍生出许多现代英语词。例如 crescent（新月、月牙），经由古法语 creissant，来自拉丁语 crescere 的现在分词 crescens，本义就是“正在生长的”，尤其指月亮逐渐变圆的样子，与 accretion 最初描述月相增长的用法直接呼应。increase（增加）经由古法语进入英语，最终也来自拉丁语 increscere，其中 in- 表示“进入、在内”，整体意为“向内生长、增长”，与 accretion 的“增长”核心义相通。concrete（具体的、混凝土）来自拉丁语 concrescere，由 con-（一起）加 crescere 构成，字面意思是“一起生长、凝结成块”，因此既表示“具体存在的”又表示“混凝土”这种凝结而成的材料，体现了从“生长结合”到“凝结成形”的语义变化。decrease（减少）经由古法语 de(s)croistre 进入英语，最终来自拉丁语 decrescere，意为“向下生长、变小”，是 increase 的反义词，也与 accretion 共享同一个词根。这些词共同勾勒出 *ker-（2）“生长”这一古老词根在英语中的丰富脉络。近义词辨析方面，accretion 与 accumulation 都表示“积累、堆积”，但 accumulation 更强调主动的聚拢和收集过程，可以指人有意为之，如积累财富、收集物品；而 accretion 更强调自然、缓慢、由外部添加而逐渐增大的过程，往往带有非人为、渐进、无意识的意味，如珊瑚礁的 accretion 或天体中尘埃颗粒的 accretion。growth 是最通用的词，泛指任何生长或增长，可用于生物、经济、人口等，而 accretion 则更正式、更技术化，常出现在地质学、天文学、法律等专业语境中。increase 侧重数量或程度上的上升，是中性且常用的词，不强调增长的方式；accretion 则暗示通过一层层添加物质而变大，具有“层层累积”的画面感。deposit 指沉积物或沉积过程，强调物质从外部落下并堆积，与 accretion 有重叠，但 deposit 更侧重“放置、沉降”的动作，而 accretion 更侧重“逐渐生长、增大”的结果。记忆链：accretion ← 拉丁语 accrescere（朝着生长）= ad-（朝向）+ crescere（生长）+ -ion（名词后缀），本义为“生长、增大”，后引申为“堆积、积聚物”，并在天文学中特指“吸积”。同根词如 crescent（新月）、increase（增加）、concrete（具体的；混凝土）可以帮助记住“生长、增大”这一核心概念。",
+    "originQuery": "accretion",
+    "page": 10
+  },
+  {
+    "id": "kmf-abnegation",
+    "word": "abnegation",
+    "pair": "",
+    "meaning": "自我克制；放弃；拒绝承认",
+    "origin": "abnegation 的核心含义是“克制自己、放弃想要的东西或权利”，也指“拒绝承认”。这个词在 14 世纪末进入英语，最初的意思是“否定性的断言”，大约到 1500 年左右才发展出“自我克制、放弃”这一更常见的抽象含义。它的来源是拉丁语 abnegatio（主格形式），意思是“拒绝、否认”，由动词 abnegare 的过去分词词干派生而来。abnegare 本身由前缀 ab- 和动词 negare 构成：ab- 表示“离开、远离”，negare 表示“否认”，所以字面意思是“将某事否认掉、推开”。这里 ab- 在拉丁语中常因后接辅音而变形，例如在 m、p、v 前缩为 a-，在 c、q、t 前变为 abs-；在 abnegare 中保留了 ab- 的形式。negare 又可以追溯到原始印欧语词根 *ne-（“不”），这是一个非常古老且多产的否定词根，出现在英语的 not、no、never 等词中，也通过拉丁语 negare 间接出现在 deny、negate、renegade 等词里。从“否认”到“自我克制”，语义经历了从具体言语行为到抽象心理与道德行为的转变：否认某个外部命题，逐渐引申为否认自己的欲望、放弃自身的利益，也就是“克己”。这种从“说不”到“对自己说不”的隐喻扩展，在多种语言中都很自然。词形上，英语直接或间接借自拉丁语 abnegatio（主格形式），保留了拉丁语名词后缀 -ion，表示动作或状态，因此 abnegation 字面就是“否认/拒绝的行为”，后来特指“自我否认”。\n\n词源亲戚：negate（拉丁语 negare“否认” → 否定、取消）；deny（拉丁语 denegare“坚决否认” → 否认、拒绝给予）；renegade（拉丁语 renegare“再次否认” → 叛徒、变节者，原指否认信仰的人）；abnegate（拉丁语 abnegare“拒绝” → 放弃、克制，是 abnegation 的动词形式）；negative（拉丁语 negativus“否认的” → 负面的、否定的）。这些词大多可追溯至否定词根 *ne-，其中 abnegate、negate、deny、renegade 等直接或间接经拉丁语 negare，但词形和语义分化明显：negate 侧重逻辑上的否定，deny 侧重拒绝承认事实或给予，renegade 已名词化并带有背叛色彩，abnegate 则专指放弃自身利益。它们不是简单同源，而是同根派生或借入，关系清晰。\n\n近义词辨析：abnegation 与 abstinence 都含“克制”之意，但 abstinence 常指戒除某种具体行为（如戒酒、禁欲），动机可能是健康、宗教或道德；abnegation 更强调整体性的自我放弃，常带宗教或哲学意味，如放弃个人意志。renunciation 与 abnegation 非常接近，但 renunciation 更正式，常指公开、郑重地放弃权利、头衔或信仰，而 abnegation 更侧重内在的自我否定。self-denial 是英语本族词，更口语化，泛指牺牲自己的欲望；abnegation 则更书面、更抽象，多用于宗教或伦理语境。temperance 指节制、适度，并不要求完全放弃，强度弱于 abnegation。\n\n记忆链：ab-（离开）+ negare（否认）→ 把欲望“否认掉、推离开” → 自我克制、放弃；从“否认外部事物”到“否认自身欲求”，完成从具体到抽象的语义转移。在 GRE 中，abnegation 常出现在宗教、伦理或自我牺牲的语境中，强调主动放弃个人利益甚至基本需求。例如，修道士的 abnegation of worldly possessions 指放弃世俗财产。\n\n一句例句：The monk's life of abnegation inspired many, but few could follow his example. 这位修士克己的生活激励了很多人，但很少有人能效仿他。",
+    "originQuery": "abnegation",
+    "page": 10
+  },
+  {
+    "id": "kmf-pundit",
+    "word": "pundit",
+    "pair": "",
+    "meaning": "专家，权威评论员（常指媒体上频繁发表意见的评论者）",
+    "origin": "pundit 这个词的英语历史不算特别长。它最早出现在 17 世纪 70 年代，当时拼作 pundit，专指“博学的印度人”，尤其是精通梵语经典、科学、法律或宗教的学者。它来自印地语 paṇḍit（有学问的人、师者、教师），再往前追溯是梵语 paṇḍita，意为“有学问的人、学者”。梵语词本身的更深来源并不确定，词源资料标注为 uncertain，因此不要再往更早的印欧词根上硬拉。\n\n从印度到英国，这个词经历了一次很清楚的语义泛化：19 世纪初（1816 年已有记录）开始，英语用它泛指“任何有学问的人”。这个变化之所以自然，是因为英国殖民时期在印度接触到的 pundit 是当地的知识权威——通晓经文、法律、梵语；这个形象被抽掉了地域和宗教内容，只剩下“说话有分量、懂行的人”这个核心，于是可以套用到任何领域的学者身上。\n\n到 20 世纪，pundit 又发生了一次语域上的迁移：它越来越多地用在新闻、政治、体育等公共评论领域，指那些在媒体上频繁就某个话题发表意见的专家。今天它常带一点轻度的调侃色彩：这个“专家”未必真的被同行公认为权威，也可能只是经常在电视或专栏上露脸。这层含义可以从它的派生名词 punditry 看出来，指的就是“评论员们的高谈阔论”这一整类现象。\n\n词形上没有太多可拆解的变化：英语直接借入印地语 paṇḍit，再上溯梵语 paṇḍita；英语拼写定型为 pundit。复数 pundits。\n\n词源亲戚\n\n由于 pundit 是较晚从印地语／梵语借入的词，英语中与它共享词根的常用词很少，这里列出关系清楚、值得记住的几个：\n\npunditry（评论员的高谈阔论；专家评论）是 pundit 的直接派生名词，来自同一词根，指的就是“评论员们发表意见”这一整类现象。\n\npunditocracy（专家治国／评论员阶层）也是由 pundit 派生而来的现代英语词，指被视为一个阶层的专家评论员群体。\n\n梵语 paṇḍita 的“有学问的人、学者”是它的直接来源；同源词还有梵语 pandá“知识、智慧”，但这属于梵语内部词形，不是现代英语词，仅作为理解词根的背景，不计入现代英语亲戚。\n\n英语中与 pundit 最容易产生联想的是 pedant（迂腐的学究）。注意：pedant 与 pundit 并非同源，只是语义上有表面相似。pedant 来自意大利语 pedante，与“教师、教育”相关，核心是“卖弄学问、抠字眼”，带贬义；pundit 的核心是“公开表达观点的权威”，并不必然贬义，只是常被调侃。\n\n近义词辨析\n\npundit 与 expert：expert 是中性、最常用的“专家”，强调专业知识或技能；pundit 更强调“面向公众、发表评论”的角色，常见于媒体语境，且可以带一点讽刺。\n\npundit 与 commentator：commentator 侧重“评论员”这一职业身份，可以指体育、新闻等现场解说；pundit 更偏“有权威感、被请来定性分析”的评论者，语域略高。\n\npundit 与 guru：guru 也是从印度借来的词（原义“上师”），今天指某个领域的权威导师，常带崇拜、追随色彩；pundit 则更冷静，偏“公共舆论场里的专家发言者”，没有 guru 那种精神导师意味。\n\npundit 与 scholar：scholar 强调学术研究、治学，通常不预设面向大众发言；pundit 的“学问”要通过对公共议题的评论体现出来。\n\n记忆链\n\npundit ← 印地语 paṇḍit（师者、博学者）← 梵语 pandita-s（有学问的人）→ 17 世纪英语“博学的印度学者”→ 19 世纪“任何有学问的人”→ 现代“媒体上常发议论的专家、评论员”。核心链条是：有学问 → 有权威 → 在公众面前发议论，所以今天它既可能是尊敬，也可能是调侃。",
+    "originQuery": "pundit",
+    "page": 10
+  },
+  {
+    "id": "kmf-sensuality",
+    "word": "sensuality",
+    "pair": "",
+    "meaning": "耽于感官享乐；肉欲、情欲（常带放纵、道德贬义）",
+    "origin": "sensuality 追溯到拉丁语 sensus“感觉、知觉”，而 sensus 来自动词 sentire“感知、感觉、知道”。据 Watkins 等学者的看法，sentire 的这层“感知”义可能由更具体的“找到路、朝某处走”引申而来，也就是说，据 Watkins 等学者推测，PIE 词根 *sent- 的核心画面可能是“走、前往”，再转为“在精神上走向某处、摸索到、领会到”。这一层属于有争议的推测，但可以解释为何“感觉”和“理解”常同源：知道一件事，就是心灵找到了路。\n\nsensus 进入晚期拉丁语后构成形容词 sensualis，字面是“被赋予感觉能力的、有感觉的”；再由晚期拉丁语名词 sensualitatem（主格 sensualitas）“感觉能力”进入古法语 sensualite，约在 14 世纪中期借入英语作 sensualite。词形变化上，英语把法语 -ité/-ite 换成 -ity，是大量抽象名词的标准做法（如 quality、charity）；拉丁词干 sensualitat- 中的 t 在英语拼写里保留为 -t-，形成 sensuality。\n\n意义演变是全词的要点。sensus 本指中性的“感觉、知觉”，sensualis 早期也表示“有感觉的、与感官有关的”，并无需贬义。中世纪拉丁语和古英语早期还用它指“人身上与感官相关的部分”，这个意思现已废弃。为什么后来偏向贬义？因为人的感官欲望（食欲、性欲、舒适之欲）被基督教道德观视为低于理性和灵性的“动物性本能”，于是“感官”这一步自然滑向“肉身、欲望”，再滑向“不受约束地满足这些欲望”。到 1620 年代，sensuality 已固定为“肉体情欲及其放纵”，中文常译作耽于声色、好色。注意：它比单纯 physical pleasure 更带道德评判，说的是主动追逐、且不加节制。\n\n词源亲戚方面，最直接的是 sense（感觉、意义），同出 sentire；sensation（感觉、轰动）经拉丁语 sensatio 来自 sensus 一系；sensitive（敏感的）经拉丁语 sensitivus，保留“能感知”的核心；sensual（肉欲的）与 sensuality 同根且同样偏贬义；consent（同意）由 con-“共同”加 sentire“感觉、想”，字面是“想法一致”，说明“感觉”与“思想”在拉丁语里本就连通。\n\n近义词辨析上，sensuality 与 sensuousness 最容易混：sensuous 由诗人弥尔顿等人特意造出，用来指对美和感官经验的敏锐欣赏，基本是中性甚至褒义，而 sensuality 强调欲望的放纵，偏贬义。lust 比 sensuality 更强烈、更直指性欲，且通常完全是贬义。hedonism 指以快乐为最高原则的哲学立场或生活方式，范围比 sensuality 宽，不限于肉体。voluptuousness 强调奢华、感官的丰盛享受，常含艳丽的意味，道德批判比 sensuality 弱。\n\n记忆链：PIE *sent-“走”→ sentire“感知、领会”→ sensus“感觉”→ sensualis“有感觉的、感官的”→ 感官欲望被道德观贬为“肉欲”→ sensuality 耽于声色、放纵情欲。",
+    "originQuery": "sensuality",
+    "page": 10
+  },
+  {
+    "id": "kmf-bookish",
+    "word": "bookish",
+    "pair": "",
+    "meaning": "爱读书的；书卷气的；死读书的、脱离实际的",
+    "origin": "bookish 是 16 世纪英语本土造出来的形容词，1560 年代最早的意思是“喜欢读书的、爱看书的”，构词非常透明：book（书）+ -ish（表“……性质的、倾向于……的）。所以它一开始是中性的、甚至偏褒义的，指一个人把时间花在书上。但从 1590 年代起，它多出并逐渐强化的意思是“过于用功读书的、只从书本里认识世界的”，也就是“书本气太重、缺乏实际经验”。这条意义演变很自然：-ish 这个后缀早期表示“属于……的、有……性质的”，当一个属于读书的倾向被推到“只有书”的程度，社会生活经验的欠缺就会被凸显出来，于是中性词带上轻微贬义。现代英语里 bookish 仍然两种色彩并存：可以说 a bookish child 只是描述“爱看书、文静”，也可以说 bookish knowledge“书本知识”，暗示纸上谈兵、不接地气。词形上没有任何不规则变化：book 是古英语 boc，-ish 来自古英语 -isc，对应的后缀在德语是 -isch；这个日耳曼后缀后来被借入意大利语和西班牙语（-esco）以及法语（-esque），因此 bookish 的拼写是典型的日耳曼式派生，而非拉丁借词。需要提醒的是，book 本身往往被追溯到原始日耳曼语 *bokiz“山毛榉”，因为日耳曼人早期在山毛榉木板上刻写符文；这一说法证据不算完全确定，词典也常标注“尽管语音上有困难”。如果把 book 和 beech（山毛榉）联系起来，只是有争议的假设，不应当作已证实的定论。拉丁语和梵语中也有基于树木名称（分别是桦树和梣树）的“书写”词，法语 livre（书）来自拉丁语 librum，本义是“树的内皮”，可对照 library，但 library 并不是 book 的同源词。\n\n词源亲戚\nbook（书）：由“山毛榉木板上的刻写”这一可能来源，发展为“成册的书写作品”，再抽象为“卷、册、账簿”，是 bookish 的直接基础。\nbooklet（小册子）：book + -let（表小），可视为 book 家族里构词最直白的一员，体现 book 从“书”泛化为“册子”的用法。\nbookishness（书卷气）：bookish + -ness，直接派生名词，指爱读书或脱离实际的特性。\nbookishly（书卷气地）：bookish + -ly，直接派生副词。\nbookend（书立）：book + end，现代复合词，反映 book 作为实物“书”的常见搭配。\n\n近义词辨析\nbookish 与 studious：studious 强调勤奋用功、认真学习，是偏褒义的；bookish 强调“爱书、书卷气”，也可能暗示不擅长社交或缺乏实际经验，语域更偏描述性。\nbookish 与 scholarly：scholarly 指有学术素养、治学严谨，通常褒义，且多用于学术领域；bookish 更口语化，程度更轻，可能只是“爱看书”，也可能略带“书呆子”的调侃。\nbookish 与 nerdy：nerdy 在当代口语里常指沉迷特定兴趣、社交上笨拙，贬义或自嘲色彩更明显；bookish 则更温和，更多与阅读习惯有关，不必然涉及社交笨拙。\nbookish 与 pedantic：pedantic 指卖弄学问、拘泥细节，带有明显的负面评价；bookish 只是“像书里出来的、书卷气的”，不一定有炫耀或迂腐的意味。\n\n记忆链\nbook（书，可能源自山毛榉刻字木板）+ -ish（有……性质的、偏向……的）→ 16 世纪“爱读书的” → 16 世纪末“只懂书本、书卷气太重、脱离实际的”。核心画面是“一个人身上带着书的气味”：好的时候是爱读书，重的时候是纸上谈兵。\n\n例句：His bookish manner made him seem distant at parties, though he could discuss almost any novel in detail.\n中文：他那种书卷气的举止让他在聚会上显得疏远，尽管他几乎能详细谈论任何一部小说。",
+    "originQuery": "bookish",
+    "page": 10
+  },
+  {
+    "id": "kmf-tedium",
+    "word": "tedium",
+    "pair": "",
+    "meaning": "单调乏味，冗长无聊；令人厌倦的状态",
+    "origin": "tedium 是 1660 年代才从拉丁语进入英语的书面词，直接来自拉丁语 taedium“厌倦、烦腻、厌恶”。这个拉丁名词多出现在后古典时期，与动词 taedet“令人厌烦、令人厌恶”、taedere“使厌倦”同族。也就是说，英语借来的不是某个具体物件的名字，而是一种情绪状态的名字——被拖长、拖久之后产生的那种腻烦。\n\n问题在于，taedium 这一组词在拉丁语内部就已经“来源不明”，词源词典只给出 uncertain etymology。有学者提出它与古教会斯拉夫语 težo、立陶宛语 tingiu / tingėti“迟钝、没精打采”等可能有远亲关系，但这些只是 suggested cognates，属于推测，不能当作已证实的传承链。所以这个词能确定的是：拉丁语内部的意义清楚，更早的来源存疑。\n\n词义上，taedium 指“厌倦、厌烦、恶心”，英语 tedium 保留了核心，但把重心放在“因单调、重复、冗长而产生的乏味”。这不是强烈的厌恶，而是一种慢慢积累的疲惫感：会议太长、任务重复、旅途单调，都会带来 tedium。它比 boredom 更书面、更文雅，常出现在文学评论和正式写作里。\n\n词形方面，tedium 以 -ium 结尾，这是拉丁中性名词常见的后缀，用来把状态或性质名词化，英语直接照搬了拉丁拼写。同族形容词 tedious 走的是另一条路：经古法语 tedieus，来自晚期拉丁语 taediosus，15 世纪初进入英语，最初特别用于形容时间、任务、旅程、演讲“令人疲惫、冗长”。中古英语中它还曾表示“疲惫的、耗尽精力的”，但这个义项后来废弃了；到 15 世纪末又发展出“缓慢、拖沓”的意思。另有 tedeation（15 世纪晚期，Caxton 用过）和 tediosity 等旧词，现在都已不用。\n\n词源亲戚\ntedious：拉丁语 taediosus → 令人厌烦的、冗长乏味的，是 tedium 的形容词搭档。\ntediously：tedious + -ly → 冗长乏味地。\ntediousness：tedious + -ness → 乏味、冗长这一性质。\n这些常用派生词已足以建立网络，不需要借废弃词或不确定的远亲凑数。\n\n近义词辨析：\nboredom：最普通、最口语，指“无聊”这种情绪本身，可因任何原因。tedium 更强调由单调、重复、漫长过程造成，语域更正式。\nmonotony：强调“缺乏变化”这一客观性质，如单调的声音、景色；tedium 强调主观感受，是单调带来的厌倦。\ndrudgery：指繁重、枯燥的苦工，含有辛苦和被迫的意味；tedium 不强调体力上的苦，只强调精神上的乏味。\nennui：来自法语，指一种更深层、更带存在感的厌倦、无聊，常含精神空虚；tedium 通常由具体事物引起，程度轻一些。\n\n记忆链：拉丁 taedium“厌倦、厌恶”→ 英语照搬拼写 → tedium“因单调冗长而产生的乏味”；同族形容词 tedious 经古法语 tedieus 进入英语，表示“冗长乏味的”。更早的词源不明，不要与形近词强行拉关系。",
+    "originQuery": "tedium",
+    "page": 10
+  },
+  {
+    "id": "kmf-nostalgia",
+    "word": "nostalgia",
+    "pair": "",
+    "meaning": "怀旧，对往昔的深切眷恋；早期指严重的思乡病",
+    "origin": "nostalgia 是少数能精确标出“出生日期”和“出生地”的英语词：1688 年由瑞士巴塞尔大学的学者 Johannes Hofer 在一篇医学论文中造出，用现代拉丁语写成，目的是翻译德语的 Heimweh（思乡病）。它是两个希腊词的拼合：nostos（回家、归乡）+ algos（疼痛、痛苦）。\n\n先看 algos。这个词在英语里以词缀 -algia 的形式高频出现：neuralgia 神经痛、myalgia 肌痛、analgesic 止痛药（an- 无 + algos 痛）。所以 nostalgia 的字面意思非常直白——“回家的痛”，一种因归乡而生的疼痛。再看 nostos，它来自希腊动词 neomai（到达某处、逃脱、返回、回到家），据 Watkins 等词源学家重构，可追溯至原始印欧语词根 *nes-，意为“平安回家”。这一重构需谨慎对待，并非有直接文献佐证的史实；它的日耳曼语同源词包括古英语 genesen“康复”、德语 genesen“痊愈”、哥特语 ganisan“治愈”——若该重构成立，“平安回到家”与“恢复健康”共享同一词根，暗示古人把归乡和痊愈联系起来。\n\n词形上，nostalgia 是纯希腊词根拼合，未经法语或拉丁语的自然演变，所以保留了希腊式的 -ia 名词后缀（表示状态、病症）。这也符合它作为医学术语的出身：它一开始不是诗意的情怀，而是一个诊断。\n\n语义演变是这个词最值得玩味的部分。1688 年原义是“病态的思乡，严重到被视为一种疾病”。当时认为这是瑞士人的“地方病”，因为瑞士雇佣兵在低地国家服役时，气压和空气的差异被认为会压迫毛细血管、减缓血液循环，从而引发忧郁症状。1726 年进入英语时，它仍是一条医学诊断。整个 19 世纪它被军队医生用来解释士兵、水手、囚犯、非洲奴隶的虚弱与死亡：美国内战中北方军队头两年报告了 2588 例 nostalgia，13 例直接死于此症。19 世纪 30 年代的医学百科把它列为“地方性流行病”，定义是“远离故国者因渴望返回家乡、亲友和少年时代场景而出现的抑郁症状集合”。\n\n关键转折发生在 1920 年前后：词义从“对遥远地方的渴望”转为主流的“对逝去时光的怅惘追忆”。这一转移其实有内在逻辑——对某个遥远地方的思念，必然同时意味着与那段时间的分离；地点之隔，终究也是时间之隔。所以具体的地理乡愁自然泛化为抽象的时间乡愁。\"wistful yearning for the past\" 这一现代义，或许受法语文学中 nostalgie 的用法影响。\n\n词源亲戚\nnostalgic：nostalgia 的形容词形式 → 怀旧的、思乡的。\nanalgesic：an-（无）与 algos“痛”一系结合 → 止痛的、止痛药，与 nostalgia 共享“痛”的来源。\nneuralgia：neuron“神经”与 algos“痛”一系结合 → 神经痛。\n前两部分让 nostalgia 的“回家之痛”容易辨认；home 与 nostalgia 都涉及“家”，但并非因此同源。更早 nostos 的深层关系需要依赖语言学构拟，不必用无关外语词填满记忆列表。\n\n近义词辨析要分清几组。homesickness 只指对家乡的思念，是日常口语词，没有 nostalgia 那种“痛”的强度和疾病隐喻，也不含对过去时光的怅惘。wistfulness 强调温和的、带点遗憾的渴望，语气远比 nostalgia 轻，可以针对任何事物，不限于过去。yearning 是最中性的“强烈渴望”，对象不局限于故土或往昔。reminiscence 则是“回忆、追忆”本身，侧重于回想这个动作和所忆之事，未必带有 nostalgia 那种伤感眷恋的色彩。简单说：homesickness 指空间，nostalgia 现在多指时间，wistfulness 指语气轻的怅然，yearning 指强度但不限对象。\n\n记忆链：希腊 nostos“归家”+ algos“疼痛”→ 字面“归家之痛”→ 医学上的严重思乡病 → 对遥远故土的思念必然牵出对逝去时光的思念 → 现代义“对往昔的怅惘眷恋”。",
+    "originQuery": "nostalgia",
+    "page": 10
+  },
+  {
+    "id": "kmf-solitude",
+    "word": "solitude",
+    "pair": "",
+    "meaning": "独处；孤独（尤指远离社会的清静状态）",
+    "origin": "solitude 直接来自拉丁语 solitudinem（主格 solitudo），意思是“孤独、独自一人；荒僻之地、沙漠、旷野”，词根是 solus“单独的”。这个词在14世纪中期经古法语 solitude“孤独”进入英语，但《牛津英语词典》指出它直到17世纪才在英语中普遍使用——也就是说它早期一直是个较文雅的书面词，17世纪后才真正活跃起来。\n\n关键要看清 -tudo 这一层。solitudo 与 solus 直接相关，字面可理解为“单独的状态”；英语中的 -tude 尾缀常来自拉丁 -tudo，表示状态、性质，但本条证据只确认 solitude 与 solus 的关系，不宜据此外推所有 -tude 词的构词细节。古法语把拉丁词形处理成 solitude，英语再借入。\n\n意义方面，这个词一直有两条并行的线：一是抽象的心理/社会状态“孤独、与世隔绝”；二是具体的空间“荒僻无人之地、荒野、沙漠”。后一条在拉丁语里就很常见，因为无人居住的旷野正是“独处状态”的空间化。从具体荒漠到抽象的内心孤独，是典型的由空间到心理的语义延伸。到了现代英语，具体的“荒野”义基本让位给 desert、wilderness，solitude 主要保留抽象的“独处”义，并且常带中性甚至正面色彩——不是被抛弃的凄苦，而是主动选择的清静。叔本华那句“一个人只有独处时才能做自己……不爱独处的人也不会爱自由”，正是利用了这种褒义倾向。1690年代还记录到 solitudinarian，指“遁世者、不合群的人”。\n\n词源亲戚方面，最直接的是 sole“唯一的、单独的”，同样来自拉丁 solus；solo“独奏、独唱、单人行动”经意大利语进入英语，最终也与 solus 相关；solitary“孤独的、独自的”与 solitude 同属一个词族，都追溯到 solus/solitarius 这一线。至于 soliloquy“独白”等更深层关系，需另据词典确认。\n\n近义词辨析上，solitude 与 loneliness 差别最大：loneliness 强调因缺少陪伴而感到的痛苦和失落，是负面情绪；solitude 可以是中性的，甚至是被向往的、自愿的独处。isolation 侧重被隔离、与外界切断联系的状态，往往含强制或负面的意味，如 social isolation；seclusion 则强调主动退隐、避开他人视线，常带安宁、有意为之的意味，如 to live in seclusion。retreat 更多指撤退或静修的地方和行动。整体上，solitude 是这几个词里最可能带褒义、最接近“享受清静”的一个。\n\n记忆链：solus“单独的” → solitudo“单独的状态、无人之地” → 古法语 solitude → 英语 solitude“独处、孤独”。同根一串：sole、solo、solitary，核心都是“一、独”。",
+    "originQuery": "solitude",
+    "page": 10
+  },
+  {
+    "id": "kmf-hyperbole",
+    "word": "hyperbole",
+    "pair": "",
+    "meaning": "（修辞中的）夸张；夸张法",
+    "origin": "hyperbole 在英语里最早出现于15世纪初，是从拉丁语 hyperbole 直接借来的，而拉丁语又是从希腊语 hyperbolē 借来的。希腊语 hyperbolē 的意思就是“夸张、过度、越界”，字面意思是“扔过头、抛到超出之外”。这个词由两部分组成：前缀 hyper- 表示“在上方、超过、过度”，后面的 bolē 表示“投掷、抛掷”，也指“被投出的东西、飞来的箭矢或光束”。bolē 来自动词 ballein“投、扔”，它的词干是 bol-，往上可以追到原始印欧语词根 *gwele-“投、够到”。所以 hyperbole 最深层的画面不是“说话大声”，而是把东西扔得越过目标、扔到范围之外——一条投掷的轨迹超出了应有的界线。\n\n这里有一个很值得注意的词形变化：同一个希腊词 hyperbolē 进入英语后，形成了两个不同的现代英语单词。作为修辞术语，它保留了希腊/拉丁式的拼写 hyperbole；而在数学里表示“双曲线”的 hyperbola，则来自同一个希腊词 hyperbolē 的拉丁化形式。两者本是一个词，只是走了不同的借入路径，于是拼写和意义都分开了。另外，形容词是 hyperbolic，既可以指“夸张的”，也可以指“双曲线的”，这也直接反映了它和数学义共用的词源。希腊语里还有一个动词 hyperballein“扔过去、越过”，正是名词 hyperbolē 的动词来源。\n\n从具体到抽象的意义演变非常清楚：最初是物理动作“把东西扔过头、抛到界限之外”；然后引申为“超出一般尺度、过度”；再进一步专门用于语言和修辞，指“把话说得超出事实、故意夸大”。亚里士多德和伊索克拉底等古希腊修辞学家已经用这个词来指修辞上的夸张。也就是说，从“投掷越过目标”到“言辞越过事实”，中间的桥梁是“超出界限”这个共同的核心概念。这不是随意的联想，而是空间动作向言语行为的自然隐喻延伸。\n\n词源亲戚方面，最直接的是 hyperbola（双曲线），与 hyperbole 同源，只是数学借用后专指一种曲线；hyperbolic（夸张的；双曲线的）是它的形容词；hyperactive（过度活跃的）里的 hyper- 就是同一个“超过、过度”的前缀；hypercritical（吹毛求疵的）同样用 hyper- 表示“过分地批评”；hype（炒作、大肆宣传）很可能部分与 hyperbole 有关，etymonline 认为它可能是 hyperbole 的逆构词，同时受到“过度、过量”这一前缀义的影响。这些词共享的核心，都是“超出正常限度”。\n\n近义词辨析方面，hyperbole 与 exaggeration 最接近，但语域不同：exaggeration 是日常通用词，泛指任何夸大；hyperbole 是修辞学、文学批评里的术语，通常指有意为之、效果明显的夸张，常带“不追求字面真实，只求修辞冲击”的意味。与 overstatement 相比，overstatement 更中性，指陈述超出事实；hyperbole 更强调修辞效果和故意性。与 understatement（低调陈述）正好相反：hyperbole 把话说大，understatement 把话说小。与 metaphor（隐喻）也不同：metaphor 是“以此喻彼”，hyperbole 是“放大尺度”，二者常结合使用，但机制不同。\n\n记忆链可以这样压缩：希腊语 hyper-“超过” + ballein/bolē“投掷”→ 字面“扔过头、抛到界限之外”→ 引申“超出尺度、过度”→ 修辞上“把话说得超出事实”→ 现代英语 hyperbole“夸张法”。抓住“扔出界”这个核心画面，就能同时理解它的修辞义和与 hyperbola、hyperactive 等词的亲缘关系。",
+    "originQuery": "hyperbole",
+    "page": 11
+  },
+  {
+    "id": "kmf-cherishes",
+    "word": "cherishes",
+    "pair": "",
+    "meaning": "珍爱，珍惜；怀有（希望、感情等）",
+    "origin": "cherish 大约在14世纪初进入英语，写作 cherischen，意思是“把某人某物看得珍贵，以温柔和爱意对待”。它不是英语本土词，而是从古法语借来的：古法语动词 chierir 意为“珍视、看重”，cherish 直接取自它的现在分词词干 cheriss-，所以英语里保留了 -ish 这个尾音。再往前追，chierir 来自形容词 chier“亲爱的、珍贵的”，而这个词又来自拉丁语 carus“亲爱的、宝贵的、代价高的”。\n\n这里最值得注意的是拉丁语 carus 的双重含义：它既表示“亲爱的、被爱的”，也表示“昂贵的、要付出代价的”。这并非巧合，因为“珍贵”这个概念本身就把情感和价值捆在一起：一样东西因为被爱而显得贵重，也因为它贵重、得来不易而被爱。所以 cherish 的核心语义不是单纯“喜欢”，而是带着珍视、呵护、不愿失去的态度去对待。\n\n从词形上看，拉丁 carus 进入古法语后，词首的 c 在法语语音演变中变成了 ch-（读作 /tʃ/），于是 carus → chier；英语再从法语借入，就得到 cherish、cherished、cherishing 这一组形式。cherishes 只是第三人称单数加 -es，词干没有变化。\n\n词义上有一条很清楚的由具体到抽象的路径。14世纪初它主要指对具体的人或物“疼爱、珍视”；到14世纪晚期，已经发展出“在心里怀有、纵容、鼓励（某种想法或感情）”的用法，例如 cherish a hope（心怀希望）、cherish a grudge（心怀怨恨）。从“把某人抱在怀里疼爱”到“在心里抱着某个念头不放”，这是典型的从身体行为、外部动作转向内心状态的隐喻扩展：念头像是被抱在怀里的东西，被小心保存、反复温养。\n\n词源亲戚\ncherish：经法语 cherir 一系，通向拉丁语 carus“亲爱的、珍贵的” → 珍爱，是 cherishes 的直接基础。\ncherished：cherish 的过去分词 → 被珍爱的、珍贵的。\ncherishing：cherish + -ing → 珍爱、怀抱。\ncaress：经法语和意大利语的相关词族，通向 carus → 爱抚。\ncharity：经拉丁语 caritas → 仁爱、慈善，也连接“珍爱”的核心概念。\n\n近义词辨析。cherish 与 love：love 是最宽泛的“爱”，可以指亲情、爱情、对事物的喜爱；cherish 更强调“珍视、呵护、怕失去”，带有保护和不舍的意味，语气更收敛、更持久。cherish 与 treasure：treasure 作动词时也表“珍视”，但更强调把对方当作宝物、价值极高，常带一点夸张或文学色彩；cherish 更侧重日常的疼爱和长期照料。cherish 与 appreciate：appreciate 是“认识到……的价值而感激、欣赏”，着眼点在认知和评价；cherish 则带有明显的情感投入和依恋，是心里真的放不下。cherish 与 nurture：nurture 强调“培育、养育”，侧重使对象成长；cherish 不必然含“使其发展”的意思，更多是珍惜地保有。\n\n记忆链：拉丁 carus“亲爱的、宝贵的”（同时有“昂贵”义）→ 古法语 chier“亲爱的”，动词 chierir“珍视” → 英语 cherish“疼爱、珍视” → 由“抱在怀里疼爱”引申为“在心里怀有（希望、感情、怨恨）”。cherishes 就是这一动词的第三人称单数形式。",
+    "originQuery": "cherish",
+    "page": 11
+  },
+  {
+    "id": "kmf-puerile",
+    "word": "puerile",
+    "pair": "",
+    "meaning": "幼稚的，孩子气的；愚蠢的、不成熟的（贬义）",
+    "origin": "puerile 在英语中出现于 17 世纪 60 年代，最初的意思是“少年的、男孩般的”，属于中性描述。它要么是从名词 puerility（幼稚、幼稚言行）逆构而成，要么直接借自 15 世纪的法语 puéril。再往前追，法语和拉丁语 puerilis 都来自拉丁语 puer，意思是“男孩、孩子”。所以这个词的字面起点非常具体：一个男孩。\n\n关键在于它的贬义是怎么回事。大约从 1680 年代起，puerile 开始带上“仅仅是小孩子式的、不成熟的、缺乏思想力度”的意味。这个变化并不突兀：一个词如果本义是“像孩子一样”，而使用场合又是对成年人言行的评价，那么“孩子气”自然就会滑向“幼稚、愚蠢”。这正是具体到抽象的典型路径——从描述年龄阶段的具体词，转向描述心智水平的评价词。今天说某人 puerile，不是在夸他天真可爱，而是在批评他的言行配不上一个成年人。\n\n词形方面，puerile 保留了拉丁语 puer 的词干加上形容词后缀 -ile（来自拉丁语 -ilis，表示“具有某种性质的”），进入英语后没有发生大的音变，只是把拉丁语词尾按英语形容词的读法固定下来。它的名词形式 puerility 出现得更早（15 世纪末），最初指“幼稚的行为或言语”，后来也指“幼稚的状态”。\n\n词源亲戚方面，puer 背后是一条很古老的印欧词根 *pau-（1），意思是“少、小”，并引申出“年幼”。这条根散落在不少现代英语词里。paucity 是“缺乏、少量”，直接从“少”这个意义来。pauper 是“穷人”，字面就是“财产少的人”。poverty 同样来自这条“少、匮乏”的脉络。另一组关系清楚但更远的是 pony（小马）和 foal（马驹），它们被认为可能与同一 PIE 词根 *pau-（1）的“小、年幼”引申义有关，但这属于深层构拟，分化路径并不确定，不如 paucity、pauper、poverty 与“少、小”这一语义直接相关那样明确。\n\n近义词辨析上，puerile 和 childish、juvenile、infantile 容易混。childish 最口语化，常指“行为像小孩一样任性、不成熟”，可以用于人也可以用于行为。puerile 更书面、更带学究气，批评的往往不是任性，而是“思想浅薄、言论幼稚、缺乏分量”，常用于评价观点、笑话或借口。juvenile 偏向法律或年龄意义，指“青少年”，用于批评时强调“不够成熟、像未成年”。infantile 贬义更强，指“像婴儿一样”，常形容极端不成熟或退化性的状态。简单说，childish 怪你任性，juvenile 嫌你未成年，puerile 嫌你浅薄，infantile 则更重。\n\n记忆链可以这样压：puer（拉丁语“男孩”）→ puerilis“男孩般的、孩子气的”→ 进入英语后从“孩子气的”转为“幼稚浅薄的”；更远的 paucity、pauper、poverty 则来自同一 PIE 词根 *pau-（1）“少、小”这一古老含义，而不是直接出自 puer。抓住“像男孩”这个具体起点，就能理解它为什么从描述年龄滑向贬低心智。",
+    "originQuery": "puerile",
+    "page": 11
+  },
+  {
+    "id": "kmf-invigorate",
+    "word": "invigorate",
+    "pair": "",
+    "meaning": "使充满活力，使精力充沛；振兴，使兴旺",
+    "origin": "invigorate 出现于 1640 年代，由三部分拼合：前缀 in-（此处是表示“进入、使成为”的 in- 第二类，不是表示否定的 in-）+ 名词 vigor + 动词后缀 -ate。也就是说，它的字面构造是“把 vigor 注入进去”。在这之前英语里已有 envigor（1610 年代），借自古法语 envigorer，前缀 en- 同样表示“使进入”，后来被拉丁化色彩更重的 in- 取代，词形才固定为 invigorate。\n\n关键在 vigor。它约 1300 年经盎格鲁-法语 vigour、古法语 vigor/vigour 进入英语，源头是拉丁语 vigor“活力、生气、力量”，来自动词 vigere“有生气、兴旺、茁壮成长”，再往上是 PIE 词根 *weg-“强壮、有生气”。值得注意的是 vigor 的语义扩展轨迹：最初指身体上的活动力、体力；1530 年代扩展到言辞和论证的“有力”；1580 年代扩展到精神或道德力量，以及“一生中力量或活动最强的时期”；约 1600 年用于植物的生长；1610 年代又用于政府或行政的“有活力、运转兴旺”。这条链是从具体身体能量走向抽象的精神、言论、制度和生命状态，所以 invigorate 的宾语既可以是人（使某人精神振奋），也可以是经济、改革、组织、气氛（使振兴、使活跃）。\n\n形态上，-ate 是借自拉丁语过去分词 -atus 的动词后缀，构成规则动词；因此有 invigorated、invigorating。invigorating（1690 年代）由现在分词转为形容词，常形容空气、冷风、淋浴、散步“令人精神一振”，与“使某人恢复精力”的动词义保持同一核心。\n\n词源亲戚\nvigor：经法语及拉丁语 vigor → 活力、精力，是核心名词。\nvigorous：拉丁语 vigor 一系的形容词 → 强健的、充满活力的。\ninvigorating：invigorate + -ing → 令人恢复精力的，描述事物的作用。\ninvigorated：invigorate 的过去分词 → 得到提振的，描述人的状态。\ninvigoration：同一动词的名词形式 → 精力的恢复、提振。\n\n近义词辨析：invigorate 强调“注入活力、使之振作”，宾语可为人、身体、组织、经济、气氛，语气偏积极、可用于正式或书面语境。energize 更直接地指“给……能量、使通电/使有干劲”，常带技术或管理色彩，如 energize a team。revitalize 强调“使恢复生机”，预设对象此前衰败或疲软，常与经济、城区、语言、传统搭配。refresh 侧重消除疲劳、恢复清爽，多用于人经过休息、饮食、沐浴后的状态，力度和抽象度都低于 invigorate。stimulate 强调“刺激、激发”，可以是刺激兴趣、增长、食欲，也可能带“人为施加刺激”的意味，不如 invigorate 那样强调内在活力被唤起。\n\n记忆链：in-（进入）+ vigor（活力，源自拉丁语 vigere“有生气、兴旺”）+ -ate（使……）→ 把活力注进去 → 使生气勃勃、振兴。",
+    "originQuery": "invigorate",
+    "page": 11
+  },
+  {
+    "id": "kmf-revitalize",
+    "word": "revitalize",
+    "pair": "",
+    "meaning": "使恢复生机；使复兴；使重新充满活力",
+    "origin": "revitalize 是 19 世纪英语自己造出来的一个词：1840 年由前缀 re- 加动词 vitalize 构成，字面就是“重新赋予生命”。它的构词完全是透明的，没有经过法语或拉丁语的整体借入，所以拆开看每个部件都还在现代英语里活着。\n\n先看核心 vitalize。它出现在 1670 年代，意思是“使具有有机体的特征”，来自形容词 vital 加动词后缀 -ize。vital 又直接来自拉丁语 vitalis“与生命有关的”，而 vitalis 来自 vita“生命”。拉丁语 vita 本身来自原始意大利语 *gʷīwō 或 *gʷītā，更早可以追到 PIE 词根 *gʷeyh₃-“活着”。所以 vitalize 的底层画面非常具体：把“生命”这个东西注入某物。到 1805 年，它已经发展出比喻义“使有生气、使活跃”，从生物学领域扩展到一般事物。\n\n再看前缀 re-。它从拉丁语 re- 进入英语，核心意思是“回、向后、再次”。在 revitalize 里取的是“再次、重新”这一支：不是从零开始创造生命，而是把失去的活力还回去。这个语义很自然：一个东西曾经有生命、有活力，后来衰弱了、僵化了或衰败了，现在让它重新回到有生命力的状态。\n\n从具体到抽象的意义演变是：拉丁语 vita“生命”→ vitalis“生命的”→ vital“生命的”（后引申出“至关重要的”）→ vitalize“使有生命”→ revitalize“重新赋予生命、使恢复元气”。最初“生命”是字面意义上的生物生命，后来 vitalize 的比喻义把“生命”抽象成“活力、生气、能动性”，revitalize 就顺理成章地表示让一个组织、经济、社区、传统或关系重新活跃起来。现代英语里它几乎只用于这种抽象或制度性的复兴，而不是让死人复活。\n\n词形上，re- 在元音前保持 re- 的拼写，不缩减；-ize 是常见的动词后缀，来自希腊语 -izein，经拉丁语 -izare 和法语 -iser 进入英语。revitalize 的过去式和过去分词是 revitalized，现在分词是 revitalizing，名词是 revitalization，后者 1869 年才出现，是 revitalize 加 -ation 构成的行动名词。\n\n词源亲戚方面，第一个是 vital，来自拉丁语 vitalis，字面“与生命有关的”，现代义“生命的”，并由此引申出“至关重要的”，是整组词的意义基石。第二个是 vitality，来自拉丁语 vitalitas，字面“生命力”，现代义“活力、生命力”，是 revitalize 要恢复的那个东西。第三个是 vitamin，20 世纪造的词，由拉丁语 vita“生命”加 amine“胺”缩合而成，字面“生命胺”，后来发现并非都是胺，但词形保留了 vita 的“生命”义。第四个是 viable，来自法语 viable，最终追溯到拉丁语 vita，字面“能活的”，现代义“可行的、能存活的”，从生物能存活扩展到方案能成立。第五个是 revive，来自拉丁语 revivere，re-“再次”加 vivere“活”，字面“再活过来”，现代义“复活、苏醒、恢复”，和 revitalize 共享“再次获得生命”的语义骨架，但 revive 更强调从死或昏迷中醒来，revitalize 更强调给一个仍存在但衰弱的东西注入新活力。\n\n近义词辨析上，revitalize 和几个词容易混。revive 强调“从无生命或近似无生命的状态恢复过来”，常用于人苏醒、旧传统复活、经济复苏，主语自身恢复的意味更强。restore 强调“恢复到原来的状态”，不一定是注入新生命，可能只是修复、归还，比如 restore a painting 是修复画作，restore order 是恢复秩序。rejuvenate 强调“使变得年轻”，常带生理或外貌上的年轻化，也可比喻组织焕发青春，语气比 revitalize 更形象，但使用范围窄一些。regenerate 强调“再生、重新生长”，有生物学上组织再生的具体义，也可用于精神或社会重建，比 revitalize 多一层“重新生成”的意味。refresh 语气最轻，指消除疲劳、使清新，常用于休息、洗澡、喝饮料，不涉及深层活力的恢复。\n\n记忆链：拉丁语 vita“生命”→ vitalis“生命的”→ vital“生命的”（后引申出“至关重要的”）→ vitalize“使有生命、使活跃”→ re-“再次”加 vitalize→ revitalize“重新赋予生命、使恢复元气”。抓住 vita 这个“生命”内核，再记住 re- 的“再次”，就能把“使复兴”这个抽象义牢牢挂在“重新注入生命”的具体画面上。",
+    "originQuery": "revitalize",
+    "page": 11
+  },
+  {
+    "id": "kmf-anomalous",
+    "word": "anomalous",
+    "pair": "",
+    "meaning": "反常的，不规则的，异常的",
+    "origin": "anomalous 这个词形容事物偏离常规或违反通则，它的历史可以追溯到古希腊人对“平整、均匀、一致”的直观理解。17世纪中叶，英语从晚期拉丁语 anomalus 借入，而拉丁语又直接来自希腊语 anōmalos（不均整的、不规则的）。希腊语这个词由两部分构成：否定前缀 an-（不、没有，源自原始印欧语 *ne-）加上 homalos（平坦的、均匀的）。homalos 本身来自 homos（相同的、一样的），其原始印欧语词根 *sem- 表示“一；如同一体”。所以，anomalous 的字面意思就是“不是同一个平面的、不齐整的”，这正是一幅很具体的画面：想象一块本该平整的地面，却有一处凸起或凹陷，它就不再平了——偏离了均匀规则。这种空间上“不平整”的具体感觉，后来就抽象化为“偏离一般规律”，因为规律就像均匀平整的基准面，违反规律的事物自然就像打破平整的异类。从“不均匀”到“不规则”，是典型的空间概念向抽象规则领域映射的语义演变。\n\n词形上，an- 是希腊语否定前缀，在元音或 h 前保持 an-，比如在 anomalous 中，它与 homalos 直接组合为 anōmalos；进入拉丁语后变为 anomalus，再到英语 anomalous，后缀 -ous 表示形容词“具有……性质的”。发音上，现代英语重音通常在第二音节（/əˈnɒmələs/）。\n\n词源亲戚方面，可以从同一个 PIE 词根 *sem- “一、一起”找到几个高价值的现代英语词。homogeneous 由 希腊语 homos（相同）+ genos（种类）构成，字面为“同种类的”，现代表示“同质的、均匀的”，与 anomalous 的“不均匀”形成对照。homosexual 是由 homo-（来自希腊语 homos“相同”）加上 sexual 构成，表示同性恋的；它是一个近现代复合词，并非直接继承自古希腊语。还有 homologous 由 homo-（相同）与 logos（比例、关系）构成，现代意为“同源的、同系的”，常用于生物学或数学。assemble 经古法语和中古英语来自拉丁语 assimulare，与 similis（相似）有关，现代表示“集合、聚集”，可追溯至 PIE 词根 *sem-。这些词都围绕“相同、一致”的核心概念，而 anomalous 则是这个体系中的否定成员，表示“不一致”。\n\n近义词辨析：abnormal 是更通用的词，指偏离正常标准，常含统计或医学意味，语气中性；anomalous 更强调违反规则或通则，常暗示与预期不符的意外感，多用于正式或科学语境。irregular 侧重于不合常规、不均匀，比如不规则形状或不规律心跳，它不强调与普遍规律对立，而只是说不整齐；anomalous 则直接与规则相对。atypical 表示“非典型的”，指不具代表性，但未必违反规律，而 anomalous 往往意味着与整个类别的规律相悖。例如，an anomalous result 指一个偏离理论预测的结果；an atypical result 可能只是不常见，但仍在规律之内。\n\n记忆链：希腊语 an-（不）+ homalos（均匀，来自 homos“相同”）→ 不均匀 → 不规则、反常。想象一块平整的板子上凸出一块，它就不符合“平整”的规律，这就是 anomalous。注意不要与 anonymous（匿名的，an- + onoma“名字”）混淆，后者前缀相同但词根不同。",
+    "originQuery": "anomalous",
+    "page": 11
+  },
+  {
+    "id": "kmf-dictum",
+    "word": "dictum",
+    "pair": "",
+    "meaning": "格言；权威意见；（法律）法官的附带意见",
+    "origin": "dictum 直接借自拉丁语 dictum，是动词 dicere（说、讲）的过去分词 dictus 的中性形式，字面意思是“被说出来的东西”。拉丁语中 dictum 已经名词化，指“说过的话、格言、预言、命令”等。英语中该名词义项可追溯到 1660 年代，最初指“明确的陈述或断言”，通常暗含说话者的权威性，后来也进入法律领域，指法官在判决中表达的、不构成正式判决依据的意见。\n\n要理解 dictum 的构词，需要回到拉丁语动词 dicere 和更早的词根。dicere 来自原始印欧语词根 *deik-，意思不仅是“说”，还有“展示、指示”，并且带有“郑重宣告”的意味。这个“展示”和“说”的关联很自然：说话就是把想法展示给别人看。因此，*deik- 的许多后代词都同时涉及“说”和“指示”两个方向。拉丁语 dictum 作为“被说出之物”，逐渐从具体的“一句话”抽象为具有规范力量的“格言、权威意见”，再到法律中“附带说明”的专门含义。\n\ndictum 的现代常用义有三层。第一，一般意义：格言、名言、权威论断，例如“笛卡尔的著名格言”。第二，法律意义：法官在判决书中附带表达的、对案件裁决并非必需的意见，称为 obiter dictum 或简称 dictum，它没有约束力，但可能具有说服力。第三，泛指某权威人物的正式声明。原始中文释义“格言”抓住了核心，但不够全面；GRE 中更常考的是“权威意见、正式声明”以及法律上的“附带意见”。\n\n词形上，dictum 保留了拉丁语的中性单数主格/宾格形式，复数有两种：按拉丁语规则作 dicta，按英语规则作 dictums。两者都正确，但 dicta 更常见于正式法律和学术语境。英语没有对 dictum 做形态改造，因为它本身已经是完整的拉丁词形。\n\n词源亲戚方面，以下现代英语词共享 *deik- 词根，可帮助建立联系。dictate：来自拉丁语 dictare，与 dicere“说”相关，引申为“口述、命令”，因为命令就是权威地说出。diction：来自拉丁语 dictio，与 dicere“说”相关，指“措辞、发音方式”，强调说话的选择与风格。dictionary：来自中世纪拉丁语 dictionarium，与“说”相关，本义“词语的集合”。edict：来自拉丁语 edictum，与 dicere“说”相关，指官方颁布的法令。verdict：来自盎格鲁-法语 verdit，与 dicere“说”相关，指陪审团的裁决。这些词共享 dicere“说”这一直接词源，但各自的语义 specialization 不同。\n\n近义词辨析方面，dictum 与 saying、maxim、aphorism、adage 等有重叠，但侧重点不同。saying 是最普通的词，指任何广为流传的话，不一定有权威性。maxim 指行为准则式的格言，通常简短且具有指导性，例如“诚实为上”。aphorism 强调简洁、机智、带文学色彩的警句，常出自具体作者。adage 指长期流传、被视为智慧结晶的古话，如谚语。dictum 则强调说话者的权威和正式性，可以是法官的附带意见，也可以是权威人士的断言，语气比 saying 更重，比 maxim 更不强调行为指导，比 aphorism 更不强调文学性。在法律语境中，dictum 特指判决中非必要的意见，与 holding（判决中具有约束力的核心裁定）相对。\n\n记忆链：拉丁语 dicere“说” → 过去分词 dictus 的中性形式 dictum“被说出来的东西” → 英语 dictum“格言、权威意见” → 法律“法官的附带意见”。核心画面是“说出的话”，因说话者地位而带权威，又因法律语境而特指非约束性意见。",
+    "originQuery": "dictum",
+    "page": 11
+  },
+  {
+    "id": "kmf-jettisons",
+    "word": "jettisons",
+    "pair": "",
+    "meaning": "（为减轻重量而）抛弃、丢弃；放弃（计划、观点等）",
+    "origin": "jettison 的动名词源直接来自航海：把货物扔下船以减轻船重、救船脱险。要理解这个词，抓住它的核心画面——船上的人把压舱的货物一件件推下甲板，扔进海里。\n\n名词 jettison 来自中古英语 jetteson，再往前是盎格鲁-法语 getteson、古法语 getaison，意为“把货物扔出船外（的行动）”，在马林保险的语境里尤其指遇险减重。更早追溯到晚期拉丁语 iactationem（主格 iactatio，来自动词 iactare，意为“抛、掷、来回投掷”）；其过去分词词干构成名词。深层词根是原始印欧语 *ye-/*yē-，意为“投掷、推动”。\n\n顺着这条链能看到几处明显的词形变化。拉丁 iactare 里的 i- 与 -act- 后来在法语里弱化成 get-/jet-，词尾 -aison 也磨成 -eson、-ison；英语从法语借入后曾写作 jetteson/jetson/jetsome。到 16 世纪，jetsam 先指“把货物扔出船外的行为”，从 1590 年代起才指“被扔下船的货物本身”（即漂浮物）；于是 18 世纪保险文书作者把旧形 jettison 还原出来，专门表示“抛货下海这个行为”，以避免与 jetsam 混指。这个名词又反过来在 1848 年生出动词 jettison：“把（货物）扔出船外”，后引申为一般的“抛弃、丢弃、放弃”。\n\n从具体到抽象的变化很清楚：先是物理上的把货物推下船、减重救船——这是人类在危急中做出的取舍；随后抽象为把任何不需要、负担或耽误自己的东西“卸掉”，如 jettison a plan（放弃一项计划）、jettison old habits（丢掉旧习惯）、jettison a policy（放弃某项政策）。丢弃动机通常是有意识、经过权衡的：为了保住更重要的东西而牺牲次要部分，这使 jettison 比单纯“扔掉”多一层“减负、权衡取舍”的意味。\n\n词源亲戚（都与 *ye-/*yē- “投掷、推动”这一原始印欧语根相关，多数经拉丁 iactare/iacere 一脉进入英语）：\nproject（pro- 向前 + -ject 投 → 向前投出 → 投射、项目、预计）；\nreject（re- 回 + -ject 投 → 投回、拒绝 → 拒绝、驳回）；\ninject（in- 入 + -ject 投 → 注射、注入）；\ntrajectory（trans- 穿过 + -ject 投 + -ory → 抛体经过的路线 → 轨迹、弹道）；\nconjecture（con- 一起 + -ject 投 → 把线索凑在一起抛出 → 推测、猜想）。这些词都有“投、掷”的底层动作，只是投的方向和结果不同。\n\n近义词辨析：jettison 强调“为减负或应急而主动丢弃”；discard 更中性，指不再要某物；abandon 侧重“彻底放手、不再照顾”，对象常是人、计划或责任；ditch 是口语化的“甩掉、扔掉”，随意且不正式；dump 则强调“草率地倒掉或抛弃”。例如：The crew jettisoned the cargo to keep the ship afloat.（船员把货物抛下海以让船不沉。）这里用 abandon 或 discard 都丢了“紧急减重”这层画面。\n\n记忆链：jettison ← 古法语 getaison“把货物扔出船外” ← 拉丁 iactare“抛掷” ← 原始印欧语 *ye-“投、推”。画面是危急中把货物推下船减重，由此引申为果断放弃不必要的东西；同根有 project、reject、inject、trajectory、conjecture 等以 -ject 表示“投”的词。",
+    "originQuery": "jettison",
+    "page": 11
+  },
+  {
+    "id": "kmf-lucidity",
+    "word": "lucidity",
+    "pair": "",
+    "meaning": "清晰，明晰；（表达）清楚明白；（神志）清醒；也指明亮、清澈",
+    "origin": "lucidity 于 1650 年代进入英语，最初的意思是“明亮、光亮”，借自法语 lucidité，再往前是晚期拉丁语 luciditas，源头是拉丁语 lucidus“光亮的、明亮的、清澈的”，而 lucidus 又来自动词 lucere“发光、照耀”。再往上追，这些词都出自原始印欧语词根 *leuk-“光、明亮”，lucere 是这个词根的带后缀（反复体）形式 *louk-eyo- 的延续。\n\n词形上不难拆：拉丁语 lucidus 加名词后缀 -itas（法语作 -ité，英语作 -ity），就得到“处于明亮状态”的抽象名词。所以 lucidity 的字面骨架是“发光的状态、明亮的状态”。英语里同一族的名词还有 lucidness，但 lucidity 更常出现在较书面的语境里。\n\n真正有意思的是意义怎么从“明亮”走到“清晰”。最初的 1650 年代义项是“明亮、光亮”；到 1851 年前后，才稳定出现“智力上的清晰、表达的透明”这一义。这个转移很自然：光让人看得见东西，看得见就能分辨、理解；于是“光线充足”被隐喻地挪到思维和语言上，变成“思路透亮、意思不含糊”。这条“光—看见—理解”的链条在世界语言中反复出现，英语用 light 说“阐明”（shed light on），用 brilliant 说“才华出众”，都是同一类隐喻。\n\n词源亲戚\nlucid：直接来自拉丁语 lucidus，字面“光亮的”，现代最常用的意思却是“清楚易懂的、头脑清醒的”，如 a lucid explanation。\ntranslucent：trans-“穿过”加 luc-“光”，字面“让光穿过的”，即“半透明的”。\nelucidate：e-/ex-“出来”加 lucidus，字面“把光引出来”，现代义“阐明、解释清楚”，正好是 lucidity 的动词化。\npellucid：per-“完全”加 lucidus，字面“完全透光的”，现代义“清澈透明的”，也常引申为“明白晓畅的”。\nluminary：来自拉丁语 lumen“光”，与 luc- 同出 *leuk- 词根，字面“发光体”，现代指“杰出人物、权威”。\n\n近义词辨析\nclarity 最通用，可指水、声音、思路、表达等各方面的清楚，语域中性；lucidity 更书面，常带“思路通透、表达如光照射般明了”的意味。\ncoherence 强调逻辑上的连贯一致，各部分彼此咬合；lucidity 强调容易被理解，不强调结构本身是否严密。\ntransparency 常指“透明”或信息公开、不隐瞒，偏制度与态度层面；lucidity 偏认知与表达层面。\nperspicuity 是更老派、更书面的近义词，几乎专指表达清楚；lucidity 除表达外还可指头脑清醒，如 moments of lucidity（神志清醒的时刻）。\n\n记忆链：*leuk-“光”→ 拉丁语 lucere“发光”→ lucidus“明亮的、清澈的”→ 晚期拉丁语 luciditas → 英语 lucidity。物理的“亮”经过“光照—看见—理解”的隐喻，最终落在“思路与表达的清晰”上；同根的 lucid、elucidate、pellucid、translucent 都共享这束“光”。",
+    "originQuery": "lucidity",
+    "page": 11
+  },
+  {
+    "id": "kmf-forbearance",
+    "word": "forbearance",
+    "pair": "",
+    "meaning": "克制；忍耐；宽容（尤指对债务的延期偿付或对过错的宽容）",
+    "origin": "forbearance 来自动词 forbear 加名词后缀 -ance。forbear 的古英语形式是 forberan，由前缀 for- 和 beran（即现代英语 bear）组成。for- 在这里不是表示“禁止”或“否定”，其具体含义在现代词源词典中未明确说明。beran 是“承受、携带、生育”的意思，和现代英语 bear 同源。古英语 forberan 的释义包括“承受、控制自己的感情、戒除、克制、容忍、忍耐”，这些意义都围绕“承受住某种压力而不发作”这个核心画面。\n\n从 forberan 到现代英语 forbear，形式变化主要来自语音演变和拼写固定。古英语的 beran 后来变成 bear，前缀 for- 保留下来，整个词在中古英语时期逐渐简化为 forbear（过去式 forbore，过去分词 forborne）。加上 -ance 后，forbearance 最早出现在 1570 年代，最初是法律用语，特指债权人允许债务人延期偿还债务，即“暂不强制执行债务”。这里的“不执行”是主动选择不施加压力，而不是无力执行——这正是 forbear 的核心：有能力做某事但选择克制。到 1590 年代，forbearance 发展出更一般的意义：“克制、不发作、宽容”，不再局限于债务语境。从具体法律行为到抽象品质的演变是很自然的：一个人能追债却选择等待，这种品质就是“宽容”；一个人能发怒却选择不说话，这种品质也是“宽容”。\n\n词源亲戚\nforbear：古英语 forberan 一系 → 克制、忍耐，是 forbearance 的直接基础。\nbear：古英语 beran → 携带、承受，也可指生育；bear a burden 就是承受负担。\nbearable：bear + -able → 可以承受的。\nbearing：bear 的分词及相关名词形式 → 承担、承载；也可指人的举止、姿态。\n这里的 bear 是动词“承受”，与动物名 bear“熊”的词源不同；不能只因拼写相同就混为一个家族。\n\n近义词辨析：forbearance 和 patience 都表示“忍耐”，但 patience 侧重在等待中不焦急、不抱怨，时间跨度可以很长；forbearance 则更强调面对挑衅或压力时主动克制自己不发作，常含有宽容、不追究的意味。tolerance 侧重对不同于自己的观点或行为的接受，不一定是面对直接压力；forbearance 更强调克制自己的反应。restraint 指控制自己不做某事，但不一定出于宽容，可能只是出于纪律或策略；forbearance 带有道德上的宽容色彩。在债务语境中，forbearance 特指债权人同意延期，这是一个非常具体的用法，其他近义词没有这个含义。\n\n记忆链：for-（避开）+ bear（承受）→ 忍住不发作 → 克制；宽容；债务延期。",
+    "originQuery": "forbearance",
+    "page": 11
   }
 ];
 
-export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: string }> = {
+export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: string; sourceLabel?: string; sourceNote?: string; sourceKey?: string }> = {
   "kmf-mirthful": {
     "english": "The dinner party grew mirthful as old friends swapped stories and laughed late into the night.",
     "chinese": "晚宴上，老朋友们交换着故事，笑声不断，一直欢闹到深夜。"
@@ -1708,6 +2122,229 @@ export const COLLECTED_EXAMPLES: Record<string, { english: string; chinese: stri
   "kmf-intriguing": {
     "english": "The professor's intriguing question about the origin of language kept the students thinking long after class.",
     "chinese": "教授关于语言起源的那个引人入胜的问题，让学生在课后很久仍在思考。"
+  },
+  "kmf-surreptitious": {
+    "english": "The photocopier, widely adopted in the 1960s, became not merely a vehicle for copying but one for publishing in a surreptitious manner, so that ideas could be circulated without interference from potential censors.",
+    "chinese": "20世纪60年代广泛采用的复印机，不仅用于复制，还可用于秘密出版，让思想在不受潜在审查者干扰的情况下传播。",
+    "sourceLabel": "GRE 原书例句 · 第 3 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p03r01"
+  },
+  "kmf-palpable": {
+    "english": "The tension in the room was so palpable that everyone fell silent.",
+    "chinese": "房间里的紧张气氛如此明显，以至于所有人都沉默了。"
+  },
+  "kmf-temporizing": {
+    "english": "Instead of answering the senator's question directly, the spokesman kept temporizing until the scandal had faded from the headlines.",
+    "chinese": "发言人没有正面回答参议员的提问，而是一直拖延敷衍，直到丑闻从新闻头条上淡出。"
+  },
+  "kmf-inaugural": {
+    "english": "The president's inaugural address focused on national unity and economic recovery.",
+    "chinese": "总统的就职演说聚焦于国家团结与经济复苏。"
+  },
+  "kmf-saga": {
+    "english": "The saga of the family's escape from the flood was passed down for generations.",
+    "chinese": "这家人逃离洪水的长篇故事代代相传。"
+  },
+  "kmf-chronicle": {
+    "english": "The medieval monk spent thirty years writing a chronicle of the kingdom's kings and wars.",
+    "chinese": "那位中世纪修士花了三十年撰写一部关于该国历代国王和战争的编年史。"
+  },
+  "kmf-elegy": {
+    "english": "The poet composed a moving elegy for his late friend.",
+    "chinese": "诗人为已故的朋友创作了一首感人的挽歌。"
+  },
+  "kmf-self-contained": {
+    "english": "The cabin is completely self-contained, with its own water supply and solar power.",
+    "chinese": "这间小屋完全自给自足，有自己的供水和太阳能电力。"
+  },
+  "kmf-discrete": {
+    "english": "In computer science, a discrete variable can take only a limited number of separate values, unlike a continuous one.",
+    "chinese": "在计算机科学中，离散变量只能取有限个彼此分开的取值，这与连续变量不同。"
+  },
+  "kmf-pugnacity": {
+    "english": "His pugnacity made him feared in every meeting, though few could deny his intelligence.",
+    "chinese": "他的好斗脾气让他在每次会议上都令人忌惮，尽管很少有人能否认他的聪明。"
+  },
+  "kmf-belligerence": {
+    "english": "His belligerence at the meeting surprised everyone, turning a simple discussion into a heated argument.",
+    "chinese": "他在会上的好斗态度让所有人吃惊，把一场简单的讨论变成了激烈的争吵。"
+  },
+  "kmf-subsequent": {
+    "english": "It is normal for artists who achieve great acclaim during their lifetimes to be considered outmoded shortly after their deaths, only to have their reputations restored by subsequent generations.",
+    "chinese": "艺术家生前备受赞誉，去世后不久却被认为过时，随后又被后代重新认可，这是一种常见现象。",
+    "sourceLabel": "GRE 原书例句 · 第 27 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p27r07"
+  },
+  "kmf-voracious": {
+    "english": "She is a voracious reader, finishing several novels every week.",
+    "chinese": "她是个如饥似渴的读者，每周都要读完好几本小说。"
+  },
+  "kmf-fastidious": {
+    "english": "She is so fastidious about her handwriting that she rewrites a whole page if a single letter looks slightly uneven.",
+    "chinese": "她对字迹极为挑剔，哪怕一个字母稍有不匀，也会把整页重写。"
+  },
+  "kmf-prodigious": {
+    "english": "Margaret Oliphant’s literary output was prodigious: it included almost 100 novels, 50 short stories, 25 nonfictional works, and in the region of 400 articles published in the periodical press.",
+    "chinese": "玛格丽特·奥利芬特的文学产量惊人：包括近100部小说、50篇短篇小说、25部非虚构作品，以及约400篇期刊文章。",
+    "sourceLabel": "GRE 原书例句 · 第 48 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p48r08"
+  },
+  "kmf-vitality": {
+    "english": "After a long illness, she returned to work with surprising vitality and quickly took charge of the project.",
+    "chinese": "久病之后，她带着令人惊讶的活力重返工作岗位，并很快接管了这个项目。"
+  },
+  "kmf-dwindling": {
+    "english": "For decades, Pluto seemed to be the mysteriously dwindling planet: it was first thought to be about as large as Earth, but, subsequently, measurements had it smaller and smaller.",
+    "chinese": "几十年来，冥王星似乎一直在神秘地缩小：最初人们认为它与地球差不多大，但后续测量得出的大小却越来越小。",
+    "sourceLabel": "GRE 原书例句 · 第 7 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p07r03"
+  },
+  "kmf-morphing": {
+    "english": "The film used digital morphing to blend the actor's face seamlessly into the wolf's.",
+    "chinese": "这部电影使用数字变形技术，把演员的脸无缝地融入了狼的脸。"
+  },
+  "kmf-wane": {
+    "english": "One object of examining past medical practices is to identify useful knowledge amid its now outmoded trappings; the alternative is to let such knowledge wane along with the discredited theories with which it was associated.",
+    "chinese": "考察以往医疗实践的一个目的，是从如今已过时的形式中找出有用的知识；另一种做法则是任由这些知识与其所依附、现已被否定的理论一起衰退。",
+    "sourceLabel": "GRE 原书例句 · 第 32 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p32r05"
+  },
+  "kmf-vehemently": {
+    "english": "She vehemently denied any involvement in the scandal.",
+    "chinese": "她激烈地否认自己与这桩丑闻有任何牵连。"
+  },
+  "kmf-exasperates": {
+    "english": "It exasperates her that he never listens to a word she says.",
+    "chinese": "他从来不把她的话当回事，这让她非常恼火。"
+  },
+  "kmf-anachronistic": {
+    "english": "The film's use of a smartphone in a story set in ancient Rome is anachronistic.",
+    "chinese": "这部电影在古罗马背景的故事里出现智能手机，是时代错误的。"
+  },
+  "kmf-unfathomable": {
+    "english": "He found his new acquaintance to be unfathomable: trying to understand her personality was like peering into an unknown dimension.",
+    "chinese": "他觉得这位新认识的人深不可测：试图理解她的性格，就像窥探一个未知的维度。",
+    "sourceLabel": "GRE 原书例句 · 第 30 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p30r04"
+  },
+  "kmf-illicit": {
+    "english": "Very few companies take the trouble to discover where the wood in their products originates, consumers do not demand this information, and consequently indifference regarding illicit timber has become the norm.",
+    "chinese": "很少有公司费心查明产品中木材的来源，消费者也不要求提供这些信息，因此对非法木材的漠不关心已成为常态。",
+    "sourceLabel": "GRE 原书例句 · 第 35 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p35r06"
+  },
+  "kmf-interminable": {
+    "english": "The lecture was interminable, and half the audience had stopped taking notes long before it ended.",
+    "chinese": "那场讲座没完没了，还没结束，一半听众早就不做笔记了。"
+  },
+  "kmf-pejorative": {
+    "english": "Calling his proposal a \"scheme\" rather than a \"plan\" gives it a pejorative tone that he resented.",
+    "chinese": "把他的提议称作“scheme（诡计/图谋）”而不是“plan（计划）”，赋予了它一种贬损色彩，这让他很不满。"
+  },
+  "kmf-shrewd": {
+    "english": "Matsui is an extremely shrewd political tactician, as she generally will withhold her support for a political faction or a policy until she is confident it will prevail.",
+    "chinese": "松井是一位极其精明的政治策略家：她通常会等到确信某个政治派别或政策将获胜，才给予支持。",
+    "sourceLabel": "GRE 原书例句 · 第 20 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p20r09"
+  },
+  "kmf-taciturn": {
+    "english": "He was a man of few words, taciturn around all but his closest friends.",
+    "chinese": "他寡言少语，除了在最亲密的朋友面前，其他时候都很沉默。",
+    "sourceLabel": "GRE 原书例句 · 第 43 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p43r06"
+  },
+  "kmf-accretion": {
+    "english": "The gradual accretion of sediment at the river mouth eventually formed a small delta.",
+    "chinese": "河口处沉积物的逐渐堆积最终形成了一小块三角洲。"
+  },
+  "kmf-abnegation": {
+    "english": "The monk's life of abnegation inspired many, but few could follow his example.",
+    "chinese": "这位修士克己的生活激励了很多人，但很少有人能效仿他。"
+  },
+  "kmf-pundit": {
+    "english": "The political pundit predicted a close election, but the results proved him wrong.",
+    "chinese": "这位政治评论员预测选举会势均力敌，但结果证明他错了。"
+  },
+  "kmf-sensuality": {
+    "english": "The novel depicts a world of decadent sensuality, where every pleasure is pursued to excess.",
+    "chinese": "这部小说描绘了一个颓废纵欲的世界，每一种享乐都被追逐到极致。"
+  },
+  "kmf-bookish": {
+    "english": "His bookish manner made him seem distant at parties, though he could discuss almost any novel in detail.",
+    "chinese": "他那种书卷气的举止让他在聚会上显得疏远，尽管他几乎能详细谈论任何一部小说。"
+  },
+  "kmf-tedium": {
+    "english": "The endless repetition of data entry turned what should have been a simple task into pure tedium.",
+    "chinese": "无休止地重复录入数据，把本该简单的任务变成了纯粹的单调乏味。"
+  },
+  "kmf-nostalgia": {
+    "english": "Looking at old photographs filled her with a bittersweet nostalgia for the summers of her childhood.",
+    "chinese": "翻看旧照片让她对童年的夏天涌起一种苦乐参半的怀旧之情。"
+  },
+  "kmf-solitude": {
+    "english": "After years of crowded city life, he moved to a cabin in the mountains and found a deep, deliberate solitude that felt like freedom.",
+    "chinese": "在拥挤的城市生活多年后，他搬到山间小屋，找到了一种深沉而自主的独处，感觉像自由。"
+  },
+  "kmf-hyperbole": {
+    "english": "Though initially presented in a blaze of hyperbole, the thesis is repeated even more soberly in the ensuing paragraphs.",
+    "chinese": "该论点最初以大肆夸张的言辞提出，却在后续段落中以更冷静的方式反复陈述。",
+    "sourceLabel": "GRE 原书例句 · 第 24 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p24r02"
+  },
+  "kmf-cherishes": {
+    "english": "She cherishes the handwritten letters her grandmother left her and reads them whenever she feels lonely.",
+    "chinese": "她珍藏着祖母留给她的那些手写信，每当感到孤独时就拿出来读。"
+  },
+  "kmf-puerile": {
+    "english": "His puerile jokes embarrassed everyone at the serious meeting.",
+    "chinese": "他在严肃会议上讲的那些幼稚笑话让所有人尴尬。"
+  },
+  "kmf-invigorate": {
+    "english": "A brisk walk in the cold morning air never fails to invigorate me before a long day of work.",
+    "chinese": "在寒冷的晨风中快步走一走，总能让我在漫长工作日开始前精神一振。"
+  },
+  "kmf-revitalize": {
+    "english": "As a way of checking the negative impacts of overdependence on a single export product—crude oil, the Nigerian government passed legislation in 1999 intended to revitalize the moribund solid minerals sector.",
+    "chinese": "为了遏制对单一出口产品——原油——过度依赖的负面影响，尼日利亚政府于1999年通过立法，旨在重振衰落的固体矿产部门。",
+    "sourceLabel": "GRE 原书例句 · 第 4 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p04r04"
+  },
+  "kmf-anomalous": {
+    "english": "Although technically their members were hunter-gatherers, many early Native California communities exhibited traits more typically associated with well-developed agrarian societies and, therefore, are often presented in the ethnographic literature as anomalous.",
+    "chinese": "虽然严格来说成员是狩猎采集者，许多早期加利福尼亚原住民社区却具有成熟农业社会常见的特征，因此民族志文献常将它们描述为异乎寻常。",
+    "sourceLabel": "GRE 原书例句 · 第 24 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p24r03"
+  },
+  "kmf-dictum": {
+    "english": "The judge's dictum about free speech was not binding but influenced later rulings.",
+    "chinese": "法官关于言论自由的附带意见虽无约束力，却影响了后来的裁决。"
+  },
+  "kmf-jettisons": {
+    "english": "To stay afloat, the crew jettisons heavy containers during the storm.",
+    "chinese": "为了不沉船，船员在暴风雨中抛弃沉重的集装箱。"
+  },
+  "kmf-lucidity": {
+    "english": "In her career as an editor, she pruned and shaped many a writer's prose into crisp lucidity.",
+    "chinese": "在编辑生涯中，她精简并打磨了许多作家的文字，使之清晰明快。",
+    "sourceLabel": "GRE 原书例句 · 第 20 页",
+    "sourceNote": "学而思 GRE 高频六选二等价1000词（2026版）· OCR 校订、等价选词整理",
+    "sourceKey": "p20r04"
+  },
+  "kmf-forbearance": {
+    "english": "The bank showed forbearance by allowing the struggling company to delay its loan payments.",
+    "chinese": "银行同意这家陷入困境的公司延期偿还贷款，表现出了宽容。"
   }
 };
 
@@ -2585,5 +3222,472 @@ export const COLLECTED_SOURCES: Record<string, { label: string; url: string }[]>
       "label": "Etymonline · intrigue",
       "url": "https://www.etymonline.com/word/intrigue"
     }
+  ],
+  "kmf-surreptitious": [
+    {
+      "label": "Etymonline · surreptitious",
+      "url": "https://www.etymonline.com/word/surreptitious"
+    }
+  ],
+  "kmf-palpable": [
+    {
+      "label": "Etymonline · palpable",
+      "url": "https://www.etymonline.com/word/palpable"
+    }
+  ],
+  "kmf-temporizing": [
+    {
+      "label": "Etymonline · temporize",
+      "url": "https://www.etymonline.com/word/temporize"
+    }
+  ],
+  "kmf-inaugural": [
+    {
+      "label": "Etymonline · inaugural",
+      "url": "https://www.etymonline.com/word/inaugural"
+    }
+  ],
+  "kmf-saga": [
+    {
+      "label": "Etymonline · saga",
+      "url": "https://www.etymonline.com/word/saga"
+    }
+  ],
+  "kmf-chronicle": [
+    {
+      "label": "Etymonline · chronicle",
+      "url": "https://www.etymonline.com/word/chronicle"
+    }
+  ],
+  "kmf-elegy": [
+    {
+      "label": "Etymonline · elegy",
+      "url": "https://www.etymonline.com/word/elegy"
+    }
+  ],
+  "kmf-self-contained": [
+    {
+      "label": "Etymonline · self-contained",
+      "url": "https://www.etymonline.com/word/self-contained"
+    }
+  ],
+  "kmf-discrete": [
+    {
+      "label": "Etymonline · discrete",
+      "url": "https://www.etymonline.com/word/discrete"
+    }
+  ],
+  "kmf-pugnacity": [
+    {
+      "label": "Etymonline · pugnacity",
+      "url": "https://www.etymonline.com/word/pugnacity"
+    }
+  ],
+  "kmf-belligerence": [
+    {
+      "label": "Etymonline · belligerence",
+      "url": "https://www.etymonline.com/word/belligerence"
+    }
+  ],
+  "kmf-subsequent": [
+    {
+      "label": "Etymonline · subsequent",
+      "url": "https://www.etymonline.com/word/subsequent"
+    }
+  ],
+  "kmf-voracious": [
+    {
+      "label": "Etymonline · voracious",
+      "url": "https://www.etymonline.com/word/voracious"
+    }
+  ],
+  "kmf-fastidious": [
+    {
+      "label": "Etymonline · fastidious",
+      "url": "https://www.etymonline.com/word/fastidious"
+    }
+  ],
+  "kmf-prodigious": [
+    {
+      "label": "Etymonline · prodigious",
+      "url": "https://www.etymonline.com/word/prodigious"
+    }
+  ],
+  "kmf-vitality": [
+    {
+      "label": "Etymonline · vitality",
+      "url": "https://www.etymonline.com/word/vitality"
+    }
+  ],
+  "kmf-dwindling": [
+    {
+      "label": "Etymonline · dwindle",
+      "url": "https://www.etymonline.com/word/dwindle"
+    }
+  ],
+  "kmf-morphing": [
+    {
+      "label": "Etymonline · morph",
+      "url": "https://www.etymonline.com/word/morph"
+    }
+  ],
+  "kmf-wane": [
+    {
+      "label": "Etymonline · wane",
+      "url": "https://www.etymonline.com/word/wane"
+    }
+  ],
+  "kmf-vehemently": [
+    {
+      "label": "Etymonline · vehement",
+      "url": "https://www.etymonline.com/word/vehement"
+    }
+  ],
+  "kmf-exasperates": [
+    {
+      "label": "Etymonline · exasperate",
+      "url": "https://www.etymonline.com/word/exasperate"
+    }
+  ],
+  "kmf-anachronistic": [
+    {
+      "label": "Etymonline · anachronistic",
+      "url": "https://www.etymonline.com/word/anachronistic"
+    }
+  ],
+  "kmf-unfathomable": [
+    {
+      "label": "Etymonline · unfathomable",
+      "url": "https://www.etymonline.com/word/unfathomable"
+    }
+  ],
+  "kmf-illicit": [
+    {
+      "label": "Etymonline · illicit",
+      "url": "https://www.etymonline.com/word/illicit"
+    }
+  ],
+  "kmf-interminable": [
+    {
+      "label": "Etymonline · interminable",
+      "url": "https://www.etymonline.com/word/interminable"
+    }
+  ],
+  "kmf-pejorative": [
+    {
+      "label": "Etymonline · pejoration",
+      "url": "https://www.etymonline.com/word/pejoration"
+    },
+    {
+      "label": "Merriam-Webster · pejorative",
+      "url": "https://www.merriam-webster.com/dictionary/pejorative"
+    }
+  ],
+  "kmf-shrewd": [
+    {
+      "label": "Etymonline · shrewd",
+      "url": "https://www.etymonline.com/word/shrewd"
+    }
+  ],
+  "kmf-taciturn": [
+    {
+      "label": "Etymonline · taciturn",
+      "url": "https://www.etymonline.com/word/taciturn"
+    }
+  ],
+  "kmf-accretion": [
+    {
+      "label": "Etymonline · accretion",
+      "url": "https://www.etymonline.com/word/accretion"
+    }
+  ],
+  "kmf-abnegation": [
+    {
+      "label": "Etymonline · abnegation",
+      "url": "https://www.etymonline.com/word/abnegation"
+    }
+  ],
+  "kmf-pundit": [
+    {
+      "label": "Etymonline · pundit",
+      "url": "https://www.etymonline.com/word/pundit"
+    }
+  ],
+  "kmf-sensuality": [
+    {
+      "label": "Etymonline · sensuality",
+      "url": "https://www.etymonline.com/word/sensuality"
+    }
+  ],
+  "kmf-bookish": [
+    {
+      "label": "Etymonline · bookish",
+      "url": "https://www.etymonline.com/word/bookish"
+    }
+  ],
+  "kmf-tedium": [
+    {
+      "label": "Etymonline · tedium",
+      "url": "https://www.etymonline.com/word/tedium"
+    }
+  ],
+  "kmf-nostalgia": [
+    {
+      "label": "Etymonline · nostalgia",
+      "url": "https://www.etymonline.com/word/nostalgia"
+    }
+  ],
+  "kmf-solitude": [
+    {
+      "label": "Etymonline · solitude",
+      "url": "https://www.etymonline.com/word/solitude"
+    }
+  ],
+  "kmf-hyperbole": [
+    {
+      "label": "Etymonline · hyperbole",
+      "url": "https://www.etymonline.com/word/hyperbole"
+    }
+  ],
+  "kmf-cherishes": [
+    {
+      "label": "Etymonline · cherish",
+      "url": "https://www.etymonline.com/word/cherish"
+    }
+  ],
+  "kmf-puerile": [
+    {
+      "label": "Etymonline · puerile",
+      "url": "https://www.etymonline.com/word/puerile"
+    }
+  ],
+  "kmf-invigorate": [
+    {
+      "label": "Etymonline · invigorate",
+      "url": "https://www.etymonline.com/word/invigorate"
+    }
+  ],
+  "kmf-revitalize": [
+    {
+      "label": "Etymonline · revitalize",
+      "url": "https://www.etymonline.com/word/revitalize"
+    }
+  ],
+  "kmf-anomalous": [
+    {
+      "label": "Etymonline · anomalous",
+      "url": "https://www.etymonline.com/word/anomalous"
+    }
+  ],
+  "kmf-dictum": [
+    {
+      "label": "Etymonline · dictum",
+      "url": "https://www.etymonline.com/word/dictum"
+    }
+  ],
+  "kmf-jettisons": [
+    {
+      "label": "Etymonline · jettison",
+      "url": "https://www.etymonline.com/word/jettison"
+    }
+  ],
+  "kmf-lucidity": [
+    {
+      "label": "Etymonline · lucidity",
+      "url": "https://www.etymonline.com/word/lucidity"
+    }
+  ],
+  "kmf-forbearance": [
+    {
+      "label": "Etymonline · forbearance",
+      "url": "https://www.etymonline.com/word/forbearance"
+    }
   ]
+};
+
+export const COLLECTED_QUESTION_CONTEXTS: Record<string, { sourceUrl: string; label: string; note: string; english?: string; chinese?: string }> = {
+  "kmf-surreptitious": {
+    "sourceUrl": "https://gre.kmf.com/question/d2dkkj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "It can be extremely difficult to uncover direct evidence of conspiracies, given that such activities are by their very nature ________.",
+    "chinese": "要找到阴谋的直接证据可能极其困难，因为这类活动本质上就是________。"
+  },
+  "kmf-illicit": {
+    "sourceUrl": "https://gre.kmf.com/question/d2dkkj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-interminable": {
+    "sourceUrl": "https://gre.kmf.com/question/d2dkkj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-shrewd": {
+    "sourceUrl": "https://gre.kmf.com/question/e2cw7j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-taciturn": {
+    "sourceUrl": "https://gre.kmf.com/question/e2cw7j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "At public appearances the leader was remarkably taciturn, typically making _____________ observations before turning the floor over to a colleague.",
+    "chinese": "在公开露面时，这位领导人极为沉默寡言，通常只说几句_____________的话，随后便把发言权交给一位同事。"
+  },
+  "kmf-palpable": {
+    "sourceUrl": "https://gre.kmf.com/question/220sfj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "Although streams of solar particles cause beautiful auroras-the northern and southern lights—sometimes their consequences are less _____________: their electromagnetic effects, for instance, can overload …",
+    "chinese": "尽管太阳粒子流会形成美丽的极光——北极光和南极光——但有时其后果却不那么_____________：例如，它们的电磁效应可能使……过载"
+  },
+  "kmf-temporizing": {
+    "sourceUrl": "https://gre.kmf.com/question/42m9fj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "Embarrassment serves as a __________ gesture to others by signaling that the violation one committed was unintended and that it will not likely be …",
+    "chinese": "尴尬起到一种对他人__________的姿态，表明一个人所犯的违规并非有意，而且很可能不会……"
+  },
+  "kmf-inaugural": {
+    "sourceUrl": "https://gre.kmf.com/question/32ih5j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-saga": {
+    "sourceUrl": "https://gre.kmf.com/question/32ih5j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-chronicle": {
+    "sourceUrl": "https://gre.kmf.com/question/32ih5j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-elegy": {
+    "sourceUrl": "https://gre.kmf.com/question/32ih5j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "With poetry seemingly forever composing its own _____________, and the novel apparently writing its last chapter. science fiction writers are now similarly concerned that …",
+    "chinese": "随着诗歌似乎永远在谱写自己的_____________，而小说显然正在写下它的最后一章，科幻小说作家如今也同样担心……"
+  },
+  "kmf-self-contained": {
+    "sourceUrl": "https://gre.kmf.com/question/62kk3j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "The author contests the idea that indigenous legal traditions in Canada are _____________, showing how these various traditions have historically shaped, and been shaped …",
+    "chinese": "作者对加拿大原住民法律传统是_____________这一观点提出质疑，展示了这些不同的传统历史上如何塑造了……"
+  },
+  "kmf-discrete": {
+    "sourceUrl": "https://gre.kmf.com/question/62kk3j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "kmf-pundit": {
+    "sourceUrl": "https://gre.kmf.com/question/f2c9xj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… characterized her opponents as extreme and one-sided, the pundit conspicuously failed to (i) _____________ the middle ground to which she laid claim; how speedily …",
+    "chinese": "……将她的对手描述为极端和片面，这位专家显然未能（i）_____________她所声称的中间立场；多么迅速……"
+  },
+  "kmf-pugnacity": {
+    "sourceUrl": "https://gre.kmf.com/question/4avndk.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "What they see in Jimenez is the one candidate capable of decisive leadership, in stark contrast to Diaz, whose team in office has been …",
+    "chinese": "他们在希门尼斯身上看到的是唯一能够果断领导的候选人，与迪亚兹形成鲜明对比，迪亚兹的执政团队一直……"
+  },
+  "kmf-belligerence": {
+    "sourceUrl": "https://gre.kmf.com/question/4avndk.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-subsequent": {
+    "sourceUrl": "https://gre.kmf.com/question/c2hokj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… which factors can drive the (ii) ______ and subsequent degradation of this gas on Mars.",
+    "chinese": "……哪些因素可以驱动火星上这种气体的（ii）______及随后的降解。"
+  },
+  "kmf-voracious": {
+    "sourceUrl": "https://gre.kmf.com/question/91pqbj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项"
+  },
+  "kmf-fastidious": {
+    "sourceUrl": "https://gre.kmf.com/question/91pqbj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-prodigious": {
+    "sourceUrl": "https://gre.kmf.com/question/91pqbj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "Consuming 25 to 35 percent of their body weight each day, sea otters are not only _____ but highly specialized eaters, organizing themselves into …",
+    "chinese": "每天消耗其体重25%到35%的海獭不仅是_____，而且是高度专业化的食客，它们会组织成……"
+  },
+  "kmf-vitality": {
+    "sourceUrl": "https://gre.kmf.com/question/21ppxj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "Saul's particular combination of intellectuality and vitality was not paradoxical; it was category-shattering. (i)_____ was, in a way, his very theme. Was ever a …",
+    "chinese": "索尔独特的理智与活力的结合并不矛盾；它是打破类别的。(i)_____ 在某种程度上正是他的主题。可曾有过……"
+  },
+  "kmf-bookish": {
+    "sourceUrl": "https://gre.kmf.com/question/21ppxj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词"
+  },
+  "kmf-dwindling": {
+    "sourceUrl": "https://gre.kmf.com/question/f1pnjj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "For decades, Pluto seemed to be the mysteriously _____ planet: it was first thought to be about as large as Earth, but, subsequently, measurements …",
+    "chinese": "几十年来，冥王星似乎是那个神秘地_____的行星：它最初被认为与地球差不多大，但随后，测量……"
+  },
+  "kmf-morphing": {
+    "sourceUrl": "https://gre.kmf.com/question/f1pnjj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-wane": {
+    "sourceUrl": "https://gre.kmf.com/question/42baoj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是正确选项",
+    "english": "One object of examining past medical practices is to identify useful knowledge amid its now outmoded trappings; the alternative is to let such knowledge …",
+    "chinese": "考察过去医疗实践的一个目的是在其如今过时的外表下识别有用的知识；另一种选择是让这样的知识……"
+  },
+  "kmf-vehemently": {
+    "sourceUrl": "https://gre.kmf.com/question/72d3kj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干"
+  },
+  "kmf-hyperbole": {
+    "sourceUrl": "https://gre.kmf.com/question/72d3kj.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "Though initially presented in a blaze of hyperbole, the thesis is repeated even more _________ in the ensuing paragraphs.",
+    "chinese": "尽管最初是以一阵夸张的言辞提出的，但该论点在随后的段落中被更加_________地重复。"
+  },
+  "kmf-exasperates": {
+    "sourceUrl": "https://gre.kmf.com/question/82bc1j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "The figure of Gertrude Stein _____________: more than a hundred books about her have been written during the past decade or so, and recently …",
+    "chinese": "格特鲁德·斯坦因的形象_____________：在过去十年左右的时间里，关于她的书已经写了一百多本，而最近……"
+  },
+  "kmf-cherishes": {
+    "sourceUrl": "https://gre.kmf.com/question/9bw7ik.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是题干用词",
+    "english": "… (i)_____ its modernized Scandinavian counterparts, the British public cherishes it most when it is most (ii)_____.",
+    "chinese": "……（i）_____其现代化的斯堪的纳维亚对应物，英国公众在它最（ii）_____的时候最为珍视它。"
+  },
+  "kmf-unfathomable": {
+    "sourceUrl": "https://gre.kmf.com/question/31pz8j.htm",
+    "label": "考满分 GRE 题库",
+    "note": "目标词在此题中是干扰选项，不能填入题干",
+    "english": "Another challenge to biologists and land-use planners alike is that while human-induced changes to the landscape are somethings _____, they can nevertheless drastically alter …",
+    "chinese": "对生物学家和土地利用规划者而言，另一个挑战是，虽然人类对景观的诱导变化有时是_____，但它们仍然能够极大地改变……"
+  }
 };

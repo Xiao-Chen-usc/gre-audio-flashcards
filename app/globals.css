@@ -498,6 +498,7 @@ kbd {
 .example-heading span { display: flex; flex-direction: column; gap: .2rem; }
 .example-heading b { color: #304660; font-size: .78rem; }
 .example-heading small { color: #7e8c9c; font-size: .66rem; }
+.example-heading a { color: var(--purple); font-size: .78rem; white-space: nowrap; }
 .example-heading em {
   color: #7d8ea2;
   font-size: .62rem;

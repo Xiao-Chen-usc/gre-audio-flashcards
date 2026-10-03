@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import StudyPage from "./StudyPage";
-import { COLLECTED_WORDS, COLLECTED_EXAMPLES, COLLECTED_SOURCES } from "./collectedWordData";
+import { COLLECTED_WORDS, COLLECTED_EXAMPLES, COLLECTED_SOURCES, COLLECTED_QUESTION_CONTEXTS } from "./collectedWordData";
 
 export default function Home() {
   const [collected, setCollected] = useState(false);
@@ -20,6 +20,7 @@ export default function Home() {
   return <StudyPage key={collected ? "collected" : "synonyms"} collected={collected} collectionSize={COLLECTED_WORDS.length}
     words={collected ? COLLECTED_WORDS : undefined}
     examples={collected ? COLLECTED_EXAMPLES : undefined}
+    questionContexts={collected ? COLLECTED_QUESTION_CONTEXTS : undefined}
     sources={collected ? COLLECTED_SOURCES : undefined}
     onCollectionChange={selectCollection} />;
 }
