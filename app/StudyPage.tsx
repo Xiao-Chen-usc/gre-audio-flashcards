@@ -4,15 +4,7 @@ import { type ChangeEvent, useCallback, useEffect, useMemo, useRef, useState } f
 import { EXAMPLES as DEFAULT_EXAMPLES } from "./exampleData";
 import { EXAMPLE_AUDIO } from "./exampleAudio";
 import { getOriginView } from "./originEngine";
-import {
-  BOOK_REVIEW_KEY,
-  BOOK_REVIEW_WORDS,
-  type BookReviewState,
-  emptyBookReview,
-  nextBookReview,
-  normalizeBookReview,
-  rememberBookReviewWord,
-} from "./bookReview";
+import { BOOK_REVIEW_WORDS, bookReviewIndices } from "./bookReview";
 import {
   type DailyProgress,
   type History,
@@ -38,7 +30,6 @@ type ProgressExport = {
   reviewWords: string[];
   // Optional so exports stay importable by builds that predate it.
   history?: History;
-  bookReview?: BookReviewState;
 };
 
 const DAILY_NEW_TARGET = 100;
@@ -142,7 +133,6 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
   const [known, setKnown] = useState<Set<string>>(new Set());
   const [hard, setHard] = useState<Set<string>>(new Set());
   const [history, setHistory] = useState<History>({});
-  const [bookReview, setBookReview] = useState<BookReviewState>(emptyBookReview);
   const [showWords, setShowWords] = useState(false);
   const [daily, setDaily] = useState<DailyProgress>(emptyDailyProgress);
   const [sessionSize, setSessionSize] = useState(10);
@@ -172,9 +162,9 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
   const currentIndex = queue[position];
   const card: WordCard | undefined =
     currentIndex === undefined ? undefined : WORDS[currentIndex];
-  const bookReviewPlan = useMemo(
-    () => nextBookReview(bookReview, WORD_PAIRS, WORDS),
-    [bookReview, WORD_PAIRS, WORDS],
+  const bookReviewPool = useMemo(
+    () => bookReviewIndices(WORDS, known),
+    [known, WORDS],
   );
   const dailyReviewTarget = collected ? COLLECTED_REVIEW_TARGET : BOOK_REVIEW_WORDS;
 
@@ -199,19 +189,8 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
       // A corrupt local preference should never block studying.
     }
     setHistory(loadHistory(historyKey));
-    if (!collected) {
-      try {
-        setBookReview(normalizeBookReview(
-          JSON.parse(window.localStorage.getItem(BOOK_REVIEW_KEY) ?? "null"),
-          WORD_PAIRS,
-          WORDS,
-        ));
-      } catch {
-        setBookReview(emptyBookReview());
-      }
-    }
     setHydrated(true);
-  }, [storageKey, historyKey, collected, WORD_PAIRS, WORDS]);
+  }, [storageKey, historyKey]);
 
   useEffect(() => {
     if (window.location.hash === (collected ? "#collected-words" : "#words")) setShowWords(true);
@@ -247,21 +226,11 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     if (hydrated) saveHistory(history, historyKey);
   }, [history, hydrated, historyKey]);
 
-  useEffect(() => {
-    if (!hydrated || collected) return;
-    try {
-      window.localStorage.setItem(BOOK_REVIEW_KEY, JSON.stringify(bookReview));
-    } catch {
-      // Storage restrictions must not prevent completing a review round.
-    }
-  }, [bookReview, collected, hydrated]);
-
   const exportProgress = useCallback(() => {
     const progress: ProgressExport = {
       learnedWords: [...new Set([...known, ...hard])],
       reviewWords: [...hard],
       history,
-      ...(!collected ? { bookReview } : {}),
     };
     const url = URL.createObjectURL(
       new Blob([JSON.stringify(progress, null, 2)], {
@@ -273,7 +242,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     link.download = collected ? "gre-collected-progress.json" : "gre-progress.json";
     link.click();
     URL.revokeObjectURL(url);
-  }, [hard, history, known, collected, bookReview]);
+  }, [hard, history, known, collected]);
 
   const importProgress = useCallback(
     async (event: ChangeEvent<HTMLInputElement>) => {
@@ -305,11 +274,6 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
           rate,
         };
         saveSaved(saved, storageKey);
-        if (!collected && progress.bookReview) {
-          window.localStorage.setItem(BOOK_REVIEW_KEY, JSON.stringify(
-            normalizeBookReview(progress.bookReview, WORD_PAIRS, WORDS),
-          ));
-        }
         if (
           progress.history &&
           typeof progress.history === "object" &&
@@ -322,7 +286,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
         window.alert("导入失败");
       }
     },
-    [autoSpeak, daily, rate, sessionSize, storageKey, historyKey, WORDS, WORD_PAIRS, collected],
+    [autoSpeak, daily, rate, sessionSize, storageKey, historyKey, WORDS],
   );
 
   const demotePair = useCallback((key: string, ids: string[]) => {
@@ -484,8 +448,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
   const buildPool = useCallback(
     (mode: SessionMode) => {
       if (mode === "review" && !collected) {
-        const pending = new Set(bookReviewPlan.pending);
-        return shuffled(WORDS.flatMap((word, index) => pending.has(word.id) ? [index] : []));
+        return shuffled(bookReviewPool);
       }
       if (mode === "recall") {
         // Longest-unreviewed mastered pairs first. Pairs with no history
@@ -538,14 +501,13 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
         .flatMap(({ indices }) => indices)
         .slice(0, evenSessionSize);
     },
-    [hard, history, known, sessionSize, WORD_PAIRS, WORDS, collected, bookReviewPlan],
+    [hard, history, known, sessionSize, WORD_PAIRS, WORDS, collected, bookReviewPool],
   );
 
   const begin = useCallback(
     (mode: SessionMode = "new") => {
       const nextQueue = buildPool(mode);
       if (!nextQueue.length) return;
-      if (mode === "review" && !collected) setBookReview(bookReviewPlan);
       setQueue(nextQueue);
       setPosition(0);
       setStarted(true);
@@ -557,7 +519,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
       setSessionMode(mode);
       creditedThisSessionRef.current = new Set();
     },
-    [buildPool, collected, bookReviewPlan],
+    [buildPool],
   );
 
   const advance = useCallback(() => {
@@ -574,9 +536,6 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
 
   const markKnown = useCallback(() => {
     if (!card) return;
-    if (sessionMode === "review" && !collected) {
-      setBookReview((old) => rememberBookReviewWord(old, card.id));
-    }
     if (!creditedThisSessionRef.current.has(card.id)) {
       creditedThisSessionRef.current.add(card.id);
       setDaily((old) => ({
@@ -598,7 +557,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     });
     setSessionKnown((value) => value + 1);
     advance();
-  }, [advance, card, sessionMode, collected]);
+  }, [advance, card, sessionMode]);
 
   const markAgain = useCallback(() => {
     if (!card) return;
@@ -692,14 +651,10 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     100,
     Math.round((daily.reviewCompleted / dailyReviewTarget) * 100),
   );
-  const bookReviewGroupCount = WORD_PAIRS.filter(({ indices }) =>
-    indices.some((index) => bookReviewPlan.pending.includes(WORDS[index].id)),
-  ).length;
-  const bookReviewLabel = bookReview.pending.length
-    ? `重练本批 ${bookReview.pending.length} 个待巩固词`
-    : bookReview.nextGroup >= WORD_PAIRS.length
-      ? `从书本开头再复习 ${bookReviewPlan.pending.length} 词`
-      : `开始${bookReview.nextGroup ? "下一批" : "复习"} ${bookReviewPlan.pending.length} 词 · ${bookReviewGroupCount} 组`;
+  const bookReviewRemaining = WORDS.filter(({ id }) => !known.has(id)).length;
+  const bookReviewLabel = bookReviewPool.length
+    ? `从头抽取 ${bookReviewPool.length} 个未记住词`
+    : "全书单词都已记住";
   const sessionProgress = queue.length
     ? Math.min(100, Math.round((position / queue.length) * 100))
     : 0;
@@ -797,10 +752,10 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               <div className="daily-progress" aria-label="今日复习进度">
                 <span style={{ width: `${reviewDailyProgress}%` }} />
               </div>
-              <p>{collected ? "先复习最近标记的不熟词，打乱顺序再回想。" : "从书本最前往后，每批 25 组、50 个词，打散后逐个回想。记住的移出本批，不会或跳过的保留，下轮马上重练；本批全部记住后再取下一批。"}</p>
-              {!collected && bookReview.nextGroup > 0 && <p>书本进度：已取 {bookReview.nextGroup} / {WORD_PAIRS.length} 组 · 本批待巩固 {bookReview.pending.length} 词</p>}
+              <p>{collected ? "先复习最近标记的不熟词，打乱顺序再回想。" : "每次都从书本开头找，跳过已记住的词，取最前面的 50 个未记住词后打散。不会或跳过的词留在原位，下轮自动入选，再从后面补足 50 个；不足 50 个时练剩余词。"}</p>
+              {!collected && <p>尚有 {bookReviewRemaining} 个词未记住 · 本轮 {bookReviewPool.length} 词</p>}
               <button
-                disabled={collected ? !hard.size : !bookReviewPlan.pending.length}
+                disabled={collected ? !hard.size : !bookReviewPool.length}
                 onClick={() => begin("review")}
                 type="button"
               >
@@ -861,14 +816,14 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
             <section className="complete-card">
               <div className="complete-orbit">✓</div>
               <p className="eyebrow">这一轮完成</p>
-              <h2>{sessionMode === "review" && !collected ? (bookReview.pending.length ? "趁热再练，记得更牢。" : "这一批已经全部记住。") : "很好，先让大脑喘口气。"}</h2>
+              <h2>{sessionMode === "review" && !collected ? (bookReviewPool.length ? "再来一轮，继续巩固。" : "全书单词都已记住。") : "很好，先让大脑喘口气。"}</h2>
               <p>
                 本轮记住 <strong>{sessionKnown}</strong> 个，标记待加强{" "}
                 <strong>{sessionAgain}</strong> 次。
               </p>
-              {sessionMode === "review" && !collected && bookReview.pending.length > 0 && <p>还有 {bookReview.pending.length} 个待巩固词留在本批，下一轮打散后继续练。刷新或下次打开也会保留。</p>}
+              {sessionMode === "review" && !collected && bookReviewPool.length > 0 && <p>不会或跳过的词仍在原位。下一轮重新从书本开头找，跳过已记住的词，再补足 {bookReviewPool.length} 个，打散后继续练。</p>}
               <div className="complete-actions">
-                <button onClick={() => begin(sessionMode)} type="button">
+                <button disabled={sessionMode === "review" && !collected && !bookReviewPool.length} onClick={() => begin(sessionMode)} type="button">
                   {sessionMode === "review" && !collected ? bookReviewLabel : `继续这一类 ${sessionMode === "recall" ? RECALL_SESSION_SIZE : sessionSize} 词`}
                 </button>
                 <button
@@ -1082,7 +1037,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                   >{size}</button>
                 ))}
               </div>
-              {!collected && <small>今日复习固定每批 25 组、50 词；重练只出本批待巩固词。</small>}
+              {!collected && <small>今日复习每次从书本开头取 50 个未记住词，再打散练习。</small>}
             </div>
             <div className="mastery-summary">
               <span style={{ width: `${fullProgress}%` }} />
@@ -1114,7 +1069,6 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                 setKnown(new Set());
                 setHard(new Set());
                 setHistory({});
-                setBookReview(emptyBookReview());
                 setDaily(emptyDailyProgress());
                 setStarted(false);
                 setComplete(false);
