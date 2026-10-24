@@ -157,14 +157,15 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
   const exampleAudioRef = useRef<HTMLAudioElement | null>(null);
   const speechRunRef = useRef(0);
   const creditedThisSessionRef = useRef(new Set<string>());
+  const failedPairsThisSessionRef = useRef(new Set<string>());
   const importInputRef = useRef<HTMLInputElement | null>(null);
 
   const currentIndex = queue[position];
   const card: WordCard | undefined =
     currentIndex === undefined ? undefined : WORDS[currentIndex];
   const bookReviewPool = useMemo(
-    () => bookReviewIndices(WORDS, known),
-    [known, WORDS],
+    () => bookReviewIndices(WORDS, known, WORD_PAIRS),
+    [known, WORDS, WORD_PAIRS],
   );
   const dailyReviewTarget = collected ? COLLECTED_REVIEW_TARGET : BOOK_REVIEW_WORDS;
 
@@ -518,6 +519,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
       setSessionAgain(0);
       setSessionMode(mode);
       creditedThisSessionRef.current = new Set();
+      failedPairsThisSessionRef.current = new Set();
     },
     [buildPool],
   );
@@ -549,15 +551,18 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     const group = groupKeyOf(card.id);
     const now = Date.now();
     setHistory((old) => ({ ...old, [group]: { ...old[group], seen: now } }));
-    setKnown((old) => new Set(old).add(card.id));
-    setHard((old) => {
-      const next = new Set(old);
-      next.delete(card.id);
-      return next;
-    });
+    // A correct partner later in the shuffled round must not undo a failure.
+    if (collected || !failedPairsThisSessionRef.current.has(group)) {
+      setKnown((old) => new Set(old).add(card.id));
+      setHard((old) => {
+        const next = new Set(old);
+        next.delete(card.id);
+        return next;
+      });
+    }
     setSessionKnown((value) => value + 1);
     advance();
-  }, [advance, card, sessionMode]);
+  }, [advance, card, sessionMode, collected]);
 
   const markAgain = useCallback(() => {
     if (!card) return;
@@ -577,9 +582,10 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
       ...old,
       [group]: { ...old[group], seen: now, hardAt: now },
     }));
-    // Forgetting a mastered word sends the whole pair back to 不熟.
+    // One failure returns the whole original-book pair in every study mode.
+    if (!collected) failedPairsThisSessionRef.current.add(group);
     const moved =
-      sessionMode === "recall"
+      !collected
         ? (WORD_PAIRS.find(({ key }) => key === group)?.indices ?? []).map(
             (index) => WORDS[index].id,
           )
@@ -596,7 +602,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     });
     setSessionAgain((value) => value + 1);
     advance();
-  }, [advance, card, sessionMode, WORDS, WORD_PAIRS]);
+  }, [advance, card, sessionMode, WORDS, WORD_PAIRS, collected]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -651,9 +657,11 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     100,
     Math.round((daily.reviewCompleted / dailyReviewTarget) * 100),
   );
-  const bookReviewRemaining = WORDS.filter(({ id }) => !known.has(id)).length;
+  const bookReviewRemaining = WORD_PAIRS.filter(({ indices }) =>
+    indices.some((index) => !known.has(WORDS[index].id)),
+  ).length;
   const bookReviewLabel = bookReviewPool.length
-    ? `从头抽取 ${bookReviewPool.length} 个未记住词`
+    ? `从头复习 ${bookReviewPool.length} 词 · ${bookReviewPool.length / 2} 对`
     : "全书单词都已记住";
   const sessionProgress = queue.length
     ? Math.min(100, Math.round((position / queue.length) * 100))
@@ -752,8 +760,8 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               <div className="daily-progress" aria-label="今日复习进度">
                 <span style={{ width: `${reviewDailyProgress}%` }} />
               </div>
-              <p>{collected ? "先复习最近标记的不熟词，打乱顺序再回想。" : "每次都从书本开头找，跳过已记住的词，取最前面的 50 个未记住词后打散。不会或跳过的词留在原位，下轮自动入选，再从后面补足 50 个；不足 50 个时练剩余词。"}</p>
-              {!collected && <p>尚有 {bookReviewRemaining} 个词未记住 · 本轮 {bookReviewPool.length} 词</p>}
+              <p>{collected ? "先复习最近标记的不熟词，打乱顺序再回想。" : "每次从书本开头找，跳过两个都记住的词对，取前 25 对、50 个词后打散。一个词不认识，整对都放回原位；本轮另一个答对也仍保留整对，下轮重新从头取满 50 个词。"}</p>
+              {!collected && <p>尚有 {bookReviewRemaining} 对待巩固 · 本轮 {bookReviewPool.length} 词{bookReviewPool.length < BOOK_REVIEW_WORDS ? "（剩余不足 50 词）" : ""}</p>}
               <button
                 disabled={collected ? !hard.size : !bookReviewPool.length}
                 onClick={() => begin("review")}
@@ -818,10 +826,10 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               <p className="eyebrow">这一轮完成</p>
               <h2>{sessionMode === "review" && !collected ? (bookReviewPool.length ? "再来一轮，继续巩固。" : "全书单词都已记住。") : "很好，先让大脑喘口气。"}</h2>
               <p>
-                本轮记住 <strong>{sessionKnown}</strong> 个，标记待加强{" "}
+                本轮答对 <strong>{sessionKnown}</strong> 个，标记待加强{" "}
                 <strong>{sessionAgain}</strong> 次。
               </p>
-              {sessionMode === "review" && !collected && bookReviewPool.length > 0 && <p>不会或跳过的词仍在原位。下一轮重新从书本开头找，跳过已记住的词，再补足 {bookReviewPool.length} 个，打散后继续练。</p>}
+              {sessionMode === "review" && !collected && bookReviewPool.length > 0 && <p>本轮有任意一个词不认识，整对都保留。下一轮从书本开头找，跳过两个都记住的词对，再补足 {bookReviewPool.length} 个词，打散后继续练。</p>}
               <div className="complete-actions">
                 <button disabled={sessionMode === "review" && !collected && !bookReviewPool.length} onClick={() => begin(sessionMode)} type="button">
                   {sessionMode === "review" && !collected ? bookReviewLabel : `继续这一类 ${sessionMode === "recall" ? RECALL_SESSION_SIZE : sessionSize} 词`}
@@ -1037,7 +1045,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                   >{size}</button>
                 ))}
               </div>
-              {!collected && <small>今日复习每次从书本开头取 50 个未记住词，再打散练习。</small>}
+              {!collected && <small>今日复习每次从书本开头取 25 对、50 个词；一个不认识，整对放回。</small>}
             </div>
             <div className="mastery-summary">
               <span style={{ width: `${fullProgress}%` }} />
