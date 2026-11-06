@@ -159,13 +159,14 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
   const creditedThisSessionRef = useRef(new Set<string>());
   const failedPairsThisSessionRef = useRef(new Set<string>());
   const importInputRef = useRef<HTMLInputElement | null>(null);
+  const wordListPositionRef = useRef({ scroll: 0, id: "" });
 
   const currentIndex = queue[position];
   const card: WordCard | undefined =
     currentIndex === undefined ? undefined : WORDS[currentIndex];
   const bookReviewPool = useMemo(
-    () => bookReviewIndices(WORDS, known, WORD_PAIRS),
-    [known, WORDS, WORD_PAIRS],
+    () => bookReviewIndices(WORDS, hard, WORD_PAIRS),
+    [hard, WORDS, WORD_PAIRS],
   );
   const dailyReviewTarget = collected ? COLLECTED_REVIEW_TARGET : BOOK_REVIEW_WORDS;
 
@@ -303,6 +304,17 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     });
     const now = Date.now();
     setHistory((old) => ({ ...old, [key]: { ...old[key], hardAt: now } }));
+  }, []);
+
+  const rememberFromList = useCallback((id: string) => {
+    setKnown((old) => new Set(old).add(id));
+    setHard((old) => {
+      const next = new Set(old);
+      next.delete(id);
+      return next;
+    });
+    const key = groupKeyOf(id);
+    setHistory((old) => ({ ...old, [key]: { ...old[key], seen: Date.now() } }));
   }, []);
 
   const stopExampleAudio = useCallback(() => {
@@ -524,9 +536,43 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     [buildPool],
   );
 
+  const openCardFromList = useCallback((id: string) => {
+    const index = WORDS.findIndex((word) => word.id === id);
+    if (index < 0) return;
+    wordListPositionRef.current = { scroll: window.scrollY, id };
+    setQueue([index]);
+    setPosition(0);
+    setStarted(true);
+    setComplete(false);
+    setRevealed(false);
+    setSettingsOpen(false);
+    setSessionMode("all");
+    setSessionKnown(0);
+    setSessionAgain(0);
+    creditedThisSessionRef.current = new Set();
+    failedPairsThisSessionRef.current = new Set();
+    window.scrollTo(0, 0);
+  }, [WORDS]);
+
+  const returnToWordList = useCallback(() => {
+    stopExampleAudio();
+    window.speechSynthesis?.cancel();
+    setStarted(false);
+    setComplete(false);
+    setSettingsOpen(false);
+    window.requestAnimationFrame(() => {
+      window.scrollTo(0, wordListPositionRef.current.scroll);
+      document.getElementById(`word-option-${wordListPositionRef.current.id}`)?.focus({ preventScroll: true });
+    });
+  }, [stopExampleAudio]);
+
   const advance = useCallback(() => {
     stopExampleAudio();
     setRevealed(false);
+    if (showWords) {
+      returnToWordList();
+      return;
+    }
     setPosition((value) => {
       if (value + 1 >= queue.length) {
         setComplete(true);
@@ -534,7 +580,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
       }
       return value + 1;
     });
-  }, [queue.length, stopExampleAudio]);
+  }, [queue.length, stopExampleAudio, showWords, returnToWordList]);
 
   const markKnown = useCallback(() => {
     if (!card) return;
@@ -657,12 +703,9 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     100,
     Math.round((daily.reviewCompleted / dailyReviewTarget) * 100),
   );
-  const bookReviewRemaining = WORD_PAIRS.filter(({ indices }) =>
-    indices.some((index) => !known.has(WORDS[index].id)),
-  ).length;
   const bookReviewLabel = bookReviewPool.length
-    ? `从头复习 ${bookReviewPool.length} 词 · ${bookReviewPool.length / 2} 对`
-    : "全书单词都已记住";
+    ? `复习不熟词 · ${bookReviewPool.length} 词`
+    : "暂无不熟词";
   const sessionProgress = queue.length
     ? Math.min(100, Math.round((position / queue.length) * 100))
     : 0;
@@ -678,8 +721,9 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     );
   }
 
-  if (showWords && !started) {
-    return (
+  return (
+    <>
+      {showWords && <div hidden={started}>
       <WordList
         words={WORDS}
         collected={collected}
@@ -687,11 +731,11 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
         known={known}
         onBack={() => openWords(false)}
         onDemote={demotePair}
+        onRemember={rememberFromList}
+        onOpenCard={openCardFromList}
       />
-    );
-  }
-
-  return (
+      </div>}
+      {(!showWords || started) &&
     <main className="app-shell">
       {!started && <nav className="collection-nav" aria-label="词库选择">
         <button aria-current={!collected ? "page" : undefined} onClick={() => onCollectionChange(false)} type="button">同义词一千速记</button>
@@ -760,8 +804,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               <div className="daily-progress" aria-label="今日复习进度">
                 <span style={{ width: `${reviewDailyProgress}%` }} />
               </div>
-              <p>{collected ? "先复习最近标记的不熟词，打乱顺序再回想。" : "每次从书本开头找，跳过两个都记住的词对，取前 25 对、50 个词后打散。一个词不认识，整对都放回原位；本轮另一个答对也仍保留整对，下轮重新从头取满 50 个词。"}</p>
-              {!collected && <p>尚有 {bookReviewRemaining} 对待巩固 · 本轮 {bookReviewPool.length} 词{bookReviewPool.length < BOOK_REVIEW_WORDS ? "（剩余不足 50 词）" : ""}</p>}
+              <p>只复习不熟词。</p>
               <button
                 disabled={collected ? !hard.size : !bookReviewPool.length}
                 onClick={() => begin("review")}
@@ -794,6 +837,10 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
             <button
               className="wordmark"
               onClick={() => {
+                if (showWords) {
+                  returnToWordList();
+                  return;
+                }
                 setStarted(false);
                 setComplete(false);
                 stopExampleAudio();
@@ -801,7 +848,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               }}
               type="button"
             >
-              <span>A音</span> {collected ? "零散 GRE 单词" : "GRE同义词一千速记"}
+              {showWords ? "← 返回词表" : <><span>A音</span> {collected ? "零散 GRE 单词" : "GRE同义词一千速记"}</>}
             </button>
             <div className="topbar-center">
               <span>{autoSpeak ? "自动朗读 开" : "自动朗读 关"}</span>
@@ -824,12 +871,11 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
             <section className="complete-card">
               <div className="complete-orbit">✓</div>
               <p className="eyebrow">这一轮完成</p>
-              <h2>{sessionMode === "review" && !collected ? (bookReviewPool.length ? "再来一轮，继续巩固。" : "全书单词都已记住。") : "很好，先让大脑喘口气。"}</h2>
+              <h2>{sessionMode === "review" && !collected ? (bookReviewPool.length ? "再练一轮。" : "不熟词已复习完。") : "很好，先让大脑喘口气。"}</h2>
               <p>
                 本轮答对 <strong>{sessionKnown}</strong> 个，标记待加强{" "}
                 <strong>{sessionAgain}</strong> 次。
               </p>
-              {sessionMode === "review" && !collected && bookReviewPool.length > 0 && <p>本轮有任意一个词不认识，整对都保留。下一轮从书本开头找，跳过两个都记住的词对，再补足 {bookReviewPool.length} 个词，打散后继续练。</p>}
               <div className="complete-actions">
                 <button disabled={sessionMode === "review" && !collected && !bookReviewPool.length} onClick={() => begin(sessionMode)} type="button">
                   {sessionMode === "review" && !collected ? bookReviewLabel : `继续这一类 ${sessionMode === "recall" ? RECALL_SESSION_SIZE : sessionSize} 词`}
@@ -849,7 +895,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
           ) : card ? (
             <section className="study-stage">
               <div className="card-meta">
-                <span>本轮 {position + 1} / {queue.length}</span>
+                <span>{showWords ? "单词详情" : <>本轮 {position + 1} / {queue.length}</>}</span>
                 <span>{collected ? `收集词 ${currentIndex + 1}` : `词表第 ${card.page} 页`}</span>
               </div>
               <article className={revealed ? "flashcard is-open" : "flashcard"}>
@@ -990,7 +1036,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                 )}
               </article>
               <div className="under-card">
-                <button onClick={advance} type="button">跳过这个词 <span>→</span></button>
+                <button onClick={advance} type="button">{showWords ? "返回词表" : "跳过这个词"} <span>→</span></button>
                 <p><kbd>Space</kbd> 翻开 · <kbd>R</kbd> 重听 · <kbd>1</kbd>/<kbd>2</kbd> 反馈</p>
               </div>
               {speechMessage ? <p className="speech-message" role="status">{speechMessage}</p> : null}
@@ -1045,7 +1091,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                   >{size}</button>
                 ))}
               </div>
-              {!collected && <small>今日复习每次从书本开头取 25 对、50 个词；一个不认识，整对放回。</small>}
+              {!collected && <small>今日复习只选不熟词，每轮最多 50 词。</small>}
             </div>
             <div className="mastery-summary">
               <span style={{ width: `${fullProgress}%` }} />
@@ -1092,6 +1138,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
           </section>
         </div>
       ) : null}
-    </main>
+    </main>}
+    </>
   );
 }

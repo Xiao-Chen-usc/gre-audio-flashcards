@@ -9,7 +9,7 @@ type Filter = Status | "all";
 
 const STATUS_LABEL: Record<Status, string> = {
   known: "已掌握",
-  hard: "正在学习",
+  hard: "不熟",
   new: "还未学到",
 };
 
@@ -34,6 +34,8 @@ export default function WordList({
   hard,
   onBack,
   onDemote,
+  onRemember,
+  onOpenCard,
   words: WORDS = DEFAULT_WORDS,
   collected = false,
 }: {
@@ -43,12 +45,15 @@ export default function WordList({
   hard: Set<string>;
   onBack: () => void;
   onDemote: (key: string, ids: string[]) => void;
+  onRemember: (id: string) => void;
+  onOpenCard: (id: string) => void;
 }) {
   const WORD_PAIRS = useMemo(() => wordGroups(WORDS), [WORDS]);
   const PAGES = [...new Set(WORDS.map((card) => card.page))].sort((a, b) => a - b);
   const [filter, setFilter] = useState<Filter>("all");
   const [masked, setMasked] = useState(true);
   const [revealed, setRevealed] = useState<Set<string>>(new Set());
+  const [selectedWord, setSelectedWord] = useState<string | null>(null);
 
   const rows = useMemo(
     () =>
@@ -184,6 +189,7 @@ export default function WordList({
             {pageRows.map((row) => {
               const hidden = masked && !revealed.has(row.key);
               const meaning = [...new Set(row.cards.map((card) => card.meaning))].join(" / ");
+              const selected = row.cards.find((card) => card.id === selectedWord);
               return (
                 <div className="words-row" key={row.key}>
                   <span className={`words-status words-status--${row.status}`}>
@@ -194,7 +200,14 @@ export default function WordList({
                     {row.cards.map((card, index) => (
                       <span key={card.id}>
                         {index ? <span className="words-sep">⇄</span> : null}
-                        {card.word}
+                        <button
+                          aria-expanded={selectedWord === card.id}
+                          aria-controls={`word-actions-${row.key}`}
+                          className="words-word"
+                          id={`word-option-${card.id}`}
+                          onClick={() => setSelectedWord((old) => old === card.id ? null : card.id)}
+                          type="button"
+                        >{card.word}</button>
                       </span>
                     ))}
                   </span>
@@ -229,6 +242,13 @@ export default function WordList({
                   ) : (
                     <span className="words-demote-placeholder" />
                   )}
+                  {selected && <div className="words-actions" id={`word-actions-${row.key}`} role="group" aria-label={`${selected.word} 的选项`}>
+                    <strong>{selected.word}</strong>
+                    <button onClick={() => onOpenCard(selected.id)} type="button">查看词卡</button>
+                    <button onClick={() => onRemember(selected.id)} type="button">记住了</button>
+                    <button onClick={() => onDemote(row.key, row.cards.map((card) => card.id))} type="button">还不熟</button>
+                    <button aria-label="关闭单词选项" onClick={() => setSelectedWord(null)} type="button">×</button>
+                  </div>}
                 </div>
               );
             })}

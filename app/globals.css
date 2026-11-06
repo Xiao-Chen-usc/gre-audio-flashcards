@@ -832,6 +832,13 @@ kbd {
 .words-status--known { color: var(--violet-dark); }
 .words-status--hard { color: #9b5b2b; }
 .words-pair { min-width: 0; font-size: .95rem; font-weight: 650; overflow-wrap: anywhere; }
+.words-word { padding: 3px 0; border: 0; border-bottom: 1px dashed #b6a9ed; background: transparent; color: inherit; font: inherit; cursor: pointer; text-align: left; overflow-wrap: anywhere; }
+.words-word:hover, .words-word[aria-expanded="true"] { color: #6441dd; border-bottom-color: currentColor; }
+.words-word:focus-visible { outline: 2px solid #7753ee; outline-offset: 3px; border-radius: 2px; }
+.words-actions { grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 6px; padding: 12px; border-radius: 12px; background: #f1eefb; }
+.words-actions strong { margin-right: auto; font-size: .85rem; overflow-wrap: anywhere; }
+.words-actions button { padding: 7px 10px; border: 1px solid #d8d0ee; border-radius: 8px; background: #fff; color: #3b3158; font: inherit; font-size: .8rem; cursor: pointer; }
+.words-actions button:hover { border-color: #7753ee; }
 .words-sep { margin: 0 .4rem; color: #b3b0bd; font-weight: 400; }
 .words-meaning {
   min-width: 0;
