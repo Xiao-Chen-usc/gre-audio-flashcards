@@ -128,3 +128,22 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 全部词表中的每个英文单词都可点击，展开「查看词卡 / 记住了 / 还不熟」选项；记住了按词记录，还不熟仍整对回退（收集词逐词）。查看词卡复用完整词卡与朗读、词源、例句和作答按钮；返回或作答后回到原词表，保留筛选、遮住中文、展开状态和滚动位置。词表单词操作不计入每日新词/复习任务次数。
 
 直接复用既有 `gre-voice-memory-v1` 的 known/hard 进度，刷新、跨天、导出/导入后按同一规则重新选词。此前误解为固定批次的 `gre-voice-book-review-v1` 不再参与选词，旧导出文件的批次字段也会被忽略；其中已记住/不熟的词仍正常保留，无需清空进度。收集词库沿用独立进度及原有复习方式。队列回归检查：Node >=22.13 下运行 `npm run test:review`。
+
+## Magoosh Common 独立词库（2026-11-11）
+
+用户改选 Magoosh GRE Common Words，先前的 Vocabulary.com 185604 词表已放弃，没有接入。新入口为 `/gre/#magoosh`，全部词表为 `/gre/#magoosh-words`。从 Magoosh 官方 1000 词 PDF 的 Common (High-frequency) 部分提取 300 个不同词名，再加入官方 Common VII 的 50 个词，共 350 个；不含 Basic/Advanced，也不复制原站释义或例句。来源和逐词定位记录在 `data/magoosh-common-words-2026-11-11.json`。
+
+全部 350 词的中文释义、词源、英语亲戚及近义词辨析通过 DeepSeek API 批量起草，再由 DeepSeek 对照词典证据复核。生成规范沿用用户的 `gre-etymology` 技能；可断点续跑的原始初稿、来源缓存和模型复核在仓库外的 `../.magoosh-build/`，审计汇总在 `data/magoosh-content-review.json`。不补造缺失例句；词卡提供 Magoosh 原词表和参考词典链接。模型名、完成数量及成功调用 token 用量可核对，失败重试可能另计用量。
+
+Magoosh 数据按需加载，原书和 177 词收集库的数据、ID、进度键不变。新词库单独使用 `gre-magoosh-common-memory-v1` 和 `gre-magoosh-common-history-v1`，按单词记录掌握/不熟，不沿用原书配对规则。复习只选不熟词，最多 50 个；支持朗读、词表选项、词源展开、进度导出/导入与跨词库切换。学习分组每 50 词一组，供网站导航，不宣称与官方 I–VI 的分组顺序一致。
+
+维护命令（API 密钥只在本机/环境变量读取，不写入源码或浏览器）：
+
+```sh
+python3 scripts/import-magoosh-common.py
+DEEPSEEK_KEY_FILE=/path/to/private-key SSL_CERT_FILE=/etc/ssl/cert.pem python3 scripts/generate-magoosh-vocabulary.py draft
+DEEPSEEK_KEY_FILE=/path/to/private-key SSL_CERT_FILE=/etc/ssl/cert.pem python3 scripts/generate-magoosh-vocabulary.py review
+python3 scripts/generate-magoosh-vocabulary.py merge
+npm run test:review
+npm run test:data
+```

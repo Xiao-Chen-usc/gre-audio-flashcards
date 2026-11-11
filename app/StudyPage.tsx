@@ -5,6 +5,7 @@ import { EXAMPLES as DEFAULT_EXAMPLES } from "./exampleData";
 import { EXAMPLE_AUDIO } from "./exampleAudio";
 import { getOriginView } from "./originEngine";
 import { BOOK_REVIEW_WORDS, bookReviewIndices } from "./bookReview";
+import { collectionHash, collectionStorageKeys, type CollectionId } from "./collections";
 import {
   type DailyProgress,
   type History,
@@ -117,18 +118,19 @@ function highlightedExample(text: string, terms: string[]) {
   );
 }
 
-export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAMPLES = DEFAULT_EXAMPLES, sources = {}, questionContexts = {}, collected = false, collectionSize, onCollectionChange }: {
+export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAMPLES = DEFAULT_EXAMPLES, sources = {}, questionContexts = {}, collected = false, collectionId = collected ? "collected" : "synonyms", collectionSize, onCollectionChange }: {
   words?: WordCard[];
   examples?: Record<string, { english: string; chinese: string; sourceLabel?: string; sourceNote?: string }>;
   questionContexts?: Record<string, { sourceUrl: string; label: string; note: string; english?: string; chinese?: string }>;
   sources?: Record<string, { label: string; url: string }[]>;
   collected?: boolean;
+  collectionId?: CollectionId;
   collectionSize: number;
-  onCollectionChange: (collected: boolean) => void;
+  onCollectionChange: (collection: CollectionId) => void;
 }) {
   const WORD_PAIRS = useMemo(() => wordGroups(WORDS), [WORDS]);
-  const storageKey = collected ? "gre-collected-memory-v1" : "gre-voice-memory-v1";
-  const historyKey = collected ? "gre-collected-history-v1" : "gre-voice-history-v1";
+  const isMagoosh = collectionId === "magoosh";
+  const { memory: storageKey, history: historyKey } = collectionStorageKeys(collectionId);
   const [hydrated, setHydrated] = useState(false);
   const [known, setKnown] = useState<Set<string>>(new Set());
   const [hard, setHard] = useState<Set<string>>(new Set());
@@ -168,7 +170,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     () => bookReviewIndices(WORDS, hard, WORD_PAIRS),
     [hard, WORDS, WORD_PAIRS],
   );
-  const dailyReviewTarget = collected ? COLLECTED_REVIEW_TARGET : BOOK_REVIEW_WORDS;
+  const dailyReviewTarget = collectionId === "collected" ? COLLECTED_REVIEW_TARGET : BOOK_REVIEW_WORDS;
 
   /* Local storage is an external source; hydrate it once after the client mounts. */
   /* eslint-disable react-hooks/set-state-in-effect */
@@ -195,20 +197,18 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
   }, [storageKey, historyKey]);
 
   useEffect(() => {
-    if (window.location.hash === (collected ? "#collected-words" : "#words")) setShowWords(true);
-  }, [collected]);
+    if (window.location.hash === collectionHash(collectionId, true)) setShowWords(true);
+  }, [collectionId]);
 
   // The word list is a view of this page, not a route: the site is served as a
   // single pre-rendered /gre page. Only replaceState is used, because the
   // framework router reacts to hash links and history traversal.
   const openWords = useCallback((open: boolean) => {
     setShowWords(open);
-    const url = open
-      ? (collected ? "#collected-words" : "#words")
-      : (collected ? "#collected" : window.location.pathname + window.location.search);
+    const url = collectionHash(collectionId, open) || window.location.pathname + window.location.search;
     window.history.replaceState(window.history.state, "", url);
     window.scrollTo(0, 0);
-  }, [collected]);
+  }, [collectionId]);
   /* eslint-enable react-hooks/set-state-in-effect */
 
   useEffect(() => {
@@ -241,10 +241,10 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     );
     const link = document.createElement("a");
     link.href = url;
-    link.download = collected ? "gre-collected-progress.json" : "gre-progress.json";
+    link.download = isMagoosh ? "magoosh-common-progress.json" : collected ? "gre-collected-progress.json" : "gre-progress.json";
     link.click();
     URL.revokeObjectURL(url);
-  }, [hard, history, known, collected]);
+  }, [hard, history, known, collected, isMagoosh]);
 
   const importProgress = useCallback(
     async (event: ChangeEvent<HTMLInputElement>) => {
@@ -460,7 +460,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
 
   const buildPool = useCallback(
     (mode: SessionMode) => {
-      if (mode === "review" && !collected) {
+      if (mode === "review" && collectionId !== "collected") {
         return shuffled(bookReviewPool);
       }
       if (mode === "recall") {
@@ -497,7 +497,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
 
       // The source PDF is organized as adjacent synonym pairs. Enqueue the
       // complete pair so 1→2, 3→4 can never become 1→4.
-      const evenSessionSize = Math.max(2, sessionSize - (sessionSize % 2));
+      const evenSessionSize = collected ? sessionSize : Math.max(2, sessionSize - (sessionSize % 2));
       if (mode === "review") {
         // Most recently marked 还不熟 first; pairs without a timestamp
         // (marked before history was recorded) go last, in PDF order.
@@ -514,7 +514,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
         .flatMap(({ indices }) => indices)
         .slice(0, evenSessionSize);
     },
-    [hard, history, known, sessionSize, WORD_PAIRS, WORDS, collected, bookReviewPool],
+    [hard, history, known, sessionSize, WORD_PAIRS, WORDS, collected, bookReviewPool, collectionId],
   );
 
   const begin = useCallback(
@@ -727,6 +727,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
       <WordList
         words={WORDS}
         collected={collected}
+        collectionId={collectionId}
         hard={hard}
         known={known}
         onBack={() => openWords(false)}
@@ -738,8 +739,9 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
       {(!showWords || started) &&
     <main className="app-shell">
       {!started && <nav className="collection-nav" aria-label="词库选择">
-        <button aria-current={!collected ? "page" : undefined} onClick={() => onCollectionChange(false)} type="button">同义词一千速记</button>
-        <button aria-current={collected ? "page" : undefined} onClick={() => onCollectionChange(true)} type="button">零散 GRE 单词 · {collectionSize}</button>
+        <button aria-current={collectionId === "synonyms" ? "page" : undefined} onClick={() => onCollectionChange("synonyms")} type="button">同义词一千速记</button>
+        <button aria-current={collectionId === "collected" ? "page" : undefined} onClick={() => onCollectionChange("collected")} type="button">零散 GRE 单词 · {collectionSize}</button>
+        <button aria-current={isMagoosh ? "page" : undefined} onClick={() => onCollectionChange("magoosh")} type="button">Magoosh Common</button>
       </nav>}
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
@@ -749,9 +751,9 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
             A<span>音</span>
           </div>
           <p className="eyebrow">ADHD 友好 · 声音记忆模式</p>
-          <h1 id="welcome-title">{collected ? <>零散 GRE 单词<br />逐个记牢</> : <>GRE同义词<br />一千速记</>}</h1>
+          <h1 id="welcome-title">{isMagoosh ? <>Magoosh Common<br />{WORDS.length} 高频词</> : collected ? <>零散 GRE 单词<br />逐个记牢</> : <>GRE同义词<br />一千速记</>}</h1>
           <p className="welcome-copy">
-            {collected ? "你收集的考试生词。先自己回想，显示答案后自动念出来，再用真实词源、英语亲戚和例句加深记忆。" : "一次只记一个词。先自己回想，显示答案后自动念出来，再用等价词、词源和例句加深记忆。"}
+            {isMagoosh ? "先回想，显示答案后朗读，再用中文释义、词源和英语亲戚加深记忆。" : collected ? "你收集的考试生词。先自己回想，显示答案后自动念出来，再用真实词源、英语亲戚和例句加深记忆。" : "一次只记一个词。先自己回想，显示答案后自动念出来，再用等价词、词源和例句加深记忆。"}
           </p>
           <div className="welcome-stats" aria-label="学习进度">
             <div><strong>{WORDS.length}</strong><span>张发声词卡</span></div>
@@ -787,7 +789,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               <div className="daily-progress" aria-label="今日新词进度">
                 <span style={{ width: `${newDailyProgress}%` }} />
               </div>
-              <p>{collected ? "按收集顺序逐个学习，每个词独立记录进度。" : "按 PDF 原顺序学习；相邻的同义词始终成对出现。每天建议约 100 个。"}</p>
+              <p>{isMagoosh ? "按词表顺序学习，每个词独立记录进度。" : collected ? "按收集顺序逐个学习，每个词独立记录进度。" : "按 PDF 原顺序学习；相邻的同义词始终成对出现。每天建议约 100 个。"}</p>
               <button
                 disabled={!newRemaining}
                 onClick={() => begin("new")}
@@ -806,11 +808,11 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               </div>
               <p>只复习不熟词。</p>
               <button
-                disabled={collected ? !hard.size : !bookReviewPool.length}
+                disabled={collectionId === "collected" ? !hard.size : !bookReviewPool.length}
                 onClick={() => begin("review")}
                 type="button"
               >
-                {collected ? (hard.size ? "复习不熟词" : "不熟词库目前为空") : bookReviewLabel} <span>→</span>
+                {collectionId === "collected" ? (hard.size ? "复习不熟词" : "不熟词库目前为空") : bookReviewLabel} <span>→</span>
               </button>
             </section>
             <section className="daily-section daily-section--recall">
@@ -848,7 +850,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               }}
               type="button"
             >
-              {showWords ? "← 返回词表" : <><span>A音</span> {collected ? "零散 GRE 单词" : "GRE同义词一千速记"}</>}
+              {showWords ? "← 返回词表" : <><span>A音</span> {isMagoosh ? "Magoosh Common" : collected ? "零散 GRE 单词" : "GRE同义词一千速记"}</>}
             </button>
             <div className="topbar-center">
               <span>{autoSpeak ? "自动朗读 开" : "自动朗读 关"}</span>
@@ -871,14 +873,14 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
             <section className="complete-card">
               <div className="complete-orbit">✓</div>
               <p className="eyebrow">这一轮完成</p>
-              <h2>{sessionMode === "review" && !collected ? (bookReviewPool.length ? "再练一轮。" : "不熟词已复习完。") : "很好，先让大脑喘口气。"}</h2>
+              <h2>{sessionMode === "review" && collectionId !== "collected" ? (bookReviewPool.length ? "再练一轮。" : "不熟词已复习完。") : "很好，先让大脑喘口气。"}</h2>
               <p>
                 本轮答对 <strong>{sessionKnown}</strong> 个，标记待加强{" "}
                 <strong>{sessionAgain}</strong> 次。
               </p>
               <div className="complete-actions">
-                <button disabled={sessionMode === "review" && !collected && !bookReviewPool.length} onClick={() => begin(sessionMode)} type="button">
-                  {sessionMode === "review" && !collected ? bookReviewLabel : `继续这一类 ${sessionMode === "recall" ? RECALL_SESSION_SIZE : sessionSize} 词`}
+                <button disabled={sessionMode === "review" && collectionId !== "collected" && !bookReviewPool.length} onClick={() => begin(sessionMode)} type="button">
+                  {sessionMode === "review" && collectionId !== "collected" ? bookReviewLabel : `继续这一类 ${sessionMode === "recall" ? RECALL_SESSION_SIZE : sessionSize} 词`}
                 </button>
                 <button
                   className="secondary-button"
@@ -896,7 +898,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
             <section className="study-stage">
               <div className="card-meta">
                 <span>{showWords ? "单词详情" : <>本轮 {position + 1} / {queue.length}</>}</span>
-                <span>{collected ? `收集词 ${currentIndex + 1}` : `词表第 ${card.page} 页`}</span>
+                <span>{isMagoosh ? `第 ${card.page} 组 · 单词 ${currentIndex + 1}` : collected ? `收集词 ${currentIndex + 1}` : `词表第 ${card.page} 页`}</span>
               </div>
               <article className={revealed ? "flashcard is-open" : "flashcard"}>
                 <div className="word-zone">
@@ -1018,7 +1020,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                         {questionContexts[card.id].chinese ? <p className="example-chinese">{questionContexts[card.id].chinese}</p> : null}
                       </section>
                     ) : null}
-                    {collected && !EXAMPLES[card.id] && !questionContexts[card.id] ? (
+                    {collected && !isMagoosh && !EXAMPLES[card.id] && !questionContexts[card.id] ? (
                       <section className="example-block">
                         <div className="example-heading"><b>GRE 原句</b></div>
                         <p className="example-chinese">暂未找到可核对的原书例句或题库出处。</p>
@@ -1091,7 +1093,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                   >{size}</button>
                 ))}
               </div>
-              {!collected && <small>今日复习只选不熟词，每轮最多 50 词。</small>}
+              {collectionId !== "collected" && <small>今日复习只选不熟词，每轮最多 50 词。</small>}
             </div>
             <div className="mastery-summary">
               <span style={{ width: `${fullProgress}%` }} />
@@ -1133,7 +1135,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
               {resetArmed ? "再点一次，确认清空进度" : "清空本机学习进度"}
             </button>
             <p className="source-note">
-              {collected ? "词表来自你的 KMF 收集词；词源附参考来源，只展示有出处的词书例句和题库内容，未找到原句的词会明确标注。" : "词表来自你上传的《学而思 GRE 高频六选二等价1000词（2026版）》；词源为便于记忆的简化整理。"}
+              {isMagoosh ? "词表来自 Magoosh GRE Common Words，中文释义和词源附参考词典链接。" : collected ? "词表来自你的 KMF 收集词；词源附参考来源，只展示有出处的词书例句和题库内容，未找到原句的词会明确标注。" : "词表来自你上传的《学而思 GRE 高频六选二等价1000词（2026版）》；词源为便于记忆的简化整理。"}
             </p>
           </section>
         </div>

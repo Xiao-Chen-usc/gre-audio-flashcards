@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { wordGroups } from "./progress";
+import type { CollectionId } from "./collections";
 import { WORDS as DEFAULT_WORDS, type WordCard } from "./wordData";
 
 type Status = "known" | "hard" | "new";
@@ -38,9 +39,11 @@ export default function WordList({
   onOpenCard,
   words: WORDS = DEFAULT_WORDS,
   collected = false,
+  collectionId = collected ? "collected" : "synonyms",
 }: {
   words?: WordCard[];
   collected?: boolean;
+  collectionId?: CollectionId;
   known: Set<string>;
   hard: Set<string>;
   onBack: () => void;
@@ -49,6 +52,8 @@ export default function WordList({
   onOpenCard: (id: string) => void;
 }) {
   const WORD_PAIRS = useMemo(() => wordGroups(WORDS), [WORDS]);
+  const isMagoosh = collectionId === "magoosh";
+  const pageUnit = isMagoosh ? "组" : "页";
   const PAGES = [...new Set(WORDS.map((card) => card.page))].sort((a, b) => a - b);
   const [filter, setFilter] = useState<Filter>("all");
   const [masked, setMasked] = useState(true);
@@ -98,7 +103,7 @@ export default function WordList({
       <header className="words-top">
         <button className="words-back" onClick={onBack} type="button">← 首页</button>
         <h1>全部词表</h1>
-        <span className="words-total">{collected ? `${WORDS.length} 个收集词` : `${rows.length} 对 · ${WORDS.length} 张`}</span>
+        <span className="words-total">{collected ? `${WORDS.length} 个${isMagoosh ? "单词" : "收集词"}` : `${rows.length} 对 · ${WORDS.length} 张`}</span>
       </header>
 
       <section className="words-summary" aria-label="掌握情况">
@@ -113,12 +118,12 @@ export default function WordList({
       <section className="words-map-card" aria-label="掌握地图">
         <div className="words-map-head">
           <strong>掌握地图</strong>
-          <span>{collected ? "每格一个收集词，每列对应收集来源页" : "每格一张卡，每列是原书一页，点一列跳到那一页"}</span>
+          <span>{isMagoosh ? "每格一个词，每列为一个学习分组" : collected ? "每格一个收集词，每列对应收集来源页" : "每格一张卡，每列是原书一页，点一列跳到那一页"}</span>
         </div>
         <div className="words-map">
           {PAGES.map((page) => (
             <button
-              aria-label={`跳到第 ${page} 页`}
+              aria-label={`跳到第 ${page} ${pageUnit}`}
               className="words-map-col"
               key={page}
               onClick={() => {
@@ -142,8 +147,8 @@ export default function WordList({
           ))}
         </div>
         <div className="words-map-axis">
-          <span>第 {PAGES[0]} 页</span>
-          <span>第 {PAGES[PAGES.length - 1]} 页</span>
+          <span>第 {PAGES[0]} {pageUnit}</span>
+          <span>第 {PAGES[PAGES.length - 1]} {pageUnit}</span>
         </div>
       </section>
 
@@ -183,7 +188,7 @@ export default function WordList({
         visibleByPage.map(([page, pageRows]) => (
           <section className="words-page" id={`page-${page}`} key={page}>
             <h2>
-              <span>第 {page} 页</span>
+              <span>第 {page} {pageUnit}</span>
               <small>{pageRows.length} {collected ? "词" : "对"}</small>
             </h2>
             {pageRows.map((row) => {

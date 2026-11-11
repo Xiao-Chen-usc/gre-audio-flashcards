@@ -1,23 +1,30 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import StudyPage from "./StudyPage";
 import { COLLECTED_WORDS, COLLECTED_EXAMPLES, COLLECTED_SOURCES, COLLECTED_QUESTION_CONTEXTS } from "./collectedWordData";
+import { collectionFromHash, collectionHash, type CollectionId } from "./collections";
+
+const MagooshStudyPage = lazy(() => import("./MagooshStudyPage"));
 
 export default function Home() {
-  const [collected, setCollected] = useState(false);
+  const [collection, setCollection] = useState<CollectionId>("synonyms");
   useEffect(() => {
     // Static nginx serves a single /gre page; hash views survive reloads.
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setCollected(window.location.hash.startsWith("#collected"));
+    setCollection(collectionFromHash(window.location.hash));
   }, []);
-  function selectCollection(value: boolean) {
+  function selectCollection(value: CollectionId) {
     window.speechSynthesis?.cancel();
-    window.history.replaceState(window.history.state, "", value ? "#collected" : window.location.pathname + window.location.search);
-    setCollected(value);
+    window.history.replaceState(window.history.state, "", collectionHash(value) || window.location.pathname + window.location.search);
+    setCollection(value);
     window.scrollTo(0, 0);
   }
-  return <StudyPage key={collected ? "collected" : "synonyms"} collected={collected} collectionSize={COLLECTED_WORDS.length}
+  if (collection === "magoosh") return <Suspense fallback={<main className="app-shell loading-shell"><div className="loading-dot" /><p>正在整理 Magoosh 词卡…</p></main>}>
+    <MagooshStudyPage collectionSize={COLLECTED_WORDS.length} onCollectionChange={selectCollection} />
+  </Suspense>;
+  const collected = collection === "collected";
+  return <StudyPage key={collection} collected={collected} collectionId={collection} collectionSize={COLLECTED_WORDS.length}
     words={collected ? COLLECTED_WORDS : undefined}
     examples={collected ? COLLECTED_EXAMPLES : undefined}
     questionContexts={collected ? COLLECTED_QUESTION_CONTEXTS : undefined}

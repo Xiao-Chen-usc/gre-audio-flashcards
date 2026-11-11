@@ -1,0 +1,2114 @@
+{
+  "title": "Magoosh GRE Common Words",
+  "retrievedOn": "2026-11-11",
+  "sources": [
+    "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf",
+    "https://gre.magoosh.com/flashcards/vocabulary/decks/common-words-vii"
+  ],
+  "pdfCommonWords": 300,
+  "commonVIIWords": 50,
+  "totalWords": 350,
+  "note": "Word names only. PDF Common section plus official Common VII, excluding Basic and Advanced. Content is generated separately with DeepSeek.",
+  "words": [
+    {
+      "word": "aberrant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "aberration",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "abstain",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "abstruse",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "accolade",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "acerbic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "acrimony",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "adamant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "admonish",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "admonitory",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "aesthete",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=1",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "aesthetic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "amalgam",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "ambiguous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "ambivalent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "ameliorate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "amenable",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "amorphous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "anomalous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "anomaly",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "antipathy",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=2",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "antithetical",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "apathetic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "apathy",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "apocryphal",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "appease",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "arbitrary",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "arcane",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "arduous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "artful",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "ascetic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=3",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "askance",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "audacious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "audacity",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "auspicious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "austere",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "avaricious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "banal",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "banality",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "belie",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=4",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "belligerent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "betray",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "blatant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "bolster",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "brazen",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "bucolic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "bumbling",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "burgeon",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "calumny",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "capricious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 1
+    },
+    {
+      "word": "castigate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "censure",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=5",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "chastise",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "chortle",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "circumscribe",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "circumvent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "commensurate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "concede",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "confound",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "conspicuous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "constituent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=6",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "construe",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "contingent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "contrition",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "contrive",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "copious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "craven",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "cryptic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "culminate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "culpability",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "decorous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "decorum",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=7",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "deferential",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "deleterious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "delineate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "demur",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "denigrate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "denote",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "derivative",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "derive",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "dictatorial",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "didactic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "diffident",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=8",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "dilatory",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "dilettante",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "disaffected",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "discrete",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "disinterested",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "dispassionate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "disseminate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "dogmatic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "duress",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "eclectic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "economical",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "edifying",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=9",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "efficacious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "egregious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "elicit",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "elucidate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "eminent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 2
+    },
+    {
+      "word": "enervate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "engender",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "entrenched",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "ephemeral",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "equivocal",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "eradicate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=10",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "erudite",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "eschew",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "esoteric",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "espouse",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "exacerbate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "exacting",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "exalt",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "exonerate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "expound",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "extant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "fallacious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "fastidious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=11",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "flux",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "foment",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "forlorn",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "forthcoming",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "fortuitous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "frivolous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "frugal",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "frustrate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "furtive",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "gainsay",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=12",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "gall",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "galvanize",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "garrulous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "gauche",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "germane",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "glut",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "gossamer",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "gregarious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "guileless",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=13",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "hackneyed",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "haphazard",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "harangue",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "harried",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "haughty",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "hegemony",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "heretic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "iconoclast",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "iconoclastic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "idiosyncrasy",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=14",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "ignoble",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "ignominious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "immutable",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 3
+    },
+    {
+      "word": "impartial",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "impertinent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "implacable",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "implausible",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "imprudent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "impudent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "incisive",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "incongruous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "incorrigible",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=15",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "indecorous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "indifference",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "inexorable",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "ingenuous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "ingratiate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "inimical",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "innocuous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "inscrutable",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "insidious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "insolent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "intimate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=16",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "intransigent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "intrepid",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "inveterate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "involved",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "irrevocable",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "itinerant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "jingoism",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "jovial",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "jubilant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "juxtapose",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "laconic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "lambast",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "languid",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "largess",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=17",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "laudable",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "lionize",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "magnanimous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "maintain",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "maladroit",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "maverick",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "mawkish",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "mendacity",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "mercurial",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "meticulous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "misconstrue",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=18",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "mitigate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "mollify",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "mundane",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "munificent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "myopic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 4
+    },
+    {
+      "word": "myriad",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "negligible",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "nonplussed",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "nuance",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=19",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "obscure",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "obsequious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "opaque",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "opulence",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "ostentatious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "ostracize",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "panache",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "parochial",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "parsimonious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "pedantic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=20",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "pedestrian",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "pejorative",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "perfidy",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "pernicious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "petulant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "placate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "platitude",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "poignant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "polemic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "posit",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "pragmatic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "precipitous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=21",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "preclude",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "precocious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "predilection",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "prescience",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "prevaricate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "prodigal",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "prodigious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "profligate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "prolific",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "propitious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=22",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "provincial",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "pundit",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "qualify",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "querulous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "quotidian",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "ravenous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "rebuke",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "reconcile",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "recondite",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "refractory",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=23",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "refute",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "reproach",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "repudiate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "rescind",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 5
+    },
+    {
+      "word": "restive",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "resurgent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "reticent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "reverent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "rudimentary",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "rustic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "sanction",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=24",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "scrupulous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=25",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "soporific",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=25",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "specious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=25",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "sporadic",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=25",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "spurious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=25",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "staunch",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=25",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "stringent",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=25",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "subsume",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=25",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "subversive",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "sullen",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "superfluous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "supplant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "sycophant",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "taciturn",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "tantamount",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "temperance",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "tempered",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "tenacious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "timorous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=26",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "torpor",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "tortuous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "tractable",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "transient",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "travesty",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "treacherous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "trite",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "truncate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "undermine",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=27",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "underscore",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "unequivocal",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "unscrupulous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "upbraid",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "vacillate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "vehement",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "venality",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "venerate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "veracious",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "vilify",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=28",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "vindicate",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=29",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "vociferous",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=29",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "volubility",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=29",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "wanting",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=29",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "winsome",
+      "sourceUrl": "https://s3.amazonaws.com/magoosh.resources/magoosh-gre-1000-words_oct01.pdf#page=29",
+      "sourcePart": "Common (High-frequency) Words",
+      "page": 6
+    },
+    {
+      "word": "abate",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/abate",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "acumen",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/acumen",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "adulterate",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/adulterate",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "alleviate",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/alleviate",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "approbation",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/approbation",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "articulate",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/articulate",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "aver",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/aver",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "bombastic",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/bombastic",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "chicanery",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/chicanery",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "circumspect",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/circumspect",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "clamor",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/clamor",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "compliant",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/compliant",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "connoisseur",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/connoisseur",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "covert",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/covert",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "desiccate",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/desiccate",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "deterrent",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/deterrent",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "dissent",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/dissent",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "divest",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/divest",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "efficacy",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/efficacy",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "eloquent",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/eloquent",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "epitome",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/epitome",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "eulogy",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/eulogy",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "explicit",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/explicit",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "facilitate",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/facilitate",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "fervid",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/fervid",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "guile",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/guile",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "gullible",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/gullible",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "homogeneous",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/homogeneous",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "implicit",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/implicit",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "inconsequential",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/inconsequential",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "indeterminate",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/indeterminate",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "intractable",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/intractable",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "lavish",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/lavish",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "loquacious",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/loquacious",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "nascent",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/nascent",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "onerous",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/onerous",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "opprobrium",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/opprobrium",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "overt",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/overt",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "paradox",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/paradox",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "partisan",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/partisan",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "plethora",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/plethora",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "propriety",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/propriety",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "tacit",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/tacit",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "tangential",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/tangential",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "tenuous",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/tenuous",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "veracity",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/veracity",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "verbose",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/verbose",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "volatile",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/volatile",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "wary",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/wary",
+      "sourcePart": "Common VII",
+      "page": 7
+    },
+    {
+      "word": "zealous",
+      "sourceUrl": "https://gre.magoosh.com/flashcards/vocabulary/common-words-vii/zealous",
+      "sourcePart": "Common VII",
+      "page": 7
+    }
+  ]
+}
