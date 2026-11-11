@@ -120,7 +120,7 @@ function highlightedExample(text: string, terms: string[]) {
 
 export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAMPLES = DEFAULT_EXAMPLES, sources = {}, questionContexts = {}, collected = false, collectionId = collected ? "collected" : "synonyms", collectionSize, onCollectionChange }: {
   words?: WordCard[];
-  examples?: Record<string, { english: string; chinese: string; sourceLabel?: string; sourceNote?: string }>;
+  examples?: Record<string, { english: string; chinese: string; sourceLabel?: string; sourceNote?: string; sourceUrl?: string; targetForms?: string[] }>;
   questionContexts?: Record<string, { sourceUrl: string; label: string; note: string; english?: string; chinese?: string }>;
   sources?: Record<string, { label: string; url: string }[]>;
   collected?: boolean;
@@ -979,9 +979,9 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                           <div className="example-heading">
                             <span>
                               <b>{collected ? "GRE 原词书例句" : "GRE 语境例句"}</b>
-                              <small>{collected ? (example.sourceNote || "原书文字 · 可复制、可缩放") : "OCR 提取文字 · 可复制、可缩放"}</small>
+                              <small>{collected ? `${example.sourceUrl && example.sourceLabel ? example.sourceLabel + " · " : ""}${example.sourceNote || "原书文字 · 可复制、可缩放"}` : "OCR 提取文字 · 可复制、可缩放"}</small>
                             </span>
-                            <em>{collected ? (example.sourceLabel || "原词书例句") : `原书第 ${card.page} 页`}</em>
+                            {example.sourceUrl ? <a href={example.sourceUrl.startsWith("/") ? `${window.location.pathname.replace(/\/$/, "")}${example.sourceUrl}` : example.sourceUrl} target="_blank" rel="noreferrer">查看原书 ↗</a> : <em>{collected ? (example.sourceLabel || "原词书例句") : `原书第 ${card.page} 页`}</em>}
                           </div>
                           {key && example.english?.trim() ? (
                             <button
@@ -1000,6 +1000,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                               ? highlightedExample(example.english, [
                                   card.word,
                                   card.pair,
+                                  ...(example.targetForms || []),
                                 ])
                               : `${card.word} 与 ${card.pair} 在原例句中构成等价表达。`}
                           </p>

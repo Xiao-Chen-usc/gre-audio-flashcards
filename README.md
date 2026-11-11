@@ -137,6 +137,8 @@ The timeout defaults can be overridden for a controlled canary with `SITES_INSTA
 
 Magoosh 数据按需加载，原书和 177 词收集库的数据、ID、进度键不变。新词库单独使用 `gre-magoosh-common-memory-v1` 和 `gre-magoosh-common-history-v1`，按单词记录掌握/不熟，不沿用原书配对规则。复习只选不熟词，最多 50 个；支持朗读、词表选项、词源展开、进度导出/导入与跨词库切换。学习分组每 50 词一组，供网站导航，不宣称与官方 I–VI 的分组顺序一致。
 
+2026-11-11 追加来源例句：95 条用户原词书例句与 7 条 GRE 题库/练习题短节选，覆盖 99 个不同单词。原词书从既有 OCR 中匹配词头及实际屈折形式，DeepSeek 只整理原句的空格/标点和同义备选、翻译并逐条复核；108 个候选中排除 13 个有歧义或未通过复核的项目。每条提供 PDF 页码和原书例句截图；题库节选保留原空格，每个来源页不超过 25 个英文词，明确区分题干用词与正确选项。PowerScore 自编练习明确注明非 ETS 真题。没有 AI 造句兜底，也不宣称全部 350 词已有例句。记录在 `data/magoosh-book-examples.json`、`data/magoosh-example-review.json`、`data/magoosh-question-contexts.json`、`data/magoosh-question-verification.json`，截图位于 `public/source-examples/`。例句整理维护脚本为 `scripts/prepare-magoosh-examples.py draft|merge`，原书裁图使用既有 `generate-example-crops.py`；API 密钥读取方式与词源生成脚本一致。
+
 维护命令（API 密钥只在本机/环境变量读取，不写入源码或浏览器）：
 
 ```sh

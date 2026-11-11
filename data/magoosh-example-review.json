@@ -1,0 +1,1695 @@
+{
+  "reviewedOn": "2026-11-11",
+  "model": "deepseek-flash",
+  "candidateWords": 108,
+  "bookExamples": 95,
+  "generatedExamples": 0,
+  "usage": {
+    "prompt_tokens": 93197,
+    "completion_tokens": 21979,
+    "total_tokens": 115176
+  },
+  "evidence": {
+    "acerbic": {
+      "sourceKey": "p11r04",
+      "originalEnglish": "Though Fine leavens her work with humor and playfulness, she can be an acerbic & a harsh writer, mincing no words in her judgements of other scientists’ work.",
+      "publishedEnglish": "Though Fine leavens her work with humor and playfulness, she can be an acerbic writer, mincing no words in her judgements of other scientists’ work.",
+      "edits": [
+        "同义选项“acerbic & a harsh”仅保留“acerbic”，并删除多余的冠词“a”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管法恩在作品中融入了幽默和趣味，但她也可以是一个尖刻的作家，对其他科学家的作品评判毫不留情。",
+        "issues": []
+      }
+    },
+    "acrimony": {
+      "sourceKey": "p41r01",
+      "originalEnglish": "Although the employees’ union and company management, entering into contract negotiations, both issued statements encouraging civility & comity, acrimony between the two sides continued unabated.",
+      "publishedEnglish": "Although the employees’ union and company management, entering into contract negotiations, both issued statements encouraging civility, acrimony between the two sides continued unabated.",
+      "edits": [
+        "从“civility & comity”这一同义选项中仅保留“civility”，删去“& comity”。"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管员工工会和公司管理层在进入合同谈判时都发表声明鼓励文明，但双方之间的尖刻敌意仍然有增无减。",
+        "issues": []
+      }
+    },
+    "aesthetic": {
+      "sourceKey": "p21r01",
+      "originalEnglish": "Itis commonly said that each persor’s aesthetic taste is distinct & idiosyncratic, yet that notion overlooks a large body of shared aesthetic preferences.",
+      "publishedEnglish": "It is commonly said that each person's aesthetic taste is distinct, yet that notion overlooks a large body of shared aesthetic preferences.",
+      "edits": [
+        "修复“Itis”为“It is”",
+        "修复“persor’”为“person's”",
+        "删除同义选项中的“& idiosyncratic”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "人们常说，每个人的审美品味都是独特的，但这一观点忽略了大量共同的审美偏好。",
+        "issues": []
+      }
+    },
+    "amalgam": {
+      "sourceKey": "p36r07",
+      "originalEnglish": "Doris Kearns Goodwin's elegant, incisive study of Lincoln gratify & please those whose knowledge of Lincoln is an amalgam of high school history and popular mythology as well as those who are experts.",
+      "publishedEnglish": "Doris Kearns Goodwin's elegant, incisive study of Lincoln gratify those whose knowledge of Lincoln is an amalgam of high school history and popular mythology as well as those who are experts.",
+      "edits": [
+        "同义选项“gratify & please”中仅保留“gratify”",
+        "修复了“knowledge of Lincoln is an amalgam”处的断词与空格"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "多丽丝·科恩斯·古德温对林肯所做的优雅而犀利的研究，既令那些对林肯的了解是高中历史与流行神话混合而成的人感到满意，也令那些专家感到满意。",
+        "issues": []
+      }
+    },
+    "anomalous": {
+      "sourceKey": "p27r05",
+      "originalEnglish": "Appearing in the midst of so many equivocal comments, this unambiguous statement, whatever its intrinsic merit, plainly stands out as anomalous & unusual.",
+      "publishedEnglish": "Appearing in the midst of so many equivocal comments, this unambiguous statement, whatever its intrinsic merit, plainly stands out as anomalous.",
+      "edits": [
+        "“anomalous & unusual”同义选项中仅保留目标词 anomalous"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "在众多模棱两可的评论中，这一明确的声明无论其本身价值如何，都显然显得异常。",
+        "issues": []
+      }
+    },
+    "anomaly": {
+      "sourceKey": "p38r08",
+      "originalEnglish": "Investigating physiological irregularities & anomalies is not how biologists typically study function and structure, but it is not entirely unreasonable-if abnormalities in the lungs hinder breathing, then the lungs are very likely the organ required for breathing,",
+      "publishedEnglish": "Investigating physiological irregularities and anomalies is not how biologists typically study function and structure, but it is not entirely unreasonable—if abnormalities in the lungs hinder breathing, then the lungs are very likely the organ required for breathing.",
+      "edits": [
+        "将“&”替换为“and”",
+        "将连字符“--”规范为破折号“—”",
+        "将末尾逗号改为句号"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "研究生理上的不规则现象和异常并不是生物学家研究功能和结构的典型方式，但这并非完全不合理——如果肺部的异常会阻碍呼吸，那么肺部很可能就是呼吸所需的器官。",
+        "issues": []
+      }
+    },
+    "antithetical": {
+      "sourceKey": "p50r04",
+      "originalEnglish": "Although the evidence to date is that the regime is not antithetical to & not opposed to_ freedom, this does not imply that any other regime would be more compatible with freedom: on the contrary, others are almost certain to be less so.",
+      "publishedEnglish": "Although the evidence to date is that the regime is not antithetical to freedom, this does not imply that any other regime would be more compatible with freedom: on the contrary, others are almost certain to be less so.",
+      "edits": [
+        "删除同义选项“& not opposed to”，保留“antithetical to”；将“not opposed to_”后的下划线及多餘空格整理为标准标点。"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管目前的证据表明该政权并非与自由对立，但这并不意味着其他政权会更符合自由；相反，其他政权几乎肯定会更不符合自由。",
+        "issues": []
+      }
+    },
+    "apathy": {
+      "sourceKey": "p35r06",
+      "originalEnglish": "Very few companies take the trouble to discover where the wood in their products originates, consumers do not demand this information, and consequently indifference & apathy regarding illicit timber has become the norm.",
+      "publishedEnglish": "Very few companies take the trouble to discover where the wood in their products originates, consumers do not demand this information, and consequently indifference apathy regarding illicit timber has become the norm.",
+      "edits": [
+        "将“indifference & apathy”中作同义并列的“&”删除，仅保留一个同义项“apathy”，并保留目标词。"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "很少有公司费心去查明其产品中木材的来源，消费者也不要求提供这一信息，因此对非法木材的冷漠态度已成为常态。",
+        "issues": [
+          "英文仅删除了同义并列项 indifferent 与 apathy 之间的“&”，保留 apathy，属允许的同义备选处理；目标词 apathy 确实出现。",
+          "译文准确传达“很少有公司……消费者不要求……因此……已成为常态”的因果与否定结构，未漏译否定、比较或转折。",
+          "“冷淡/冷漠”语义基本对应 apathy；可接受的细微差别不影响准确性。"
+        ]
+      }
+    },
+    "appease": {
+      "sourceKey": "p24r05",
+      "originalEnglish": "The author's latest novel may placate & appease those who generally spurn her writing: its unvarnished prose has little in common with the labyrinthine interior explorations of her earlier work.",
+      "publishedEnglish": "The author's latest novel may appease those who generally spurn her writing: its unvarnished prose has little in common with the labyrinthine interior explorations of her earlier work.",
+      "edits": [
+        "同义选项“placate & appease”仅保留目标词appease"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "作者的最新小说可能会安抚那些通常排斥她作品的人：其质朴的文笔与她早期作品中错综复杂的内心探索几乎没有共同之处。",
+        "issues": []
+      }
+    },
+    "audacious": {
+      "sourceKey": "p38r04",
+      "originalEnglish": "The cat known to researchers as M-120—beefy, audacious, and apparently smart enough to spot a free lunch—is perhaps the world's least evasive & elusive lynx: the scientists catch him several times a year.",
+      "publishedEnglish": "The cat known to researchers as M-120—beefy, audacious, and apparently smart enough to spot a free lunch—is perhaps the world's least evasive lynx: the scientists catch him several times a year.",
+      "edits": [
+        "删除同义选项中的“elusive”，仅保留“evasive”",
+        "修复“一一候壮”为“——体格壮实”",
+        "修复“狂鲁”为“猞猁”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "被研究人员称为M-120的这只猫——体格壮实、胆大妄为，而且显然聪明到能发现免费的午餐——或许是世界上最不难捉摸的猞猁：科学家们每年都会抓到它好几次。",
+        "issues": []
+      }
+    },
+    "auspicious": {
+      "sourceKey": "p42r09",
+      "originalEnglish": "The 1840s were a favorable & an auspicious time for young women beginning to study science, particularly astronomy, in 1847 Maria Mitchell discovered the Nantucket comet, the first of several important astronomical discoveries of the era.",
+      "publishedEnglish": "The 1840s were a favorable and an auspicious time for young women beginning to study science, particularly astronomy. In 1847 Maria Mitchell discovered the Nantucket comet, the first of several important astronomical discoveries of the era.",
+      "edits": [
+        "合并“favorable & an auspicious”为“favorable and an auspicious”以去除&符号",
+        "将逗号连接的两个独立分句改为句号分隔",
+        "修复“1847 Maria”缺少的标点和“玛丽亚: 米切尔”中的OCR冒号"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "19世纪40年代是年轻女性开始学习科学、尤其是天文学的一个有利且吉祥的时期。1847年，玛丽亚·米切尔发现了南塔克彗星，这是该时代几项重要天文发现中的第一项。",
+        "issues": [
+          "草稿将原文中逗号连接的两个分句改为句号分隔，属于可接受的标点规范化，未改变语义",
+          "原文OCR中的“&”与“玛丽亚: 米切尔”冒号属于明显OCR噪声，草稿已合理修复",
+          "目标词auspicious在英文中出现，译文以“吉祥”对应，准确",
+          "未发现漏译否定、比较、因果或转折关系"
+        ]
+      }
+    },
+    "avaricious": {
+      "sourceKey": "p42r08",
+      "originalEnglish": "Because experience had convinced her that Hector was both self-seeking and avaricious, she rejected the possibility that the motivation behind his donation had been wholly altruistic & benevolent.",
+      "publishedEnglish": "Because experience had convinced her that Hector was both self-seeking and avaricious, she rejected the possibility that the motivation behind his donation had been wholly altruistic.",
+      "edits": [
+        "删除同义选项中的“& benevolent”，仅保留“altruistic”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "因为经验使她确信赫克托既自私又贪婪，所以她否定了他的捐款动机完全利他的可能性。",
+        "issues": []
+      }
+    },
+    "belie": {
+      "sourceKey": "p10r04",
+      "originalEnglish": "Coagulation factors are useful proteins whose simple names—many are known only by Roman numerals—belie & mask their importance and the specificity of their roles in the thinning and clotting of blood.",
+      "publishedEnglish": "Coagulation factors are useful proteins whose simple names—many are known only by Roman numerals—belie their importance and the specificity of their roles in the thinning and clotting of blood.",
+      "edits": [
+        "删除同义选项“& mask”，仅保留“belie”",
+        "修复破折号排版并规范标点"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "凝血因子是有用的蛋白质，它们简单的名称——许多仅以罗马数字为人所知——掩盖了它们在血液稀释和凝固中的重要性和特定作用。",
+        "issues": []
+      }
+    },
+    "bolster": {
+      "sourceKey": "p09r07",
+      "originalEnglish": "Bolstering & Buttressing_the idea that attention is a limited resource, scientists have repeatedly observed that drivers using mobile phones are slower to react and more apt to miss important details than are drivers focused solely on road.",
+      "publishedEnglish": "Bolstering the idea that attention is a limited resource, scientists have repeatedly observed that drivers using mobile phones are slower to react and more apt to miss important details than are drivers focused solely on road.",
+      "edits": [
+        "删除同义选项标记“& Buttressing”，保留“Bolstering”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "支持注意力是有限资源这一观点的是，科学家多次观察到，使用手机的司机比只专注于道路的司机反应更慢，也更易错过重要细节。",
+        "issues": []
+      }
+    },
+    "bucolic": {
+      "sourceKey": "p35r03",
+      "originalEnglish": "Devoted to beauty and the poetic, evanescent moment, artists of the period were often inspired by the charm of the capital city and of its bucolic & rustic_ countryside.",
+      "publishedEnglish": "Devoted to beauty and the poetic, evanescent moment, artists of the period were often inspired by the charm of the capital city and of its bucolic countryside.",
+      "edits": [
+        "删除同义选项中的“rustic”及下划线，仅保留“bucolic”",
+        "修复“bucolic & rustic_ countryside”中的选项标记与空格"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "这一时期的艺术家专注于美与诗意的、转瞬即逝的瞬间，常常受到首都城市及其田园乡村魅力的启发。",
+        "issues": [
+          "英文原句含同义备选\"bucolic & rustic\"，草稿只保留\"bucolic\"并删除下划线/选项标记，属允许的删除同义备选范围，核心句意未变。",
+          "目标词bucolic在保留英文中确实出现。",
+          "中文译文基本准确，未漏否定、比较、因果或转折；\"evanescent moment\"译为\"转瞬即逝的瞬间\"可接受。"
+        ]
+      }
+    },
+    "capricious": {
+      "sourceKey": "p42r06",
+      "originalEnglish": "The candidate seeks to depict his opponent as being inconstant & capricious, as one who is simply unable to make a decision and stand his ground.",
+      "publishedEnglish": "The candidate seeks to depict his opponent as being inconstant, capricious, as one who is simply unable to make a decision and stand his ground.",
+      "edits": [
+        "将原文中的“inconstant & capricious”选项合并，保留目标词capricious，并调整标点"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "候选人试图将他的对手描绘成反复无常、任性多变，一个根本无法做决定并坚持立场的人。",
+        "issues": [
+          "英文原句依据OCR为'inconstant & capricious'，合并后语义等价，目标词capricious出现，可确认",
+          "译文将capricious译为'反复无常'与inconstant语义重复，漏译了capricious的'任性/多变'层含义，建议分开体现"
+        ]
+      }
+    },
+    "circumscribe": {
+      "sourceKey": "p25r02",
+      "originalEnglish": "The book brings together many valuable reports on conservation projects, but with less variety than might have been wished: nearly half the contributions are from the same state, and consequently, the case studies are similarly restricted & circumscribed geographically.",
+      "publishedEnglish": "The book brings together many valuable reports on conservation projects, but with less variety than might have been wished: nearly half the contributions are from the same state, and consequently, the case studies are similarly restricted and circumscribed geographically.",
+      "edits": [
+        "将“restricted & circumscribed”中的“&”改为“and”，保留目标词“circumscribed”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "这本书汇集了许多关于保护项目的宝贵报告，但种类不如预期丰富：近一半的内容来自同一个州，因此案例研究在地理上同样受到限制和约束。",
+        "issues": [
+          "英文原句中为“restricted & circumscribed”，草稿将“&”改为“and”，属于标点/连接词的可接受等义替换，目标词circumscribed仍出现",
+          "译文准确传达了“less variety than might have been wished”的比较含义以及“consequently”的因果关系，未漏译否定或因果",
+          "地理上‘受到限制和约束’对应restricted和circumscribed，基本准确"
+        ]
+      }
+    },
+    "commensurate": {
+      "sourceKey": "p50r07",
+      "originalEnglish": "Although the book, with its many and varied approaches to its subject, might strike some readers as too loosely structured, this refreshingly nonreductive method is commensurate with & appropriate for_the complexity of the issues the author explores.",
+      "publishedEnglish": "Although the book, with its many and varied approaches to its subject, might strike some readers as too loosely structured, this refreshingly nonreductive method is commensurate with the complexity of the issues the author explores.",
+      "edits": [
+        "删除同义选项“& appropriate for_”，保留“commensurate with”",
+        "修复“for_the”中下划线造成的断词与空格"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管这本书对其主题采用了多种多样的方式，可能会让一些读者觉得结构过于松散，但这种令人耳目一新的非简化方法与作者所探讨问题的复杂性相称。",
+        "issues": [
+          "删除同义备选“& appropriate for_”后英文仍连贯，符合允许的删除同义备选操作",
+          "源键p50r07存在，目标词commensurate在英文中出现",
+          "译文准确传达让步转折关系（Although...but）及相称含义，无漏译否定/比较/因果"
+        ]
+      }
+    },
+    "concede": {
+      "sourceKey": "p10r03",
+      "originalEnglish": "In noting that critical and popular opinions about Lis art coincided, Chuang conceded & acknowledged the existence of an exception to her general theory of art criticism, which posits that critics’ views do not intersect with those of the general public.",
+      "publishedEnglish": "In noting that critical and popular opinions about Lis art coincided, Chuang conceded the existence of an exception to her general theory of art criticism, which posits that critics’ views do not intersect with those of the general public.",
+      "edits": [
+        "删去了同义选项中的“& acknowledged”，只保留“conceded”",
+        "保留了OCR原文中“Lis art”的拼写"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "在指出关于Lis艺术的评论界意见与大众意见相一致时，Chuang承认了她的一般艺术批评理论存在一个例外，该理论认为评论家的观点与公众的观点并不相交。",
+        "issues": [
+          "OCR中\"Lis art\"缺少撇号，疑为\"Lis's art\"，但属无法确认的拼写问题，已在译文中保留原样\"Lis艺术\"",
+          "英文除删除同义备选\"& acknowledged\"外忠于原句",
+          "目标词\"conceded\"确实出现",
+          "译文未漏掉否定（\"并不相交\"）和转折关系，基本准确"
+        ]
+      }
+    },
+    "confound": {
+      "sourceKey": "p18r09",
+      "originalEnglish": "Although the essayist’s arguments did not confound & perplex her most perceptive readers, the extreme subtlety of the points she made explains why she was misinterpreted by most critics of her day.",
+      "publishedEnglish": "Although the essayist’s arguments did not confound her most perceptive readers, the extreme subtlety of the points she made explains why she was misinterpreted by most critics of her day.",
+      "edits": [
+        "从“confound & perplex”选项中只保留“confound”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管这位散文家的论点并未让最敏锐的读者感到困惑，但她所提出观点的极度微妙性解释了为何她在当时被大多数评论家误解。",
+        "issues": []
+      }
+    },
+    "conspicuous": {
+      "sourceKey": "p27r09",
+      "originalEnglish": "Itis troubling that blogs, which may be among the least reliable sources of information in human history, occupy such conspicuous & prominentpositions in Intemet search engine results.",
+      "publishedEnglish": "It is troubling that blogs, which may be among the least reliable sources of information in human history, occupy such conspicuous positions in Internet search engine results.",
+      "edits": [
+        "修复断词“Itis”为“It is”",
+        "修复拼写“Intemet”为“Internet”",
+        "修复“prominentpositions”为“prominent positions”",
+        "同义选项“conspicuous & prominent”仅保留“conspicuous”"
+      ],
+      "review": {
+        "type": "json_object",
+        "approved": true,
+        "chinese": "令人不安的是，博客可能是人类历史上最不可靠的信息来源之一，却在互联网搜索引擎结果中占据如此显眼的位置。",
+        "issues": []
+      }
+    },
+    "construe": {
+      "sourceKey": "p16r02",
+      "originalEnglish": "The vast majority of universities in the United States promote themselves as institutions of free speech and thought, construing censorship as antipathetic to & inconsistent with_ their search for knowledge.",
+      "publishedEnglish": "The vast majority of universities in the United States promote themselves as institutions of free speech and thought, construing censorship as antipathetic to and inconsistent with their search for knowledge.",
+      "edits": [
+        "将“antipathetic to & inconsistent with_”中的“&”改为“and”，并删除多余下划线"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "美国绝大多数大学将自己宣传为言论和思想自由的机构，认为审查制度与它们对知识的追求格格不入且不相容。",
+        "issues": []
+      }
+    },
+    "cryptic": {
+      "sourceKey": "p28r10",
+      "originalEnglish": "There is a cryptic & an elusive quality to Beryl Bainbridge’s best novels, what Hilary Martel calls “an air of mystery, as if something has been inked in and then sponged away, leaving a faint trace for the reader to pick up”.",
+      "publishedEnglish": "There is a cryptic, elusive quality to Beryl Bainbridge’s best novels, what Hilary Martel calls “an air of mystery, as if something has been inked in and then sponged away, leaving a faint trace for the reader to pick up”.",
+      "edits": [
+        "将“cryptic & an elusive”整理为“cryptic, elusive”并仅保留一个选项连接",
+        "修复“Hilary Martel”的OCR拼写"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "贝丽尔·贝恩布里奇最好的小说带有一种神秘莫测、难以捉摸的特质，也就是希拉里·马特尔所说的“一种神秘气息，仿佛某样东西被用墨写上去，随后又被海绵擦去，只留下淡淡的痕迹供读者捕捉”。",
+        "issues": []
+      }
+    },
+    "deleterious": {
+      "sourceKey": "p29r05",
+      "originalEnglish": "When it comes to arriving at brilliant ideas, filtering out distractions might well be deleterious & counterproductive: if a person's mind is wandering, that person tends to outperform peers ina range of tasks in which flashes of insight are important.",
+      "publishedEnglish": "When it comes to arriving at brilliant ideas, filtering out distractions might well be deleterious: if a person's mind is wandering, that person tends to outperform peers in a range of tasks in which flashes of insight are important.",
+      "edits": [
+        "删除同义选项中的“& counterproductive”，仅保留目标词deleterious",
+        "修复“ina”为“in a”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "当涉及产生出色的想法时，排除干扰很可能是有害的：如果一个人的思绪在游移，那么在需要灵感闪现的一系列任务中，这个人往往表现优于同龄人。",
+        "issues": []
+      }
+    },
+    "derive": {
+      "sourceKey": "p03r08",
+      "originalEnglish": "The tribes’ proclivity toward & predilection for a settled mode of living was derived from their long-standing traditions, which, though differing from one tribal group to another, always included a resistance to nomadic lifestyles.",
+      "publishedEnglish": "The tribes’ proclivity toward a settled mode of living was derived from their long-standing traditions, which, though differing from one tribal group to another, always included a resistance to nomadic lifestyles.",
+      "edits": [
+        "同义选项“proclivity toward & predilection for”中保留“proclivity toward”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "部落对定居生活方式的倾向源于其长期的传统，这些传统虽然因部落群体不同而有所差异，但始终包含对游牧生活方式的抵制。",
+        "issues": []
+      }
+    },
+    "dispassionate": {
+      "sourceKey": "p12r07",
+      "originalEnglish": "The climate researchers’ prejudicial & tendentious_ method of presentation caused a stir among those who felt that scientific papers should be dispassionate in their delivery of evidence.",
+      "publishedEnglish": "The climate researchers’ prejudicial and tendentious method of presentation caused a stir among those who felt that scientific papers should be dispassionate in their delivery of evidence.",
+      "edits": [
+        "将OCR中的“&”替换为“and”",
+        "将“tendentious_ method”中多余的下划线删除"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "气候研究人员带有偏见且倾向性的呈现方式引起了轩然大波，那些人认为科学论文在呈现证据时应保持冷静客观。",
+        "issues": []
+      }
+    },
+    "eclectic": {
+      "sourceKey": "p09r02",
+      "originalEnglish": "Early natural history collections in eighteenth-century Europe were fundamentally miscellaneous & thoroughly eclectic: a bear's tooth might sit incongruously alongside a piece of silverwork or, in the menagerie, a South American capybara might be housed next to an African baboon.",
+      "publishedEnglish": "Early natural history collections in eighteenth-century Europe were fundamentally miscellaneous and thoroughly eclectic: a bear's tooth might sit incongruously alongside a piece of silverwork or, in the menagerie, a South American capybara might be housed next to an African baboon.",
+      "edits": [
+        "将 & 改为 and 以去除符号",
+        "修复明显OCR错误：能牙→熊牙，动物园蜂→动物园里，狂卯→狒狒"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "18世纪欧洲的早期自然历史收藏本质上杂乱无章且极为兼收并蓄：一颗熊牙可能与一件银器不协调地摆放在一起，或者在动物园里，一只南美水豚可能被安置在非洲狒狒旁边。",
+        "issues": [
+          "源OCR存在明显错误（能牙、动物园蜂、狂卯），草稿已正确还原为熊牙、动物园里、狒狒，可确认",
+          "英文将 & 改为 and，未改变语义",
+          "目标词eclectic在英文中出现，译文以“兼收并蓄”对应，基本准确",
+          "译文未漏否定、比较、因果、转折"
+        ]
+      }
+    },
+    "elicit": {
+      "sourceKey": "p19r01",
+      "originalEnglish": "The laboratory maze has grown ever less intricate & convoluted since it was first invented; instead of hoping to lose a rodent in a labyrinth, today's scientists design mazes to elicit a few simple, easily measured behaviors.",
+      "publishedEnglish": "The laboratory maze has grown ever less intricate and convoluted since it was first invented; instead of hoping to lose a rodent in a labyrinth, today's scientists design mazes to elicit a few simple, easily measured behaviors.",
+      "edits": [
+        "将“&”改为“and”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "实验室迷宫自首次发明以来已变得愈发不复杂、不曲折；如今的科学家不再希望让啮齿动物在迷宫中迷路，而是设计迷宫以引发少数简单且易于测量的行为。",
+        "issues": [
+          "英文将OCR中的“&”改为“and”，属符号规范化，可接受；目标词elicit出现；译文未漏否定/比较/因果/转折，基本准确。"
+        ]
+      }
+    },
+    "engender": {
+      "sourceKey": "p04r06",
+      "originalEnglish": "Established scientists recognize that peer review of manuscripts submitted to scientific journals is critical to science, but this recognition engenders & induces a certain ambivalence in them, since reviewing takes time away from their research.",
+      "publishedEnglish": "Established scientists recognize that peer review of manuscripts submitted to scientific journals is critical to science, but this recognition engenders a certain ambivalence in them, since reviewing takes time away from their research.",
+      "edits": [
+        "从“engenders & induces”中仅保留目标词屈折形式“engenders”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "资深科学家认识到，对提交至科学期刊的手稿进行同行评审对科学至关重要，但这种认识也引发了他们一定的矛盾心理，因为评审会占用他们的研究时间。",
+        "issues": []
+      }
+    },
+    "entrenched": {
+      "sourceKey": "p34r04",
+      "originalEnglish": "Despite the critic’ s assertion that Willa Cather’ s place in the literary canon is now so entrenched that it scarcely matters if she were really a modernist, her reputation arguably remains uncertain & tenuous.",
+      "publishedEnglish": "Despite the critic's assertion that Willa Cather's place in the literary canon is now so entrenched that it scarcely matters if she were really a modernist, her reputation arguably remains uncertain and tenuous.",
+      "edits": [
+        "修复“critic’ s”中多余空格为“critic's”",
+        "将“uncertain & tenous”中的同义/并列连接符保留为“and”，并按OCR疑似误拼修复为“tenuous”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管这位评论家断言，薇拉·凯瑟在文学经典中的地位如今已如此牢固，以至于她是否真的是现代主义者几乎无关紧要，但可以说她的声誉仍然不确定且脆弱。",
+        "issues": []
+      }
+    },
+    "ephemeral": {
+      "sourceKey": "p39r09",
+      "originalEnglish": "Any antimatter in our part of the universe is necessarily short-lived & ephemeral because of the overwhelming preponderance of ordinary matter, by which antimatter is quickly annihilated.",
+      "publishedEnglish": "Any antimatter in our part of the universe is necessarily short-lived and ephemeral because of the overwhelming preponderance of ordinary matter, by which antimatter is quickly annihilated.",
+      "edits": [
+        "将 & 替换为 and",
+        "chinese 中“潭灭”修正为“湮灭”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "在我们宇宙的这一部分，任何反物质都必然是短暂而转瞬即逝的，因为普通物质占据压倒性的优势，反物质会被它迅速湮灭。",
+        "issues": [
+          "草稿将OCR中的“&”规范为“and”，属可接受的符号还原，未改动英文实词",
+          "草稿中文已将OCR来源译文中误拼的“潭灭”修正为“湮灭”，因果与被动关系保留完整",
+          "目标词ephemeral在英文中明确出现，sourceKey与引用一致"
+        ]
+      }
+    },
+    "equivocal": {
+      "sourceKey": "p27r05",
+      "originalEnglish": "Appearing in the midst of so many equivocal comments, this unambiguous statement, whatever its intrinsic merit, plainly stands out as anomalous & unusual.",
+      "publishedEnglish": "Appearing in the midst of so many equivocal comments, this unambiguous statement, whatever its intrinsic merit, plainly stands out as anomalous.",
+      "edits": [
+        "同义选项“anomalous & unusual”仅保留“anomalous”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "在众多模棱两可的评论中，这一明确的声明无论其本身价值如何，都显然显得格外异常。",
+        "issues": []
+      }
+    },
+    "eradicate": {
+      "sourceKey": "p39r07",
+      "originalEnglish": "Economic growth has been identified as a panacea & remedy for poor countries to eradicate poverty, but this prescription also triggers great environmental concerns.",
+      "publishedEnglish": "Economic growth has been identified as a panacea for poor countries to eradicate poverty, but this prescription also triggers great environmental concerns.",
+      "edits": [
+        "同义选项“panacea & remedy”保留“panacea”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "经济增长已被视为贫困国家消除贫困的灵丹妙药，但这一处方也引发了巨大的环境担忧。",
+        "issues": []
+      }
+    },
+    "eschew": {
+      "sourceKey": "p51r04",
+      "originalEnglish": "Fedigan argues that, in actuality, ethologists who claim to eschew & avoid_anthropomorphism often end up simply substituting one set of anthropomorphic terms for another.",
+      "publishedEnglish": "Fedigan argues that, in actuality, ethologists who claim to eschew anthropomorphism often end up simply substituting one set of anthropomorphic terms for another.",
+      "edits": [
+        "删除了同义选项标记及 & avoid_anthropomorphism 选项，仅保留含目标词 eschew 的一项",
+        "修复了中文末尾被截断的“术语”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "费迪根认为，实际上，那些声称避免拟人化的动物行为学家往往最终只是用一组拟人化术语取代另一组。",
+        "issues": []
+      }
+    },
+    "espouse": {
+      "sourceKey": "p03r10",
+      "originalEnglish": "If itis wrong to justify human selfishness on the basis of the alleged selfishness of nature, then it is equally mistaken to espouse altruism & benevolence merely because some animals happily assist each other.",
+      "publishedEnglish": "If it is wrong to justify human selfishness on the basis of the alleged selfishness of nature, then it is equally mistaken to espouse altruism merely because some animals happily assist each other.",
+      "edits": [
+        "修复OCR空格错误“itis”为“it is”",
+        "删除同义选项“& benevolence”中的非目标项，保留“altruism”"
+      ],
+      "review": {
+        "type": "json_object",
+        "approved": true,
+        "chinese": "如果以所谓的自然自私性为依据来为人类的自私辩护是错误的，那么仅仅因为某些动物乐于互相帮助而提倡利他主义也同样是错误的。",
+        "issues": []
+      }
+    },
+    "exacerbate": {
+      "sourceKey": "p11r02",
+      "originalEnglish": "The environmental threat posed by the New Zealand mud snail, an invasive species, is exacerbated & aggravated by the snail's small size, which facilitates its spread across watersheds through human activity.",
+      "publishedEnglish": "The environmental threat posed by the New Zealand mud snail, an invasive species, is exacerbated by the snail's small size, which facilitates its spread across watersheds through human activity.",
+      "edits": [
+        "将“exacerbated & aggravated”选项整理为仅保留“exacerbated”，以匹配目标词"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "新西兰泥螺这种入侵物种所带来的环境威胁因其体型小巧而加剧，这种体型特征便于它通过人类活动在流域间传播。",
+        "issues": []
+      }
+    },
+    "exacting": {
+      "sourceKey": "p34r10",
+      "originalEnglish": "Despite the rather stringent & exacting conditions required for its preservation, the evidence for glaciation during the late Proterozoic is found on every continent, suggesting that ice sheets were present throughout the globe.",
+      "publishedEnglish": "Despite the rather stringent exacting conditions required for its preservation, the evidence for glaciation during the late Proterozoic is found on every continent, suggesting that ice sheets were present throughout the globe.",
+      "edits": [
+        "同义选项“stringent & exacting”仅保留目标词 exacting，删除 stringent 与 & 符号"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管其保存需要相当严格苛刻的条件，但晚期元古代冰川作用的证据在每个大陆都有发现，这表明冰盖遍布全球。",
+        "issues": [
+          "OCR原文为“stringent & exacting”，草稿仅保留目标词 exacting 并删除同义备选 stringent，属于允许的删除同义备选编辑",
+          "草稿中所选sourceKey p34r10与引用英文基本一致，仅缺少原文的“&”和“stringent”，不影响事实",
+          "目标词 exacting 出现在英文中",
+          "译文准确传达了让步关系（Despite）和结果（suggesting that），未遗漏否定、比较或转折"
+        ]
+      }
+    },
+    "gainsay": {
+      "sourceKey": "p15r05",
+      "originalEnglish": "Scenes of bustling streets full of well-dressed citizens going about their business contradict & gainsay the growing hardship faced by all but the richest local residents.",
+      "publishedEnglish": "Scenes of bustling streets full of well-dressed citizens going about their business contradict and gainsay the growing hardship faced by all but the richest local residents.",
+      "edits": [
+        "将“&”替换为“and”",
+        "将中文译文中明显的OCR错字“照晤接接”按原句语义修正为“熙熙攘攘”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "熙熙攘攘的街道上满是衣着光鲜、忙于各自事务的市民，这些景象与除最富有的当地居民之外所有人日益加剧的困苦相矛盾，也否定了这种困苦。",
+        "issues": [
+          "引用OCR中“&”与草稿英文的“and”为同义备选，可确认",
+          "原中文译文存在明显OCR错字“照晤接接”“访于”“因境”，草稿已按原句语义修正，未改动英文",
+          "目标词gainsay确实出现在英文原句中",
+          "译文保留了contradict与gainsay的双重否定含义，并准确传达“all but the richest”的比较范围"
+        ]
+      }
+    },
+    "galvanize": {
+      "sourceKey": "p43r05",
+      "originalEnglish": "The women's rights movement has been mostly quiescent & abeyant in the Middle East, but it is likely that activists will be newly galvanized by the political upheavals currently sweeping the region.",
+      "publishedEnglish": "The women's rights movement has been mostly quiescent in the Middle East, but it is likely that activists will be newly galvanized by the political upheavals currently sweeping the region.",
+      "edits": [
+        "同义选项“quiescent & abeyant”保留其中一项 quiescent；修正译文中的错字“沉训”为“沉寂”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "中东地区的女性权利运动大多处于沉寂状态，但当前席卷该地区的政治动荡可能会重新激励活动人士。",
+        "issues": [
+          "原译“沉训”为明显错字，已修正为“沉寂”",
+          "英文中“quiescent & abeyant”为同义备选，草稿仅保留quiescent，属允许删除同义备选，未改动原句实质",
+          "目标词galvanized在英文中出现，译作“重新激励”，译文基本准确，未漏否定/比较/因果/转折"
+        ]
+      }
+    },
+    "glut": {
+      "sourceKey": "p35r05",
+      "originalEnglish": "The current glut & surfeit of repackaged music under Miles Davis’ name might prompt any reasonable person to conclude that the recording vault has been plundered bare.",
+      "publishedEnglish": "The current glut of repackaged music under Miles Davis’ name might prompt any reasonable person to conclude that the recording vault has been plundered bare.",
+      "edits": [
+        "将“glut & surfeit”同义选项合并，仅保留“glut”",
+        "删除“Miles”后的空格与多余撇号，规范“Davis’”所有格"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "目前以迈尔斯·戴维斯之名重新包装的音乐泛滥，可能会让任何理性的人得出录音库已被掏空的结论。",
+        "issues": []
+      }
+    },
+    "hackneyed": {
+      "sourceKey": "p50r06",
+      "originalEnglish": "The wealth of insightful and challenging articles found in the journal is astounding in a world where mainstream publications increasingly focus on the most hackneyed & pedestrian_of topics.",
+      "publishedEnglish": "The wealth of insightful and challenging articles found in the journal is astounding in a world where mainstream publications increasingly focus on the most hackneyed topics.",
+      "edits": [
+        "删除“& pedestrian_of”这一同义选项残留，只保留目标词所在的一项“hackneyed”；保留原句其余措辞"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "在一个主流出版物越来越关注最陈腐话题的世界里，这本期刊中充满洞见且富有挑战性的文章之多令人震惊。",
+        "issues": []
+      }
+    },
+    "iconoclastic": {
+      "sourceKey": "p31r08",
+      "originalEnglish": "Wilson sees the ideas that he presents in his new book as being notably iconoclastic & subversive, but his critics, by contrast, claim that they are actually rather conventional",
+      "publishedEnglish": "Wilson sees the ideas that he presents in his new book as being notably iconoclastic, but his critics, by contrast, claim that they are actually rather conventional.",
+      "edits": [
+        "将“iconoclastic & subversive”同义并列选项整理为仅保留目标词“iconoclastic”",
+        "补充句末标点"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "威尔逊认为他在新书中提出的观点极具反传统精神，但批评者却相反地声称这些观点实际上相当传统。",
+        "issues": []
+      }
+    },
+    "impartial": {
+      "sourceKey": "p29r03",
+      "originalEnglish": "Every serious attempt at a historical portrait of the past will subtly absorb the milieu and temperament of its living author, however objective & impartial he or she sets out to be.",
+      "publishedEnglish": "Every serious attempt at a historical portrait of the past will subtly absorb the milieu and temperament of its living author, however objective and impartial he or she sets out to be.",
+      "edits": [
+        "将同义选项“objective & impartial”整理为“objective and impartial”",
+        "将中文译文中“历史画像”调整为“历史描绘”",
+        "调整中文语序使逻辑更清晰"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "每一次对过去进行历史描绘的严肃尝试，无论其仍在世的作者起初多么力求客观公正，都会微妙地吸收其生活环境和性情。",
+        "issues": []
+      }
+    },
+    "implausible": {
+      "sourceKey": "p13r03",
+      "originalEnglish": "At first, most of the famous fairy tales seem so implausible and so irrelevant to contemporary life that their persistence & survival is hard to understand.",
+      "publishedEnglish": "At first, most of the famous fairy tales seem so implausible and so irrelevant to contemporary life that their persistence and survival is hard to understand.",
+      "edits": [
+        "将原文“&”改为“and”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "起初，大多数著名的童话故事看起来既不可信，又与当代生活毫无关联，因此它们的存续难以理解。",
+        "issues": []
+      }
+    },
+    "incisive": {
+      "sourceKey": "p24r01",
+      "originalEnglish": "Astute and incisive, the essayist’s work was nevertheless civil and polite: the essayist either had no gift of vitriol & obloquy_or else never felt any.",
+      "publishedEnglish": "Astute and incisive, the essayist’s work was nevertheless civil and polite: the essayist either had no gift of vitriol or else never felt any.",
+      "edits": [
+        "删除同义选项“& obloquy”，保留“vitriol”",
+        "修复因选项切分产生的断词和多余空格"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "这位随笔作家的作品虽然敏锐而深刻，却仍然文明而有礼：这位随笔作家要么没有尖酸刻薄的天赋，要么从未有过这种感受。",
+        "issues": [
+          "sourceKey p24r01正确，英文除删除同义备选“& obloquy”外忠于原句，目标词incisive出现。",
+          "译文准确传达了“nevertheless”的转折和“either...or else”的选择关系，未漏否定或因果。",
+          "原文中“获文家”系OCR/输入笔误，不影响英文原文；译文按“essayist”处理。",
+          "英文无拼写或来源无法确认的改动，OCR歧义不显著。"
+        ]
+      }
+    },
+    "indifference": {
+      "sourceKey": "p35r06",
+      "originalEnglish": "Very few companies take the trouble to discover where the wood in their products originates, consumers do not demand this information, and consequently indifference & apathy regarding illicit timber has become the norm.",
+      "publishedEnglish": "Very few companies take the trouble to discover where the wood in their products originates, consumers do not demand this information, and consequently indifference regarding illicit timber has become the norm.",
+      "edits": [
+        "删除同义选项中的“& apathy”，仅保留indifference"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "很少有公司费心去了解其产品中木材的来源，消费者也不要求提供这一信息，因此对非法木材的漠不关心已成为常态。",
+        "issues": [
+          "草稿英文与OCR原句仅差删除同义备选“& apathy”，属于允许的删除同义备选操作，英文其余内容一致。",
+          "译文完整传达否定（很少、不要求）、因果（因此）和“indifference”的冷漠含义，无漏译。",
+          "目标词indifference确实出现在英文中。",
+          "未发现需判为unusable的OCR歧义或无法确认的拼写/来源改动。"
+        ]
+      }
+    },
+    "ingratiate": {
+      "sourceKey": "p23r10",
+      "originalEnglish": "All of his previous efforts at ingratiating himself with the official were nullified & vitiated when he responded antagonistically to the official's goading,",
+      "publishedEnglish": "All of his previous efforts at ingratiating himself with the official were nullified when he responded antagonistically to the official's goading.",
+      "edits": [
+        "删除同义选项中的“& vitiated”，保留“nullified”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "他此前为讨好那位官员所做的一切努力，都因他对该官员的挑唆作出敌意回应而化为乌有。",
+        "issues": []
+      }
+    },
+    "inimical": {
+      "sourceKey": "p43r01",
+      "originalEnglish": "Many people remember a time when cutting-edge architects, who are these days treated like celebrities, had an antagonistic & an inimical relationship with the public: for much of the 1960s, big new buildings in cities were often cause for hostility, not celebration.",
+      "publishedEnglish": "Many people remember a time when cutting-edge architects, who are these days treated like celebrities, had an inimical relationship with the public: for much of the 1960s, big new buildings in cities were often cause for hostility, not celebration.",
+      "edits": [
+        "从“antagonistic & an inimical”中只保留“an inimical”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "许多人记得曾经有一段时间，如今被视为名人的前沿建筑师与公众之间存在敌对关系：在20世纪60年代的大部分时间里，城市中的大型新建筑往往引发敌意，而非庆祝。",
+        "issues": []
+      }
+    },
+    "innocuous": {
+      "sourceKey": "p18r04",
+      "originalEnglish": "Even if the story now seems a surprisingly innocuous overture to the author's later, more fully developed narrations, it anticipates & prefigures some of the key traits of those bleaker tales.",
+      "publishedEnglish": "Even if the story now seems a surprisingly innocuous overture to the author's later, more fully developed narrations, it anticipates some of the key traits of those bleaker tales.",
+      "edits": [
+        "删除了同义选项标记“& prefigures”及重复表述，保留“anticipates”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "即使这个故事现在看起来像是对作者后来更充分展开的叙述的一次出人意料地平和的开场，它也预示了那些更阴郁故事的一些关键特征。",
+        "issues": []
+      }
+    },
+    "inscrutable": {
+      "sourceKey": "p51r10",
+      "originalEnglish": "The enigmatic & inscrutable markings on some prehistoric bone and antler fragments could be accidents or the result of doodling, but may also represent a form of communication such as tally marks or even early calendars.",
+      "publishedEnglish": "The inscrutable markings on some prehistoric bone and antler fragments could be accidents or the result of doodling, but may also represent a form of communication such as tally marks or even early calendars.",
+      "edits": [
+        "从同义选项“enigmatic & inscrutable”中仅保留“inscrutable”，以保留目标词"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "一些史前骨骼和鹿角碎片上那些难以捉摸的痕迹可能是意外造成的，也可能是涂鸦的结果，但也可能代表某种交流形式，例如计数标记甚至早期的日历。",
+        "issues": []
+      }
+    },
+    "insidious": {
+      "sourceKey": "p37r07",
+      "originalEnglish": "‘Some kinds of deadly bacteria, including those that cause tetanus, tuberculosis, and botulism, remain harmless & innocuous until something triggers their insidious activity.",
+      "publishedEnglish": "Some kinds of deadly bacteria, including those that cause tetanus, tuberculosis, and botulism, remain harmless and innocuous until something triggers their insidious activity.",
+      "edits": [
+        "将同义选项“harmless & innocuous”整理为“harmless and innocuous”，保留其中一个同义表达并去除&符号",
+        "补齐中文译文中缺失的“and innocuous（且无毒）”部分",
+        "规范了中文标点"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "某些致命细菌，包括引发破伤风、结核病和肉毒中毒的细菌，在某种因素触发其隐秘活动之前，始终是无害且无毒的。",
+        "issues": []
+      }
+    },
+    "itinerant": {
+      "sourceKey": "p14r04",
+      "originalEnglish": "As the biography makes plain, the scientist led an itinerant & a peripatetic sort of life, rarely remaining in one place for long,",
+      "publishedEnglish": "As the biography makes plain, the scientist led an itinerant sort of life, rarely remaining in one place for long.",
+      "edits": [
+        "删除同义选项“& a peripatetic”，仅保留目标词itinerant",
+        "补充句末标点"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "正如传记所述，这位科学家过着漂泊的生活，很少长时间待在一个地方。",
+        "issues": []
+      }
+    },
+    "laconic": {
+      "sourceKey": "p43r06",
+      "originalEnglish": "He was a man of few words, laconic & taciturn around all but his closest friends.",
+      "publishedEnglish": "He was a man of few words, laconic and taciturn around all but his closest friends.",
+      "edits": [
+        "将同义选项连接符号 & 改为 and，仅保留其一，并保留目标词 laconic"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "他是个寡言少语的人，除了最亲密的朋友之外，对所有人都沉默寡言。",
+        "issues": [
+          "英文源句p43r06中laconic出现，译文准确传达few words、laconic、taciturn及all but closest friends，无否定/比较/因果/转折遗漏",
+          "将 & 规范为 and 属可接受的同义连接符统一，未改动英文实词或补造事实"
+        ]
+      }
+    },
+    "lambast": {
+      "sourceKey": "p16r03",
+      "originalEnglish": "When called before Congress to testify about the revocation of his passport, Paul Robeson defiantly lambasted & excoriated his inquisitors for violating his rights.",
+      "publishedEnglish": "When called before Congress to testify about the revocation of his passport, Paul Robeson defiantly lambasted his inquisitors for violating his rights.",
+      "edits": [
+        "从“lambasted & excoriated”中仅保留与目标词对应的同义选项“lambasted”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "当被传唤到国会就其护照被吊销一事作证时，保罗·罗伯逊挑衅性地痛斥审讯者侵犯了他的权利。",
+        "issues": [
+          "英文删除了同义备选excoriated，保留目标词lambasted，符合规则",
+          "译文准确传达“defiantly lambasted...for violating his rights”的含义，未漏否定、比较、因果或转折",
+          "拼写与来源无法确认的疑点均不存在"
+        ]
+      }
+    },
+    "maintain": {
+      "sourceKey": "p12r03",
+      "originalEnglish": "The author argued that a relentless focus on political scandal was making it hard for even the least cynical & jaded politicians to maintain their faith in the nobility of public service.",
+      "publishedEnglish": "The author argued that a relentless focus on political scandal was making it hard for even the least cynical politicians to maintain their faith in the nobility of public service.",
+      "edits": [
+        "删除了同义选项中的“& jaded”，仅保留“least cynical”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "作者认为，对政治丑闻的不懈关注使即便最不愤世嫉俗的政治家也难以保持对公共服务高尚性的信念。",
+        "issues": [
+          "p12r03英文原文含同义备选“cynical & jaded”，草稿仅保留“cynical”并删除“& jaded”，属删除同义备选，未改动实质英文。",
+          "目标词maintain在英文中出现，中文译作“保持”，对应准确。",
+          "译文保留“hard for even ... to ...”的递进与否定（难以保持），因果/转折关系未漏。"
+        ]
+      }
+    },
+    "maverick": {
+      "sourceKey": "p12r01",
+      "originalEnglish": "When Kim Dae Jung was decisively elected South Korea's president in December 1997, he was considered something of maverick & nonconformist but nevertheless the right man for the time and the job.",
+      "publishedEnglish": "When Kim Dae Jung was decisively elected South Korea's president in December 1997, he was considered something of a maverick but nevertheless the right man for the time and the job.",
+      "edits": [
+        "删除了同义选项“& nonconformist”",
+        "补加了“something of”后的冠词“a”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "当金大中于1997年12月果断当选韩国总统时，他被认为有些特立独行，但仍然是那个时代和那一职位的合适人选。",
+        "issues": [
+          "草稿在“something of”后补加冠词“a”并删除“& nonconformist”，属可确认的删除同义备选及冠词补全，不影响原意。",
+          "主语译为“果断”而非“决定性地”更通顺，但“决定性地”亦不算明显误译。"
+        ]
+      }
+    },
+    "mitigate": {
+      "sourceKey": "p40r02",
+      "originalEnglish": "Flash floods are common in desert regions and were widespread before the evolution of trees and woodland soils; in contrast, flash floods are mitigated & abated in woodlands, where floodwaters, impeded by trees, form ponds.",
+      "publishedEnglish": "Flash floods are common in desert regions and were widespread before the evolution of trees and woodland soils; in contrast, flash floods are mitigated in woodlands, where floodwaters, impeded by trees, form ponds.",
+      "edits": [
+        "同义选项“mitigated & abated”仅保留“mitigated”；保留目标词屈折形式",
+        "修复“soils; in”处空格与标点"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "山洪在沙漠地区很常见，并且在树木和林地土壤演化之前曾广泛发生；相比之下，山洪在林地被缓解，那里的洪水因树木阻挡而形成池塘。",
+        "issues": [
+          "英文原句含“mitigated & abated”，草稿仅保留“mitigated”，属可确认的删除同义备选，英文其余部分与OCR原句一致",
+          "目标词“mitigate”以屈折形式“mitigated”出现，符合forms标注",
+          "译文保留了原文的对比（in contrast）与因果（impeded by trees, form ponds）关系，未漏译否定或比较",
+          "未发现无法确认的拼写或来源改动"
+        ]
+      }
+    },
+    "myriad": {
+      "sourceKey": "p02r03",
+      "originalEnglish": "Although one can adduce myriad of examples of ecosystem disruption by nonindigenous species, nevertheless most introduced species that survive in fact appear to have quite minimal & trifling effects on the ecosystem they have invaded",
+      "publishedEnglish": "Although one can adduce myriad of examples of ecosystem disruption by nonindigenous species, nevertheless most introduced species that survive in fact appear to have quite minimal effects on the ecosystem they have invaded",
+      "edits": [
+        "删除冗余的“& trifling”，仅保留“minimal”",
+        "修正OCR错字“彩响”为“影响”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管可以举出无数外来物种破坏生态系统的例子，但实际上，大多数存活下来的引入物种对其入侵的生态系统似乎影响微乎其微。",
+        "issues": []
+      }
+    },
+    "nuance": {
+      "sourceKey": "p06r01",
+      "originalEnglish": "In literature, thrillers thrive on heroes and villains, and usually the characterization is not very nuanced & subtle_; writers don't want to confuse or slow the plot.",
+      "publishedEnglish": "In literature, thrillers thrive on heroes and villains, and usually the characterization is not very nuanced; writers don't want to confuse or slow the plot.",
+      "edits": [
+        "删除选项符号及下划线，仅保留 nuanced，剔除同义选项 subtle",
+        "修复中文“细脖”为“细腻”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "在文学作品中，惊悚小说依靠英雄和反派来发展，而且人物刻画通常并不十分细腻；作家不希望让情节变得混乱或拖慢进展。",
+        "issues": []
+      }
+    },
+    "parochial": {
+      "sourceKey": "p09r04",
+      "originalEnglish": "Because the political situation seriously impeded international communication, French scientific research was at that time uncharacteristicallyinsular & parochial",
+      "publishedEnglish": "Because the political situation seriously impeded international communication, French scientific research was at that time uncharacteristically insular and parochial.",
+      "edits": [
+        "修复了 uncharacteristicallyinsular 中缺失的空格",
+        "将 & 连接的两个同义选项合并，仅保留目标词 parochial 并调整连接词为 and",
+        "句末补充句号"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "由于政治局势严重阻碍了国际交流，法国的科学研究在当时表现得异常封闭和狭隘。",
+        "issues": []
+      }
+    },
+    "placate": {
+      "sourceKey": "p24r05",
+      "originalEnglish": "The author's latest novel may placate & appease those who generally spurn her writing: its unvarnished prose has little in common with the labyrinthine interior explorations of her earlier work.",
+      "publishedEnglish": "The author's latest novel may placate those who generally spurn her writing: its unvarnished prose has little in common with the labyrinthine interior explorations of her earlier work.",
+      "edits": [
+        "同义选项“placate & appease”仅保留placate，删除“& appease”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "这位作者的最新小说或许能安抚那些通常排斥她作品的人：其质朴的文笔与她早期作品中迷宫般的内心探索几乎没有共同之处。",
+        "issues": []
+      }
+    },
+    "posit": {
+      "sourceKey": "p10r03",
+      "originalEnglish": "In noting that critical and popular opinions about Lis art coincided, Chuang conceded & acknowledged the existence of an exception to her general theory of art criticism, which posits that critics’ views do not intersect with those of the general public.",
+      "publishedEnglish": "In noting that critical and popular opinions about Lis art coincided, Chuang conceded the existence of an exception to her general theory of art criticism, which posits that critics’ views do not intersect with those of the general public.",
+      "edits": [
+        "从同义选项“conceded & acknowledged”中保留“conceded”",
+        "修复“Lis art”中缺失的撇号"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "庄在指出关于利斯艺术的批评意见与大众意见相一致时，承认她的艺术批评一般理论存在一个例外，该理论认为评论家的观点与公众的观点并不相交。",
+        "issues": [
+          "英文原句为OCR形式'Lis art'，草稿改为'Lis's art'属合理修复，未见其他来源改动",
+          "目标词posits确实出现于英文句中",
+          "译文处理了'do not intersect'的否定，'which posits that'关系从句翻译准确",
+          "未发现明显漏译否定/比较/因果/转折"
+        ]
+      }
+    },
+    "preclude": {
+      "sourceKey": "p51r05",
+      "originalEnglish": "Those who admired Callas felt that she was one of the greatest opera singers of all time, while others believed that her vocal inadequacies precluded & invalidated_such a claim.",
+      "publishedEnglish": "Those who admired Callas felt that she was one of the greatest opera singers of all time, while others believed that her vocal inadequacies precluded such a claim.",
+      "edits": [
+        "删除了选项中并存的一个同义表述“invalidated”，仅保留包含目标词的“precluded”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "那些欣赏卡拉斯的人认为她是有史以来最伟大的歌剧歌手之一，而另一些人则认为她的声乐缺陷使这一说法无法成立。",
+        "issues": []
+      }
+    },
+    "predilection": {
+      "sourceKey": "p09r09",
+      "originalEnglish": "One of the peculiarities of humans is that we irrationally gravitate to the predictable and avoid risk, whatever the reasons for this predilection & proclivity, it is hardly a sound basis for dealing with complex, long-term problems.",
+      "publishedEnglish": "One of the peculiarities of humans is that we irrationally gravitate to the predictable and avoid risk, whatever the reasons for this predilection, it is hardly a sound basis for dealing with complex, long-term problems.",
+      "edits": [
+        "从“predilection & proclivity”这一同义选项中只保留 predilection；将逗号改为句号以分隔两个独立分句"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "人类的一个特殊之处在于，我们非理性地倾向于可预测的事物并规避风险，无论这种偏好的原因是什么，它都很难成为应对复杂、长期问题的可靠基础。",
+        "issues": [
+          "草稿英文来自p09r09，删除了同义备选proclivity并只保留predilection，符合引用允许范围；目标词predilection确实出现。",
+          "译文准确传达原文：irrationally gravitate to the predictable and avoid risk译作“非理性地倾向于可预测的事物并规避风险”；whatever the reasons for this predilection译作“无论这种偏好的原因是什么”；hardly a sound basis译作“很难成为……可靠基础”，否定与转折关系保留。",
+          "原文前半句用逗号连接两个独立分句存在轻微标点问题，但非OCR歧义，不影响判断；未发现漏译否定、比较、因果或转折。"
+        ]
+      }
+    },
+    "prodigious": {
+      "sourceKey": "p48r08",
+      "originalEnglish": "Margaret Oliphant’ literary output was ample & prodigious: it included almost 100 novels, 50 short stories, 25 nonfictional works, and in the region of 400 articles published in the periodical press.",
+      "publishedEnglish": "Margaret Oliphant's literary output was ample and prodigious: it included almost 100 novels, 50 short stories, 25 nonfictional works, and in the region of 400 articles published in the periodical press.",
+      "edits": [
+        "修复所有格符号：Oliphant’ → Oliphant's",
+        "将“&”替换为“and”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "玛格丽特·奥利芬特的文学创作十分丰富且惊人：包含近100部小说、50篇短篇故事、25部非虚构作品，以及约400篇发表在期刊上的文章。",
+        "issues": []
+      }
+    },
+    "repudiate": {
+      "sourceKey": "p50r03",
+      "originalEnglish": "Partisans of literary realism sometimes think that because fantastical narratives do not abide by the laws of reality, they repudiate & repudiate & abjure_all rules, though, in fact, the logic of fairy tales is often relentlessly rigorous.",
+      "publishedEnglish": "Partisans of literary realism sometimes think that because fantastical narratives do not abide by the laws of reality, they repudiate all rules, though, in fact, the logic of fairy tales is often relentlessly rigorous.",
+      "edits": [
+        "从“repudiate & repudiate & abjure_all rules”中保留同义选项之一，仅保留目标词repudiate，删除重复及abjure"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "文学现实主义的支持者有时认为，由于幻想叙事不遵守现实法则，它们便摒弃一切规则，然而事实上，童话的逻辑往往极其严密。",
+        "issues": []
+      }
+    },
+    "rudimentary": {
+      "sourceKey": "p18r01",
+      "originalEnglish": "Space is often referred to as the final frontier, as the only realm of which humankind has still to gain substantial understanding, yet the ocean is also another vast area about which our knowledge is rudimentary & sketchy.",
+      "publishedEnglish": "Space is often referred to as the final frontier, as the only realm of which humankind has still to gain substantial understanding, yet the ocean is also another vast area about which our knowledge is rudimentary and sketchy.",
+      "edits": [
+        "将“rudimentary & sketchy”中的“&”替换为“and”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "太空常被称为最终边疆，因为它是人类仍需获得实质性理解的唯一领域，然而海洋同样是另一个广阔区域，我们对它的知识仍然粗浅而零散。",
+        "issues": []
+      }
+    },
+    "scrupulous": {
+      "sourceKey": "p21r05",
+      "originalEnglish": "Journal editors note that the peer review process has difficulty detecting fraud & duplicity__: deliberate misinformation, if it is clever enough, might sail right through no matter how scrupulous the reviews.",
+      "publishedEnglish": "Journal editors note that the peer review process has difficulty detecting fraud: deliberate misinformation, if it is clever enough, might sail right through no matter how scrupulous the reviews.",
+      "edits": [
+        "删除选项分隔符“& duplicity__”，保留下一个同义项“fraud”",
+        "删除“fraud”后多余空格"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "期刊编辑指出，同行评审过程难以发现欺诈：如果刻意的虚假信息足够巧妙，无论审查多么严格，都可能轻易通过。",
+        "issues": []
+      }
+    },
+    "specious": {
+      "sourceKey": "p21r07",
+      "originalEnglish": "The senator complained that the president's argument against the provision was specious & deceptive, gaining its apparent plausibility from a distorted presentation of the relevant data",
+      "publishedEnglish": "The senator complained that the president's argument against the provision was specious, gaining its apparent plausibility from a distorted presentation of the relevant data.",
+      "edits": [
+        "同义选项“specious & deceptive”按规则仅保留目标词specious",
+        "补全句末标点"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "参议员抱怨总统反对该条款的论点是似是而非的，其表面上的合理性来源于对相关数据的扭曲呈现。",
+        "issues": []
+      }
+    },
+    "spurious": {
+      "sourceKey": "p14r05",
+      "originalEnglish": "British critics covering African American musicians performing in London in the 1910s had little idea how to distinguish what was authentic African American music from what was spurious & specious, but they knew such a distinction existed.",
+      "publishedEnglish": "British critics covering African American musicians performing in London in the 1910s had little idea how to distinguish what was authentic African American music from what was spurious, but they knew such a distinction existed.",
+      "edits": [
+        "删除了同义选项“& specious”，仅保留目标词 spurious"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "20世纪10年代，报道非裔美国音乐家在伦敦演出的英国评论家几乎不知道如何区分什么是真正的非裔美国音乐、什么是虚假的音乐，但他们知道这种区别是存在的。",
+        "issues": []
+      }
+    },
+    "stringent": {
+      "sourceKey": "p34r10",
+      "originalEnglish": "Despite the rather stringent & exacting conditions required for its preservation, the evidence for glaciation during the late Proterozoic is found on every continent, suggesting that ice sheets were present throughout the globe.",
+      "publishedEnglish": "Despite the rather stringent conditions required for its preservation, the evidence for glaciation during the late Proterozoic is found on every continent, suggesting that ice sheets were present throughout the globe.",
+      "edits": [
+        "同义选项“stringent & exacting”仅保留“stringent”",
+        "修复了断裂词“人遍布全”为“遍布全球”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "尽管其保存需要相当严格的条件，但晚期元古代冰川作用的证据在每个大陆都有发现，这表明冰盖遍布全球。",
+        "issues": [
+          "原文OCR中的“ice sheets were present throughout the globe”在中文草稿中译为“遍布全球”，准确",
+          "“stringent & exacting”删去同义备选“exacting”符合规则",
+          "sourceKey p34r10与总词 stringent一致，英文中目标词stringent确实出现",
+          "未发现漏译否定、比较、因果或转折关系",
+          "OCR中的断词“人遍布全”已由草稿修复为“遍布全球”，可确认"
+        ]
+      }
+    },
+    "subversive": {
+      "sourceKey": "p31r08",
+      "originalEnglish": "Wilson sees the ideas that he presents in his new book as being notably iconoclastic & subversive, but his critics, by contrast, claim that they are actually rather conventional",
+      "publishedEnglish": "Wilson sees the ideas that he presents in his new book as being notably iconoclastic, subversive, but his critics, by contrast, claim that they are actually rather conventional",
+      "edits": [
+        "将“iconoclastic & subversive”中的&符号替换为逗号",
+        "修正OCR错字“其覆性”为“颠覆性”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "威尔逊认为他在新书中提出的观点具有显著的颠覆偶像和颠覆性，但相比之下，他的批评者却声称这些观点实际上相当传统。",
+        "issues": [
+          "原文source英文中“iconoclastic & subversive”使用&连接，草稿将其替换为逗号；但语义未变，可视为同一列举结构。",
+          "source中文译文有OCR错字“其覆性”，草稿修正为“颠覆性”，符合目标词subversive。",
+          "译文准确传达对比（but...by contrast）和程度（notably、rather），无漏译否定/因果/转折。",
+          "目标词subversive确实出现在英文原句中，并被译为“颠覆性”。"
+        ]
+      }
+    },
+    "supplant": {
+      "sourceKey": "p17r04",
+      "originalEnglish": "In many branches of science, our knowledge and technology have advanced so rapidly that new studies carried out with improved instruments and techniques may well supplant & supersede research done just twenty years earlier.",
+      "publishedEnglish": "In many branches of science, our knowledge and technology have advanced so rapidly that new studies carried out with improved instruments and techniques may well supplant research done just twenty years earlier.",
+      "edits": [
+        "删除同义选项“& supersede”，仅保留“supplant”，目标词保留。"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "在许多科学分支中，我们的知识和技术发展得如此迅速，以至于用改进的仪器和技术进行的新研究很可能取代仅仅二十年前所做的研究。",
+        "issues": [
+          "p45r05 的中文含 OCR 乱码“BRS AINBI SR”且“狭独”疑为“狡猾”的 OCR 误识，但草稿选用的是 p17r04，其英文与译文均无问题。"
+        ]
+      }
+    },
+    "taciturn": {
+      "sourceKey": "p43r06",
+      "originalEnglish": "He was a man of few words, laconic & taciturn around all but his closest friends.",
+      "publishedEnglish": "He was a man of few words, laconic and taciturn around all but his closest friends.",
+      "edits": [
+        "将“&”替换为“and”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "他是一个寡言少语的人，除了最亲密的朋友之外，对所有人都显得简洁而沉默。",
+        "issues": [
+          "英文以“&”替换为“and”，属可允许的符号规范化，不改变原句语义。",
+          "目标词 taciturn 确实出现。",
+          "译文未遗漏否定/比较/因果/转折：“all but his closest friends”译为“除了最亲密的朋友之外，对所有人都…”，否定与范围准确。",
+          "laconic 译为“简洁”，taciturn 译为“沉默”，基本对应，无重大误译。"
+        ]
+      }
+    },
+    "tantamount": {
+      "sourceKey": "p51r03",
+      "originalEnglish": "Receiving sole credit for a scientific breakthrough is tantamount to acquiring a much-coveted prize: small wonder, then, that scientists often impugn & dispute_the claim of first discovery.",
+      "publishedEnglish": "Receiving sole credit for a scientific breakthrough is tantamount to acquiring a much-coveted prize: small wonder, then, that scientists often impugn the claim of first discovery.",
+      "edits": [
+        "将“& dispute_”选项整理为单一选项“impugn”，保留原句；修复“coveted”前后空格及“dispute_the”断词，并补全句末标点"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "获得某项科学突破的唯一功劳无异于获得一个备受觊觎的奖项：难怪科学家们常常质疑首先发现的主张。",
+        "issues": []
+      }
+    },
+    "tempered": {
+      "sourceKey": "p40r09",
+      "originalEnglish": "People enjoy listening to the governor's inspiring speeches, and his eloquence lulls his adversaries into underestimating his tenacity & resolve, the tempered steel beneath the sleek suits.",
+      "publishedEnglish": "People enjoy listening to the governor's inspiring speeches, and his eloquence lulls his adversaries into underestimating his tenacity and resolve, the tempered steel beneath the sleek suits.",
+      "edits": [
+        "将“tenacity & resolve”中的并列符号整理为“and”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "人们喜欢听州长鼓舞人心的演讲，他的雄辩使对手低估了他的坚韧与决心——那是笔挺西装下经过淬炼的钢铁。",
+        "issues": []
+      }
+    },
+    "tortuous": {
+      "sourceKey": "p41r08",
+      "originalEnglish": "The central idea of the worldview known as “consilience’ is that all tangible phenomena are based on material process that are ultimately reducible, however long and tortuous & convoluted the sequences, to the laws of physics.",
+      "publishedEnglish": "The central idea of the worldview known as “consilience” is that all tangible phenomena are based on material processes that are ultimately reducible, however long and tortuous the sequences, to the laws of physics.",
+      "edits": [
+        "修复引号内的“consilience”拼写与引号配对",
+        "将“process”改为复数“processes”",
+        "将“tortuous & convoluted”按选项规则保留“tortuous”，删除同义项“convoluted”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "被称为“融贯”的世界观的核心思想是：所有有形现象都基于物质过程，无论这些过程多么漫长曲折，最终都可归结为物理定律。",
+        "issues": [
+          "英文与OCR相比仅修正了拼写(consilience)、复数(processes)并删除同义备选(convoluted)，符合仅可删除同义备选和修正可确认拼写的规则",
+          "目标词tortuous确实出现",
+          "译文完整保留因果(core idea...is that)、让步(however long and tortuous)和归结(reducible to)关系，无漏译否定/比较/转折",
+          "‘融贯’作为consilience译名可接受"
+        ]
+      }
+    },
+    "treacherous": {
+      "sourceKey": "p32r07",
+      "originalEnglish": "The snow-covered surface of the lake presents a reassuring illusion of substantiality & soundness_, but beneath the snow the ice is riven with treacherous cracks.",
+      "publishedEnglish": "The snow-covered surface of the lake presents a reassuring illusion of substantiality and soundness, but beneath the snow the ice is riven with treacherous cracks.",
+      "edits": [
+        "将“substantiality & soundness_”中的“&”改为“and”，并删除下划线"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "湖面被雪覆盖，给人一种坚实而稳固的令人安心的错觉，但在雪下，冰面布满了危险的裂缝。",
+        "issues": []
+      }
+    },
+    "unscrupulous": {
+      "sourceKey": "p12r02",
+      "originalEnglish": "Motorcycle riders in London have discovered an ingenious, albeit unscrupulous & dishonest, way of parking illegally without getting a ticket.",
+      "publishedEnglish": "Motorcycle riders in London have discovered an ingenious, albeit unscrupulous, way of parking illegally without getting a ticket.",
+      "edits": [
+        "同义选项“unscrupulous & dishonest”中保留目标词 unscrupulous，删除 dishonest"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "伦敦的摩托车骑手发现了一种巧妙但不道德的非法停车方式，可以避免被罚单。",
+        "issues": []
+      }
+    },
+    "venerate": {
+      "sourceKey": "p51r06",
+      "originalEnglish": "China has a long tradition of venerating & exalting_ the written word; whereas in Renaissance Europe, painting, sculpture, and architecture were viewed as the apex of artistic achievement, in China calligraphy was the preeminent art form.",
+      "publishedEnglish": "China has a long tradition of venerating the written word; whereas in Renaissance Europe, painting, sculpture, and architecture were viewed as the apex of artistic achievement, in China calligraphy was the preeminent art form.",
+      "edits": [
+        "删除同义选项中的“& exalting_”，仅保留“venerating”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "中国有着尊崇书面文字的悠久传统；而在文艺复兴时期的欧洲，绘画、雕塑和建筑被视为艺术成就的顶峰，在中国，书法则是最卓越的艺术形式。",
+        "issues": []
+      }
+    },
+    "abate": {
+      "sourceKey": "p49r02",
+      "originalEnglish": "The effect of the distant past on an individual's financial decisions abates & dissipates much more slowly than the authors of the study had expected, with the impact of events early in life persisting decades into the future.",
+      "publishedEnglish": "The effect of the distant past on an individual's financial decisions abates much more slowly than the authors of the study had expected, with the impact of events early in life persisting decades into the future.",
+      "edits": [
+        "从“abates & dissipates”中仅保留abates",
+        "删除同义选项dissipates"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "遥远过去对个人财务决策的影响减弱得比该研究作者预期的要慢得多，早年事件的影响会持续数十年之久。",
+        "issues": []
+      }
+    },
+    "articulate": {
+      "sourceKey": "p49r09",
+      "originalEnglish": "She had a feeling that was not yet fully articulated, an inchoate & an incipient_sense that something extraordinary and wonderful awaited her.",
+      "publishedEnglish": "She had a feeling that was not yet fully articulated, an inchoate incipient sense that something extraordinary and wonderful awaited her.",
+      "edits": [
+        "将“inchoate & an incipient_sense”整理为“inchoate incipient sense”，并修复下划线造成的断词；中文原译“感党”系“感觉”的OCR错误，已更正。"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "她有一种尚未完全表达的感觉，一种初现的、萌芽般的预感，仿佛有非凡而美好的事情在等待着她。",
+        "issues": []
+      }
+    },
+    "circumspect": {
+      "sourceKey": "p31r09",
+      "originalEnglish": "Whether the director's action was pusillanimous or merely prudent & circumspect, the effect was the same: many board members argued against continuing to entrust leadership to a person who was perceived as unwilling to take risks.",
+      "publishedEnglish": "Whether the director's action was pusillanimous or merely prudent and circumspect, the effect was the same: many board members argued against continuing to entrust leadership to a person who was perceived as unwilling to take risks.",
+      "edits": [
+        "将选项符号“&”改为“and”以保持句子连贯"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "无论导演的行为是胆怯还是仅仅审慎而谨慎，结果都是一样的：许多董事会成员反对继续将领导权交给一个被认为不愿冒险的人。",
+        "issues": [
+          "英文与OCR基本一致：符号“&”改为“and”属可确认的标点/连词还原，目标词circumspect确实出现。",
+          "译文准确传达whether...or...让步结构与冒号后的结果，未漏否定/比较/因果/转折。",
+          "draft中文将pusillanimous译为“胆怯”，较草稿“局弱”更通顺且不失原义；谨慎对应prudent and circumspect基本达意。"
+        ]
+      }
+    },
+    "eloquent": {
+      "sourceKey": "p20r07",
+      "originalEnglish": "It's true that occasional verbose & long-winded entries might have been edited without damaging the diarys overall impact, but the very completeness of Clara's eloquent reflections conveys a strong sense of the density of a young woman's experiences.",
+      "publishedEnglish": "It's true that occasional verbose entries might have been edited without damaging the diary's overall impact, but the very completeness of Clara's eloquent reflections conveys a strong sense of the density of a young woman's experiences.",
+      "edits": [
+        "同义选项“verbose & long-winded”仅保留“verbose”",
+        "补全“diarys”中缺失的撇号"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "确实，偶尔冗长的条目本可以被编辑而不损害日记的整体影响力，但克拉拉那些富有表现力的反思的完整本身充分传达出一位年轻女性经历的密集感。",
+        "issues": []
+      }
+    },
+    "explicit": {
+      "sourceKey": "p46r06",
+      "originalEnglish": "Japanese law draws a distinction between currency imitation and actual counterfeiting: only the latter involved an explicit intent to defraud & swindle__ the public.",
+      "publishedEnglish": "Japanese law draws a distinction between currency imitation and actual counterfeiting: only the latter involved an explicit intent to defraud the public.",
+      "edits": [
+        "删除同义选项“& swindle__”，保留选项defraud"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "日本法律区分了货币仿制与真正的伪造：只有后者涉及欺诈公众的明确意图。",
+        "issues": []
+      }
+    },
+    "facilitate": {
+      "sourceKey": "p11r02",
+      "originalEnglish": "The environmental threat posed by the New Zealand mud snail, an invasive species, is exacerbated & aggravated by the snail's small size, which facilitates its spread across watersheds through human activity.",
+      "publishedEnglish": "The environmental threat posed by the New Zealand mud snail, an invasive species, is exacerbated by the snail's small size, which facilitates its spread across watersheds through human activity.",
+      "edits": [
+        "同义选项“exacerbated & aggravated”仅保留“exacerbated”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "新西兰泥螺这种入侵物种带来的环境威胁因其体型小巧而被加剧，这种特性通过人类活动促进了其在流域间的传播。",
+        "issues": [
+          "原文含同义备选“exacerbated & aggravated”，草稿仅保留“exacerbated”，属于允许删除同义备选，英文实质忠于原句。",
+          "目标词facilitates在句中确实出现，译文“促进了”对应准确。",
+          "译文保留了因果关系（因体型小巧而被加剧）和方式状语（通过人类活动），未漏否定或比较结构。"
+        ]
+      }
+    },
+    "inconsequential": {
+      "sourceKey": "p10r08",
+      "originalEnglish": "Recent research runs counter to the long-cherished notion that a small drop in body temperature during and after surgery is either immaterial & inconsequential or actually protects the patient by slowing metabolism and reducing the body's demand for blood and oxygen.",
+      "publishedEnglish": "Recent research runs counter to the long-cherished notion that a small drop in body temperature during and after surgery is either immaterial or inconsequential or actually protects the patient by slowing metabolism and reducing the body's demand for blood and oxygen.",
+      "edits": [
+        "删除同义选项中的 '& inconsequential'，保留 'immaterial or inconsequential' 中的目标词",
+        "修复 'and and' 为 'and'"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "最近的研究与长期以来的观念相悖，即手术期间和之后体温略微下降要么无关紧要，要么实际上通过减缓新陈代谢并降低身体对血液和氧气的需求来保护患者。",
+        "issues": []
+      }
+    },
+    "intractable": {
+      "sourceKey": "p09r10",
+      "originalEnglish": "Historically, the depletion of soils nitrogen has been one of the most stubborn & intractable problems faced by farmers: an essential nutrient, nitrogen is quickly leached from soil, and farmers have struggled to find ways to replenish it.",
+      "publishedEnglish": "Historically, the depletion of soil nitrogen has been one of the most stubborn intractable problems faced by farmers: an essential nutrient, nitrogen is quickly leached from soil, and farmers have struggled to find ways to replenish it.",
+      "edits": [
+        "修复了明显空格与断词（soils nitrogen→soil nitrogen，stubborn & intractable→stubborn intractable，并移除&符号）",
+        "依据语义将误识别的“氨”改为“氮”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "历史上，土壤中氮的耗竭一直是农民面临的最顽固难解的问题之一：作为一种必需养分，氮会迅速从土壤中流失，农民一直在努力寻找补充氮的方法。",
+        "issues": [
+          "target词intractable确在源句中（stubborn & intractable），draft删除&并将stubborn intractable视为同义备选，属可允许的形式处理",
+          "OCR中'ammonia/氨'应为'nitrogen/氮'，中文修正合理，英文draft对应为nitrogen",
+          "译文保留了否定/转折/因果逻辑，无漏译或明显OCR歧义需进一步确认"
+        ]
+      }
+    },
+    "opprobrium": {
+      "sourceKey": "p29r10",
+      "originalEnglish": "Other monarchs have been accused by posterity of murder and treason without having come to be regarded with such opprobrium & infamy, perhaps because the cases against them have never been satisfactorily proved.",
+      "publishedEnglish": "Other monarchs have been accused by posterity of murder and treason without having come to be regarded with such opprobrium, perhaps because the cases against them have never been satisfactorily proved.",
+      "edits": [
+        "从备选同义表达“opprobrium & infamy”中仅保留目标词“opprobrium”，删除“& infamy”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "其他君主虽被后世指控犯有谋杀和叛国罪，却并未因此受到如此强烈的唾弃与恶名，或许是因为针对他们的指控从未得到令人信服的证明。",
+        "issues": []
+      }
+    },
+    "paradox": {
+      "sourceKey": "p25r07",
+      "originalEnglish": "An apparent paradox led the scientists to pursue their present line of research. They were struck by the fact that a single mathematics formula can be used to describe physical phenomena that appear to be so heterogeneous & dissimilar.",
+      "publishedEnglish": "An apparent paradox led the scientists to pursue their present line of research. They were struck by the fact that a single mathematics formula can be used to describe physical phenomena that appear to be so heterogeneous and dissimilar.",
+      "edits": [
+        "将原文中的 & 替换为 and",
+        "修正了中文译文中的错别字“竞然”为“竟然”"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "一个明显的悖论促使科学家们开展了他们当前的研究方向。他们惊诧于这样一个事实：一个数学公式竟能用来描述看似如此异质且不同的物理现象。",
+        "issues": [
+          "英文原句中的 & 替换为 and 属于可确认的格式规范化，不改变语义",
+          "中文草稿已修正OCR错别字“竞然”为“竟然”，与英文原句一致",
+          "原文中“apparent paradox”译为“明显的悖论”可接受，未见漏译否定、比较、因果或转折"
+        ]
+      }
+    },
+    "partisan": {
+      "sourceKey": "p50r03",
+      "originalEnglish": "Partisans of literary realism sometimes think that because fantastical narratives do not abide by the laws of reality, they repudiate & repudiate & abjure_all rules, though, in fact, the logic of fairy tales is often relentlessly rigorous.",
+      "publishedEnglish": "Partisans of literary realism sometimes think that because fantastical narratives do not abide by the laws of reality, they repudiate all rules, though, in fact, the logic of fairy tales is often relentlessly rigorous.",
+      "edits": [
+        "删除重复的“repudiate & repudiate & abjure_”选项串，仅保留同义选项之一“repudiate”；修复“abjure_all”的断词问题。"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "文学现实主义的支持者有时认为，由于幻想叙事不遵守现实法则，它们就摒弃一切规则，然而事实上，童话的逻辑往往极其严谨。",
+        "issues": []
+      }
+    },
+    "tenuous": {
+      "sourceKey": "p41r02",
+      "originalEnglish": "Upon realizing that the indicators of a stressful situation can be extremely exiguous & tenuous, the psychologist reconsidered her claim that a reliable way of reducing stress is to recognize stressful situations and then avoid them.",
+      "publishedEnglish": "Upon realizing that the indicators of a stressful situation can be extremely tenuous, the psychologist reconsidered her claim that a reliable way of reducing stress is to recognize stressful situations and then avoid them.",
+      "edits": [
+        "从同义选项“exiguous & tenuous”中仅保留目标词 tenuous，删去 exiguous 及连接符"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "在意识到压力情境的迹象可能极其微弱之后，这位心理学家重新考虑了她的主张，即一种可靠的减压方式是识别压力情境然后避开它们。",
+        "issues": []
+      }
+    },
+    "veracity": {
+      "sourceKey": "p33r02",
+      "originalEnglish": "The reader does well to approach claims in this autobiography with a certain amount of friendly skepticism, but the overall impression it conveys is that veracity wins out over invention & contrivance_.",
+      "publishedEnglish": "The reader does well to approach claims in this autobiography with a certain amount of friendly skepticism, but the overall impression it conveys is that veracity wins out over invention and contrivance.",
+      "edits": [
+        "将“invention & contrivance_”整理为“invention and contrivance”，去除“&”符号和多余下划线。"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "读者最好以一定程度的友好怀疑态度看待这本自传中的主张，但它传达的整体印象是真实性胜过虚构与编造。",
+        "issues": []
+      }
+    },
+    "verbose": {
+      "sourceKey": "p20r07",
+      "originalEnglish": "It's true that occasional verbose & long-winded entries might have been edited without damaging the diarys overall impact, but the very completeness of Clara's eloquent reflections conveys a strong sense of the density of a young woman's experiences.",
+      "publishedEnglish": "It's true that occasional verbose entries might have been edited without damaging the diary's overall impact, but the very completeness of Clara's eloquent reflections conveys a strong sense of the density of a young woman's experiences.",
+      "edits": [
+        "将“verbose & long-winded”按同义选项规则仅保留“verbose”",
+        "修复“diarys”为“diary's”",
+        "删除“occasional”后的多余空格",
+        "移除“long-winded”后的选项并列结构"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "诚然，偶尔冗长的条目或许经过编辑而并未损害日记的整体影响力，但克拉拉那些富有表现力的反思之所以完整，恰恰强烈传达出一位年轻女性经历的密集丰富。",
+        "issues": [
+          "英文原文含'verbose & long-winded'，草稿按同义备选只保留'verbose'，可接受",
+          "'diarys'为'Diary's'的OCR缺省，修复合理",
+          "译文准确传达'It's true that...but...'的转折关系，未漏否定或比较",
+          "目标词verbose在英文中出现，译文'冗长'对应准确"
+        ]
+      }
+    },
+    "volatile": {
+      "sourceKey": "p35r01",
+      "originalEnglish": "Globalization has made ethnic entrepreneurship resilient in postindustrial economies: well represented in the small business sector in the United States, ethnic entrepreneurship has been sustained & perpetuated by the volatile tides of international migration",
+      "publishedEnglish": "Globalization has made ethnic entrepreneurship resilient in postindustrial economies: well represented in the small business sector in the United States, ethnic entrepreneurship has been sustained and perpetuated by the volatile tides of international migration",
+      "edits": [
+        "将 & 改为 and",
+        "修复中文译文中无法辨认的乱码前缀"
+      ],
+      "review": {
+        "approved": true,
+        "chinese": "全球化使族裔创业在后工业经济中具有韧性：族裔创业在美国小企业部门中占有重要地位，并因国际移民的动荡潮流而得以维持和延续。",
+        "issues": [
+          "英文将OCR中的 & 展开为 and，属可确认的符号规范化，未改变语义",
+          "目标词 volatile 在原句和译文中均出现（“动荡的”）",
+          "译文准确传达冒号后的解释关系及因果逻辑，无漏译否定/比较/转折",
+          "引用OCR中的中文前缀为乱码，草稿已修复为可读译文，未补造事实"
+        ]
+      }
+    }
+  },
+  "excluded": {
+    "adamant": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p44r06",
+        "english": "As a proponent of women’s traditional roles, Sarah Hale was adamant against women's suffrage as thrusting women into an improper sphere; yet she supported and championed female textile strikers when they publicly protested their mistreatment at miles.",
+        "chinese": "作为女性传统角色的拥护者，莎拉·黑尔坚决反对女性选举权，认为这会将女性推入不适当的领域；然而，当女性纺织工人公开抗议她们在工厂遭受的不公待遇时，她却支持并倡导她们。",
+        "edits": [
+          "将“supported & championed”改为“supported and championed”以消除符号",
+          "保留原文末尾“at miles”（疑为“at mills”的OCR误识，但无法确定，故不作改动）"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "作为女性传统角色的拥护者，莎拉·黑尔坚决反对女性选举权，认为这会将女性推入不适当的领域；然而，当女性纺织工人公开抗议她们在工厂遭受的不公待遇时，她却支持并倡导她们。",
+        "issues": [
+          "英文末尾“at miles”疑为“at mills”的OCR误识，无法确认原句拼写，故approved=false",
+          "“与”supported & championed”中的“&”改为“and”属于对英文的改动，但draft已说明，仍需标注；本系统不可改英文，该改动无法确认"
+        ]
+      }
+    },
+    "brazen": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p34r06",
+        "english": "In his article, Bazerman highlights Edison's brazen manipulation of the press, including gifts of stock to friendly reporters.",
+        "chinese": "在这篇文章中，巴泽曼着重指出了爱迪生对新闻界厚颜无耻的操纵，包括向友善的记者赠送股票。",
+        "edits": [
+          "修复了词间缺少的空格（Inhis → In his）",
+          "按选项要求仅保留同义选项“brazen”，删除“& barefaced”"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "在这篇文章中，巴泽曼着重指出了爱迪生对新闻界厚颜无耻的操纵，包括向友善的记者赠送股票。",
+        "issues": [
+          "英文与OCR原句不一致：删除了连词及同义备选“& barefaced”，并改动了标点（原文“brazen & barefaced manipulation”，草稿为“brazen manipulation”），超出仅修复空格和删除同义备选的允许范围，无法确认原句准确形式。",
+          "因英文被改动，无法核实目标词brazen在整理句中的合法出现形式，来源可靠性存疑。"
+        ]
+      }
+    },
+    "censure": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p24r04",
+        "english": "An academic with a questionable record in either teaching, administration, or research may still be well regarded at many schools, but simultaneous failure in all three areas normally results in disapprobation or censure by superiors.",
+        "chinese": "一名在教学、行政或研究任一领域记录存疑的学者，在许多学校可能仍受好评，但若在三个领域同时失败，通常会导致上级的非难或谴责。",
+        "edits": [
+          "将“disapprobation & censure”中的&替换为or，仅保留一个同义选项并保留目标词censure"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "一名在教学、行政或研究任一领域记录存疑的学者，在许多学校可能仍受好评，但若在三个领域同时失败，通常会导致上级的非难或谴责。",
+        "issues": [
+          "原文OCR为“disapprobation & censure”，草稿英文将&改为or，属于来源改动，无法确认原句如此，故approved=false。",
+          "译文补入了“或谴责”，与草稿英文or对应；若以OCR原句为准，需保留两种并列结果，但英文不可改，因此仅指出英文来源不一致。"
+        ]
+      }
+    },
+    "circumvent": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p04r02",
+        "english": "Flawed as it may be because it is conducted by subjective scientists, science itself has methods that help us bypass circumvent our biases and talk about objective reality with some validity.",
+        "chinese": "尽管科学可能因由主观的科学家进行而存在缺陷，但科学本身拥有一些方法，能帮助我们绕过并规避自身偏见，并以一定的有效性讨论客观现实。",
+        "edits": [
+          "删除了原句中的“&”，并将“bypass & circumvent”整理为“bypass circumvent”"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "尽管科学可能因由主观的科学家进行而存在缺陷，但科学本身拥有一些方法，能帮助我们绕过并规避自身偏见，并以一定的有效性讨论客观现实。",
+        "issues": [
+          "草稿删除了英文原句中的“&”符号，将“bypass & circumvent”改为“bypass circumvent”，属于对英文的改动；按要求不可改英文，且此类删除同义备选格式不明确，无法确认是否为可接受的备选形式整理",
+          "英文与所引sourceKey p04r02的OCR内容存在符号差异，需保留原句符号或明确标注为可接受的删除同义备选"
+        ]
+      }
+    },
+    "deferential": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p05r07",
+        "english": "French's tone was reasonable, deferential, respectful almost, but the gaze she fixed on Backhouse over her reading spectacles had something of defiance in it.",
+        "chinese": "French的语气相当合理，几乎带着恭敬，但她透过阅读眼镜注视Backhouse的目光中带着几分挑衅。",
+        "edits": [
+          "将“deferential & respectful”中的&替换为逗号以保留deferential并符合英文不得含&的要求",
+          "修复原中文译文中的OCR乱码并补全为完整译文"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "French的语气相当合理，几乎带着恭敬与尊重，但她透过阅读眼镜注视Backhouse的目光中带着几分挑衅。",
+        "issues": [
+          "英文原句含'deferential & respectful'，草稿将&替换为逗号，属于改动英文，须保留deferential和respectful两个词（&为OCR可识别符号，不应作为删除备选处理）",
+          "原OCR中文含大量乱码且不完整，需修复；译文须同时体现deferential与respectful两层含义",
+          "引用OCR中'over her reading spectacles'已可辨识，译文'透过阅读眼镜'基本准确"
+        ]
+      }
+    },
+    "erudite": {
+      "draft": {
+        "status": "unusable",
+        "reason": "OCR原文含无法确认的拼写错误impressivelyleamed，且letter疑为letters但无法确定；按规则不可编造或改写措辞。"
+      },
+      "review": {
+        "approved": false,
+        "chinese": "这本书博学多识，汲取了多个学科和视角的精华，基于多样且广泛的档案资料、自传、已出版的书信集以及历史著作。",
+        "issues": [
+          "OCR原文含无法确认的拼写错误“impressivelyleamed”（疑为impressively learned，但无法确认），且“published collection of letter”中letter疑为letters但无法确定，按规则不可编造或改写英文。",
+          "因英文存在无法确认的OCR歧义，草稿状态为unusable，按规则直接approved=false。"
+        ]
+      }
+    },
+    "ingenuous": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p40r06",
+        "english": "Even the man was reserved in his speech, he thoroughly understood his mother, which made him far from simple and ingenuous as people usually thought.",
+        "chinese": "尽管这个人言语矜持，他却完全了解自己的母亲，这使他远非人们通常所想的那样单纯天真。",
+        "edits": [
+          "将 & 改为 and，以符合英文输出不得含 & 的要求并保持同义选项之一"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "尽管这个人言语矜持，他却完全了解自己的母亲，这使他远非人们通常所想的那样单纯天真。",
+        "issues": [
+          "草稿将原文中的“&”改成了“and”，属于对英文的改动；规则要求不得改动英文（除空格、标点和删除同义备选外），此处不属于可改范围，应保持原样或记录为来源改动。",
+          "原文“Even the man was reserved in his speech”语法不完整，疑似OCR遗漏“though/if”等词，存在明显OCR歧义，无法确认原句。",
+          "因英文来源无法确认，应approved=false。"
+        ]
+      }
+    },
+    "involved": {
+      "draft": {
+        "status": "unusable",
+        "reason": "两条候选原句均不可靠：第一条含OCR错误“swindle__”及无法确定的&选项结构；第二条中文翻译不完整且英文含“quitespeculative”断词合并及“mechanisms”与前文语法不一致，无法在不改写措辞的前提下修复。"
+      },
+      "review": {
+        "approved": false,
+        "chinese": "日本法律区分了仿造货币与真正的伪造：只有后者涉及明确的欺诈和骗取公众的意图。",
+        "issues": [
+          "sourceKey p46r06 英文含OCR标记“swindle__”及“&”备选结构，无法确认原句措辞",
+          "sourceKey p48r04 英文含“quitespeculative”断词合并及“mechanisms”与“mechanism involved”语法不一致，存在OCR歧义",
+          "第二条译文不完整，缺少机制阐释部分",
+          "存在无法确认的拼写/来源问题"
+        ]
+      }
+    },
+    "meticulous": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p14r01",
+        "english": "As a historical genre, biography is best when meticulous and thorough, a careful reconstruction of the past in all its unfamiliar particularity.",
+        "chinese": "作为一种历史体裁，传记在细致入微且周全时最为出色，能够细心重现过去所有不熟悉的细节。",
+        "edits": [
+          "将原文中的“&”改为“and”",
+          "修正中文译文中的OCR错误“历史体哉”为“历史体裁”"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "作为一种历史体裁，传记在细致入微且周全时最为出色，能够细心重现过去所有不熟悉的细节。",
+        "issues": [
+          "sourceKey p14r01 的 OCR 英文为“meticulous & thorough”，草稿将“&”改为“and”，属于对英文的改动，不可确认，故 approved=false",
+          "中文译文漏译“a careful reconstruction of the past”，现译“细心重现过去”虽大致对应，但“所有不熟悉的细节”对应“in all its unfamiliar particularity”基本可接受；主要问题是英文改写未经确认"
+        ]
+      }
+    },
+    "obscure": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p13r08",
+        "english": "In order to cultivate new repertoire, the music industry is providing a hearing for previously anonymous obscure composers.",
+        "chinese": "为了培养新的曲目，音乐行业正在为此前默默无闻的作曲家提供展示机会。",
+        "edits": [
+          "合并了原文中并列的 anonymous & obscure 选项，仅保留 obscure 以去除 & 符号"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "为了培养新的曲目，音乐行业正在为此前默默无闻的作曲家提供展示机会。",
+        "issues": [
+          "sourceKey p13r08 英文原文为 'previously anonymous & obscure composers'，草稿删除了 'anonymous &'，仅保留 'obscure'，这是对英文原句的改动，而非可确认的删除同义备选（anonymous 与 obscure 并非同义词），不能据此认定忠于原句",
+          "目标词 obscure 在第一句中出现，译文'默默无闻'基本对应，但英文改动导致无法确认该来源句合理",
+          "p40r08 译文含明显错字'颂发'（应为'颁发'）、'降涩难懂'（应为'晦涩难懂'），且'在科学术语'漏译冠词/介词结构，存在 OCR 或录入问题，但这些不影响第一句的判定；整体草稿因英文改动不可通过"
+        ]
+      }
+    },
+    "opaque": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p39r04",
+        "english": "Potential readers may well be put off by the rather opaque quality of the prose in this book, which at times seems deliberately inaccessible to the uninitiated reader.",
+        "chinese": "潜在读者很可能会被本书中相当晦涩的文笔劝退，这种文笔有时似乎故意让外行读者难以理解。",
+        "edits": [
+          "删除选项标记“& insurmountable for”，仅保留符合语法的表述“inaccessible to”"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "潜在读者很可能会被本书中相当晦涩的文笔劝退，这种文笔有时似乎故意让外行读者难以理解且无法逾越。",
+        "issues": [
+          "英文原句含“inaccessible to & insurmountable for the uninitiated reader”，删除同义备选后应保留“inaccessible to”与“insurmountable for”两部分的语义；草稿英文删去了“insurmountable”相关表述，中文译文也漏译了“insurmountable（无法逾越）”这一信息。",
+          "英文原句中的“&”表示并列的备选说法，不应被视为仅保留其一；中文应体现“难以理解且无法逾越”。"
+        ]
+      }
+    },
+    "recondite": {
+      "draft": {
+        "status": "unusable",
+        "reason": "OCR文本中混入大量坐标数字和“part 5 1 1 1 2 8...”等无法还原的乱码，且“esoteric_”存在明显断词/多余符号；同义选项“recondite & an esoteric”结构不完整，无法在保持原句且不编造的前提下整理出可靠英文原句。"
+      },
+      "review": {
+        "approved": false,
+        "chinese": "威廉斯认为，哲学如今已成为一种深奥且隐秘的职业，而它本应是一种更普遍的尝试，去理解我们生活的最佳意义。",
+        "issues": [
+          "OCR文本中混入大量坐标数字（如\"part 5 1 1 1 2 8 254 56 13 12 96.924469\"等）和无法还原的乱码，英文原句无法可靠确认",
+          "\"esoteric_\"存在多余下划线/断词符号，结构不完整",
+          "由于英文原句无法确认，草稿判定为unusable，应approved=false"
+        ]
+      }
+    },
+    "plethora": {
+      "draft": {
+        "status": "ok",
+        "sourceKey": "p27r01",
+        "english": "The archives of the museum, containing a plethora of documents that shed light on Picasso's work, may, for a time, give us the illusion of total comprehension, but in the end it seems that Picasso is no more understandable than he ever was.",
+        "chinese": "博物馆的档案馆中保存着大量揭示毕加索作品的文件，这些文件或许会在一段时间内让我们产生完全理解的错觉，但最终看来，毕加索似乎仍然和过去一样难以理解。",
+        "edits": [
+          "修复OCR断词“no moreunderstandable”为“no more understandable”",
+          "删除同义选项“& transparent”，仅保留“understandable”"
+        ]
+      },
+      "review": {
+        "approved": false,
+        "chinese": "博物馆的档案馆中保存着大量揭示毕加索作品的文件，这些文件或许会暂时让我们产生完全理解的错觉，但最终看来，毕加索似乎并不比以往更容易理解。",
+        "issues": [
+          "原文含比较结构 no more understandable than he ever was，应准确译为“并不比过去更好理解/仍然和过去一样难以理解”；草稿译文“仍然和过去一样难以理解”基本保留了比较义，但建议采用更明确的“并不比以往更容易理解”",
+          "英文原句中存在OCR断词 no moreunderstandable，草稿将其修复为 no more understandable，属于可确认的拼写修复，但需在issues中注明；同时草稿删除了同义备选 & transparent，属于允许的删除同义备选",
+          "译文“大量”对应 plethora 可接受，但可更贴近“数量繁多/过多”的贬义色彩；非必须",
+          "未发现漏译否定、因果或转折；但 approved=false 因存在需标注的OCR拼写修复与比较结构需更严谨表达"
+        ]
+      }
+    }
+  }
+}

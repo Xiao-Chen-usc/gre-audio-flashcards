@@ -1,0 +1,87 @@
+{
+  "verifiedOn": "2026-11-11",
+  "policy": "Exact public-source excerpts; retain blanks and distinguish target word roles. Not certified ETS originals.",
+  "sources": [
+    {
+      "word": "taciturn",
+      "verified": true,
+      "sourceUrl": "https://gre.kmf.com/question/e2cw7j.htm",
+      "label": "考满分 GRE 题库",
+      "note": "目标词在此题中是题干用词",
+      "english": "At public appearances the leader was remarkably taciturn, typically making _____________ observations before turning the floor over to a colleague.",
+      "chinese": "在公开露面时，这位领导人极为沉默寡言，通常只说几句_____________的话，随后便把发言权交给一位同事。"
+    },
+    {
+      "word": "pundit",
+      "verified": true,
+      "sourceUrl": "https://gre.kmf.com/question/f2c9xj.htm",
+      "label": "考满分 GRE 题库",
+      "note": "目标词在此题中是题干用词",
+      "english": "… characterized her opponents as extreme and one-sided, the pundit conspicuously failed to (i) _____________ the middle ground to which she laid claim; how speedily …",
+      "chinese": "……将她的对手描述为极端和片面，这位专家显然未能（i）_____________她所声称的中间立场；多么迅速……"
+    },
+    {
+      "word": "prodigious",
+      "verified": true,
+      "sourceUrl": "https://gre.kmf.com/question/91pqbj.htm",
+      "label": "考满分 GRE 题库",
+      "note": "目标词在此题中是正确选项",
+      "english": "Consuming 25 to 35 percent of their body weight each day, sea otters are not only _____ but highly specialized eaters, organizing themselves into …",
+      "chinese": "每天消耗其体重25%到35%的海獭不仅是_____，而且是高度专业化的食客，它们会组织成……"
+    },
+    {
+      "word": "tractable",
+      "verified": true,
+      "sourceUrl": "https://gre.kmf.com/explain/index/41p1yk",
+      "label": "考满分 GRE 题库",
+      "note": "目标词在此题中是正确选项",
+      "english": "… the rich hurly-burly of continental plant and animal communities is reduced to a scientifically (ii) _____ complexity.",
+      "chinese": "……大陆植物和动物群落的丰富喧嚣被简化为科学上(ii)_____的复杂性。"
+    },
+    {
+      "word": "galvanize",
+      "verified": true,
+      "sourceUrl": "https://gre.kmf.com/explain/question/722unj-0.html",
+      "label": "考满分 GRE 题库",
+      "note": "目标词在此题中是题干用词",
+      "english": "But the ability to galvanize a hundred musicians into giving a great performance requires more than proficiency and affability.",
+      "chinese": "但是，激发一百名音乐家进行精彩表演的能力需要的不仅仅是熟练和和蔼可亲。"
+    },
+    {
+      "word": "mundane",
+      "verified": true,
+      "sourceUrl": "https://gre.kmf.com/explain/question/022cwj-0.html",
+      "label": "考满分 GRE 题库",
+      "note": "目标词在此题中是正确选项",
+      "english": "… for dreams are as likely to have been molded by (ii)_________ events as by extreme and life-changing ones.",
+      "chinese": "……因为梦境同样可能由 (ii)_________ 事件塑造，正如由极端且改变人生的事件塑造一样。"
+    },
+    {
+      "word": "aberrant",
+      "verified": true,
+      "sourceUrl": "https://blog.powerscore.com/gre/gre-sentence-equivalence-challenge-hard-unknown-vocab/",
+      "label": "PowerScore GRE 六选二练习",
+      "note": "出版社自编练习，非 ETS 真题 · 目标词在题干中",
+      "english": "… to discredit the __________ properties of fragrance and, more radically, to deem perfume use potentially toxic and aberrant.",
+      "chinese": "……否定香水的______特性，并且更激进地认为使用香水可能有毒且不正常。"
+    }
+  ],
+  "deepseekNewTranslation": {
+    "result": {
+      "chinese": "……否定香水的______特性，并且更激进地认为使用香水可能有毒且不正常。",
+      "verified": true,
+      "issues": []
+    },
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 142,
+      "completion_tokens": 32,
+      "total_tokens": 174,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 142
+    }
+  }
+}
