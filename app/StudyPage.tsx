@@ -34,7 +34,6 @@ type ProgressExport = {
 };
 
 const DAILY_NEW_TARGET = 100;
-const COLLECTED_REVIEW_TARGET = 40;
 const RECALL_SESSION_SIZE = 20;
 
 function SpeakerIcon() {
@@ -170,7 +169,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
     () => bookReviewIndices(WORDS, hard, WORD_PAIRS),
     [hard, WORDS, WORD_PAIRS],
   );
-  const dailyReviewTarget = collectionId === "collected" ? COLLECTED_REVIEW_TARGET : BOOK_REVIEW_WORDS;
+  const dailyReviewTarget = BOOK_REVIEW_WORDS;
 
   /* Local storage is an external source; hydrate it once after the client mounts. */
   /* eslint-disable react-hooks/set-state-in-effect */
@@ -507,7 +506,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
         );
         // Shuffle so the first word of a pair no longer gives away the second.
         return shuffled(
-          recent.flatMap(({ indices }) => indices).slice(0, evenSessionSize),
+          recent.flatMap(({ indices }) => indices).slice(0, BOOK_REVIEW_WORDS),
         );
       }
       return eligiblePairs
@@ -1094,7 +1093,7 @@ export default function StudyPage({ words: WORDS = DEFAULT_WORDS, examples: EXAM
                   >{size}</button>
                 ))}
               </div>
-              {collectionId !== "collected" && <small>今日复习只选不熟词，每轮最多 50 词。</small>}
+              <small>今日复习只选不熟词，每轮最多 {BOOK_REVIEW_WORDS} 词。</small>
             </div>
             <div className="mastery-summary">
               <span style={{ width: `${fullProgress}%` }} />

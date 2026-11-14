@@ -1,4 +1,4 @@
-export const BOOK_REVIEW_WORDS = 50;
+export const BOOK_REVIEW_WORDS = 20;
 
 /** Review only explicitly unfamiliar pairs, in book order, without unseen filler. */
 export function bookReviewIndices(

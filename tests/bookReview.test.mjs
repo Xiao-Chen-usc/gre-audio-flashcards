@@ -19,11 +19,11 @@ test("sparse unfamiliar pairs stay in book order regardless of when they were ad
   assert.deepEqual(select(new Set(["word-81", "word-3", "word-42"])), [2, 3, 42, 43, 80, 81]);
 });
 
-test("a round is capped at the first 25 unfamiliar pairs / 50 words", () => {
+test("a round is capped at the first 10 unfamiliar pairs / 20 words", () => {
   const hard = new Set(range(0, 106).filter((index) => index % 2 === 0).map((index) => words[index].id));
-  assert.deepEqual(select(hard), range(0, 50));
+  assert.deepEqual(select(hard), range(0, 20));
   for (const index of range(0, 10)) hard.delete(words[index].id);
-  assert.deepEqual(select(hard), range(10, 60));
+  assert.deepEqual(select(hard), range(10, 30));
 });
 
 test("a pair stays eligible until neither member is marked unfamiliar", () => {
@@ -44,13 +44,20 @@ test("stale IDs do not create review cards", () => {
   assert.deepEqual(select(new Set(["deleted-id"])), []);
 });
 
-test("the 50-word boundary never splits an unfamiliar pair", () => {
+test("the 20-word boundary never splits an unfamiliar pair", () => {
   const pool = select(new Set(words.map(({ id }) => id)));
-  assert.equal(pool.length, 50);
+  assert.equal(pool.length, 20);
   for (const group of groups) {
     const included = group.indices.filter((index) => pool.includes(index));
     assert.ok(included.length === 0 || included.length === 2);
   }
+});
+
+test("single-word decks also select at most 20 unfamiliar words without unseen filler", () => {
+  const singletons = words.map((_, index) => ({ indices: [index] }));
+  const hard = new Set(range(30, 60).map(index => words[index].id));
+  assert.deepEqual(bookReviewIndices(words, hard, singletons), range(30, 50));
+  assert.deepEqual(bookReviewIndices(words, new Set(['word-32']), singletons), [32]);
 });
 
 test("selection never rearranges the book or mutates unfamiliar progress", () => {
